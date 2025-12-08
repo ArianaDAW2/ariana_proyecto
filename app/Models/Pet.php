@@ -31,4 +31,6 @@ class Pet extends Model
     {
         return $this->belongsTo(Booking::class, 'id_booking');
     }
+
+
 }

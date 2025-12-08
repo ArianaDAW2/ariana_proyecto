@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Booking extends Model
@@ -22,5 +23,9 @@ class Booking extends Model
     public function room(): HasOne
     {
         return $this->hasOne(Room::class, 'id_room');
+    }
+    public function Pet(): HasMany
+    {
+        return $this->hasMany(Pet::class, 'id_booking');
     }
 }

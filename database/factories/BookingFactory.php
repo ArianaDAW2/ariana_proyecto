@@ -17,6 +17,7 @@ class BookingFactory extends Factory
 
         return [
             'id_room' => Room::factory(),
+
             'date_start' => $startDate->format('Y-m-d'),
             'date_end' => $endDate->format('Y-m-d'),
             'status' => $this->faker->boolean(),

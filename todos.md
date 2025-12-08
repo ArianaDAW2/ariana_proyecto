@@ -1,9 +1,9 @@
 # TddCourses25 - Todos
 
 ## Los invitados pueden
-* Ver la descripción de los cursos (página home)
-* Ver los detalles del curso (página)
-* Comprar un curso (se accede desde los detalles del curso)
+* Ver la (página home)
+* Ver los detalles de los precios y las habitaciones
+* Registrarse junto a sus mascotas
 
 ## Los miembros pueden
 * Autenticarse (página)

@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\Booking;
+use App\Models\Extra;
 use App\Models\Owner;
 use App\Models\Pet;
+use App\Models\Price;
 use App\Models\Room;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -26,7 +28,9 @@ class DatabaseSeeder extends Seeder
 
           });
         */
-        Pet::factory(10)->create(); // Booking -> Room //Owner -> User
+        Pet::factory(5)->create(); // Booking -> Room //Owner -> User
+        Price::factory(5)->create();
+        Extra::factory(5)->create();
 
     }
 }
