@@ -1,7 +1,7 @@
 # ariana_proyecto - To do List - Spanish
 
 ## Los invitados pueden
-* ver la página HOME, IMAGES, CONTACT
+* ver la página HOME, GALLERY, CONTACT
 * ver que servicios ofrece para mascotas.
 * ver las habitaciones.
 * ver que días están libres y sus precios día por mascota.
