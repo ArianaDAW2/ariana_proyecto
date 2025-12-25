@@ -22,7 +22,7 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-
+/coverage
 # Project exclude paths
 /storage/app/
 /storage/framework/
