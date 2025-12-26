@@ -6,7 +6,7 @@
             <p class="text-sm text-gray-400">Cuidamos de tus mejores amigos las 24 horas.</p>
         </div>
 
-        <nav aria-label="Footer navigation" class="text-sm">
+        <nav class="text-sm">
             <ul class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                 <li><a href="/" class="hover:text-white">📸 Instagram</a></li>
                 <li><a href="/servicios/" class="hover:text-white">Servicios</a></li>
