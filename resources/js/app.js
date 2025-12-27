@@ -6,3 +6,12 @@ menu.classList.toggle('hidden');
 click.addEventListener('click', () => {
     menu.classList.toggle('hidden');
 });
+
+let overlay = document.getElementById("overlay");
+document.querySelectorAll(".gallery_img").forEach(img => {
+    img.addEventListener("click", () => {
+        overlay.classList.toggle('hidden')
+        img.classList.toggle("fullscreen");
+    });
+});
+
