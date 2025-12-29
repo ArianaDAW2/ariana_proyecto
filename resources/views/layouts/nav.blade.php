@@ -4,8 +4,8 @@
         <p id="menu_mobile" class=" md:hidden group border-2 border-b-blue-500 px-[10px]">-->MENÚ<--</p>
         <ul id="menu"
             class=" not-md:hidden md:grid md:grid-cols-12 md:gap-2 items-center">
-            <li><a href="/">INICIO</a></li>
-            <li class="bg-blue-600 group">
+            <li><a href="<?= route('home') ?>">INICIO</a></li>
+            <li class=" bg-blue-600 group">
                 <a href="/contact">CONÓCENOS</a>
                 <ul class="bg-black border-2 border-blue-600 absolute left-9999 md:group-hover:left-auto not-md:w-112">
                     <li><a href="/gallery">Nuestra historia</a></li>

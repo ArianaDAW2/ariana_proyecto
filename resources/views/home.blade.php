@@ -4,6 +4,8 @@
 
 @section('content-1')
     <section>
+        <livewire:counter/>
+
         <h1 class="font-bold text-gray-700 text-[35px] pb-5 not-md:text-center">
             Bienvenidos a HotelForPets
         </h1>

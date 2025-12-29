@@ -10,6 +10,8 @@ class HomeController extends Controller
     {
         $testPets = Pet::first()->name;
 
-        return view('home',compact('testPets'));
+        return view('home', compact('testPets'), [
+            'title' => 'Home'
+        ]);
     }
 }
