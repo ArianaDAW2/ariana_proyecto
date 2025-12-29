@@ -1,10 +1,9 @@
 import './bootstrap';
 
-let click = document.getElementById('menu-mobile');
+let mobile = document.getElementById('menu_mobile');
 let menu = document.getElementById('menu');
-menu.classList.toggle('hidden');
-click.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+mobile.addEventListener('click', () => {
+    menu.classList.toggle('not-md:hidden');
 });
 
 let overlay = document.getElementById("overlay");

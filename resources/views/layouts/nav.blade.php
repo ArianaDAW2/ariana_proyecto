@@ -1,16 +1,15 @@
 @vite('res')
 <header class="pb-5 md:pb-20">
     <nav class="bg-black text-white text-center text-[15px] fixed w-[100%]">
-        <p id="menu-mobile" class="md:hidden group border-2 border-b-blue-500 px-[10px]">-->MENÚ<--</p>
-        <ul id="menu" class=" md:grid md:grid-cols-12 md:gap-2 items-center ">
+        <p id="menu_mobile" class=" md:hidden group border-2 border-b-blue-500 px-[10px]">-->MENÚ<--</p>
+        <ul id="menu"
+            class=" not-md:hidden md:grid md:grid-cols-12 md:gap-2 items-center">
             <li><a href="/">INICIO</a></li>
             <li class="bg-blue-600 group">
                 <a href="/contact">CONÓCENOS</a>
                 <ul class="bg-black border-2 border-blue-600 absolute left-9999 md:group-hover:left-auto not-md:w-112">
                     <li><a href="/gallery">Nuestra historia</a></li>
-                    <li><a href="/">Equipo Petlovers</a></li>
                     <li><a href="/">Nuestro Centro</a></li>
-                    <li><a href="/">Nuestro día a día</a></li>
                     <li><a href="/">Compromiso Social Internacional</a></li>
                 </ul>
             </li>

@@ -9,7 +9,7 @@
 <body>
 @include('layouts.nav')
 
-<main class="overflow-scroll md:px-[110px] px-[10px]">
+<main class=" md:px-[110px] px-[10px]">
     @yield('content-1')
     <div class="my-10 text-center">
         <a class="bg-indigo-600 p-5 m-40 rounded-4xl font-bold text-white " href="/">
