@@ -7,17 +7,14 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('discounts', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->integer('percentage');
-            $table->integer('min_days');
-
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->decimal('base_price', 10, 2)->default(0);
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
 
-    public function down(): void
-    {
-        Schema::dropIfExists('discounts');
-    }
 };

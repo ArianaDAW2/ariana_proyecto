@@ -2,19 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Pet;
+use App\Models\Payment;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PetFactory extends Factory
+class PaymentFactory extends Factory
 {
-    // Many
-    protected $model = Pet::class;
+    protected $model = Payment::class;
 
     public function definition(): array
     {
         return [
 
         ];
-
     }
 }

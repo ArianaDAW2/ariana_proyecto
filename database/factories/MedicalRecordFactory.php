@@ -2,19 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Pet;
+use App\Models\MedicalRecord;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PetFactory extends Factory
+class MedicalRecordFactory extends Factory
 {
-    // Many
-    protected $model = Pet::class;
+    protected $model = MedicalRecord::class;
 
     public function definition(): array
     {
         return [
 
         ];
-
     }
 }

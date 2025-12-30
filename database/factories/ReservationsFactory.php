@@ -2,19 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Pet;
+use App\Models\Reservations;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PetFactory extends Factory
+class ReservationsFactory extends Factory
 {
-    // Many
-    protected $model = Pet::class;
+    protected $model = Reservations::class;
 
     public function definition(): array
     {
         return [
 
         ];
-
     }
 }
