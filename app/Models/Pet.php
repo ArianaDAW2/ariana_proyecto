@@ -2,35 +2,26 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Pet extends Model
 {
-    use HasFactory;
-
-    protected $table = 'pets';
+    use SoftDeletes;
 
     protected $fillable = [
-        'id_owner',
         'name',
+        'species',
         'breed',
-        'sex',
-        'info',
-        'photo',
-        'id_booking',
+        'age',
+        'weight',
+        'notes',
+        'user_id',
     ];
 
-    public function owner(): BelongsTo
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Owner::class, 'id_owner');
+        return $this->belongsTo(User::class);
     }
-
-    public function booking(): BelongsTo
-    {
-        return $this->belongsTo(Booking::class, 'id_booking');
-    }
-
 
 }
