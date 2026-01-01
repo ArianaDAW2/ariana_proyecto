@@ -2,12 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Models\Reservations;
+use App\Models\Reservation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ReservationsFactory extends Factory
 {
-    protected $model = Reservations::class;
+    protected $model = Reservation::class;
 
     public function definition(): array
     {

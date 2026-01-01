@@ -15,7 +15,7 @@ class Invoice extends Model
 
     public function reservations(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Reservations::class);
+        return $this->belongsTo(Reservation::class);
     }
 
     public function payments()

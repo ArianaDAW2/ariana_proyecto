@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Reservations extends Model
+class Reservation extends Model
 {
     use SoftDeletes;
 
@@ -30,7 +30,7 @@ class Reservations extends Model
             ->withTimestamps();
     }
 
-    public function invoice(): \Illuminate\Database\Eloquent\Relations\HasOne|Reservations
+    public function invoice(): \Illuminate\Database\Eloquent\Relations\HasOne|Reservation
     {
         return $this->hasOne(Invoice::class);
     }
