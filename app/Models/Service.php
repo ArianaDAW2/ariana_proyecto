@@ -10,7 +10,7 @@ class Service extends Model
         'name', 'description', 'base_price', 'is_active'
     ];
 
-    public function reservations()
+    public function reservations(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Reservations::class)
             ->withPivot('price', 'duration', 'notes')

@@ -8,9 +8,8 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
-        $testPets = Pet::first()->name;
 
-        return view('home', compact('testPets'), [
+        return view('home', [
             'title' => 'Home'
         ]);
     }

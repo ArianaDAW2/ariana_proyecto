@@ -26,7 +26,6 @@
             <p class="p-2 ">Nuestro centro ofrece una amplia gama de <span
                     class="font-bold">servicios y tratamientos </span>para que tu mascota esté
                 perfectamente atendida.</p>
-            <p>Primer Pet: {{ $testPets }}</p>
         </div>
     </section>
 @endsection

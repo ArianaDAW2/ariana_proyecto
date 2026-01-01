@@ -13,7 +13,7 @@ class Invoice extends Model
         'reservation_id', 'invoice_number', 'total', 'status', 'issued_at'
     ];
 
-    public function reservation()
+    public function reservations(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Reservations::class);
     }

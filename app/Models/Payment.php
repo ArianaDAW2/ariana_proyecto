@@ -10,12 +10,12 @@ class Payment extends Model
         'invoice_id', 'user_id', 'amount', 'payment_method', 'status', 'transaction_id', 'paid_at'
     ];
 
-    public function invoice()
+    public function invoice(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Invoice::class);
     }
 
-    public function user()
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class);
     }

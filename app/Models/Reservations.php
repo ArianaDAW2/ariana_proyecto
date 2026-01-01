@@ -23,14 +23,14 @@ class Reservations extends Model
         return $this->belongsTo(Pet::class);
     }
 
-    public function services()
+    public function services(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Service::class)
             ->withPivot('price', 'duration', 'notes')
             ->withTimestamps();
     }
 
-    public function invoice()
+    public function invoice(): \Illuminate\Database\Eloquent\Relations\HasOne|Reservations
     {
         return $this->hasOne(Invoice::class);
     }

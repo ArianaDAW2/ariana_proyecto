@@ -2,13 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Booking;
-use App\Models\Extra;
-use App\Models\Owner;
 use App\Models\Pet;
-use App\Models\Price;
-use App\Models\Room;
 use App\Models\User;
+use FontLib\Table\Type\name;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,16 +17,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        /* Room::factory(5)->create()->each(function ($room) {
-              Booking::factory()->create([
-                  'id_room' => $room->id,
-              ]);
-
-          });
-        */
-        Pet::factory(5)->create(); // Booking -> Room //Owner -> User
-        Price::factory(5)->create();
-        Extra::factory(5)->create();
-
+        User::create([
+            'name' => 'Ariana',
+            'email' => 'admin@mail.es',
+            'password' => '12345678',
+        ]);
     }
 }
