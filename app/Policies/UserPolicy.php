@@ -12,6 +12,7 @@ class UserPolicy
      */
     public function viewAny(User $user): bool
     {
+        if ($user->isAdmin()) return true;
         return false;
     }
 
