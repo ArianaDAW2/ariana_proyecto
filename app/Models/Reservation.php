@@ -10,17 +10,22 @@ class Reservation extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'user_id', 'pet_id', 'start_date', 'end_date', 'status', 'total_price'
+        'user_id',
+        'pet_id',
+        'start_date',
+        'end_date',
+        'status',
+        'total_price',
     ];
 
-    public function user()
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function pet()
+    public function pet(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Pet::class);
+        return $this->belongsTo(Pet::class, 'pet_id');
     }
 
     public function services(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
