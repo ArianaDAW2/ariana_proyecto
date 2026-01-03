@@ -10,18 +10,24 @@ class Pet extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'user_id',
+
         'name',
         'species',
         'breed',
         'age',
         'weight',
         'notes',
-        'user_id',
+
     ];
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function owner(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
+    public function medicalRecords(): \Illuminate\Database\Eloquent\Relations\HasMany|Pet
+    {
+        return $this->hasMany(MedicalRecord::class);
+    }
 }
