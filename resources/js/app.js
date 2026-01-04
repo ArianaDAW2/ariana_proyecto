@@ -3,7 +3,7 @@ import './bootstrap';
 let mobile = document.getElementById('menu_mobile');
 let menu = document.getElementById('menu');
 mobile.addEventListener('click', () => {
-    menu.classList.toggle('not-md:hidden');
+    menu.classList.toggle('hidden');
 });
 
 let overlay = document.getElementById("overlay");

@@ -20,8 +20,28 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {   //1 User para Admin
         User::create([
-            'name' => 'Ariana',
+            'name' => 'admin',
             'email' => 'admin@mail.es',
+            'password' => '12345678',
+        ]);
+        User::create([
+            'name' => 'vet',
+            'email' => 'vet@mail.es',
+            'password' => '12345678',
+        ]);
+        User::create([
+            'name' => 'recep',
+            'email' => 'recep@mail.es',
+            'password' => '12345678',
+        ]);
+        User::create([
+            'name' => 'client',
+            'email' => 'client@mail.es',
+            'password' => '12345678',
+        ]);
+        User::create([
+            'name' => 'cuid',
+            'email' => 'cuid@mail.es',
             'password' => '12345678',
         ]);
         // 5 roles
@@ -51,8 +71,13 @@ class DatabaseSeeder extends Seeder
         Role::findByName('Cliente')->givePermissionTo([]); // permisos limitados
 
         // Asignación inicial a usuarios de prueba
-        if ($admin = User::first()) {
-            $admin->assignRole('Admin');
+        $users = User::orderBy('id')->take(5)->get();
+
+        foreach ($users as $index => $user) {
+            if (isset($roles[$index])) {
+                $user->assignRole($roles[$index]);
+            }
         }
+
     }
 }
