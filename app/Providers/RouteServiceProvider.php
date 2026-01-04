@@ -15,16 +15,16 @@ class RouteServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        // API v1
+        // API
         Route::middleware('api')
             ->prefix('api/v1')
             ->group(base_path('routes/api/v1.php'));
 
-        // Web pública
+        // Web pública -> Invitados
         Route::middleware('web')
             ->group(base_path('routes/web/public.php'));
 
-        // Web privada (usuarios autenticados)
+        // Web privada -> usuarios autenticados
         Route::middleware(['web', 'auth', 'verified'])
             ->group(base_path('routes/web/dashboard.php'));
 

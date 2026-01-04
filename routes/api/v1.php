@@ -9,6 +9,10 @@ use App\Http\Controllers\Api\v1\{
     PaymentController
 };
 
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');
+
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::apiResource('pets', PetController::class);
