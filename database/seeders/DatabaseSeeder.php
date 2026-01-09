@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {   //1 User para Admin
+    {   //Usuarios para test
         User::create([
             'name' => 'admin',
             'email' => 'admin@mail.es',
@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'cuid@mail.es',
             'password' => '12345678',
         ]);
-        // 5 roles
+        //5 roles
         $roles = ['Admin', 'Veterinario', 'Recepcionista', 'Cliente', 'Cuidador'];
         foreach ($roles as $roleName) {
             Role::firstOrCreate(['name' => $roleName]);
@@ -68,7 +68,7 @@ class DatabaseSeeder extends Seeder
         Role::findByName('Recepcionista')->givePermissionTo(['manage_reservations', 'create_reports']);
         Role::findByName('Veterinario')->givePermissionTo(['view_medical_records', 'create_reports']);
         Role::findByName('Cuidador')->givePermissionTo(['manage_reservations']);
-        Role::findByName('Cliente')->givePermissionTo([]); // permisos limitados
+        Role::findByName('Cliente')->givePermissionTo([]); // No necesita más //Borrar???
 
         // Asignación inicial a usuarios de prueba
         $users = User::orderBy('id')->take(5)->get();

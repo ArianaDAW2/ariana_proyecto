@@ -33,7 +33,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        // 🔥 Admin = acceso total
+        //Admin = acceso total
         Gate::before(function ($user) {
             return $user->hasPermissionTo('manage_users') ? true : null;
         });

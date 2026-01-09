@@ -23,7 +23,7 @@
 <main class=" md:px-[110px] px-[10px]">
     @yield('content-1')
     <div class="my-10 text-center">
-        <a class="bg-indigo-600 p-5 m-40 rounded-lg font-bold text-white " href="/">
+        <a href="<?= route('dashboard') ?>" class="bg-indigo-600 p-5 m-40 rounded-lg font-bold text-white " href="/">
             Pide tu cita </a>
     </div>
     @yield('content-2')
