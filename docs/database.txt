@@ -1,0 +1,168 @@
+
+TABLE users {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    name VARCHAR(255) NOT NULL
+    email VARCHAR(255) NOT NULL UNIQUE
+    email_verified_at TIMESTAMP NULL
+    password VARCHAR(255) NOT NULL
+    remember_token VARCHAR(100) NULL
+    current_team_id BIGINT UNSIGNED NULL
+    profile_photo_path VARCHAR(2048) NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+}
+
+TABLE password_reset_tokens {
+    email VARCHAR(255) PRIMARY KEY
+    token VARCHAR(255) NOT NULL
+    created_at TIMESTAMP NULL
+}
+
+TABLE sessions {
+    id VARCHAR(255) PRIMARY KEY
+    user_id BIGINT UNSIGNED NULL
+    ip_address VARCHAR(45) NULL
+    user_agent TEXT NULL
+    payload LONGTEXT NOT NULL
+    last_activity INT NOT NULL
+    INDEX (user_id)
+    INDEX (last_activity)
+}
+
+TABLE pets {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    user_id BIGINT UNSIGNED NOT NULL
+    name VARCHAR(255) NOT NULL
+    species VARCHAR(255) NOT NULL -- perro gato etc
+    breed VARCHAR(255) NULL
+    age INT NOT NULL
+    weight FLOAT NOT NULL
+    notes TEXT NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    deleted_at TIMESTAMP NULL
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+}
+
+TABLE services {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    name VARCHAR(255) NOT NULL
+    description TEXT NULL
+    base_price DECIMAL(10 2) DEFAULT 0.00
+    is_active BOOLEAN DEFAULT TRUE
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+}
+
+TABLE reservations {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    user_id BIGINT UNSIGNED NOT NULL
+    pet_id BIGINT UNSIGNED NOT NULL
+    start_date DATE NOT NULL
+    end_date DATE NOT NULL
+    status ENUM('pending' 'confirmed' 'completed' 'cancelled') DEFAULT 'pending'
+    total_price DECIMAL(10 2) DEFAULT 0.00
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    deleted_at TIMESTAMP NULL
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    FOREIGN KEY (pet_id) REFERENCES pets(id) ON DELETE CASCADE
+}
+
+ TABLE reservation_service {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    reservation_id BIGINT UNSIGNED NOT NULL
+    service_id BIGINT UNSIGNED NOT NULL
+    price DECIMAL(10 2) NOT NULL
+    duration INT DEFAULT 0 -- minutos
+    notes TEXT NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    FOREIGN KEY (reservation_id) REFERENCES reservations(id) ON DELETE CASCADE
+    FOREIGN KEY (service_id) REFERENCES services(id) ON DELETE CASCADE
+}
+
+TABLE medical_records {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    pet_id BIGINT UNSIGNED NOT NULL
+    veterinarian_id BIGINT UNSIGNED NOT NULL
+    diagnosis TEXT NOT NULL
+    treatment TEXT NULL
+    notes TEXT NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    deleted_at TIMESTAMP NULL
+    FOREIGN KEY (pet_id) REFERENCES pets(id) ON DELETE CASCADE
+    FOREIGN KEY (veterinarian_id) REFERENCES users(id) ON DELETE CASCADE
+}
+
+ TABLE invoices {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    reservation_id BIGINT UNSIGNED NOT NULL
+    invoice_number VARCHAR(255) NOT NULL UNIQUE
+    total DECIMAL(10 2) NOT NULL
+    status ENUM('paid' 'unpaid') DEFAULT 'unpaid'
+    issued_at TIMESTAMP NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    deleted_at TIMESTAMP NULL
+    FOREIGN KEY (reservation_id) REFERENCES reservations(id) ON DELETE CASCADE
+}
+
+ TABLE payments {
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    user_id BIGINT UNSIGNED NOT NULL
+    invoice_id BIGINT UNSIGNED NULL
+    amount DECIMAL(10 2) NOT NULL
+    payment_method VARCHAR(255) DEFAULT 'paypal'
+    status ENUM('pending' 'completed' 'failed') DEFAULT 'pending'
+    transaction_id VARCHAR(255) NULL
+    paid_at TIMESTAMP NULL
+    created_at TIMESTAMP NULL
+    updated_at TIMESTAMP NULL
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE SET NULL
+}
+
+
+TABLE permissions {
+     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+     name VARCHAR(255) NOT NULL
+     guard_name VARCHAR(255) NOT NULL
+     created_at TIMESTAMP NULL
+     updated_at TIMESTAMP NULL
+     UNIQUE (name guard_name)
+ }
+
+TABLE roles {
+     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY
+     name VARCHAR(255) NOT NULL
+     guard_name VARCHAR(255) NOT NULL
+     created_at TIMESTAMP NULL
+     updated_at TIMESTAMP NULL
+     UNIQUE (name guard_name)
+ }
+
+TABLE model_has_permissions {
+     permission_id BIGINT UNSIGNED NOT NULL
+     model_type VARCHAR(255) NOT NULL
+     model_id BIGINT UNSIGNED NOT NULL
+     PRIMARY KEY (permission_id model_id model_type)
+     FOREIGN KEY (permission_id) REFERENCES permissions(id) ON DELETE CASCADE
+}
+
+TABLE model_has_roles {
+     role_id BIGINT UNSIGNED NOT NULL
+     model_type VARCHAR(255) NOT NULL
+     model_id BIGINT UNSIGNED NOT NULL
+     PRIMARY KEY (role_id model_id model_type)
+     FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE CASCADE
+ }
+
+ TABLE role_has_permissions {
+     permission_id BIGINT UNSIGNED NOT NULL
+     role_id BIGINT UNSIGNED NOT NULL
+     PRIMARY KEY (permission_id role_id)
+     FOREIGN KEY (permission_id) REFERENCES permissions(id) ON DELETE CASCADE
+     FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE CASCADE
+ }

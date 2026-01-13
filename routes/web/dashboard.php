@@ -5,6 +5,9 @@ use App\Http\Livewire\DashboardStats;
 use App\Http\Livewire\PetsCrud;
 use App\Http\Livewire\ReservationsCrud;
 use App\Http\Livewire\InvoicesCrud;
+use App\Livewire\ServicesCrud;
+
+Route::get('/servicios', ServicesCrud::class)->name('services.index');
 /*
 Route::get('/dashboard', DashboardStats::class)->name('dashboard');
 
