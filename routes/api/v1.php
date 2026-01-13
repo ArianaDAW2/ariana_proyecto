@@ -16,7 +16,7 @@ Route::get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::apiResource('pets', PetController::class);
-    Route::apiResource('reservations', ReservationController::class);
+    Route::apiResource('reservation', ReservationController::class);
     Route::apiResource('services', ServiceController::class);
 
     // Endpoints protegidos 🔐

@@ -11,23 +11,24 @@ class MedicalRecordsCrud extends Component
 {
     use AuthorizesRequests;
 
-    public MedicalRecord $record;
+    public $petId;
 
-    protected function rules()
+    public function mount($petId = null)
     {
-        return (new MedicalRecordRequest())->rules();
-    }
-
-    public function save()
-    {
-        $this->authorize($this->record->exists ? 'update' : 'create', $this->record);
-
-        $this->record->veterinarian_id = auth()->id();
-        $this->record->save();
+        $this->authorize('view_medical_records');
+        $this->petId = $petId;
     }
 
     public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
     {
-        return view('livewire.medical-records-crud');
+        $query = MedicalRecord::with(['pet', 'veterinarian']);
+
+        if ($this->petId) {
+            $query->where('pet_id', $this->petId);
+        }
+
+        return view('livewire.medical-records-crud', [
+            'medicalRecords' => $query->latest()->paginate(10)
+        ]);
     }
 }

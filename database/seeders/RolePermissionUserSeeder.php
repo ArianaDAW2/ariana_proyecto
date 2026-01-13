@@ -1,0 +1,91 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
+class RolePermissionUserSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        // Usuarios para test
+        User::firstOrCreate(
+            ['email' => 'admin@mail.es'],
+            [
+                'name' => 'admin',
+                'password' => Hash::make('12345678'),
+            ]
+        );
+        User::firstOrCreate(
+            ['email' => 'vet@mail.es'],
+            [
+                'name' => 'veterinario',
+                'password' => Hash::make('12345678'),
+            ]
+        );
+        User::firstOrCreate(
+            ['email' => 'recep@mail.es'],
+            [
+                'name' => 'recepcionista',
+                'password' => Hash::make('12345678'),
+            ]
+        );
+        User::firstOrCreate(
+            ['email' => 'client@mail.es'],
+            [
+                'name' => 'cliente',
+                'password' => Hash::make('12345678'),
+            ]
+        );
+        User::firstOrCreate(
+            ['email' => 'cuid@mail.es'],
+            [
+                'name' => 'cuidador',
+                'password' => Hash::make('12345678'),
+            ]
+        );
+
+        // 5 roles
+        $roles = ['Admin', 'Veterinario', 'Recepcionista', 'Cliente', 'Cuidador'];
+        foreach ($roles as $roleName) {
+            Role::firstOrCreate(['name' => $roleName]);
+        }
+
+        // 5 Permisos
+        $permissions = [
+            'manage_users',
+            'manage_reservations',
+            'view_medical_records',
+            'create_reports',
+            'manage_payments'
+        ];
+
+        foreach ($permissions as $perm) {
+            Permission::firstOrCreate(['name' => $perm]);
+        }
+
+        // Asignar permisos a roles
+        Role::findByName('Admin')->givePermissionTo(Permission::all());
+        Role::findByName('Recepcionista')->givePermissionTo(['manage_reservations', 'create_reports']);
+        Role::findByName('Veterinario')->givePermissionTo(['view_medical_records', 'create_reports']);
+        Role::findByName('Cuidador')->givePermissionTo(['manage_reservations']);
+        Role::findByName('Cliente')->givePermissionTo([]);
+
+        // Asignación inicial a usuarios de prueba
+        $users = User::orderBy('id')->take(5)->get();
+
+        foreach ($users as $index => $user) {
+            if (isset($roles[$index])) {
+                $user->assignRole($roles[$index]);
+            }
+        }
+    }
+}

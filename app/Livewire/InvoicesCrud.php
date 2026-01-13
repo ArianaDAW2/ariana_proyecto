@@ -11,6 +11,14 @@ class InvoicesCrud extends Component
 {
     use AuthorizesRequests;
 
+    public $reservationId;
+
+    public function mount($reservationId = null)
+    {
+        $this->authorize('manage_reservations');
+        $this->reservationId = $reservationId;
+    }
+
     public function generate(Reservation $reservation)
     {
         $this->authorize('create', Invoice::class);
@@ -24,6 +32,14 @@ class InvoicesCrud extends Component
 
     public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
     {
-        return view('livewire.invoices-crud');
+        $query = Invoice::query();
+
+        if ($this->reservationId) {
+            $query->where('reservation_id', $this->reservationId);
+        }
+
+        return view('livewire.invoices-crud', [
+            'invoices' => $query->latest()->paginate(10)
+        ]);
     }
 }
