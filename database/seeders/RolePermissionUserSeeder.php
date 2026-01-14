@@ -63,9 +63,10 @@ class RolePermissionUserSeeder extends Seeder
         $permissions = [
             'manage_users',
             'manage_reservations',
-            'view_medical_records',
-            'create_reports',
-            'manage_payments'
+            'manage_medical_records',
+            'manage_services',
+            'manage_payments',
+            'access_worker'
         ];
 
         foreach ($permissions as $perm) {
@@ -74,9 +75,9 @@ class RolePermissionUserSeeder extends Seeder
 
         // Asignar permisos a roles
         Role::findByName('Admin')->givePermissionTo(Permission::all());
-        Role::findByName('Recepcionista')->givePermissionTo(['manage_reservations', 'create_reports']);
-        Role::findByName('Veterinario')->givePermissionTo(['view_medical_records', 'create_reports']);
-        Role::findByName('Cuidador')->givePermissionTo(['manage_reservations']);
+        Role::findByName('Recepcionista')->givePermissionTo(['access_worker', 'manage_reservations', 'manage_payments', 'manage_users']);
+        Role::findByName('Veterinario')->givePermissionTo(['access_worker', 'manage_medical_records', 'manage_services']);
+        Role::findByName('Cuidador')->givePermissionTo(['access_worker', 'manage_medical_records']);
         Role::findByName('Cliente')->givePermissionTo([]);
 
         // Asignación inicial a usuarios de prueba

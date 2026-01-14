@@ -1,16 +1,28 @@
 <?php
 
+use App\Livewire\PetsCrud;
+use App\Livewire\ReservationsCrud;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\MedicalRecordsCrud;
 use App\Livewire\InvoicesCrud;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\adminController;
 
-Route::resource('users', UserController::class);
+//Admin y trabajadores
 
-Route::get('/medical-records/{petId?}', MedicalRecordsCrud::class)
-    ->middleware('can:view_medical_records')
-    ->name('medical-records.index');
-Route::get('/invoices/{reservationId?}', InvoicesCrud::class)
+Route::resource('users', adminController::class);
+
+Route::get('/reservations-admin', ReservationsCrud::class)
     ->middleware('can:manage_reservations')
-    ->name('invoices.index');
-
+    ->name('Reservations-admin');
+Route::get('/medical-records', MedicalRecordsCrud::class)
+    ->middleware('can:manage_medical_records')
+    ->name('medical-records');
+Route::get('/Pets-admin', PetsCrud::class)
+    ->middleware('can:manage_users')
+    ->name('Pets-admin');
+Route::get('/invoices', InvoicesCrud::class)
+    ->middleware('can:manage_payments')
+    ->name('Invoices');
+Route::get('/control-panel', adminController::class)
+    ->middleware('can:manage_users')
+    ->name('control-panel');

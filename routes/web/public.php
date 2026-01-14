@@ -1,28 +1,21 @@
 <?php
 
-use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\HomeController;
 use App\Livewire\Counter;
+use App\Livewire\ServicesCrud;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 
-Route::get('/', [PublicController::class, 'home'])->name('home');
-Route::get('/servicios', [PublicController::class, 'services'])->name('services');
-Route::get('/veterinarios', [PublicController::class, 'vets'])->name('vets');
-Route::get('/tarifas', [PublicController::class, 'pricing'])->name('pricing');
-Route::get('/contacto', [PublicController::class, 'contact'])->name('contact');
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
-Route::get('/livewire/counter', Counter::class)->name('counter');
+Route::get('/', [PublicController::class, 'home'])
+    ->name('home');
+Route::get('/services', ServicesCrud::class)
+    ->name('services');
+Route::get('/vets', [PublicController::class, 'vets'])
+    ->name('vets');
+Route::get('/prices', [PublicController::class, 'pricing'])
+    ->name('pricing');
+Route::get('/gallery', [PublicController::class, 'gallery'])
+    ->name('gallery');
+Route::get('/contact', [PublicController::class, 'contact'])
+    ->name('contact');
+//Ejemplo componente
+//Route::get('/livewire/counter', Counter::class)->name('counter');

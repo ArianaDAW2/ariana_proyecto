@@ -20,16 +20,16 @@ class RouteServiceProvider extends ServiceProvider
             ->prefix('api/v1')
             ->group(base_path('routes/api/v1.php'));
 
-        // Web pública -> Invitados
+        // Web pública
         Route::middleware('web')
             ->group(base_path('routes/web/public.php'));
 
-        // Web privada -> usuarios autenticados
+        // Web privada !-> Redirige al login
         Route::middleware(['web', 'auth', 'verified'])
             ->group(base_path('routes/web/dashboard.php'));
 
         // Administración
-        Route::middleware(['web', 'auth', 'verified', 'role:Admin'])
+        Route::middleware(['web', 'auth', 'verified', 'can:access_worker'])
             ->prefix('admin')
             ->name('admin.')
             ->group(base_path('routes/web/admin.php'));

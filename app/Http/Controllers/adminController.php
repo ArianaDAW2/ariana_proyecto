@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class GalleryController extends Controller
+class adminController extends Controller
 {
     public function __invoke()
     {
-        return view('gallery');
+        return view('panel');
     }
+
 }

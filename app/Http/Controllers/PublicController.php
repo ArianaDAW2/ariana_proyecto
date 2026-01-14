@@ -28,4 +28,9 @@ class PublicController extends Controller
     {
         return view('public.contact');
     }
+
+    public function gallery()
+    {
+        return view('public.gallery');
+    }
 }
