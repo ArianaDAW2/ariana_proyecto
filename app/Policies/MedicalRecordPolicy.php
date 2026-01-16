@@ -13,7 +13,7 @@ class MedicalRecordPolicy
      */
     public function viewAny(User $user): bool
     {
-        return false;
+        return $user->hasPermissionTo('manage_medical_records');
     }
 
     /**
@@ -21,7 +21,7 @@ class MedicalRecordPolicy
      */
     public function view(User $user, MedicalRecord $record): bool
     {
-        return $user->hasPermissionTo('view_medical_records')
+        return $user->hasPermissionTo('manage_medical_records')
             || $record->pet->user_id === $user->id;
     }
 
@@ -30,7 +30,7 @@ class MedicalRecordPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasPermissionTo('view_medical_records');
+        return $user->hasPermissionTo('manage_medical_records');
     }
 
     /**
@@ -38,7 +38,7 @@ class MedicalRecordPolicy
      */
     public function update(User $user, MedicalRecord $record): bool
     {
-        return $user->hasPermissionTo('view_medical_records');
+        return $user->hasPermissionTo('manage_medical_records');
     }
 
     /**
@@ -46,7 +46,7 @@ class MedicalRecordPolicy
      */
     public function delete(User $user, MedicalRecord $record): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user->hasPermissionTo('manage_medical_records');
     }
 
     /**
@@ -54,7 +54,7 @@ class MedicalRecordPolicy
      */
     public function restore(User $user, MedicalRecord $medicalRecord): bool
     {
-        return false;
+        return $user->hasPermissionTo('manage_medical_records');
     }
 
     /**
@@ -62,6 +62,6 @@ class MedicalRecordPolicy
      */
     public function forceDelete(User $user, MedicalRecord $medicalRecord): bool
     {
-        return false;
+        return $user->hasPermissionTo('manage_medical_records');
     }
 }

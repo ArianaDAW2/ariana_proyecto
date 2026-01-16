@@ -15,7 +15,7 @@ class InvoicesCrud extends Component
 
     public function mount($reservationId = null)
     {
-        $this->authorize('manage_reservations');
+        $this->authorize('manage_payments');
         $this->reservationId = $reservationId;
     }
 

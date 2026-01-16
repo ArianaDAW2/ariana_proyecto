@@ -10,7 +10,11 @@ class Invoice extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'reservation_id', 'invoice_number', 'total', 'status', 'issued_at'
+        'reservation_id',
+        'invoice_number',
+        'total',
+        'status',
+        'issued_at'
     ];
 
     public function reservation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -18,7 +22,7 @@ class Invoice extends Model
         return $this->belongsTo(Reservation::class);
     }
 
-    public function payments()
+    public function payments(): Invoice|\Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Payment::class);
     }

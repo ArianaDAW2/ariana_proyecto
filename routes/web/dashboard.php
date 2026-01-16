@@ -6,8 +6,12 @@ use App\Livewire\PetsCrud;
 use App\Livewire\ReservationsCrud;
 use Illuminate\Support\Facades\Route;
 
-Route::get('main', DashboardController::class)->name('dashboard');
-Route::get('reservations', ReservationsCrud::class)->name('ReservationsCrud');
-Route::get('pets', PetsCrud::class)->name('PetsCrud');
-Route::get('invoices', InvoicesCrud::class)->name('invoicesCrud');
+Route::get('main', DashboardController::class)
+    ->name('dashboard');
+Route::get('reservations', ReservationsCrud::class)
+    ->name('ReservationsCrud');
+Route::get('pets', PetsCrud::class)
+    ->name('PetsCrud');
+Route::get('invoices', InvoicesCrud::class)
+    ->name('invoicesCrud');
 

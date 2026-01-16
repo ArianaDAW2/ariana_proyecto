@@ -1,20 +1,14 @@
-<x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        {{ __('Servicios') }}
-    </h2>
-</x-slot>
-
 <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-2xl font-bold text-gray-800">Lista de Servicios</h2>
-                @if(auth()->user()->hasRole('Admin'))
+                @can('manage_services')
                     <button wire:click="create"
                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
                         Nuevo Servicio
                     </button>
-                @endif
+                @endcan
             </div>
 
             @if (session()->has('message'))
@@ -23,7 +17,7 @@
                 </div>
             @endif
 
-            @if($editing && auth()->user()->hasRole('Admin'))
+            @can('manage_services')
                 <div class="mb-6 p-4 border rounded-lg bg-gray-50">
                     <h3 class="text-lg font-semibold mb-3">{{ $service->id ? 'Editar' : 'Crear' }} Servicio</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -64,8 +58,7 @@
                         </button>
                     </div>
                 </div>
-            @endif
-
+            @endcan
             <div class="overflow-x-auto">
                 <table class="min-w-full divide-y divide-gray-200">
                     <thead class="bg-gray-50">
@@ -82,11 +75,11 @@
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Estado
                         </th>
-                        @if(auth()->user()->hasRole('Admin'))
+                        @can('manage_services')
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Acciones
                             </th>
-                        @endif
+                        @endcan
                     </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
@@ -103,7 +96,7 @@
                                     {{ $s->is_active ? 'Activo' : 'Inactivo' }}
                                 </span>
                             </td>
-                            @if(auth()->user()->hasRole('Admin'))
+                            @can('manage_services')
                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex gap-2">
                                     <button wire:click="edit({{ $s->id }})"
                                             class="text-indigo-600 hover:text-indigo-900">Editar
@@ -114,7 +107,7 @@
                                         Eliminar
                                     </button>
                                 </td>
-                            @endif
+                            @endcan
                         </tr>
                     @endforeach
                     </tbody>

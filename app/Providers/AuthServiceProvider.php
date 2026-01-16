@@ -32,10 +32,6 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->registerPolicies();
-
-        //Admin = acceso total
-        Gate::before(function ($user) {
-            return $user->hasPermissionTo('manage_users') ? true : null;
-        });
+        
     }
 }

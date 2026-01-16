@@ -26,6 +26,8 @@ class RouteServiceProvider extends ServiceProvider
 
         // Web privada !-> Redirige al login
         Route::middleware(['web', 'auth', 'verified'])
+            ->prefix('client')
+            ->name('client.')
             ->group(base_path('routes/web/dashboard.php'));
 
         // Administración

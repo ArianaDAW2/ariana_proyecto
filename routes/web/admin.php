@@ -9,20 +9,22 @@ use App\Http\Controllers\adminController;
 
 //Admin y trabajadores
 
-Route::resource('users', adminController::class);
+Route::resource('users', adminController::class)
+    ->middleware('can:manage-users')
+    ->names('users-admin');
 
 Route::get('/reservations-admin', ReservationsCrud::class)
     ->middleware('can:manage_reservations')
-    ->name('Reservations-admin');
+    ->name('reservations-admin');
 Route::get('/medical-records', MedicalRecordsCrud::class)
     ->middleware('can:manage_medical_records')
     ->name('medical-records');
 Route::get('/Pets-admin', PetsCrud::class)
     ->middleware('can:manage_users')
-    ->name('Pets-admin');
+    ->name('pets-admin');
 Route::get('/invoices', InvoicesCrud::class)
     ->middleware('can:manage_payments')
-    ->name('Invoices');
-Route::get('/control-panel', adminController::class)
+    ->name('invoices-admin');
+Route::get('/control-panel', [adminController::class, 'panel'])
     ->middleware('can:manage_users')
-    ->name('control-panel');
+    ->name('panel-admin');

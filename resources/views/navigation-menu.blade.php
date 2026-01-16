@@ -5,25 +5,31 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('client.dashboard') }}">
                         <x-application-mark class="block h-9 w-auto"/>
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ route('client.dashboard') }}" :active="request()->routeIs('client.dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('services') }}" :active="request()->routeIs('services.index')">
                         {{ __('Servicios') }}
                     </x-nav-link>
                     @can('manage_users')
-                        <x-nav-link href="{{ route('admin.control-panel') }}"
-                                    :active="request()->routeIs('admin.control-panel')">
+                        <x-nav-link href="{{ route('admin.panel-admin') }}"
+                                    :active="request()->routeIs('admin.panel-admin')">
                             {{ __('Panel de control') }}
                         </x-nav-link>
                     @endcan
+                    <x-nav-link href="{{ route('client.invoicesCrud') }}"
+                                :active="request()->routeIs('client.invoicesCrud')">
+                        {{ __('Mis Facturas') }}
+                    </x-nav-link>
+
+
                 </div>
             </div>
 
@@ -160,7 +166,8 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link href="{{ route('client.dashboard') }}"
+                                   :active="request()->routeIs('client.dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>

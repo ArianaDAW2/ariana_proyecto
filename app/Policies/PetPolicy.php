@@ -4,7 +4,6 @@ namespace App\Policies;
 
 use App\Models\Pet;
 use App\Models\User;
-use Illuminate\Auth\Access\Response;
 
 class PetPolicy
 {
@@ -13,7 +12,7 @@ class PetPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasAnyRole(['Admin', 'Cliente', 'Veterinario']);
+        return $user->hasPermissionTo('manage_users');
     }
 
     /**
@@ -21,8 +20,7 @@ class PetPolicy
      */
     public function view(User $user, Pet $pet): bool
     {
-        return $user->hasPermissionTo('manage_reservations')
-            || $user->hasPermissionTo('view_medical_records')
+        return $user->hasPermissionTo('manage_users')
             || $pet->user_id === $user->id;
     }
 
@@ -31,8 +29,9 @@ class PetPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasPermissionTo('manage_reservations')
-            || $user->hasRole('Cliente');
+        return $user->hasPermissionTo('manage_users');
+
+
     }
 
     /**
@@ -40,8 +39,7 @@ class PetPolicy
      */
     public function update(User $user, Pet $pet): bool
     {
-        return $user->hasPermissionTo('manage_reservations')
-            || $pet->user_id === $user->id;
+        return $user->hasPermissionTo('manage_users');
     }
 
     /**
@@ -57,7 +55,7 @@ class PetPolicy
      */
     public function restore(User $user, Pet $pet): bool
     {
-        return false;
+        return $user->hasPermissionTo('manage_users');
     }
 
     /**
@@ -65,6 +63,6 @@ class PetPolicy
      */
     public function forceDelete(User $user, Pet $pet): bool
     {
-        return false;
+        return $user->hasPermissionTo('manage_users');
     }
 }

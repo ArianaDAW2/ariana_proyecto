@@ -9,6 +9,10 @@ class ReservationService extends Pivot
     protected $table = 'reservation_service';
 
     protected $fillable = [
-        'reservation_id', 'service_id', 'price', 'duration', 'notes'
+        'reservation_id',
+        'service_id',
+        'price',
+        'duration',
+        'notes'
     ];
 }

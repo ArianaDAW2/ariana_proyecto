@@ -10,7 +10,11 @@ class MedicalRecord extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'pet_id', 'veterinarian_id', 'diagnosis', 'treatment', 'notes'
+        'pet_id',
+        'veterinarian_id',
+        'diagnosis',
+        'treatment',
+        'notes'
     ];
 
     public function pet(): \Illuminate\Database\Eloquent\Relations\BelongsTo

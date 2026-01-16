@@ -58,12 +58,15 @@
                         <p class="text-gray-500">Manage the services offered.</p>
                         <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Services</a>
                     </div>
-
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Invoices</h2>
-                        <p class="text-gray-500">View and manage invoices.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
-                    </div>
+                    @can('manage_payments')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Invoices</h2>
+                            <p class="text-gray-500">View and manage invoices.</p>
+                            <a href="{{ route('admin.invoices-admin') }}"
+                               :active="request()->routeIs('admin.Invoices')"
+                               class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
+                        </div>
+                    @endcan
 
                     <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                         <h2 class="font-semibold text-lg">Payments</h2>

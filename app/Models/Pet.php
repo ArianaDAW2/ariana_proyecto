@@ -11,14 +11,12 @@ class Pet extends Model
 
     protected $fillable = [
         'user_id',
-
         'name',
         'species',
         'breed',
         'age',
         'weight',
         'notes',
-
     ];
 
     public function owner(): \Illuminate\Database\Eloquent\Relations\BelongsTo

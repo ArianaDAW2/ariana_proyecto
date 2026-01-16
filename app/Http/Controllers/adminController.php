@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 class adminController extends Controller
 {
-    public function __invoke()
+    public function panel()
     {
         return view('panel');
     }
+
 
 }
