@@ -12,7 +12,7 @@ use App\Http\Controllers\Api\v1\{
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
-
+/*
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::apiResource('pets', PetController::class);
@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('medical-records', MedicalRecordController::class);
     Route::apiResource('payments', PaymentController::class);
 });
+*/

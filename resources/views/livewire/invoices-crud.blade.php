@@ -38,11 +38,19 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($invoice->total, 2) }}
                             €
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full
-                                    {{ $invoice->status === 'paid' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800' }}">
-                                    {{ ucfirst($invoice->status) }}
-                                </span>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 flex items-center space-x-2">
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full
+                {{ $invoice->status === 'paid' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800' }}">
+                {{ ucfirst($invoice->status) }}
+            </span>
+
+                            @can('manage_payments')
+                                <input type="checkbox"
+                                       wire:model="status.{{ $invoice->id }}"
+                                       value="paid"
+                                       class="form-checkbox"
+                                       title="Marcar como pagado">
+                            @endcan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $invoice->created_at->format('d/m/Y H:i') }}</td>
                     </tr>

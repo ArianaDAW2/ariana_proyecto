@@ -39,7 +39,7 @@
 {{-- Main Content --}}
 <main class="md:px-[110px] px-[10px] py-10">
     @yield('content-1')
-
+    {{ $slot }}
     <div class="my-10 text-center">
         <a href="{{ route('client.dashboard') }}"
            class="bg-indigo-600 p-5 rounded-lg font-bold text-white hover:bg-indigo-700 transition">

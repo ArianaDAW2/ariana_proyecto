@@ -19,6 +19,24 @@ class InvoicesCrud extends Component
         $this->reservationId = $reservationId;
     }
 
+    public function save()
+    {
+        $data = $this->validate([
+            'status' => 'required|in:paid,unpaid',
+        ]);
+
+        // Si el checkbox no estaba marcado, forzamos unpaid
+        if ($this->status !== 'paid') {
+            $this->status = 'unpaid';
+        }
+
+        $reservation = new Reservation();
+        $reservation->status = $this->status;
+        $reservation->save();
+
+        session()->flash('message', 'Reserva actualizada');
+    }
+
     public function generate(Reservation $reservation)
     {
         $this->authorize('create', Invoice::class);

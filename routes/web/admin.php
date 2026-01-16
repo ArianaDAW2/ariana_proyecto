@@ -2,6 +2,7 @@
 
 use App\Livewire\PetsCrud;
 use App\Livewire\ReservationsCrud;
+use App\Livewire\UsersCrud;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\MedicalRecordsCrud;
 use App\Livewire\InvoicesCrud;
@@ -9,10 +10,9 @@ use App\Http\Controllers\adminController;
 
 //Admin y trabajadores
 
-Route::resource('users', adminController::class)
+Route::get('users', UsersCrud::class)
     ->middleware('can:manage-users')
     ->names('users-admin');
-
 Route::get('/reservations-admin', ReservationsCrud::class)
     ->middleware('can:manage_reservations')
     ->name('reservations-admin');

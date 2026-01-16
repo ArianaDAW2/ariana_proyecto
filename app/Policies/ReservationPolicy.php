@@ -23,6 +23,7 @@ class ReservationPolicy
     {
         return $user->hasPermissionTo('manage_reservations')
             || $reservation->user_id === $user->id;
+
     }
 
     /**

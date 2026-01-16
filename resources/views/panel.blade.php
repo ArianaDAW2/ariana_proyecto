@@ -29,12 +29,15 @@
 
                 {{-- Aquí iría el contenido dinámico de cada sección --}}
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Users</h2>
-                        <p class="text-gray-500">Manage all registered users.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Users</a>
-                    </div>
-
+                    @can('manage_payments')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Users</h2>
+                            <p class="text-gray-500">Manage all registered users.</p>
+                            <a href="{{ route('admin.user-admin') }}"
+                               :active="request()->routeIs('admin.users-admin')"
+                               class="text-blue-500 hover:underline mt-2 block">Go to Users</a>
+                        </div>
+                    @endcan
                     <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                         <h2 class="font-semibold text-lg">Pets</h2>
                         <p class="text-gray-500">View and manage pets.</p>
@@ -67,6 +70,7 @@
                                class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
                         </div>
                     @endcan
+
 
                     <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                         <h2 class="font-semibold text-lg">Payments</h2>

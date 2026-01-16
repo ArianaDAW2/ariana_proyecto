@@ -7,14 +7,16 @@ use App\Models\{
     Reservation,
     MedicalRecord,
     User,
-    Invoice
+    Invoice,
+    Service
 };
 use App\Policies\{
     PetPolicy,
     ReservationPolicy,
     MedicalRecordPolicy,
     UserPolicy,
-    InvoicePolicy
+    InvoicePolicy,
+    ServicePolicy
 };
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
@@ -25,6 +27,7 @@ class AuthServiceProvider extends ServiceProvider
         Pet::class => PetPolicy::class,
         Reservation::class => ReservationPolicy::class,
         MedicalRecord::class => MedicalRecordPolicy::class,
+        Service::class => ServicePolicy::class,
         User::class => UserPolicy::class,
         Invoice::class => InvoicePolicy::class,
     ];
@@ -32,6 +35,6 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->registerPolicies();
-        
+
     }
 }

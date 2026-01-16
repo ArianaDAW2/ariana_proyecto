@@ -2,10 +2,16 @@
 
 namespace App\Http\Requests;
 
+use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ServiceRequest extends FormRequest
 {
+    public function authorize(User $user): bool
+    {
+        return $user->hasPermissionTo('manage_services');
+    }
+
     public function rules(): array
     {
         return [
@@ -16,8 +22,4 @@ class ServiceRequest extends FormRequest
         ];
     }
 
-    public function authorize(): bool
-    {
-        return true;
-    }
 }
