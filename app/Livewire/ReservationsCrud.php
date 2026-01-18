@@ -2,41 +2,123 @@
 
 namespace App\Livewire;
 
-use App\Http\Requests\ReservationRequest;
 use App\Models\Reservation;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Models\User;
+use App\Models\Pet;
+use App\Models\Service;
 use Livewire\Component;
+use Livewire\WithPagination;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Requests\ReservationRequest;
 
 class ReservationsCrud extends Component
 {
+    use WithPagination;
     use AuthorizesRequests;
 
-    public Reservation $reservation;
-    public array $services = [];
+    public $reservationId;
+    public $user_id;
+    public $pet_id;
+    public $start_date;
+    public $end_date;
+    public $status = 'pending';
+    public $total_price = 0;
+    public $selectedServices = [];
+
+    public $isEdit = false;
 
     protected function rules()
     {
-        return (new ReservationRequest())->rules();
+        return (new ReservationRequest())->rules($this->reservationId);
+    }
+
+    public function render()
+    {
+        $this->authorize('viewAny', Reservation::class);
+
+        $reservations = auth()->user()->hasPermissionTo('manage_reservations')
+            ? Reservation::with(['user', 'pet', 'services'])->paginate(10)
+            : Reservation::with(['user', 'pet', 'services'])
+                ->where('user_id', auth()->id())
+                ->paginate(10);
+
+        $users = auth()->user()->hasPermissionTo('manage_reservations')
+            ? User::all()
+            : User::where('id', auth()->id())->get();
+
+        return view('livewire.reservations-crud', [
+            'reservations' => $reservations,
+            'users' => $users,
+            'pets' => Pet::all(),
+            'services' => Service::all(),
+        ]);
     }
 
     public function save()
     {
-        $this->authorize($this->reservation->exists ? 'update' : 'create', $this->reservation);
+        $this->authorize('create', Reservation::class);
 
-        $this->validate();
+        $validated = $this->validate();
 
-        $this->reservation->user_id = auth()->id();
-        $this->reservation->save();
+        $reservation = Reservation::create($validated);
 
-        foreach ($this->services as $id => $data) {
-            $this->reservation->services()
-                ->syncWithPivotValues($id, $data, false);
+        if (!empty($this->selectedServices)) {
+            $reservation->services()->sync($this->selectedServices);
         }
+
+        $this->resetForm();
     }
 
-    public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+    public function edit(Reservation $reservation)
     {
-        return view('livewire.reservations-crud');
+        $this->authorize('update', $reservation);
+
+        $this->reservationId = $reservation->id;
+        $this->user_id = $reservation->user_id;
+        $this->pet_id = $reservation->pet_id;
+        $this->start_date = $reservation->start_date->format('Y-m-d');
+        $this->end_date = $reservation->end_date->format('Y-m-d');
+        $this->status = $reservation->status;
+        $this->total_price = $reservation->total_price;
+        $this->selectedServices = $reservation->services->pluck('id')->toArray();
+        $this->isEdit = true;
     }
 
+    public function update()
+    {
+        $reservation = Reservation::findOrFail($this->reservationId);
+        $this->authorize('update', $reservation);
+
+        $validated = $this->validate();
+
+        $reservation->update($validated);
+
+        if (!empty($this->selectedServices)) {
+            $reservation->services()->sync($this->selectedServices);
+        }
+
+        $this->resetForm();
+    }
+
+    public function delete(Reservation $reservation)
+    {
+        $this->authorize('delete', $reservation);
+
+        $reservation->delete();
+    }
+
+    private function resetForm()
+    {
+        $this->reset([
+            'reservationId',
+            'user_id',
+            'pet_id',
+            'start_date',
+            'end_date',
+            'status',
+            'total_price',
+            'selectedServices',
+            'isEdit',
+        ]);
+    }
 }

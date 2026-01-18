@@ -2,70 +2,88 @@
 
 namespace App\Livewire;
 
+use Livewire\Component;
 use App\Models\Service;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Livewire\Component;
+use App\Http\Requests\ServiceRequest;
+use Livewire\WithPagination;
 
 class ServicesCrud extends Component
 {
+    use WithPagination;
     use AuthorizesRequests;
 
-    public Service $service;
-    public bool $editing = false;
+    public $serviceId;
+    public $name;
+    public $description;
+    public $base_price = 0;
+    public $is_active = true;
 
-    protected $rules = [
-        'service.name' => 'required|string|max:255',
-        'service.description' => 'nullable|string',
-        'service.base_price' => 'required|numeric|min:0',
-        'service.is_active' => 'boolean',
-    ];
+    public $isEdit = false;
 
-    public function mount()
+    protected function rules()
     {
-        $this->service = new Service(['is_active' => true]);
+        return (new ServiceRequest())->rules($this->serviceId);
     }
 
-    public function create()
+    public function render()
     {
-        // Solo administradores pueden crear servicios
-        if (auth()->user()->hasRole('Admin')) {
-            $this->service = new Service(['is_active' => true]);
-            $this->editing = true;
-        }
-    }
-
-    public function edit(Service $service)
-    {
-        // Solo administradores pueden editar servicios
-        if (auth()->user()->hasRole('Admin')) {
-            $this->service = $service;
-            $this->editing = true;
-        }
+        return view('livewire.services-crud', [
+            'services' => Service::paginate(10),
+        ]);
     }
 
     public function save()
     {
-        if (auth()->user()->hasRole('Admin')) {
-            $this->validate();
-            $this->service->save();
-            $this->editing = false;
-            $this->service = new Service(['is_active' => true]);
-            session()->flash('message', 'Servicio guardado correctamente.');
-        }
+        $this->authorize('create', Service::class);
+
+        $validated = $this->validate();
+
+        Service::create($validated);
+
+        $this->resetForm();
+    }
+
+    public function edit(Service $service)
+    {
+        $this->authorize('update', $service);
+
+        $this->serviceId = $service->id;
+        $this->name = $service->name;
+        $this->description = $service->description;
+        $this->base_price = $service->base_price;
+        $this->is_active = $service->is_active;
+        $this->isEdit = true;
+    }
+
+    public function update()
+    {
+        $service = Service::findOrFail($this->serviceId);
+        $this->authorize('update', $service);
+
+        $validated = $this->validate();
+
+        $service->update($validated);
+
+        $this->resetForm();
     }
 
     public function delete(Service $service)
     {
-        if (auth()->user()->hasRole('Admin')) {
-            $service->delete();
-            session()->flash('message', 'Servicio eliminado correctamente.');
-        }
+        $this->authorize('delete', $service);
+
+        $service->delete();
     }
 
-    public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+    private function resetForm()
     {
-        return view('livewire.services-crud', [
-            'services' => Service::all(),
+        $this->reset([
+            'serviceId',
+            'name',
+            'description',
+            'base_price',
+            'is_active',
+            'isEdit',
         ]);
     }
 }

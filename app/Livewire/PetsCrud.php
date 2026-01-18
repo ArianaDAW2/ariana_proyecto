@@ -2,68 +2,105 @@
 
 namespace App\Livewire;
 
-use App\Http\Requests\PetRequest;
 use App\Models\Pet;
+use App\Models\User;
 use Livewire\Component;
+use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Requests\PetRequest;
 
 class PetsCrud extends Component
 {
-    public Pet $pet;
-    public bool $editing = false;
+    use WithPagination;
+    use AuthorizesRequests;
+
+    public $petId;
+    public $user_id;
+    public $name;
+    public $species;
+    public $breed;
+    public $age;
+    public $weight;
+    public $notes;
+
+    public $isEdit = false;
 
     protected function rules()
     {
-        return (new PetRequest())->rules();
+        return (new PetRequest())->rules($this->petId);
     }
 
-    public function mount()
+    public function render()
     {
-        $this->pet = new Pet();
         $this->authorize('viewAny', Pet::class);
+
+        $pets = auth()->user()->hasPermissionTo('manage_users')
+            ? Pet::with('owner')->paginate(10)
+            : Pet::with('owner')->where('user_id', auth()->id())->paginate(10);
+
+        return view('livewire.pets-crud', [
+            'pets' => $pets,
+            'owners' => User::all(), // Est o solo sirve paraAdmin
+        ]);
     }
 
-    public function create()
+    public function save()
     {
         $this->authorize('create', Pet::class);
-        $this->pet = new Pet();
-        $this->editing = true;
+
+        $validated = $this->validate();
+
+        Pet::create($validated);
+
+        $this->resetForm();
     }
 
     public function edit(Pet $pet)
     {
         $this->authorize('update', $pet);
-        $this->pet = $pet;
-        $this->editing = true;
+
+        $this->petId = $pet->id;
+        $this->user_id = $pet->user_id;
+        $this->name = $pet->name;
+        $this->species = $pet->species;
+        $this->breed = $pet->breed;
+        $this->age = $pet->age;
+        $this->weight = $pet->weight;
+        $this->notes = $pet->notes;
+        $this->isEdit = true;
     }
 
-    public function save()
+    public function update()
     {
-        $this->authorize($this->pet->exists ? 'update' : 'create', $this->pet);
+        $pet = Pet::findOrFail($this->petId);
+        $this->authorize('update', $pet);
 
-        $this->validate();
+        $validated = $this->validate();
 
-        $this->pet->user_id = auth()->id();
-        $this->pet->save();
+        $pet->update($validated);
 
-        session()->flash('success', 'Mascota guardada correctamente');
-
-        $this->reset(['editing']);
-        $this->pet = new Pet();
+        $this->resetForm();
     }
 
     public function delete(Pet $pet)
     {
         $this->authorize('delete', $pet);
-        $pet->delete();
 
-        session()->flash('success', 'Mascota eliminada');
+        $pet->delete();
     }
 
-    public function render()
+    private function resetForm()
     {
-        return view('livewire.pets-crud', [
-            'pets' => Pet::where('user_id', auth()->id())->latest()->get(),
+        $this->reset([
+            'petId',
+            'user_id',
+            'name',
+            'species',
+            'breed',
+            'age',
+            'weight',
+            'notes',
+            'isEdit'
         ]);
     }
 }

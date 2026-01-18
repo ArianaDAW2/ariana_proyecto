@@ -7,15 +7,30 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UserRequest extends FormRequest
 {
-    public function rules(): array
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    public function rules($userId = null): array
     {
         return [
-
+            'name' => [
+                'required',
+                'string',
+                'max:255'],
+            'email' => [
+                'required',
+                'email',
+                'max:255',
+                'unique:users,email,' . $userId,
+            ],
+            'password' => [
+                $userId ? 'nullable' : 'required',
+                'min:8',
+            ],
         ];
     }
 
-    public function authorize(User $user): bool
-    {
-        return $user->hasPermissionTo('manage_users');
-    }
+
 }

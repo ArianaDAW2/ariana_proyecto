@@ -2,31 +2,24 @@
 
 namespace App\Http\Requests;
 
-use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ReservationRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
-    public function authorize(User $user): bool
+    public function authorize(): bool
     {
-        return $user->hasPermissionTo('manage_reservations');
+        return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
-    public function rules(): array
+    public function rules($reservationId = null): array
     {
         return [
-            'pet_id' => 'required|exists:pets,id',
-            'start_date' => 'required|date|after_or_equal:today',
-            'end_date' => 'required|date|after:start_date',
-            'services' => 'array|min:1',
+            'user_id' => ['required', 'exists:users,id'],
+            'pet_id' => ['required', 'exists:pets,id'],
+            'start_date' => ['required', 'date', 'before_or_equal:end_date'],
+            'end_date' => ['required', 'date', 'after_or_equal:start_date'],
+            'status' => ['required', 'in:pending,confirmed,completed,cancelled'],
+            'total_price' => ['required', 'numeric', 'min:0'],
         ];
     }
 }

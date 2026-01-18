@@ -2,22 +2,27 @@
 
 namespace App\Http\Requests;
 
-use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class InvoiceRequest extends FormRequest
 {
-    public function authorize(User $user): bool
+    public function authorize(): bool
     {
-        return $user->hasPermissionTo('manage_payments');
+        return true;
     }
 
-    public function rules(): array
+    public function rules($invoiceId = null): array
     {
         return [
-            'status' => 'required|string|max:100',
+            'reservation_id' => ['required', 'exists:reservations,id'],
+            'invoice_number' => [
+                'required',
+                'string',
+                'unique:invoices,invoice_number,' . $invoiceId,
+            ],
+            'total' => ['required', 'numeric', 'min:0'],
+            'status' => ['required', 'in:paid,unpaid'],
+            'issued_at' => ['nullable', 'date'],
         ];
     }
-
-
 }

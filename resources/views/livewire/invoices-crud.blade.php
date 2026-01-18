@@ -1,72 +1,77 @@
-<div class="p-6">
-    <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-semibold text-gray-800">
-            @if($reservationId)
-                Facturas de la Reserva #{{ $reservationId }}
-            @else
-                Todas las Facturas
-            @endif
-        </h2>
-    </div>
+<div>
+    {{-- FORMULARIO --}}
+    @can('create', App\Models\Invoice::class)
+        <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
+            <select wire:model="reservation_id">
+                <option value="">Reserva</option>
+                @foreach($reservations as $reservation)
+                    <option value="{{ $reservation->id }}">
+                        #{{ $reservation->id }}
+                    </option>
+                @endforeach
+            </select>
+            @error('reservation_id') <span>{{ $message }}</span> @enderror
 
-    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-        <div class="p-6 bg-white border-b border-gray-200">
-            <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nº
-                        Factura
-                    </th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Reserva
-                    </th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total
-                    </th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado
-                    </th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fecha
-                    </th>
-                </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-gray-200">
-                @forelse($invoices as $invoice)
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $invoice->id }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $invoice->invoice_number ?? 'N/A' }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            #{{ $invoice->reservation_id }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($invoice->total, 2) }}
-                            €
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 flex items-center space-x-2">
-            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full
-                {{ $invoice->status === 'paid' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800' }}">
-                {{ ucfirst($invoice->status) }}
-            </span>
+            <input type="text" wire:model="invoice_number" placeholder="Número factura">
+            @error('invoice_number') <span>{{ $message }}</span> @enderror
 
-                            @can('manage_payments')
-                                <input type="checkbox"
-                                       wire:model="status.{{ $invoice->id }}"
-                                       value="paid"
-                                       class="form-checkbox"
-                                       title="Marcar como pagado">
-                            @endcan
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $invoice->created_at->format('d/m/Y H:i') }}</td>
-                    </tr>
-                @empty
-                    <tr>
-                        <td colspan="6" class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">No se
-                            encontraron facturas.
-                        </td>
-                    </tr>
-                @endforelse
-                </tbody>
-            </table>
+            <input type="number" step="0.01" wire:model="total" placeholder="Total">
+            @error('total') <span>{{ $message }}</span> @enderror
 
-            <div class="mt-4">
-                {{ $invoices->links() }}
-            </div>
-        </div>
-    </div>
+            <select wire:model="status">
+                <option value="unpaid">Pendiente</option>
+                <option value="paid">Pagada</option>
+            </select>
+            @error('status') <span>{{ $message }}</span> @enderror
+
+            <input type="datetime-local" wire:model="issued_at">
+            @error('issued_at') <span>{{ $message }}</span> @enderror
+
+            <button type="submit">
+                {{ $isEdit ? 'Actualizar' : 'Crear factura' }}
+            </button>
+        </form>
+    @endcan
+
+    <hr>
+
+    {{-- LISTADO --}}
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Factura</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($invoices as $invoice)
+            <tr>
+                <td>{{ $invoice->id }}</td>
+                <td>{{ $invoice->invoice_number }}</td>
+                <td>{{ $invoice->total }} €</td>
+                <td>{{ $invoice->status }}</td>
+                <td>{{ $invoice->issued_at }}</td>
+                <td>
+                    @can('update', $invoice)
+                        <button wire:click="edit({{ $invoice->id }})">
+                            Editar
+                        </button>
+                    @endcan
+
+                    @can('delete', $invoice)
+                        <button wire:click="delete({{ $invoice->id }})">
+                            Eliminar
+                        </button>
+                    @endcan
+                </td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+
+    {{ $invoices->links() }}
 </div>

@@ -29,54 +29,56 @@
 
                 {{-- Aquí iría el contenido dinámico de cada sección --}}
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    @can('manage_payments')
+                    @can('manage_users')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Users</h2>
                             <p class="text-gray-500">Manage all registered users.</p>
-                            <a href="{{ route('admin.user-admin') }}"
-                               :active="request()->routeIs('admin.users-admin')"
+                            <a href="{{ route('admin.users-admin') }}"
                                class="text-blue-500 hover:underline mt-2 block">Go to Users</a>
                         </div>
                     @endcan
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Pets</h2>
-                        <p class="text-gray-500">View and manage pets.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Pets</a>
-                    </div>
-
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Reservations</h2>
-                        <p class="text-gray-500">Manage reservations for pets.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Reservations</a>
-                    </div>
-
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Medical Records</h2>
-                        <p class="text-gray-500">View medical history of pets.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Medical Records</a>
-                    </div>
-
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Services</h2>
-                        <p class="text-gray-500">Manage the services offered.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Services</a>
-                    </div>
+                    @can('manage_users')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Pets</h2>
+                            <p class="text-gray-500">View and manage pets.</p>
+                            <a href="{{route('admin.pets-admin')}}" class="text-blue-500 hover:underline mt-2 block">Go
+                                to Pets</a>
+                        </div>
+                    @endcan
+                    @can('manage_reservations')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Reservations</h2>
+                            <p class="text-gray-500">Manage reservations for pets.</p>
+                            <a href="{{route('admin.pets-admin')}}"
+                               class="text-blue-500 hover:underline mt-2 block">Go
+                                to Reservations</a>
+                        </div>
+                    @endcan
+                    @can('manage_medical_records')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Medical Records</h2>
+                            <p class="text-gray-500">View medical history of pets.</p>
+                            <a href="{{route('admin.medical-records')}}"
+                               class="text-blue-500 hover:underline mt-2 block">Go to Medical Records</a>
+                        </div>
+                    @endcan
+                    @can('manage_services')
+                        <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
+                            <h2 class="font-semibold text-lg">Services</h2>
+                            <p class="text-gray-500">Manage the services offered.</p>
+                            <a href="{{route('services')}}"
+                               class="text-blue-500 hover:underline mt-2 block">Go to Services</a>
+                        </div>
+                    @endcan
                     @can('manage_payments')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Invoices</h2>
                             <p class="text-gray-500">View and manage invoices.</p>
                             <a href="{{ route('admin.invoices-admin') }}"
-                               :active="request()->routeIs('admin.Invoices')"
                                class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
                         </div>
                     @endcan
 
-
-                    <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                        <h2 class="font-semibold text-lg">Payments</h2>
-                        <p class="text-gray-500">Track payments from users.</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-2 block">Go to Payments</a>
-                    </div>
                 </div>
             </div>
         </main>

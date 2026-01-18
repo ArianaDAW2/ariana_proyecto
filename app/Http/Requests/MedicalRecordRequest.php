@@ -2,25 +2,23 @@
 
 namespace App\Http\Requests;
 
-use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MedicalRecordRequest extends FormRequest
 {
-    public function authorize(User $user): bool
+    public function authorize(): bool
     {
-        return $user->hasPermissionTo('manage_medical_records');
+        return true;
     }
 
-    public function rules(): array
+    public function rules($recordId = null): array
     {
-
         return [
-            'pet_id' => 'required|exists:pets,id',
-            'diagnosis' => 'required|string|min:10',
-            'notes' => 'nullable|string',
+            'pet_id' => ['required', 'exists:pets,id'],
+            'veterinarian_id' => ['required', 'exists:users,id'],
+            'diagnosis' => ['required', 'string'],
+            'treatment' => ['nullable', 'string'],
+            'notes' => ['nullable', 'string'],
         ];
     }
-
-
 }

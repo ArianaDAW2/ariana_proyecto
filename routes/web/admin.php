@@ -10,9 +10,9 @@ use App\Http\Controllers\adminController;
 
 //Admin y trabajadores
 
-Route::get('users', UsersCrud::class)
-    ->middleware('can:manage-users')
-    ->names('users-admin');
+Route::get('/users', UsersCrud::class)
+    ->middleware('can:manage_users')
+    ->name('users-admin');
 Route::get('/reservations-admin', ReservationsCrud::class)
     ->middleware('can:manage_reservations')
     ->name('reservations-admin');

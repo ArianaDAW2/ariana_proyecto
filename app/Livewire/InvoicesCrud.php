@@ -4,60 +4,93 @@ namespace App\Livewire;
 
 use App\Models\Invoice;
 use App\Models\Reservation;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
+use Livewire\WithPagination;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Requests\InvoiceRequest;
 
 class InvoicesCrud extends Component
 {
+    use WithPagination;
     use AuthorizesRequests;
 
-    public $reservationId;
+    public $invoiceId;
+    public $reservation_id;
+    public $invoice_number;
+    public $total;
+    public $status = 'unpaid';
+    public $issued_at;
 
-    public function mount($reservationId = null)
+    public $isEdit = false;
+
+    protected function rules()
     {
-        $this->authorize('manage_payments');
-        $this->reservationId = $reservationId;
+        return (new InvoiceRequest())->rules($this->invoiceId);
+    }
+
+    public function render()
+    {
+        $this->authorize('viewAny', Invoice::class);
+
+        return view('livewire.invoices-crud', [
+            'invoices' => Invoice::with('reservation')->paginate(10),
+            'reservations' => Reservation::all(),
+        ]);
     }
 
     public function save()
     {
-        $data = $this->validate([
-            'status' => 'required|in:paid,unpaid',
-        ]);
-
-        // Si el checkbox no estaba marcado, forzamos unpaid
-        if ($this->status !== 'paid') {
-            $this->status = 'unpaid';
-        }
-
-        $reservation = new Reservation();
-        $reservation->status = $this->status;
-        $reservation->save();
-
-        session()->flash('message', 'Reserva actualizada');
-    }
-
-    public function generate(Reservation $reservation)
-    {
         $this->authorize('create', Invoice::class);
 
-        Invoice::create([
-            'reservation_id' => $reservation->id,
-            'total' => $reservation->total_price,
-            'status' => 'pending',
-        ]);
+        $validated = $this->validate();
+
+        Invoice::create($validated);
+
+        $this->resetForm();
     }
 
-    public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+    public function edit(Invoice $invoice)
     {
-        $query = Invoice::query();
+        $this->authorize('update', $invoice);
 
-        if ($this->reservationId) {
-            $query->where('reservation_id', $this->reservationId);
-        }
+        $this->invoiceId = $invoice->id;
+        $this->reservation_id = $invoice->reservation_id;
+        $this->invoice_number = $invoice->invoice_number;
+        $this->total = $invoice->total;
+        $this->status = $invoice->status;
+        $this->issued_at = $invoice->issued_at;
+        $this->isEdit = true;
+    }
 
-        return view('livewire.invoices-crud', [
-            'invoices' => $query->latest()->paginate(10)
+    public function update()
+    {
+        $invoice = Invoice::findOrFail($this->invoiceId);
+        $this->authorize('update', $invoice);
+
+        $validated = $this->validate();
+
+        $invoice->update($validated);
+
+        $this->resetForm();
+    }
+
+    public function delete(Invoice $invoice)
+    {
+        $this->authorize('delete', $invoice);
+
+        $invoice->delete();
+    }
+
+    private function resetForm()
+    {
+        $this->reset([
+            'invoiceId',
+            'reservation_id',
+            'invoice_number',
+            'total',
+            'status',
+            'issued_at',
+            'isEdit'
         ]);
     }
 }

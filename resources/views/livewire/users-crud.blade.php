@@ -1,38 +1,45 @@
 <div>
-    @can('manage_users')
-        <livewire:user-form :key="$form->userId ?? 'new-user'"/>
+    {{-- FORMULARIO --}}
+    @can('create', App\Models\User::class)
+        <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
+            <input type="text" wire:model="name" placeholder="Nombre">
+            @error('name') <span>{{ $message }}</span> @enderror
+
+            <input type="email" wire:model="email" placeholder="Email">
+            @error('email') <span>{{ $message }}</span> @enderror
+
+            <input type="password" wire:model="password" placeholder="Contraseña">
+            @error('password') <span>{{ $message }}</span> @enderror
+
+            <button type="submit">
+                {{ $isEdit ? 'Actualizar' : 'Crear' }}
+            </button>
+        </form>
     @endcan
 
-    @if(session()->has('message'))
-        <div class="bg-green-100 text-green-800 p-2 mb-2">{{ session('message') }}</div>
-    @endif
+    <hr>
 
-    <table class="min-w-full divide-y divide-gray-200">
+    {{-- LISTADO --}}
+    <table>
         <thead>
         <tr>
-            <th class="px-6 py-3 text-left">Nombre</th>
-            <th class="px-6 py-3 text-left">Email</th>
-            <th class="px-6 py-3 text-left">Roles</th>
-            <th class="px-6 py-3 text-left">Acciones</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
         </tr>
         </thead>
-        <tbody class="bg-white divide-y divide-gray-200">
+        <tbody>
         @foreach($users as $user)
             <tr>
-                <td class="px-6 py-4">{{ $user->name }}</td>
-                <td class="px-6 py-4">{{ $user->email }}</td>
-                <td class="px-6 py-4">{{ $user->roles->pluck('name')->join(', ') }}</td>
-                <td class="px-6 py-4">
-                    @can('manage_users')
-                        <button wire:click="$emit('editUser', {{ $user->id }})"
-                                class="bg-blue-500 text-white px-2 py-1 rounded">Editar
-                        </button>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
+                <td>
+                    @can('update', $user)
+                        <button wire:click="edit({{ $user->id }})">Editar</button>
+                    @endcan
 
-                        <button wire:click="deleteUser({{ $user->id }})"
-                                class="bg-red-500 text-white px-2 py-1 rounded"
-                                onclick="confirm('¿Eliminar usuario?') || event.stopImmediatePropagation()">
-                            Eliminar
-                        </button>
+                    @can('delete', $user)
+                        <button wire:click="delete({{ $user->id }})">Eliminar</button>
                     @endcan
                 </td>
             </tr>
@@ -40,7 +47,6 @@
         </tbody>
     </table>
 
-    <div class="mt-4">
-        {{ $users->links() }}
-    </div>
+    {{ $users->links() }}
 </div>
+

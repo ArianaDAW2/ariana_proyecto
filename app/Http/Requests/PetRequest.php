@@ -2,28 +2,25 @@
 
 namespace App\Http\Requests;
 
-use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PetRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
-    public function authorize(User $user): bool
+    public function authorize(): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return true;
     }
-    
-    public function rules(): array
+
+    public function rules($petId = null): array
     {
         return [
-            'name' => 'required|string|max:100',
-            'species' => 'required|string|max:50',
-            'breed' => 'nullable|string|max:100',
-            'weight' => 'required|numeric|min:0.1|max:100',
-            'birth_date' => 'nullable|date',
-            'notes' => 'nullable|string|max:1000',
+            'user_id' => ['required', 'exists:users,id'],
+            'name' => ['required', 'string', 'max:255'],
+            'species' => ['required', 'string', 'max:100'],
+            'breed' => ['nullable', 'string', 'max:100'],
+            'age' => ['required', 'integer', 'min:0'],
+            'weight' => ['required', 'numeric', 'min:0'],
+            'notes' => ['nullable', 'string'],
         ];
     }
 }

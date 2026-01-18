@@ -2,33 +2,105 @@
 
 namespace App\Livewire;
 
-use App\Http\Requests\MedicalRecordRequest;
 use App\Models\MedicalRecord;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Models\Pet;
+use App\Models\User;
 use Livewire\Component;
+use Livewire\WithPagination;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Requests\MedicalRecordRequest;
 
 class MedicalRecordsCrud extends Component
 {
+    use WithPagination;
     use AuthorizesRequests;
 
-    public $petId;
+    public $recordId;
+    public $pet_id;
+    public $veterinarian_id;
+    public $diagnosis;
+    public $treatment;
+    public $notes;
 
-    public function mount($petId = null)
+    public $isEdit = false;
+
+    protected function rules()
     {
-        $this->authorize('view_medical_records');
-        $this->petId = $petId;
+        return (new MedicalRecordRequest())->rules($this->recordId);
     }
 
-    public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+    public function render()
     {
-        $query = MedicalRecord::with(['pet', 'veterinarian']);
+        $this->authorize('viewAny', MedicalRecord::class);
 
-        if ($this->petId) {
-            $query->where('pet_id', $this->petId);
-        }
+        $records = auth()->user()->hasPermissionTo('manage_medical_records')
+            ? MedicalRecord::with(['pet', 'veterinarian'])->paginate(10)
+            : MedicalRecord::with(['pet', 'veterinarian'])
+                ->whereHas('pet', fn($q) => $q->where('user_id', auth()->id()))
+                ->paginate(10);
 
-        return view('livewire.medical-records-crud', [
-            'medicalRecords' => $query->latest()->paginate(10)
+        $pets = auth()->user()->hasPermissionTo('manage_medical_records')
+            ? Pet::all()
+            : Pet::where('user_id', auth()->id())->get();
+
+        $veterinarians = User::role('Veterinario')->get();
+
+        return view('livewire.medical-records-crud', compact('records', 'pets', 'veterinarians'));
+    }
+
+    public function save()
+    {
+        $this->authorize('create', MedicalRecord::class);
+
+        $validated = $this->validate();
+
+        MedicalRecord::create($validated);
+
+        $this->resetForm();
+    }
+
+    public function edit(MedicalRecord $record)
+    {
+        $this->authorize('update', $record);
+
+        $this->recordId = $record->id;
+        $this->pet_id = $record->pet_id;
+        $this->veterinarian_id = $record->veterinarian_id;
+        $this->diagnosis = $record->diagnosis;
+        $this->treatment = $record->treatment;
+        $this->notes = $record->notes;
+        $this->isEdit = true;
+    }
+
+    public function update()
+    {
+        $record = MedicalRecord::findOrFail($this->recordId);
+        $this->authorize('update', $record);
+
+        $validated = $this->validate();
+
+        $record->update($validated);
+
+        $this->resetForm();
+    }
+
+    public function delete(MedicalRecord $record)
+    {
+        $this->authorize('delete', $record);
+
+        $record->delete();
+    }
+
+    private function resetForm()
+    {
+        $this->reset([
+            'recordId',
+            'pet_id',
+            'veterinarian_id',
+            'diagnosis',
+            'treatment',
+            'notes',
+            'isEdit'
         ]);
     }
 }

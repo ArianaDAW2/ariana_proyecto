@@ -15,7 +15,6 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasProfilePhoto, Notifiable, TwoFactorAuthenticatable, HasRoles;
 
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory;
     use HasProfilePhoto;
     use Notifiable;
