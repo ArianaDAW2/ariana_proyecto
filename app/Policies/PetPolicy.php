@@ -14,8 +14,7 @@ class PetPolicy
 
     public function view(User $user, Pet $pet): bool
     {
-        return $user->hasPermissionTo('manage_users')
-            || $pet->user_id === $user->id;//Para que el usuario pueda ver sus pets
+        return $pet->user_id === $user->id;//Para que el usuario pueda ver sus pets
     }
 
     public function create(User $user): bool
@@ -33,6 +32,7 @@ class PetPolicy
         return $user->hasPermissionTo('manage_users');
     }
 
+//softdeletes SIN HACER
     public function restore(User $user, Pet $pet): bool
     {
         return $user->hasPermissionTo('manage_users');

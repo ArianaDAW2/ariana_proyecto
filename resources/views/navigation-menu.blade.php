@@ -12,21 +12,22 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('client.dashboard') }}" :active="request()->routeIs('client.dashboard')">
+                    <x-nav-link href="{{ route('client.dashboard') }}">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('services') }}" :active="request()->routeIs('services.index')">
+                    <x-nav-link href="{{ route('services') }}">
                         {{ __('Servicios') }}
                     </x-nav-link>
                     @can('manage_users')
-                        <x-nav-link href="{{ route('admin.panel-admin') }}"
-                                    :active="request()->routeIs('admin.panel-admin')">
+                        <x-nav-link href="{{ route('admin.panel-admin') }}">
                             {{ __('Panel de control') }}
                         </x-nav-link>
                     @endcan
-                    <x-nav-link href="{{ route('client.invoicesCrud') }}"
-                                :active="request()->routeIs('client.invoicesCrud')">
-                        {{ __('Mis Facturas') }}
+                    <x-nav-link href="{{ route('client.ReservationsCrud') }}">
+                        {{ __('Mis Reservas') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('client.PetsCrud') }}">
+                        {{ __('Mis Mascotas') }}
                     </x-nav-link>
 
 

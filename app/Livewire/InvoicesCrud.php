@@ -30,7 +30,7 @@ class InvoicesCrud extends Component
 
     public function render()
     {
-        $this->authorize('viewAny', Invoice::class);
+        $this->authorize('view', Invoice::class);
 
         return view('livewire.invoices-crud', [
             'invoices' => Invoice::with('reservation')->paginate(10),

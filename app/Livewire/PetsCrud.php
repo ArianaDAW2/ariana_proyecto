@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Pet;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -13,7 +14,7 @@ class PetsCrud extends Component
 {
     use WithPagination;
     use AuthorizesRequests;
-
+    
     public $petId;
     public $user_id;
     public $name;
@@ -30,18 +31,39 @@ class PetsCrud extends Component
         return (new PetRequest())->rules($this->petId);
     }
 
-    public function render()
+
+    public function render(Request $request)
     {
-        $this->authorize('viewAny', Pet::class);
+        $pet = Pet::findOrFail($this->petId);
+        if (isset($this->petId)) {
+            $pet = Pet::findOrFail($this->petId);
+            $this->authorize('view', $pet);
 
-        $pets = auth()->user()->hasPermissionTo('manage_users')
-            ? Pet::with('owner')->paginate(10)
-            : Pet::with('owner')->where('user_id', auth()->id())->paginate(10);
+            return view('livewire.pets-crud', [
+                'pets' => collect([$pet]), // Un solo pet como colección
+                'owners' => User::all(),
+            ]);
+        } else {
 
-        return view('livewire.pets-crud', [
-            'pets' => $pets,
-            'owners' => User::all(), // Est o solo sirve paraAdmin
-        ]);
+            $this->authorize('viewAny', Pet::class);
+
+            $pets = auth()->user()->hasPermissionTo('manage_users')
+                ? Pet::with('owner')->paginate(10)
+                : Pet::with('owner')->where('user_id', auth()->id())->paginate(10);
+
+            if ($request->wantsJson()) {
+                return response()->json([
+                    'pets' => $pets,
+                    'owner' => User::all(),
+                ]);
+            } else {
+                return view('livewire.pets-crud', [
+                    'pets' => $pets,
+                    'owners' => User::all(), // Est o solo sirve paraAdmin
+                ]);
+            }
+        }
+
     }
 
     public function save()

@@ -13,12 +13,6 @@ class ServicePolicy
         return true;
     }
 
-    public function view(): bool
-    {
-        return true;
-
-    }
-
     public function create(User $user): bool
     {
         return $user->hasPermissionTo('manage_services');
@@ -35,6 +29,7 @@ class ServicePolicy
         return $user->hasPermissionTo('manage_services');
     }
 
+//softdeletes SIN HACER
     public function restore(User $user): bool
     {
         return $user->hasPermissionTo('manage_services');

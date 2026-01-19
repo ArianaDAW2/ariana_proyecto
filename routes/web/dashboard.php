@@ -12,6 +12,4 @@ Route::get('reservations', ReservationsCrud::class)
     ->name('ReservationsCrud');
 Route::get('pets', PetsCrud::class)
     ->name('PetsCrud');
-Route::get('invoices', InvoicesCrud::class)
-    ->name('invoicesCrud');
 

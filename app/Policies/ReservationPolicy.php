@@ -35,6 +35,7 @@ class ReservationPolicy
         return $user->hasPermissionTo('manage_users');
     }
 
+//softdeletes SIN HACER
     public function restore(User $user, Reservation $reservation): bool
     {
         return $user->hasPermissionTo('manage_reservations');

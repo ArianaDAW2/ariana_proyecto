@@ -12,13 +12,6 @@ class InvoicePolicy
         return $user->hasPermissionTo('manage_payments');
     }
 
-    public function view(User $user, Invoice $invoice): bool
-    {
-        return $user->hasPermissionTo('manage_payments')
-            || $invoice->user_id === $user->id; //para que el usuario pueda ver sus facturas
-    }
-
-
     public function create(User $user): bool
     {
         return $user->hasPermissionTo('manage_payments');
@@ -34,6 +27,7 @@ class InvoicePolicy
         return $user->hasPermissionTo('manage_payments');
     }
 
+//softdeletes SIN HACER
     public function restore(User $user, Invoice $invoice): bool
     {
         return $user->hasPermissionTo('manage_payments');

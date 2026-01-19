@@ -33,6 +33,7 @@ class MedicalRecordPolicy
         return $user->hasPermissionTo('manage_medical_records');
     }
 
+//softdeletes SIN HACER
     public function restore(User $user, MedicalRecord $medicalRecord): bool
     {
         return $user->hasPermissionTo('manage_medical_records');

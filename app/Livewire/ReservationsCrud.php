@@ -34,7 +34,7 @@ class ReservationsCrud extends Component
 
     public function render()
     {
-        $this->authorize('viewAny', Reservation::class);
+        $this->authorize('view', Reservation::class);
 
         $reservations = auth()->user()->hasPermissionTo('manage_reservations')
             ? Reservation::with(['user', 'pet', 'services'])->paginate(10)
