@@ -7,7 +7,7 @@ use App\Models\User;
 
 class MedicalRecordPolicy
 {
-    public function view(User $user, MedicalRecord $record): bool
+    public function view(User $user): bool
     {
         return $user->hasPermissionTo('manage_medical_records');
 

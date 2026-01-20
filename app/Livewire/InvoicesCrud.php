@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Invoice;
 use App\Models\Reservation;
+use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -28,7 +29,7 @@ class InvoicesCrud extends Component
         return (new InvoiceRequest())->rules($this->invoiceId);
     }
 
-    public function render()
+    public function render(Request $request)
     {
         $this->authorize('view', Invoice::class);
 
@@ -36,6 +37,7 @@ class InvoicesCrud extends Component
             'invoices' => Invoice::with('reservation')->paginate(10),
             'reservations' => Reservation::all(),
         ]);
+
     }
 
     public function save()

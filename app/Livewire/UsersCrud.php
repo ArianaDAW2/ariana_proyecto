@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -25,10 +26,15 @@ class UsersCrud extends Component
         return (new UserRequest())->rules($this->userId);
     }
 
-    public function render()
+    public function render(Request $request)
     {
         $this->authorize('view', User::class);
 
+        if ($request->wantsJson()) {
+            return response()->json([
+                'users' => User::paginate(10),
+            ]);
+        }
         return view('livewire.users-crud', [
             'users' => User::paginate(20),
         ]);

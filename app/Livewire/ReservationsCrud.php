@@ -6,6 +6,7 @@ use App\Models\Reservation;
 use App\Models\User;
 use App\Models\Pet;
 use App\Models\Service;
+use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -32,20 +33,28 @@ class ReservationsCrud extends Component
         return (new ReservationRequest())->rules($this->reservationId);
     }
 
-    public function render()
+    public function render(Request $request)
     {
         $this->authorize('view', Reservation::class);
 
         $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
 
         $users = User::all();
-
-        return view('livewire.reservations-crud', [
-            'reservations' => $reservations,
-            'users' => $users,
-            'pets' => Pet::all(),
-            'services' => Service::all(),
-        ]);
+        if ($request->wantsJson()) {
+            return response()->json([
+                'reservations' => $reservations,
+                'users' => $users,
+                'pets' => Pet::all(),
+                'services' => Service::all(),
+            ]);
+        } else {
+            return view('livewire.reservations-crud', [
+                'reservations' => $reservations,
+                'users' => $users,
+                'pets' => Pet::all(),
+                'services' => Service::all(),
+            ]);
+        }
     }
 
     public function save()

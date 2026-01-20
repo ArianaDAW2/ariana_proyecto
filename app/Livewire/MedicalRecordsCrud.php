@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\MedicalRecord;
 use App\Models\Pet;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -29,9 +30,9 @@ class MedicalRecordsCrud extends Component
         return (new MedicalRecordRequest())->rules($this->recordId);
     }
 
-    public function render()
+    public function render(Request $request)
     {
-        $this->authorize('viewAny', MedicalRecord::class);
+        $this->authorize('view', MedicalRecord::class);
 
         $records = MedicalRecord::with(['pet', 'veterinarian'])->paginate(10);
 
@@ -39,7 +40,19 @@ class MedicalRecordsCrud extends Component
 
         $veterinarians = User::role('Veterinario')->get();
 
-        return view('livewire.medical-records-crud', compact('records', 'pets', 'veterinarians'));
+        if ($request->wantsJson()) {
+            return response()->json([
+                'records' => $records,
+                'pets' => $pets,
+                'veterinarians' => $veterinarians,
+            ]);
+        } else {
+            return view('livewire.medical-records-crud', [
+                'records' => $records,
+                'pets' => $pets,
+                'veterinarians' => $veterinarians,
+            ]);
+        }
     }
 
     public function save()

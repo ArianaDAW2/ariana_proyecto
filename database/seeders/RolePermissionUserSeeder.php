@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Laravel\Sanctum\PersonalAccessToken;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -82,11 +82,20 @@ class RolePermissionUserSeeder extends Seeder
 
         // Asignación inicial a usuarios de prueba
         $users = User::orderBy('id')->take(5)->get();
-
+        // Bearer $user->name para la auth
         foreach ($users as $index => $user) {
             if (isset($roles[$index])) {
                 $user->assignRole($roles[$index]);
+                $user->tokens()->delete();
+                PersonalAccessToken::create([
+                    'tokenable_type' => User::class,
+                    'tokenable_id' => $user->id,
+                    'name' => 'api-token',
+                    'token' => hash('sha256', $user->name),
+                    'abilities' => ['*'],
+                ]);
             }
         }
+
     }
 }

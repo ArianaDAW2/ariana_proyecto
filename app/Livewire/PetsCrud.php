@@ -47,7 +47,7 @@ class PetsCrud extends Component
         } else {
             return view('livewire.pets-crud', [
                 'pets' => $pets,
-                'owners' => User::all(), // Est o solo sirve paraAdmin
+                'owners' => User::all(),
             ]);
         }
 

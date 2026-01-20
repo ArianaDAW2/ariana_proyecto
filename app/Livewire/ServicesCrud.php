@@ -5,6 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Service;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Http\Request;
 use App\Http\Requests\ServiceRequest;
 use Livewire\WithPagination;
 
@@ -26,13 +27,19 @@ class ServicesCrud extends Component
         return (new ServiceRequest())->rules($this->serviceId);
     }
 
-    public function render()
+    public function render(Request $request)
     {
         $this->authorize('view', Service::class);
 
-        return view('livewire.services-crud', [
-            'services' => Service::paginate(10),
-        ]);
+        if ($request->wantsJson()) {
+            return response()->json([
+                'services' => Service::paginate(10),
+            ]);
+        } else {
+            return view('livewire.services-crud', [
+                'services' => Service::paginate(10),
+            ]);
+        }
     }
 
     public function save()

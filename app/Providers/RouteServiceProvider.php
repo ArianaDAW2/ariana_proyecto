@@ -10,15 +10,15 @@ class RouteServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-
+        //
     }
 
     public function boot(): void
     {
         // API
-        Route::middleware('api')
-            ->prefix('api/v1')
-            ->group(base_path('routes/api/v1.php'));
+        Route::middleware('api', 'auth:sanctum')
+            ->prefix('api')
+            ->group(base_path('routes/api.php'));
 
         // Web pública
         Route::middleware('web')
