@@ -13,6 +13,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class reservationsCrudController extends Controller
 {
+    use AuthorizesRequests;
+
     public function index()
     {
         $this->authorize('view', Reservation::class);

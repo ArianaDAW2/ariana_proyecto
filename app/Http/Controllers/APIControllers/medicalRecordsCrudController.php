@@ -11,6 +11,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class medicalRecordsCrudController extends Controller
 {
+    use AuthorizesRequests;
+
     public function index()
     {
         $this->authorize('view', MedicalRecord::class);

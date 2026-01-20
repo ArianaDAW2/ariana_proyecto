@@ -90,7 +90,7 @@ class RolePermissionUserSeeder extends Seeder
                 PersonalAccessToken::create([
                     'tokenable_type' => User::class,
                     'tokenable_id' => $user->id,
-                    'name' => 'api-token',
+                    'name' => 'api-' . $user->name,
                     'token' => hash('sha256', $user->name),
                     'abilities' => ['*'],
                 ]);

@@ -5,11 +5,16 @@ namespace App\Http\Controllers\APIControllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRequest;
 use App\Models\User;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class usersCrudController extends Controller
 {
+    use AuthorizesRequests;
+
     public function index()
     {
+        
+        $this->authorize('view', User::class);
         return response()->json([
             'users' => User::paginate(10),
         ]);

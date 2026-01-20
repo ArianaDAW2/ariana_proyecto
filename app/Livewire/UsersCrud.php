@@ -26,10 +26,10 @@ class UsersCrud extends Component
         return (new UserRequest())->rules($this->userId);
     }
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', User::class);
-        
+
         return view('livewire.users-crud', [
             'users' => User::paginate(20),
         ]);

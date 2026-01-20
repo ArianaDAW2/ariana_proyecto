@@ -30,7 +30,9 @@
             <th>Descripción</th>
             <th>Precio Base</th>
             <th>Activo</th>
-            <th>Acciones</th>
+            @can('manage_services')
+                <th>Acciones</th>
+            @endcan
         </tr>
         </thead>
         <tbody>

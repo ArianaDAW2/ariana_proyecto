@@ -10,6 +10,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class petsCrudController extends Controller
 {
+    use AuthorizesRequests;
+
     public function index()
     {
 

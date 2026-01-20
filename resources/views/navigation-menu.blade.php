@@ -23,14 +23,6 @@
                             {{ __('Panel de control') }}
                         </x-nav-link>
                     @endcan
-                    <x-nav-link href="{{ route('client.ReservationsCrud') }}">
-                        {{ __('Mis Reservas') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('client.PetsCrud') }}">
-                        {{ __('Mis Mascotas') }}
-                    </x-nav-link>
-
-
                 </div>
             </div>
 
@@ -50,6 +42,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                   d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"/>
                                         </svg>
+                                    </button>
                                     </button>
                                 </span>
                             </x-slot>

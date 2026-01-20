@@ -5,9 +5,12 @@ namespace App\Http\Controllers\APIControllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ServiceRequest;
 use App\Models\Service;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class servicesCrudController extends Controller
 {
+    use AuthorizesRequests;
+
     public function index()
     {
         $this->authorize('view', Service::class);

@@ -11,20 +11,14 @@ use App\Http\Controllers\adminController;
 //Admin y trabajadores
 
 Route::get('/users', UsersCrud::class)
-    ->middleware('can:manage_users')
     ->name('users-admin');
 Route::get('/reservations-admin', ReservationsCrud::class)
-    ->middleware('can:manage_reservations')
     ->name('reservations-admin');
 Route::get('/medical-records', MedicalRecordsCrud::class)
-    ->middleware('can:manage_medical_records')
     ->name('medical-records');
 Route::get('/Pets-admin', PetsCrud::class)
-    ->middleware('can:manage_users')
     ->name('pets-admin');
 Route::get('/invoices', InvoicesCrud::class)
-    ->middleware('can:manage_payments')
     ->name('invoices-admin');
 Route::get('/control-panel', [adminController::class, 'panel'])
-    ->middleware('can:manage_users')
     ->name('panel-admin');

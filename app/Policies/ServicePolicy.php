@@ -8,7 +8,7 @@ use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ServicePolicy
 {
-    public function view(): bool
+    public function view(User $user): bool
     {
         return true;
     }
