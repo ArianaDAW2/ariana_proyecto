@@ -28,8 +28,8 @@ class ServicesCrud extends Component
 
     public function render()
     {
-        $this->authorize('viewAny', Service::class);
-        
+        $this->authorize('view', Service::class);
+
         return view('livewire.services-crud', [
             'services' => Service::paginate(10),
         ]);

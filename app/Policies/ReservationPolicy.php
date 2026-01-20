@@ -9,17 +9,11 @@ use Illuminate\Auth\Access\Response;
 class ReservationPolicy
 {
 
-    public function viewAny(User $user): bool
+    public function view(User $user): bool
     {
         return $user->hasPermissionTo('manage_reservations');
     }
-
-    public function view(User $user, Reservation $reservation): bool
-    {
-        return $user->hasPermissionTo('manage_reservations')
-            || $reservation->user_id === $user->id; //Para que el usuario pueda ver sus reservas
-    }
-
+    
     public function create(User $user): bool
     {
         return $user->hasPermissionTo('manage_reservations');

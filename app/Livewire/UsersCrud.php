@@ -27,7 +27,7 @@ class UsersCrud extends Component
 
     public function render()
     {
-        $this->authorize('viewAny', User::class);
+        $this->authorize('view', User::class);
 
         return view('livewire.users-crud', [
             'users' => User::paginate(20),

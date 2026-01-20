@@ -36,15 +36,9 @@ class ReservationsCrud extends Component
     {
         $this->authorize('view', Reservation::class);
 
-        $reservations = auth()->user()->hasPermissionTo('manage_reservations')
-            ? Reservation::with(['user', 'pet', 'services'])->paginate(10)
-            : Reservation::with(['user', 'pet', 'services'])
-                ->where('user_id', auth()->id())
-                ->paginate(10);
+        $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
 
-        $users = auth()->user()->hasPermissionTo('manage_reservations')
-            ? User::all()
-            : User::where('id', auth()->id())->get();
+        $users = User::all();
 
         return view('livewire.reservations-crud', [
             'reservations' => $reservations,

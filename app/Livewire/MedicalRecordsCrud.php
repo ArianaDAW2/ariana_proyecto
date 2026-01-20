@@ -33,15 +33,9 @@ class MedicalRecordsCrud extends Component
     {
         $this->authorize('viewAny', MedicalRecord::class);
 
-        $records = auth()->user()->hasPermissionTo('manage_medical_records')
-            ? MedicalRecord::with(['pet', 'veterinarian'])->paginate(10)
-            : MedicalRecord::with(['pet', 'veterinarian'])
-                ->whereHas('pet', fn($q) => $q->where('user_id', auth()->id()))
-                ->paginate(10);
+        $records = MedicalRecord::with(['pet', 'veterinarian'])->paginate(10);
 
-        $pets = auth()->user()->hasPermissionTo('manage_medical_records')
-            ? Pet::all()
-            : Pet::where('user_id', auth()->id())->get();
+        $pets = Pet::all();
 
         $veterinarians = User::role('Veterinario')->get();
 

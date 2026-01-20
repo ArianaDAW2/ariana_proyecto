@@ -7,15 +7,10 @@ use App\Models\User;
 
 class MedicalRecordPolicy
 {
-    public function viewAny(User $user): bool
-    {
-        return $user->hasPermissionTo('manage_medical_records');
-    }
-
     public function view(User $user, MedicalRecord $record): bool
     {
-        return $user->hasPermissionTo('manage_medical_records')
-            || $record->pet->user_id === $user->id;//Para que el usuario pueda ver el historial médico de su mascota
+        return $user->hasPermissionTo('manage_medical_records');
+
     }
 
     public function create(User $user): bool

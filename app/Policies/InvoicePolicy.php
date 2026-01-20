@@ -7,7 +7,7 @@ use App\Models\User;
 
 class InvoicePolicy
 {
-    public function viewAny(User $user): bool
+    public function view(User $user): bool
     {
         return $user->hasPermissionTo('manage_payments');
     }

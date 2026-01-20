@@ -7,14 +7,9 @@ use App\Models\User;
 
 class PetPolicy
 {
-    public function viewAny(User $user): bool
+    public function view(User $user): bool
     {
         return $user->hasPermissionTo('manage_users');
-    }
-
-    public function view(User $user, Pet $pet): bool
-    {
-        return $pet->user_id === $user->id;//Para que el usuario pueda ver sus pets
     }
 
     public function create(User $user): bool

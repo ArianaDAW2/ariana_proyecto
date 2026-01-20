@@ -14,7 +14,7 @@ class PetsCrud extends Component
 {
     use WithPagination;
     use AuthorizesRequests;
-    
+
     public $petId;
     public $user_id;
     public $name;
@@ -34,34 +34,21 @@ class PetsCrud extends Component
 
     public function render(Request $request)
     {
-        $pet = Pet::findOrFail($this->petId);
-        if (isset($this->petId)) {
-            $pet = Pet::findOrFail($this->petId);
-            $this->authorize('view', $pet);
 
-            return view('livewire.pets-crud', [
-                'pets' => collect([$pet]), // Un solo pet como colección
-                'owners' => User::all(),
+        $this->authorize('view', Pet::class);
+
+        $pets = Pet::with('owner')->paginate(10);
+
+        if ($request->wantsJson()) {
+            return response()->json([
+                'pets' => $pets,
+                'owner' => User::all(),
             ]);
         } else {
-
-            $this->authorize('viewAny', Pet::class);
-
-            $pets = auth()->user()->hasPermissionTo('manage_users')
-                ? Pet::with('owner')->paginate(10)
-                : Pet::with('owner')->where('user_id', auth()->id())->paginate(10);
-
-            if ($request->wantsJson()) {
-                return response()->json([
-                    'pets' => $pets,
-                    'owner' => User::all(),
-                ]);
-            } else {
-                return view('livewire.pets-crud', [
-                    'pets' => $pets,
-                    'owners' => User::all(), // Est o solo sirve paraAdmin
-                ]);
-            }
+            return view('livewire.pets-crud', [
+                'pets' => $pets,
+                'owners' => User::all(), // Est o solo sirve paraAdmin
+            ]);
         }
 
     }
