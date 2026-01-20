@@ -29,7 +29,7 @@ class InvoicesCrud extends Component
         return (new InvoiceRequest())->rules($this->invoiceId);
     }
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', Invoice::class);
 

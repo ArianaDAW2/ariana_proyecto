@@ -5,40 +5,52 @@ namespace App\Http\Controllers\APIControllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MedicalRecordRequest;
 use App\Models\MedicalRecord;
+use App\Models\Pet;
+use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-
 
 class medicalRecordsCrudController extends Controller
 {
     public function index()
     {
+        $this->authorize('view', MedicalRecord::class);
+
+        $records = MedicalRecord::with(['pet', 'veterinarian'])->paginate(10);
+        $pets = Pet::all();
+        $veterinarians = User::role('Veterinario')->get();
+
+        return response()->json([
+            'records' => $records,
+            'pets' => $pets,
+            'veterinarians' => $veterinarians,
+        ]);
 
     }
 
-    public function store(medicalRecordRequest $request)
+    public function store(MedicalRecordRequest $request)
     {
-        $this->authorize('create', medicalRecord::class);
-        $invoice = medicalRecordsCrudController::create($request->validated());
-        return response()->json($invoice, 201);
+        $this->authorize('create', MedicalRecord::class);
+        $record = MedicalRecord::create($request->validated());
+        return response()->json($record, 201);
     }
 
-    public function show(Invoice $invoice)
+    public function show(MedicalRecord $record)
     {
-        $this->authorize('view', $invoice);
-        return response()->json($invoice->load('reservation'));
+        $this->authorize('view', $record);
+        return response()->json($record->load(['pet', 'veterinarian']));
     }
 
-    public function update(InvoiceRequest $request, Invoice $invoice)
+    public function update(MedicalRecordRequest $request, MedicalRecord $record)
     {
-        $this->authorize('update', $invoice);
-        $invoice->update($request->validated());
-        return response()->json($invoice->load('reservation'));
+        $this->authorize('update', $record);
+        $record->update($request->validated());
+        return response()->json($record->load(['pet', 'veterinarian']));
     }
 
-    public function destroy(Invoice $invoice)
+    public function destroy(MedicalRecord $record)
     {
-        $this->authorize('delete', $invoice);
-        $invoice->delete();
+        $this->authorize('delete', $record);
+        $record->delete();
         return response()->json(null, 204);
     }
 }

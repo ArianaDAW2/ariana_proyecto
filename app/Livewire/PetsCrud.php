@@ -34,23 +34,14 @@ class PetsCrud extends Component
 
     public function render(Request $request)
     {
-
         $this->authorize('view', Pet::class);
 
         $pets = Pet::with('owner')->paginate(10);
 
-        if ($request->wantsJson()) {
-            return response()->json([
-                'pets' => $pets,
-                'owner' => User::all(),
-            ]);
-        } else {
-            return view('livewire.pets-crud', [
-                'pets' => $pets,
-                'owners' => User::all(),
-            ]);
-        }
-
+        return view('livewire.pets-crud', [
+            'pets' => $pets,
+            'owners' => User::all(),
+        ]);
     }
 
     public function save()

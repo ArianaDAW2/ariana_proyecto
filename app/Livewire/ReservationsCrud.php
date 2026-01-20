@@ -38,23 +38,14 @@ class ReservationsCrud extends Component
         $this->authorize('view', Reservation::class);
 
         $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
-
         $users = User::all();
-        if ($request->wantsJson()) {
-            return response()->json([
-                'reservations' => $reservations,
-                'users' => $users,
-                'pets' => Pet::all(),
-                'services' => Service::all(),
-            ]);
-        } else {
-            return view('livewire.reservations-crud', [
-                'reservations' => $reservations,
-                'users' => $users,
-                'pets' => Pet::all(),
-                'services' => Service::all(),
-            ]);
-        }
+
+        return view('livewire.reservations-crud', [
+            'reservations' => $reservations,
+            'users' => $users,
+            'pets' => Pet::all(),
+            'services' => Service::all(),
+        ]);
     }
 
     public function save()

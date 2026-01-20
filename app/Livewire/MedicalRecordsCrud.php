@@ -30,29 +30,19 @@ class MedicalRecordsCrud extends Component
         return (new MedicalRecordRequest())->rules($this->recordId);
     }
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', MedicalRecord::class);
 
         $records = MedicalRecord::with(['pet', 'veterinarian'])->paginate(10);
-
         $pets = Pet::all();
-
         $veterinarians = User::role('Veterinario')->get();
 
-        if ($request->wantsJson()) {
-            return response()->json([
-                'records' => $records,
-                'pets' => $pets,
-                'veterinarians' => $veterinarians,
-            ]);
-        } else {
-            return view('livewire.medical-records-crud', [
-                'records' => $records,
-                'pets' => $pets,
-                'veterinarians' => $veterinarians,
-            ]);
-        }
+        return view('livewire.medical-records-crud', [
+            'records' => $records,
+            'pets' => $pets,
+            'veterinarians' => $veterinarians,
+        ]);
     }
 
     public function save()

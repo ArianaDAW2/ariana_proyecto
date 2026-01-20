@@ -29,12 +29,7 @@ class UsersCrud extends Component
     public function render(Request $request)
     {
         $this->authorize('view', User::class);
-
-        if ($request->wantsJson()) {
-            return response()->json([
-                'users' => User::paginate(10),
-            ]);
-        }
+        
         return view('livewire.users-crud', [
             'users' => User::paginate(20),
         ]);

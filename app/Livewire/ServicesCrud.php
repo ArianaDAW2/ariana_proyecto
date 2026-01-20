@@ -31,15 +31,10 @@ class ServicesCrud extends Component
     {
         $this->authorize('view', Service::class);
 
-        if ($request->wantsJson()) {
-            return response()->json([
-                'services' => Service::paginate(10),
-            ]);
-        } else {
-            return view('livewire.services-crud', [
-                'services' => Service::paginate(10),
-            ]);
-        }
+        return view('livewire.services-crud', [
+            'services' => Service::paginate(10),
+        ]);
+
     }
 
     public function save()
