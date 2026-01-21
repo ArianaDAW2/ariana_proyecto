@@ -11,9 +11,20 @@ class usersCrudController extends Controller
 {
     use AuthorizesRequests;
 
+    public function __construct()
+    {
+        $token = request()->bearerToken();
+
+        if ($token) {
+            $accessToken = \Laravel\Sanctum\PersonalAccessToken::findToken($token);
+            if ($accessToken) {
+                auth()->setUser($accessToken->tokenable);
+            }
+        }
+    }
+
     public function index()
     {
-        
         $this->authorize('view', User::class);
         return response()->json([
             'users' => User::paginate(10),

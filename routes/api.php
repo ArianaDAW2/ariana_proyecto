@@ -19,5 +19,5 @@ Route::apiResource('services', servicesCrudController::class);
 Route::apiResource('pets', petsCrudController::class);
 Route::apiResource('users', usersCrudController::class);
 //Sin CRUD
-Route::get('/statuses', [paymentsController::class, 'payment']);
+Route::get('payments', [paymentsController::class, 'payment']);
 

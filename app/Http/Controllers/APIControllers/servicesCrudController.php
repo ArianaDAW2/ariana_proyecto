@@ -11,10 +11,21 @@ class servicesCrudController extends Controller
 {
     use AuthorizesRequests;
 
+    public function __construct()
+    {
+        $token = request()->bearerToken();
+
+        if ($token) {
+            $accessToken = \Laravel\Sanctum\PersonalAccessToken::findToken($token);
+            if ($accessToken) {
+                auth()->setUser($accessToken->tokenable);
+            }
+        }
+    }
+
     public function index()
     {
         $this->authorize('view', Service::class);
-
         return response()->json([
             'services' => Service::paginate(10),
         ]);

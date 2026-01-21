@@ -7,35 +7,36 @@ use App\Models\User;
 
 class MedicalRecordPolicy
 {
-    public function view(User $user): bool
+    public function view(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_medical_records');
+        return $user?->hasPermissionTo('manage_medical_records') ?? false;
 
     }
 
-    public function create(User $user): bool
+    public function create(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_medical_records');
+        return $user?->hasPermissionTo('manage_medical_records') ?? false;
     }
 
-    public function update(User $user, MedicalRecord $record): bool
+    public function update(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_medical_records');
+        return $user?->hasPermissionTo('manage_medical_records') ?? false;
     }
 
-    public function delete(User $user, MedicalRecord $record): bool
+    public function delete(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_medical_records');
+        return $user?->hasPermissionTo('manage_medical_records') ?? false;
     }
 
-//softdeletes SIN HACER
-    public function restore(User $user, MedicalRecord $medicalRecord): bool
-    {
-        return $user->hasPermissionTo('manage_medical_records');
-    }
+    /*softdeletes SIN HACER
+        public function restore(User $user): bool
+        {
+            return $user->hasPermissionTo('manage_medical_records');
+        }
 
-    public function forceDelete(User $user, MedicalRecord $medicalRecord): bool
-    {
-        return $user->hasPermissionTo('manage_medical_records');
-    }
+        public function forceDelete(User $user): bool
+        {
+            return $user->hasPermissionTo('manage_medical_records');
+        }
+    */
 }

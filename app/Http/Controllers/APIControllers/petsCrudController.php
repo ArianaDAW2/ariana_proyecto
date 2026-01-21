@@ -12,13 +12,23 @@ class petsCrudController extends Controller
 {
     use AuthorizesRequests;
 
+    public function __construct()
+    {
+        $token = request()->bearerToken();
+
+        if ($token) {
+            $accessToken = \Laravel\Sanctum\PersonalAccessToken::findToken($token);
+            if ($accessToken) {
+                auth()->setUser($accessToken->tokenable);
+            }
+        }
+    }
+
     public function index()
     {
 
         $this->authorize('view', Pet::class);
-
         $pets = Pet::with('owner')->paginate(10);
-
         return response()->json([
             'pets' => $pets,
             'owner' => User::all(),

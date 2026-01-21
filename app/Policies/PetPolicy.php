@@ -7,34 +7,35 @@ use App\Models\User;
 
 class PetPolicy
 {
-    public function view(User $user): bool
+    public function view(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function create(User $user): bool
+    public function create(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function update(User $user, Pet $pet): bool
+    public function update(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function delete(User $user, Pet $pet): bool
+    public function delete(User $user): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-//softdeletes SIN HACER
-    public function restore(User $user, Pet $pet): bool
-    {
-        return $user->hasPermissionTo('manage_users');
-    }
+    /*softdeletes SIN HACER
+        public function restore(User $user, Pet $pet): bool
+        {
+            return $user->hasPermissionTo('manage_users');
+        }
 
-    public function forceDelete(User $user, Pet $pet): bool
-    {
-        return $user->hasPermissionTo('manage_users');
-    }
+        public function forceDelete(User $user, Pet $pet): bool
+        {
+            return $user->hasPermissionTo('manage_users');
+        }
+    */
 }

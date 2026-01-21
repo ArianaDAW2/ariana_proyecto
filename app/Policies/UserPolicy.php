@@ -6,35 +6,36 @@ use App\Models\User;
 
 class UserPolicy
 {
-    public function view(User $user): bool
+    public function view(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_users');
-    }
-    
-    public function create(User $user): bool
-    {
-        return $user->hasPermissionTo('manage_users');
+
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function update(User $user, User $model): bool
+    public function create(?User $user): bool
     {
-        return $user->hasPermissionTo('manage_users')
-            || $user->id === $model->id;
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function delete(User $user, User $model): bool
+    public function update(?User $user, User $model): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-//Softdeletes Sin terminar
-    public function restore(User $user, User $model): bool
+    public function delete(?User $user, User $model): bool
     {
-        return $user->hasPermissionTo('manage_users');
+        return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    public function forceDelete(User $user, User $model): bool
-    {
-        return $user->hasPermissionTo('manage_users');
-    }
+    /*Softdeletes Sin terminar
+        public function restore(User $user, User $model): bool
+        {
+            return $user->hasPermissionTo('manage_users');
+        }
+
+        public function forceDelete(User $user, User $model): bool
+        {
+            return $user->hasPermissionTo('manage_users');
+        }
+    */
 }
