@@ -18,7 +18,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'name' => 'Alojamiento Deluxe',
-                'description' => 'Habitación amplia con aire acondicionado y webcam.',
+                'description' => 'Añadido: webcam, comida húmeda y juegos constantes.',
                 'base_price' => 35.00,
                 'is_active' => true,
             ],
@@ -30,15 +30,33 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'name' => 'Consulta Veterinaria',
-                'description' => 'Revisión general de salud.',
+                'description' => 'Revisión general y aviso de pagos extra por llamada.',
                 'base_price' => 30.00,
                 'is_active' => true,
             ],
             [
                 'name' => 'Adiestramiento Básico',
-                'description' => 'Sesión de obediencia básica.',
+                'description' => 'Sesión de obediencia básica y juegos.',
                 'base_price' => 40.00,
                 'is_active' => true,
+            ],
+            [
+                'name' => 'Cirujía',
+                'description' => 'Mayoría de operaciones.',
+                'base_price' => 500.00,
+                'is_active' => false,
+            ],
+            [
+                'name' => 'Dentista',
+                'description' => 'Tratamiento dental y limpieza',
+                'base_price' => 50.00,
+                'is_active' => false,
+            ],
+            [
+                'name' => 'Animales exóticos',
+                'description' => 'Atención especial por especie',
+                'base_price' => 100.00,
+                'is_active' => false,
             ],
         ];
 

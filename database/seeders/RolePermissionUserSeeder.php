@@ -96,6 +96,16 @@ class RolePermissionUserSeeder extends Seeder
                 ]);
             }
         }
+        for ($i = 1; $i <= 5; $i++) {
+            $client = User::firstOrCreate(
+                ['email' => "cliente{$i}@mail.es"],
+                [
+                    'name' => "cliente{$i}",
+                    'password' => Hash::make('12345678'),
+                ]
+            );
+            $client->assignRole('Cliente');
+        }
 
     }
 }

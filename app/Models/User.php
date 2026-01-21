@@ -37,6 +37,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+
     protected function casts(): array
     {
         return [
@@ -45,22 +46,5 @@ class User extends Authenticatable
         ];
     }
 
-// En App\Models\User
-    public function scopeWithUnpaidInvoices($query)
-    {
-        return $query->whereHas('reservations.invoice', function ($q) {
-            $q->where('status', 'unpaid');
-        })->with(['reservations.invoice' => function ($q) {
-            $q->where('status', 'unpaid');
-        }]);
-    }
-
-// Necesitas agregar la relación en User
-    public function reservations()
-    {
-        return $this->hasMany(Reservation::class);
-    }
-
-// Uso
-//User::withUnpaidInvoices()->get();
+//scopes
 }

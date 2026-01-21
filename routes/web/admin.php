@@ -2,6 +2,7 @@
 
 use App\Livewire\PetsCrud;
 use App\Livewire\ReservationsCrud;
+use App\Livewire\ServicesCrud;
 use App\Livewire\UsersCrud;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\MedicalRecordsCrud;
@@ -12,6 +13,8 @@ use App\Http\Controllers\adminController;
 
 Route::get('/users', UsersCrud::class)
     ->name('users-admin');
+Route::get('/services', ServicesCrud::class)
+    ->name('services');
 Route::get('/reservations-admin', ReservationsCrud::class)
     ->name('reservations-admin');
 Route::get('/medical-records', MedicalRecordsCrud::class)

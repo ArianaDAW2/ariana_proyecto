@@ -35,6 +35,7 @@ class ServicesCrud extends Component
             'services' => Service::paginate(10),
         ]);
 
+
     }
 
     public function save()

@@ -53,13 +53,10 @@ class ReservationsCrud extends Component
         $this->authorize('create', Reservation::class);
 
         $validated = $this->validate();
-
         $reservation = Reservation::create($validated);
-
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
-
         $this->resetForm();
     }
 

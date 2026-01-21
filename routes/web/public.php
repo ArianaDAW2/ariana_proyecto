@@ -1,13 +1,11 @@
 <?php
 
-use App\Livewire\Counter;
-use App\Livewire\ServicesCrud;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 
 Route::get('/', [PublicController::class, 'home'])
     ->name('home');
-Route::get('/services', ServicesCrud::class)
+Route::get('/services', [PublicController::class, 'services'])
     ->name('services');
 Route::get('/vets', [PublicController::class, 'vets'])
     ->name('vets');

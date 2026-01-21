@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -30,8 +29,10 @@ class UsersCrud extends Component
     {
         $this->authorize('view', User::class);
 
+        $usersWithUnpaid = User::withUnpaidInvoices()->pluck('id')->toArray();
         return view('livewire.users-crud', [
             'users' => User::paginate(20),
+            'usersWithUnpaid' => $usersWithUnpaid,
         ]);
     }
 

@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Reservation;
+use App\Models\Service;
+use App\Models\User;
+
 class DashboardController extends Controller
 {
-    public function __invoke()
+    public function dashboard()
     {
         return view('dashboard');
     }
+    
 }

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
+
 class PublicController extends Controller
 {
     public function home()
@@ -11,7 +13,9 @@ class PublicController extends Controller
 
     public function services()
     {
-        return view('public.services');
+        return view('public.services', [
+            'services' => Service::active()->paginate(10)
+        ]);
     }
 
     public function vets()
