@@ -27,7 +27,7 @@ class ServicesCrud extends Component
         return (new ServiceRequest())->rules($this->serviceId);
     }
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', Service::class);
 

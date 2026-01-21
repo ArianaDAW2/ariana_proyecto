@@ -20,22 +20,12 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'name',
         'email',
         'password',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
@@ -43,20 +33,10 @@ class User extends Authenticatable
         'two_factor_secret',
     ];
 
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array<int, string>
-     */
     protected $appends = [
         'profile_photo_url',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
@@ -65,4 +45,22 @@ class User extends Authenticatable
         ];
     }
 
+// En App\Models\User
+    public function scopeWithUnpaidInvoices($query)
+    {
+        return $query->whereHas('reservations.invoice', function ($q) {
+            $q->where('status', 'unpaid');
+        })->with(['reservations.invoice' => function ($q) {
+            $q->where('status', 'unpaid');
+        }]);
+    }
+
+// Necesitas agregar la relación en User
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
+
+// Uso
+//User::withUnpaidInvoices()->get();
 }

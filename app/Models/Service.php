@@ -13,9 +13,11 @@ class Service extends Model
         'is_active'
     ];
 
+    //Relaciones
     public function reservations(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Reservation::class)
+            ->using(ReservationService::class)
             ->withPivot(
                 'price',
                 'duration',
@@ -23,4 +25,13 @@ class Service extends Model
             )
             ->withTimestamps();
     }
+
+    //Scopes
+    public function scopeActive($query)
+    {
+        return $query->where('is_active', true);
+    }
+
+// Service::active()->get();
+
 }

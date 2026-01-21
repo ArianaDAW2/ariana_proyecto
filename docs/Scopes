@@ -1,0 +1,10 @@
+// Simples
+Service::active()->get();
+Reservation::status('pending')->get();
+
+// Complejos
+Reservation::overlapping('2026-02-01', '2026-02-10')->get();
+Pet::withRecentMedicalHistory(7)->get();
+User::withUnpaidInvoices()->get();
+Invoice::overdue(30)->withTotalPaid()->get();
+Reservation::completedBetween('2026-01-01', '2026-01-31')->withRevenueStats()->first();
