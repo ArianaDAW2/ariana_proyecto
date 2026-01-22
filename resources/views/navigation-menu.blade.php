@@ -15,7 +15,7 @@
                     <x-nav-link href="{{ route('client.dashboard') }}">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('admin.services') }}">
+                    <x-nav-link href="{{ route('services') }}">
                         {{ __('Servicios') }}
                     </x-nav-link>
                     @can('access_worker')

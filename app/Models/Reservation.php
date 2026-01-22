@@ -45,6 +45,12 @@ class Reservation extends Model
     {
         return $this->hasOne(Invoice::class);
     }
-    //Scopes
 
+    //Scopes
+    public function scopeForUser($query)
+    {
+        $query->where('user_id', auth()->id())
+            ->orderBy('start_date', 'asc');
+        return $query;
+    }
 }

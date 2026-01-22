@@ -19,8 +19,8 @@
                     <label class="m-[5px]">Mensaje</label><br>
                     <textarea class="m-[5px] h-[50px] w-[25em] border-2 p-[5px]" placeholder="Tu mensaje"></textarea>
                 </div>
-                <button
-                    class="bg-blue-500 text-white p-[5px] px-[20px] m-[20px] mb-[0px] rounded-[5px] h-[40px] w-[100px]">
+                <button type="submit"
+                        class="bg-blue-500 text-white p-[5px] px-[20px] m-[20px] mb-[0px] rounded-[5px] h-[40px] w-[100px]">
                     Enviar
                 </button>
             </form>
