@@ -29,10 +29,8 @@ class UsersCrud extends Component
     {
         $this->authorize('view', User::class);
 
-        $usersWithUnpaid = User::withUnpaidInvoices()->pluck('id')->toArray();
         return view('livewire.users-crud', [
-            'users' => User::paginate(20),
-            'usersWithUnpaid' => $usersWithUnpaid,
+            'users' => User::paginate(20)
         ]);
     }
 

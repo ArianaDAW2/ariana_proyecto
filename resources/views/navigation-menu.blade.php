@@ -18,7 +18,7 @@
                     <x-nav-link href="{{ route('admin.services') }}">
                         {{ __('Servicios') }}
                     </x-nav-link>
-                    @can('manage_users')
+                    @can('access_worker')
                         <x-nav-link href="{{ route('admin.panel-admin') }}">
                             {{ __('Panel de control') }}
                         </x-nav-link>

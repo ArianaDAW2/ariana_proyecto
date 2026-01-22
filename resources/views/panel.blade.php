@@ -33,7 +33,7 @@
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Users</h2>
                             <p class="text-gray-500">Manage all registered users.</p>
-                            <a href="{{ route('admin.users-admin') }}"
+                            <a href="{{ route('admin.users') }}"
                                class="text-blue-500 hover:underline mt-2 block">Go to Users</a>
                         </div>
                     @endcan
@@ -41,7 +41,7 @@
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Pets</h2>
                             <p class="text-gray-500">View and manage pets.</p>
-                            <a href="{{route('admin.pets-admin')}}" class="text-blue-500 hover:underline mt-2 block">Go
+                            <a href="{{route('admin.pets')}}" class="text-blue-500 hover:underline mt-2 block">Go
                                 to Pets</a>
                         </div>
                     @endcan
@@ -49,7 +49,7 @@
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Reservations</h2>
                             <p class="text-gray-500">Manage reservations for pets.</p>
-                            <a href="{{route('admin.pets-admin')}}"
+                            <a href="{{route('admin.reservations')}}"
                                class="text-blue-500 hover:underline mt-2 block">Go
                                 to Reservations</a>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Services</h2>
                             <p class="text-gray-500">Manage the services offered.</p>
-                            <a href="{{route('services')}}"
+                            <a href="{{route('admin.services')}}"
                                class="text-blue-500 hover:underline mt-2 block">Go to Services</a>
                         </div>
                     @endcan
@@ -74,7 +74,7 @@
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
                             <h2 class="font-semibold text-lg">Invoices</h2>
                             <p class="text-gray-500">View and manage invoices.</p>
-                            <a href="{{ route('admin.invoices-admin') }}"
+                            <a href="{{ route('admin.invoices') }}"
                                class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
                         </div>
                     @endcan

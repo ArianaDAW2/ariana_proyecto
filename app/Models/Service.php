@@ -32,6 +32,11 @@ class Service extends Model
         return $query->where('is_active', true);
     }
 
+    public function scopeInActive($query)
+    {
+        return $query->where('is_active', false);
+    }
+
 // Service::active()->get();
 
 }

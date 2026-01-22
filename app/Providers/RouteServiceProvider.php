@@ -22,6 +22,8 @@ class RouteServiceProvider extends ServiceProvider
 
         // Web pública
         Route::middleware('web')
+            ->prefix('public')
+            ->name('public.')
             ->group(base_path('routes/web/public.php'));
 
         // Web privada !-> Redirige al login
