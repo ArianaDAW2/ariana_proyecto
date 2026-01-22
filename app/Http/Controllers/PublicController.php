@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
@@ -27,17 +28,21 @@ class PublicController extends Controller
         return view('public.gallery');
     }
 
-    public function services()
+    public function services(Request $request)
     {
-        return view('public.services', [
-            'services' => Service::Active()->paginate(10),
-        ]);
+        if ($request->status == 'inactive') {
+            return view('public.services', [
+                'services' => Service::InActive()->paginate(10),
+                'request' => $request,
+            ]);
+        } else {
+
+            return view('public.services', [
+                'services' => Service::Active()->paginate(10),
+                'request' => $request,
+
+            ]);
+        }
     }
 
-    public function NotServices()
-    {
-        return view('public.NotServices', [
-            'services' => Service::InActive()->paginate(10),
-        ]);
-    }
 }

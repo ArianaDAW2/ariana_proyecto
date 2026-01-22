@@ -37,7 +37,7 @@
 @include('layouts.nav')
 
 {{-- Main Content --}}
-<main class="md:px-[110px] px-[10px] py-10">
+<main class="md:px-[110px] px-[10px] ">
     @yield('content-1')
     {{ $slot }}
     <div class="my-10 text-center">

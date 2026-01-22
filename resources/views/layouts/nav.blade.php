@@ -13,22 +13,21 @@
             </li>
             <li class="bg-orange-600 group"><a href="<?= route('services') ?>">SERVICIOS</a>
                 <ul class="bg-black border-2 border-orange-600 absolute left-[-9999px] md:group-hover:left-auto not-md:w-112">
-                    <li><a href="<?= route('services') ?>">MEDICINA INTERNA</a></li>
-                    <li><a href="<?= route('services') ?>">CIRUGÍA</a></li>
-                    <li><a href="<?= route('services') ?>">ODONTOLOGÍA Y CIRUGÍA ORAL</a></li>
-                    <li><a href="<?= route('services') ?>">DIAGNÓSTICO POR IMAGEN</a></li>
-                    <li><a href="<?= route('services') ?>">HOSPITALIZACIÓN</a></li>
+                    <li><a href="#">ALOJAMIENTO</a></li>
+                    <li><a href="#">JUEGOS</a></li>
+                    <li><a href="#">PELUQUERÍA</a></li>
+                    <li><a href="#">CONSULTA</a></li>
+                    <li><a href="#">ADIESTRAMIENTO</a></li>
                 </ul>
             </li>
             <li class="bg-red-600 group">
-                <a href="<?= route('NotServices') ?>">Servicios por llegar</a>
+                <a href="<?= route('services','status=inactive ') ?>">Servicios por llegar</a>
                 <ul class="bg-black border-2 border-red-600 absolute left-[-9999px] md:group-hover:left-auto not-md:w-112">
-                    <li><a href="#">CONSULTA A DOMICILIO</a></li>
+                    <li><a href="#">CIRUJÍA</a></li>
+                    <li><a href="#">SESIÓN DE FOTOS</a></li>
+                    <li><a href="#">AROMATERAPIA</a></li>
                     <li><a href="#">URGENCIAS 24H</a></li>
-                    <li><a href="#">ATENCION ANIMAL EXTRAJERO</a></li>
-                    <li><a href="#">CONSULTA ONLINE</a></li>
-                    <li><a href="#">DOG&amp;CAT HOTEL</a></li>
-                    <li><a href="#">PELUQUERÍA Y SPA</a></li>
+                    <li><a href="#">DENTISTA</a></li>
                 </ul>
             </li>
             <li><a href="<?= route('contact') ?>">CONTACTO</a></li>

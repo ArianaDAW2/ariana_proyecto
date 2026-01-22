@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('main', [DashboardController::class, 'dashboard'])
     ->name('dashboard');
-Route::get('main', [DashboardController::class, 'dashboard'])
-    ->name('dashboard');
+Route::get('main', [DashboardController::class, 'my_reservations'])
+    ->name('my_reservations');
 Route::get('main', [DashboardController::class, 'dashboard'])
     ->name('dashboard');
 Route::get('main', [DashboardController::class, 'dashboard'])

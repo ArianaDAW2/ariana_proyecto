@@ -34,8 +34,6 @@ class ServicesCrud extends Component
         return view('livewire.services-crud', [
             'services' => Service::paginate(10),
         ]);
-
-
     }
 
     public function save()
@@ -43,9 +41,7 @@ class ServicesCrud extends Component
         $this->authorize('create', Service::class);
 
         $validated = $this->validate();
-
         Service::create($validated);
-
         $this->resetForm();
     }
 
@@ -67,9 +63,7 @@ class ServicesCrud extends Component
         $this->authorize('update', $service);
 
         $validated = $this->validate();
-
         $service->update($validated);
-
         $this->resetForm();
     }
 

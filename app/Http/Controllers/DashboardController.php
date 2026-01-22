@@ -12,5 +12,10 @@ class DashboardController extends Controller
     {
         return view('dashboard');
     }
-    
+
+    public function my_reservations()
+    {
+        return view('client.my_reservations');
+    }
+
 }
