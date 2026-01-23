@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Session;
 class LanguageSwitcher extends Component
 {
     public $locale;
+    public $availableLocales = [
+        'es' => '🇪🇸 Español',
+        'en' => '🇬🇧 English',
+        // 'fr' => '🇫🇷 Français',
+        // 'de' => '🇩🇪 Deutsch',
+    ];
 
     public function mount()
     {
@@ -17,16 +23,12 @@ class LanguageSwitcher extends Component
 
     public function switchLanguage($lang)
     {
-        if ($lang == 'es') {
-            Session::forget('locale');
-            App::setLocale('es');
-        } else {
-            Session::put('locale', $lang);
-            App::setLocale($lang);
-        }
+        Session::put('locale', $lang);
+        App::setLocale($lang);
         $this->locale = $lang;
 
         return $this->redirect(request()->header('Referer'), navigate: true);
+
     }
 
     public function render()
