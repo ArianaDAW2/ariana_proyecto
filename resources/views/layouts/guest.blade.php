@@ -22,12 +22,15 @@
 @if (Route::has('login'))
     <div class="fixed top-0 right-0 px-6 py-4 sm:block">
         @auth
-            <a href="{{ route('client.dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+            <a href="{{ route('client.dashboard') }}"
+               class="text-sm text-gray-700 dark:text-gray-500 underline">{{ __('public.dashboard') }}</a>
         @else
-            <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+            <a href="{{ route('login') }}"
+               class="text-sm text-gray-700 dark:text-gray-500 underline">{{ __('public.login') }}</a>
 
             @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                <a href="{{ route('register') }}"
+                   class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">{{ __('public.register') }}</a>
             @endif
         @endauth
     </div>
@@ -43,7 +46,7 @@
     <div class="my-10 text-center">
         <a href="{{ route('client.dashboard') }}"
            class="bg-indigo-600 p-5 rounded-lg font-bold text-white hover:bg-indigo-700 transition">
-            Pide tu cita
+            {{ __('public.book_appointment') }}
         </a>
     </div>
 

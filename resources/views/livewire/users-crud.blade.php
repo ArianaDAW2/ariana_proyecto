@@ -2,17 +2,17 @@
     {{-- FORMULARIO --}}
     @can('create', App\Models\User::class)
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
-            <input type="text" wire:model="name" placeholder="Nombre">
+            <input type="text" wire:model="name" placeholder="{{ __('private.name') }}">
             @error('name') <span>{{ $message }}</span> @enderror
 
-            <input type="email" wire:model="email" placeholder="Email">
+            <input type="email" wire:model="email" placeholder="{{ __('private.email') }}">
             @error('email') <span>{{ $message }}</span> @enderror
 
-            <input type="password" wire:model="password" placeholder="Contraseña">
+            <input type="password" wire:model="password" placeholder="{{ __('private.password') }}">
             @error('password') <span>{{ $message }}</span> @enderror
 
             <button type="submit">
-                {{ $isEdit ? 'Actualizar' : 'Crear' }}
+                {{ $isEdit ? __('private.update') : __('private.create') }}
             </button>
         </form>
     @endcan
@@ -23,9 +23,9 @@
     <table>
         <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Acciones</th>
+            <th>{{ __('private.name') }}</th>
+            <th>{{ __('private.email') }}</th>
+            <th>{{ __('private.actions') }}</th>
         </tr>
         </thead>
         <tbody>
@@ -35,11 +35,11 @@
                 <td>{{ $user->email }}</td>
                 <td>
                     @can('update', $user)
-                        <button wire:click="edit({{ $user->id }})">Editar</button>
+                        <button wire:click="edit({{ $user->id }})">{{ __('private.edit') }}</button>
                     @endcan
 
                     @can('delete', $user)
-                        <button wire:click="delete({{ $user->id }})">Eliminar</button>
+                        <button wire:click="delete({{ $user->id }})">{{ __('private.delete') }}</button>
                     @endcan
                 </td>
             </tr>
@@ -49,4 +49,3 @@
 
     {{ $users->links() }}
 </div>
-

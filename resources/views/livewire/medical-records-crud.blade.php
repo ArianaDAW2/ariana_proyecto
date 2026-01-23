@@ -3,17 +3,17 @@
     @can('create', App\Models\MedicalRecord::class)
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model="pet_id">
-                <option value="">Mascota</option>
+                <option value="">{{ __('private.pet') }}</option>
                 @foreach($pets as $pet)
                     <option value="{{ $pet->id }}">
-                        {{ $pet->name ?? 'Mascota #' . $pet->id }}
+                        {{ $pet->name ?? __('private.pet') . ' #' . $pet->id }}
                     </option>
                 @endforeach
             </select>
             @error('pet_id') <span>{{ $message }}</span> @enderror
 
             <select wire:model="veterinarian_id">
-                <option value="">Veterinario</option>
+                <option value="">{{ __('private.veterinarian') }}</option>
                 @foreach($veterinarians as $vet)
                     <option value="{{ $vet->id }}">
                         {{ $vet->name }}
@@ -22,17 +22,17 @@
             </select>
             @error('veterinarian_id') <span>{{ $message }}</span> @enderror
 
-            <textarea wire:model="diagnosis" placeholder="Diagnóstico"></textarea>
+            <textarea wire:model="diagnosis" placeholder="{{ __('private.diagnosis') }}"></textarea>
             @error('diagnosis') <span>{{ $message }}</span> @enderror
 
-            <textarea wire:model="treatment" placeholder="Tratamiento"></textarea>
+            <textarea wire:model="treatment" placeholder="{{ __('private.treatment') }}"></textarea>
             @error('treatment') <span>{{ $message }}</span> @enderror
 
-            <textarea wire:model="notes" placeholder="Notas"></textarea>
+            <textarea wire:model="notes" placeholder="{{ __('private.notes') }}"></textarea>
             @error('notes') <span>{{ $message }}</span> @enderror
 
             <button type="submit">
-                {{ $isEdit ? 'Actualizar' : 'Crear historial' }}
+                {{ $isEdit ? __('private.update') : __('private.create_record') }}
             </button>
         </form>
     @endcan
@@ -43,10 +43,10 @@
     <table>
         <thead>
         <tr>
-            <th>Mascota</th>
-            <th>Veterinario</th>
-            <th>Diagnóstico</th>
-            <th>Acciones</th>
+            <th>{{ __('private.pet') }}</th>
+            <th>{{ __('private.veterinarian') }}</th>
+            <th>{{ __('private.diagnosis') }}</th>
+            <th>{{ __('private.actions') }}</th>
         </tr>
         </thead>
 
@@ -59,13 +59,13 @@
                 <td>
                     @can('update', $record)
                         <button wire:click="edit({{ $record->id }})">
-                            Editar
+                            {{ __('private.edit') }}
                         </button>
                     @endcan
 
                     @can('delete', $record)
                         <button wire:click="delete({{ $record->id }})">
-                            Eliminar
+                            {{ __('private.delete') }}
                         </button>
                     @endcan
                 </td>
