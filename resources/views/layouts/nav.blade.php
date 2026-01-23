@@ -31,22 +31,7 @@
                 </ul>
             </li>
             <li><a href="<?= route('contact') ?>">CONTACTO</a></li>
-            <li class="border-2 border-red-600 group relative">
-                <p>
-                    <a href="/">🇪🇸</a>
-                    <a href="/">🇩🇪</a>
-                    <a href="/">🇫🇷</a>
-                    <a href="/">🇺🇸</a>
-                    <a href="/">🇮🇹</a>
-                </p>
-                <ul class="bg-black border-2 border-red-600 absolute left-[-9999px] md:group-hover:left-auto md:group-hover:right-[0%] w-36 not-md:w-111 not-md:block not-md:left-auto">
-                    <li><a href="/">🇪🇸 Español</a></li>
-                    <li><a href="/">🇩🇪 Deutsch</a></li>
-                    <li><a href="/">🇫🇷 Français</a></li>
-                    <li><a href="/">🇺🇸 English</a></li>
-                    <li><a href="/">🇮🇹 Italiano</a></li>
-                </ul>
-            </li>
+            <livewire:language-switcher/>
         </ul>
     </nav>
 </header>
