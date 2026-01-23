@@ -6,15 +6,15 @@
         </a>
     </div>
     <div class="my-10 text-center">
-        <a href="{{ route('client.dashboard') }}"
+        <a href="{{ route('client.top_buyers') }}"
            class="bg-indigo-600 p-5 rounded-lg font-bold text-white hover:bg-indigo-700 transition">
-            Pide tu cita
+            Top Clientes
         </a>
     </div>
     <div class="my-10 text-center">
-        <a href="{{ route('client.dashboard') }}"
+        <a href="{{ route('client.top_services') }}"
            class="bg-indigo-600 p-5 rounded-lg font-bold text-white hover:bg-indigo-700 transition">
-            Pide tu cita
+            Top Servicios
         </a>
     </div>
     <div class="my-10 text-center">

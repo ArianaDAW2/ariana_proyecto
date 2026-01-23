@@ -46,5 +46,24 @@ class User extends Authenticatable
         ];
     }
 
+    //Relaciones
+    public function pets(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->HasMany(Pet::class, 'user_id');
+    }
+
+    public function reservations(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->HasMany(Reservation::class, 'user_id');
+    }
+
 //scopes
+//Usuarios premium
+    public function scopeTopBuyers($query)
+    {
+        return $query->role('Cliente')
+            ->with('pets')
+            ->withSum('reservations', 'total_price')
+            ->orderByDesc('reservations_sum_total_price');
+    }
 }

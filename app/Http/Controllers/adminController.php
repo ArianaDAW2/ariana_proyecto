@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Invoice;
+use App\Models\Payment;
+
 class adminController extends Controller
+
 {
     public function panel()
     {
@@ -38,6 +42,21 @@ class adminController extends Controller
     {
         return view('admin.users');
     }
+
+    public function payments()
+    {
+        return view('admin.payments', [
+            'payments' => Payment::select(
+                'id',
+                'amount',
+                'payment_method',
+                'paid_at'
+            )->get()
+        ]);
+    }
+
+    public $minWeight = 0;
+    public $maxWeight = 200;
 
 
 }

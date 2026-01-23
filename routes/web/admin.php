@@ -19,4 +19,6 @@ Route::get('/invoices', [adminController::class, 'invoices'])
     ->name('invoices');
 Route::get('/control-panel', [adminController::class, 'panel'])
     ->name('panel-admin');
+Route::get('/payments', [adminController::class, 'payments'])
+    ->name('payments');
 

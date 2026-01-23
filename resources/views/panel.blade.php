@@ -12,13 +12,14 @@
             <nav class="space-y-2">
                 <h3 class="text-gray-500 uppercase text-xs font-semibold mb-2">Admin Panel</h3>
 
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Users</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Pets</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Reservations</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Medical Records</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Services</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Invoices</a>
-                <a href="#" class="block px-4 py-2 rounded hover:bg-gray-200">Payments</a>
+                <a href="{{ route('admin.users') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Users</a>
+                <a href="{{ route('admin.pets') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Pets</a>
+                <a href="{{ route('admin.reservations') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Reservations</a>
+                <a href="{{ route('admin.medical-records') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Medical
+                    Records</a>
+                <a href="{{ route('admin.services') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Services</a>
+                <a href="{{ route('admin.invoices') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Invoices</a>
+                <a href="{{ route('admin.payments') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Payments</a>
             </nav>
         </aside>
 

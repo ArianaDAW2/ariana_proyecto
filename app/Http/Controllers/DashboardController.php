@@ -27,4 +27,17 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function top_buyers()
+    {
+        return view('client.top_buyers', [
+            'users' => User::topBuyers()->paginate(20)
+        ]);
+    }
+
+    public function top_services()
+    {
+        return view('client.top_services', [
+            'services' => Service::topServices()->paginate(10)
+        ]);
+    }
 }

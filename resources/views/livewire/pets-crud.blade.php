@@ -69,6 +69,29 @@
         @endforeach
         </tbody>
     </table>
+    <div class="mb-4 flex gap-4">
+        <select wire:model.live="filterSpecies" class="rounded border-gray-300">
+            <option value="">Todas las especies</option>
+            @foreach($speciesList as $species)
+                <option value="{{ $species }}">{{ $species }}</option>
+            @endforeach
+        </select>
 
+        <label class="flex items-center gap-2">
+            <input type="checkbox" wire:model.live="sortByName" class="rounded">
+            Ordenar alfabéticamente por mascota
+        </label>
+    </div>
+    <div class="mb-4 flex gap-4 items-center">
+        <div class="flex items-center gap-2">
+            <label>Peso mínimo: {{ $minWeight }}kg</label>
+            <input type="range" wire:model.live="minWeight" min="0" max="100" step="1" class="w-32">
+        </div>
+
+        <div class="flex items-center gap-2">
+            <label>Peso máximo: {{ $maxWeight }}kg</label>
+            <input type="range" wire:model.live="maxWeight" min="0" max="100" step="1" class="w-32">
+        </div>
+    </div>
     {{ $pets->links() }}
 </div>

@@ -30,7 +30,7 @@ class ReservationSeeder extends Seeder
             ]);
 
             // Asignar servicios aleatorios
-            $randomServices = $services->random(rand(1, 2));
+            $randomServices = $services->random(rand(1, 4));
             $totalPrice = 0;
 
             foreach ($randomServices as $service) {

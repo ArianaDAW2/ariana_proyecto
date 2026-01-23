@@ -26,6 +26,13 @@ class PetsCrud extends Component
 
     public $isEdit = false;
 
+    //scope
+    public $filterSpecies = '';
+    public $sortByName = false;
+
+    public $minWeight = 0;
+    public $maxWeight = 200;
+
     protected function rules()
     {
         return (new PetRequest())->rules($this->petId);
@@ -36,11 +43,15 @@ class PetsCrud extends Component
     {
         $this->authorize('view', Pet::class);
 
-        $pets = Pet::with('owner')->paginate(10);
+        $pets = Pet::with('owner')
+            ->filter($this->filterSpecies, $this->sortByName)
+            ->byWeight($this->minWeight, $this->maxWeight)
+            ->paginate(10);
 
         return view('livewire.pets-crud', [
             'pets' => $pets,
             'owners' => User::all(),
+            'speciesList' => Pet::distinct()->pluck('species'),
         ]);
     }
 

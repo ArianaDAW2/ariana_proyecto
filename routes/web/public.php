@@ -7,8 +7,6 @@ Route::get('/', [PublicController::class, 'home'])
     ->name('home');
 Route::get('/services', [PublicController::class, 'services'])
     ->name('services');
-Route::get('/coming-services', [PublicController::class, 'NotServices'])
-    ->name('NotServices');
 Route::get('/vets', [PublicController::class, 'vets'])
     ->name('vets');
 Route::get('/gallery', [PublicController::class, 'gallery'])

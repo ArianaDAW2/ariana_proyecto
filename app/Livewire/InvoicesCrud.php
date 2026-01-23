@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use App\Models\Invoice;
 use App\Models\Reservation;
-use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;

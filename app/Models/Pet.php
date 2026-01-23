@@ -28,18 +28,27 @@ class Pet extends Model
         return $this->hasMany(MedicalRecord::class);
     }
     //Scopes
-    // En App\Models\Pet
-    public function scopeWithRecentMedicalHistory($query, int $days = 30)
+    //filtrar por especie y nombre de mascota ordenando estos
+    public function scopeFilter($query, $species = null, $sortByName = false)
     {
-        return $query->whereHas('medicalRecords', function ($q) use ($days) {
-            $q->where('created_at', '>=', now()->subDays($days));
-        })->with(['medicalRecords' => function ($q) use ($days) {
-            $q->where('created_at', '>=', now()->subDays($days))
-                ->latest();
-        }]);
+        if ($species != null) {
+            $query->where('species', $species);
+        }
+        if ($sortByName == true) {
+            $query->orderBy('name');
+        }
+        return $query;
     }
 
-// Uso
-//Pet::withRecentMedicalHistory()->get();       // últimos 30 días
-//Pet::withRecentMedicalHistory(7)->get();      // última semana
+    //Filtra mascotas por rango de peso
+    public function scopeByWeight($query, $minWeight = null, $maxWeight = null)
+    {
+        if ($minWeight != null) {
+            $query->where('weight', '>=', $minWeight);
+        }
+        if ($maxWeight != null) {
+            $query->where('weight', '<=', $maxWeight);
+        }
+        return $query;
+    }
 }

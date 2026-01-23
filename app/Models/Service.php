@@ -37,6 +37,9 @@ class Service extends Model
         return $query->where('is_active', false);
     }
 
-// Service::active()->get();
-
+    public function scopeTopServices($query)
+    {
+        return $query->active()->withCount('reservations')
+            ->orderByDesc('reservations_count');
+    }
 }

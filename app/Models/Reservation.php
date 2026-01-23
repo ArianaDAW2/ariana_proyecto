@@ -47,6 +47,7 @@ class Reservation extends Model
     }
 
     //Scopes
+    //Muestra las reservas de un usuario for fecha reciente
     public function scopeForUser($query)
     {
         $query->where('user_id', auth()->id())
