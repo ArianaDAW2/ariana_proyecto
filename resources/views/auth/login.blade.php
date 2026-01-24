@@ -11,7 +11,6 @@
             {{ $value }}
         </div>
         @endsession
-
         <form method="POST" action="{{ route('login') }}">
             @csrf
 

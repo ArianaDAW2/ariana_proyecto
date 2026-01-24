@@ -9,6 +9,5 @@ Route::get('/services', [PublicController::class, 'services'])
     ->name('services');
 Route::get('/gallery', [PublicController::class, 'gallery'])
     ->name('gallery');
-Route::get('/contact', [PublicController::class, 'contact'])
-    ->name('contact');
+
 

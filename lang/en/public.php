@@ -35,7 +35,7 @@ return [
     'contact' => 'CONTACT',
     'email' => 'Email',
     'message' => 'Message',
-    'your_name' => 'Your name',
+    'your_title' => 'Title',
     'your_email' => 'Your email',
     'your_message' => 'Your message',
     'send' => 'Send',
@@ -64,5 +64,8 @@ return [
     'aromatherapy' => 'AROMATHERAPY',
     'emergency_24h' => '24H EMERGENCY',
     'dentist' => 'DENTIST',
+    //emails
+    'title' => 'Title',
+    'message_sent' => 'Message sent successfully.',
 
 ];

@@ -6,7 +6,7 @@
             class=" hidden md:grid md:grid-cols-7 md:gap-2 items-center">
             <li><a href="<?= route('home') ?>">{{ __('public.home') }}</a></li>
             <li class=" bg-blue-600 group">
-                <a href="<?= route('contact') ?>">{{ __('public.contact') }}</a>
+                <a href="<?= route('public.contact') ?>">{{ __('public.contact') }}</a>
                 <ul class="bg-black border-2 border-blue-600 absolute left-[-9999px] md:group-hover:left-auto not-md:w-112">
                     <li><a href="">{{ __('public.veterinarians') }}</a></li>
                     <li><a href="<?= route('gallery') ?>">{{ __('public.gallery') }}</a></li>

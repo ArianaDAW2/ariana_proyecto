@@ -1,32 +1,43 @@
 <x-guest-layout>
+    <section class="grid place-items-center py-10">
+        <h1 class="font-bold text-gray-700 text-[35px] pb-5 not-md:text-center">{{ __('public.contact') }}</h1>
 
-    @section('title', __('public.contact'))
+        @if (session('status'))
+            <div
+                class="mb-4 w-full max-w-[500px] bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+                {{ session('status') }}
+            </div>
+        @endif
 
-    @section('content-1')
-        <section class="grid place-items-center">
-            <h1 class="font-bold text-gray-700 text-[35px] pb-5 not-md:text-center">{{ __('public.contact') }}</h1>
-            <form class=" bg-white w-[500px] shadow-lg grid grid-rows-3 h-[300px] p-[20px]">
-                <div class="row-start-1">
-                    <label class="m-[5px]">{{ __('public.name') }}</label><br>
-                    <input class="m-[5px] h-[30px] w-[25em] border-2 p-[5px]" type="text"
-                           placeholder="{{ __('public.your_name') }}">
-                </div>
-                <div class="row-start-2">
-                    <label class="m-[5px]">{{ __('public.email') }}</label><br>
-                    <input class="m-[5px] h-[30px] w-[25em] border-2 p-[5px]" type="email"
-                           placeholder="{{ __('public.your_email') }}">
-                </div>
-                <div class="row-start-3">
-                    <label class="m-[5px]">{{ __('public.message') }}</label><br>
-                    <textarea class="m-[5px] h-[50px] w-[25em] border-2 p-[5px]"
-                              placeholder="{{ __('public.your_message') }}"></textarea>
-                </div>
-                <button type="submit"
-                        class="bg-blue-500 text-white p-[5px] px-[20px] m-[20px] mb-[0px] rounded-[5px] h-[40px] w-[100px]">
-                    {{ __('public.send') }}
-                </button>
-            </form>
-        </section>
-        <div class="md:h-150"></div>
-    @endsection
+        <form method="POST" action="{{ route('public.contact.send') }}"
+              class="bg-white w-full max-w-[500px] shadow-lg p-6 rounded-lg">
+            @csrf
+
+            <div class="mb-4">
+                <x-label for="title" value="{{ __('public.title') }}"/>
+                <x-input id="title" name="title" type="text" class="mt-1 block w-full"
+                         placeholder="{{ __('public.your_title') }}" :value="old('title')" required/>
+                <x-input-error for="title" class="mt-2"/>
+            </div>
+
+            <div class="mb-4">
+                <x-label for="email" value="{{ __('public.email') }}"/>
+                <x-input id="email" name="email" type="email" class="mt-1 block w-full"
+                         placeholder="{{ __('public.your_email') }}" :value="old('email')" required/>
+                <x-input-error for="email" class="mt-2"/>
+            </div>
+
+            <div class="mb-4">
+                <x-label for="message" value="{{ __('public.message') }}"/>
+                <textarea id="message" name="message" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                          rows="4" placeholder="{{ __('public.your_message') }}"
+                          required>{{ old('message') }}</textarea>
+                <x-input-error for="message" class="mt-2"/>
+            </div>
+
+            <x-button type="submit">
+                {{ __('public.send') }}
+            </x-button>
+        </form>
+    </section>
 </x-guest-layout>
