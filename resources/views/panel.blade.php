@@ -2,7 +2,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('private.admin_panel') }}
         </h2>
     </x-slot>
 
@@ -10,73 +10,78 @@
         {{-- Sidebar --}}
         <aside class="w-64 bg-gray-100 p-4 border-r border-gray-200">
             <nav class="space-y-2">
-                <h3 class="text-gray-500 uppercase text-xs font-semibold mb-2">Admin Panel</h3>
+                <h3 class="text-gray-500 uppercase text-xs font-semibold mb-2">{{ __('private.admin_panel') }}</h3>
 
-                <a href="{{ route('admin.users') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Users</a>
-                <a href="{{ route('admin.pets') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Pets</a>
-                <a href="{{ route('admin.reservations') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Reservations</a>
-                <a href="{{ route('admin.medical-records') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Medical
-                    Records</a>
-                <a href="{{ route('admin.services') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Services</a>
-                <a href="{{ route('admin.invoices') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Invoices</a>
-                <a href="{{ route('admin.payments') }}" class="block px-4 py-2 rounded hover:bg-gray-200">Payments</a>
+                <a href="{{ route('admin.users') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.users') }}</a>
+                <a href="{{ route('admin.pets') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.pets') }}</a>
+                <a href="{{ route('admin.reservations') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.reservations') }}</a>
+                <a href="{{ route('admin.medical-records') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.medical_records') }}</a>
+                <a href="{{ route('admin.services') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.services') }}</a>
+                <a href="{{ route('admin.invoices') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.invoices') }}</a>
+                <a href="{{ route('admin.payments') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.payments') }}</a>
             </nav>
         </aside>
 
         {{-- Main content --}}
         <main class="flex-1 p-6 bg-white">
             <div class="max-w-7xl mx-auto">
-                <h1 class="text-2xl font-bold mb-6">Welcome, {{ Auth::user()->name }}!</h1>
+                <h1 class="text-2xl font-bold mb-6">{{ __('private.welcome') }}, {{ Auth::user()->name }}!</h1>
 
                 {{-- Aquí iría el contenido dinámico de cada sección --}}
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @can('manage_users')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Users</h2>
-                            <p class="text-gray-500">Manage all registered users.</p>
+                            <h2 class="font-semibold text-lg">{{ __('private.users') }}</h2>
+                            <p class="text-gray-500">{{ __('private.users_desc') }}</p>
                             <a href="{{ route('admin.users') }}"
-                               class="text-blue-500 hover:underline mt-2 block">Go to Users</a>
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_users') }}</a>
                         </div>
                     @endcan
                     @can('manage_users')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Pets</h2>
-                            <p class="text-gray-500">View and manage pets.</p>
-                            <a href="{{route('admin.pets')}}" class="text-blue-500 hover:underline mt-2 block">Go
-                                to Pets</a>
+                            <h2 class="font-semibold text-lg">{{ __('private.pets') }}</h2>
+                            <p class="text-gray-500">{{ __('private.pets_desc') }}</p>
+                            <a href="{{route('admin.pets')}}"
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_pets') }}</a>
                         </div>
                     @endcan
                     @can('manage_reservations')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Reservations</h2>
-                            <p class="text-gray-500">Manage reservations for pets.</p>
+                            <h2 class="font-semibold text-lg">{{ __('private.reservations') }}</h2>
+                            <p class="text-gray-500">{{ __('private.reservations_desc') }}</p>
                             <a href="{{route('admin.reservations')}}"
-                               class="text-blue-500 hover:underline mt-2 block">Go
-                                to Reservations</a>
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_reservations') }}</a>
                         </div>
                     @endcan
                     @can('manage_medical_records')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Medical Records</h2>
-                            <p class="text-gray-500">View medical history of pets.</p>
+                            <h2 class="font-semibold text-lg">{{ __('private.medical_records') }}</h2>
+                            <p class="text-gray-500">{{ __('private.medical_records_desc') }}</p>
                             <a href="{{route('admin.medical-records')}}"
-                               class="text-blue-500 hover:underline mt-2 block">Go to Medical Records</a>
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_medical_records') }}</a>
                         </div>
                     @endcan
                     @can('manage_services')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Services</h2>
-                            <p class="text-gray-500">Manage the services offered.</p>
+                            <h2 class="font-semibold text-lg">{{ __('private.services') }}</h2>
+                            <p class="text-gray-500">{{ __('private.services_desc') }}</p>
                             <a href="{{route('admin.services')}}"
-                               class="text-blue-500 hover:underline mt-2 block">Go to Services</a>
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_services') }}</a>
                         </div>
                     @endcan
                     @can('manage_payments')
                         <div class="p-4 border rounded shadow-sm hover:shadow-md transition">
-                            <h2 class="font-semibold text-lg">Invoices</h2>
-                            <p class="text-gray-500">View and manage invoices.</p>
+                            <h2 class="font-semibold text-lg">{{ __('private.invoices') }}</h2>
+                            <p class="text-gray-500">{{ __('private.invoices_desc') }}</p>
                             <a href="{{ route('admin.invoices') }}"
-                               class="text-blue-500 hover:underline mt-2 block">Go to Invoices</a>
+                               class="text-blue-500 hover:underline mt-2 block">{{ __('private.go_to_invoices') }}</a>
                         </div>
                     @endcan
 

@@ -31,7 +31,7 @@
                     <li><a href="#">{{ __('public.dentist') }}</a></li>
                 </ul>
             </li>
-            <li><a href="<?= route('contact') ?>">{{ __('public.contact') }}</a></li>
+            <li><a href="/docs">Api-doc</a></li>
             <livewire:language-switcher/>
         </ul>
     </nav>

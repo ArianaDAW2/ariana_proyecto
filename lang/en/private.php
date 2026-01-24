@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'page_heading' => 'Page Heading',
-    'page_content' => 'Page Content',
+    //Facturas
     'reservation' => 'Reservation',
     'invoice_number' => 'Invoice number',
     'total' => 'Total',
@@ -16,12 +15,14 @@ return [
     'actions' => 'Actions',
     'edit' => 'Edit',
     'delete' => 'Delete',
+    //Historial médico
     'pet' => 'Pet',
     'veterinarian' => 'Veterinarian',
     'diagnosis' => 'Diagnosis',
     'treatment' => 'Treatment',
     'notes' => 'Notes',
     'create_record' => 'Create record',
+    //Mascotas
     'owner' => 'Owner',
     'name' => 'Name',
     'species' => 'Species',
@@ -33,6 +34,7 @@ return [
     'sort_alphabetically' => 'Sort alphabetically by pet',
     'min_weight' => 'Min weight',
     'max_weight' => 'Max weight',
+    //Reservas
     'client' => 'Client',
     'start_date' => 'Start date',
     'end_date' => 'End date',
@@ -41,8 +43,8 @@ return [
     'completed' => 'Completed',
     'cancelled' => 'Cancelled',
     'total_price' => 'Total price',
-    'services' => 'Services',
     'create_reservation' => 'Create reservation',
+    //Servicios
     'service_name' => 'Service name',
     'description' => 'Description',
     'base_price' => 'Base price',
@@ -50,7 +52,42 @@ return [
     'create_service' => 'Create service',
     'yes' => 'Yes',
     'no' => 'No',
+    //Usuarios
     'email' => 'Email',
     'password' => 'Password',
     'create' => 'Create',
+    //nav
+    'dashboard' => 'Dashboard',
+    'services' => 'Services',
+    'control_panel' => 'Control Panel',
+    'manage_account' => 'Manage Account',
+    'profile' => 'Profile',
+    'api_tokens' => 'API Tokens',
+    'log_out' => 'Log Out',
+    'manage_team' => 'Manage Team',
+    'team_settings' => 'Team Settings',
+    'create_new_team' => 'Create New Team',
+    'switch_teams' => 'Switch Teams',
+    //Panel de control
+    'admin_panel' => 'Admin Panel',
+    'users' => 'Users',
+    'pets' => 'Pets',
+    'reservations' => 'Reservations',
+    'medical_records' => 'Medical Records',
+    'invoices' => 'Invoices',
+    'payments' => 'Payments',
+    'welcome' => 'Welcome',
+    'users_desc' => 'Manage all registered users.',
+    'pets_desc' => 'View and manage pets.',
+    'reservations_desc' => 'Manage reservations for pets.',
+    'medical_records_desc' => 'View medical history of pets.',
+    'services_desc' => 'Manage the services offered.',
+    'invoices_desc' => 'View and manage invoices.',
+    'go_to_users' => 'Go to Users',
+    'go_to_pets' => 'Go to Pets',
+    'go_to_reservations' => 'Go to Reservations',
+    'go_to_medical_records' => 'Go to Medical Records',
+    'go_to_services' => 'Go to Services',
+    'go_to_invoices' => 'Go to Invoices',
+    
 ];

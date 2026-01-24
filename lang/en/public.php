@@ -1,6 +1,7 @@
 <?php
 
 return [
+    //HOME
     'welcome' => 'Welcome to HotelForPets',
     'slogan_1' => 'WE HEAL WITH KNOWLEDGE',
     'slogan_2' => 'WE CARE WITH HEART',
@@ -18,6 +19,7 @@ return [
     'discover_services' => 'Discover everything we can do for your pet',
     'services_link' => '➡️ SERVICES ⬅️',
     'service_image' => 'service image',
+    //Servicios
     'services' => 'SERVICES',
     'inactive_services' => 'INACTIVE SERVICES',
     'name' => 'Name',
@@ -26,8 +28,10 @@ return [
     'unknown' => 'unknown',
     'active' => 'Active',
     'inactive' => 'Inactive',
+    //Galería
     'gallery' => 'Gallery',
     'explore_images' => 'Explore our images.',
+    //Conctacto
     'contact' => 'CONTACT',
     'email' => 'Email',
     'message' => 'Message',
@@ -35,14 +39,17 @@ return [
     'your_email' => 'Your email',
     'your_message' => 'Your message',
     'send' => 'Send',
+    //Guest
     'dashboard' => 'Dashboard',
     'login' => 'Log in',
     'register' => 'Register',
     'book_appointment' => 'Book your appointment',
+    //Footer
     'contact_us' => '☎️ CONTACT US 📞',
     'care_24h' => 'We take care of your best friends 24 hours.',
     'all_rights' => 'All rights reserved.',
     'back_to_top' => '⬆️ Back to top ⬆️',
+    //nav-guest
     'menu' => 'MENU',
     'home' => 'HOME',
     'veterinarians' => 'VETERINARIANS',

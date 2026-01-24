@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'page_heading' => 'Encabezado de página',
-    'page_content' => 'Contenido de página',
+    //Facturas
     'reservation' => 'Reserva',
     'invoice_number' => 'Número factura',
     'total' => 'Total',
@@ -16,12 +15,14 @@ return [
     'actions' => 'Acciones',
     'edit' => 'Editar',
     'delete' => 'Eliminar',
+    //Historial médico
     'pet' => 'Mascota',
     'veterinarian' => 'Veterinario',
     'diagnosis' => 'Diagnóstico',
     'treatment' => 'Tratamiento',
     'notes' => 'Notas',
     'create_record' => 'Crear historial',
+    //Mascotas
     'owner' => 'Propietario',
     'name' => 'Nombre',
     'species' => 'Especie',
@@ -33,6 +34,7 @@ return [
     'sort_alphabetically' => 'Ordenar alfabéticamente por mascota',
     'min_weight' => 'Peso mínimo',
     'max_weight' => 'Peso máximo',
+    //Reservas
     'client' => 'Cliente',
     'start_date' => 'Fecha inicio',
     'end_date' => 'Fecha fin',
@@ -41,8 +43,8 @@ return [
     'completed' => 'Completada',
     'cancelled' => 'Cancelada',
     'total_price' => 'Precio total',
-    'services' => 'Servicios',
     'create_reservation' => 'Crear reserva',
+    //Servicios
     'service_name' => 'Nombre del servicio',
     'description' => 'Descripción',
     'base_price' => 'Precio base',
@@ -50,7 +52,43 @@ return [
     'create_service' => 'Crear servicio',
     'yes' => 'Sí',
     'no' => 'No',
+    //Usuarios
     'email' => 'Email',
     'password' => 'Contraseña',
     'create' => 'Crear',
+    //nav
+    'dashboard' => 'Panel',
+    'services' => 'Servicios',
+    'control_panel' => 'Panel de control',
+    'manage_account' => 'Gestionar cuenta',
+    'profile' => 'Perfil',
+    'api_tokens' => 'Tokens de API',
+    'log_out' => 'Cerrar sesión',
+    'manage_team' => 'Gestionar equipo',
+    'team_settings' => 'Configuración del equipo',
+    'create_new_team' => 'Crear nuevo equipo',
+    'switch_teams' => 'Cambiar de equipo',
+    //Panel de control
+    'admin_panel' => 'Panel de administración',
+    'users' => 'Usuarios',
+    'pets' => 'Mascotas',
+    'reservations' => 'Reservas',
+    'medical_records' => 'Historial médico',
+    'invoices' => 'Facturas',
+    'payments' => 'Pagos',
+    'welcome' => 'Bienvenido',
+    'users_desc' => 'Gestiona todos los usuarios registrados.',
+    'pets_desc' => 'Ver y gestionar mascotas.',
+    'reservations_desc' => 'Gestiona las reservas de mascotas.',
+    'medical_records_desc' => 'Ver historial médico de las mascotas.',
+    'services_desc' => 'Gestiona los servicios ofrecidos.',
+    'invoices_desc' => 'Ver y gestionar facturas.',
+    'go_to_users' => 'Ir a Usuarios',
+    'go_to_pets' => 'Ir a Mascotas',
+    'go_to_reservations' => 'Ir a Reservas',
+    'go_to_medical_records' => 'Ir a Historial médico',
+    'go_to_services' => 'Ir a Servicios',
+    'go_to_invoices' => 'Ir a Facturas',
+    'private.Delete_Account' => 'Borrar cuenta',
+
 ];

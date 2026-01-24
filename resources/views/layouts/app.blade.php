@@ -23,7 +23,7 @@
 <div class="h-screen bg-gray-100">
     @livewire('navigation-menu')
 
-    <!-- {{ __('private.page_heading') }} -->
+    <!--Encabezado de página -->
     @if (isset($header))
         <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -32,14 +32,17 @@
         </header>
     @endif
 
-    <!-- {{ __('private.page_content') }} -->
+    <!-- Contenido de página-->
     <main>
         {{ $slot }}
     </main>
+    @include('layouts.footer')
 </div>
 
 @stack('modals')
 
 @livewireScripts
+
 </body>
+
 </html>

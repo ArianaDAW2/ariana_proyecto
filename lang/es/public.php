@@ -1,6 +1,7 @@
 <?php
 
 return [
+    //Home
     'welcome' => 'Bienvenidos a HotelForPets',
     'slogan_1' => 'CURAMOS CON EL CONOCIMIENTO',
     'slogan_2' => 'CUIDAMOS CON EL CORAZÓN',
@@ -16,6 +17,7 @@ return [
     'view_gallery' => '➡️ Ver toda la galería ⬅️',
     'missing_image' => 'Falta imagen',
     'discover_services' => 'Descubre todo lo que podemos hacer por tu mascota',
+    //Servicios
     'services_link' => '➡️ SERVICIOS ⬅️',
     'service_image' => 'imagen servicio',
     'services' => 'SERVICIOS',
@@ -26,8 +28,10 @@ return [
     'unknown' => 'desconocido',
     'active' => 'Activos',
     'inactive' => 'Inactivos',
+    //Galería
     'gallery' => 'Galería',
     'explore_images' => 'Explora nuestras imágenes.',
+    //Contacto
     'contact' => 'CONTACTO',
     'email' => 'Correo',
     'message' => 'Mensaje',
@@ -35,14 +39,17 @@ return [
     'your_email' => 'Tu correo electrónico',
     'your_message' => 'Tu mensaje',
     'send' => 'Enviar',
+    //Guest
     'dashboard' => 'Dashboard',
     'login' => 'Iniciar sesión',
     'register' => 'Registrarse',
     'book_appointment' => 'Pide tu cita',
+    //Footer
     'contact_us' => '☎️ CONTACTANOS 📞',
     'care_24h' => 'Cuidamos de tus mejores amigos las 24 horas.',
     'all_rights' => 'Todos los derechos reservados.',
     'back_to_top' => '⬆️ Volver arriba ⬆️',
+    //Nav-Guest
     'menu' => 'MENÚ',
     'home' => 'INICIO',
     'veterinarians' => 'VETERINARIOS',
