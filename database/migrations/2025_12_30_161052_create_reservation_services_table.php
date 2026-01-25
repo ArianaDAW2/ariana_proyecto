@@ -11,9 +11,7 @@ return new class extends Migration {
             $table->id();
             $table->foreignId('reservation_id')->constrained()->cascadeOnDelete();
             $table->foreignId('service_id')->constrained()->cascadeOnDelete();
-            $table->decimal('price', 10, 2);
-            $table->integer('duration')->default(0); // minutos
-            $table->text('notes')->nullable();
+
             $table->timestamps();
         });
     }

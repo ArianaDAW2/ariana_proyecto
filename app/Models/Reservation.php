@@ -32,12 +32,6 @@ class Reservation extends Model
     public function services(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Service::class)
-            ->using(ReservationService::class)
-            ->withPivot(
-                'price',
-                'duration',
-                'notes'
-            )
             ->withTimestamps();
     }
 

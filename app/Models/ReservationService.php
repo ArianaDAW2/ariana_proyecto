@@ -12,8 +12,5 @@ class ReservationService extends Pivot
     protected $fillable = [
         'reservation_id',
         'service_id',
-        'price',
-        'duration',
-        'notes'
     ];
 }

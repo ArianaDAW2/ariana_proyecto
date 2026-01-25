@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Events\ReservationCreatedEvent;
 use App\Models\Reservation;
 use App\Models\User;
 use App\Models\Pet;
@@ -54,9 +55,12 @@ class ReservationsCrud extends Component
 
         $validated = $this->validate();
         $reservation = Reservation::create($validated);
+
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
+        ReservationCreatedEvent::dispatch($reservation);
+
         $this->resetForm();
     }
 

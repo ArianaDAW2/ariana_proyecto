@@ -20,30 +20,19 @@ class ReservationSeeder extends Seeder
         if ($pets->isEmpty() || $services->isEmpty()) return;
 
         foreach ($pets as $index => $pet) {
+            $randomServices = $services->random(rand(1, 4));
+            $totalPrice = $randomServices->sum('base_price');
+
             $reservation = Reservation::create([
                 'user_id' => $client->id,
                 'pet_id' => $pet->id,
                 'start_date' => Carbon::now()->addDays($index * 5),
                 'end_date' => Carbon::now()->addDays($index * 5 + 3),
                 'status' => 'confirmed',
-                'total_price' => 0, // Se calculará después o se pondrá manual
+                'total_price' => $totalPrice,
             ]);
 
-            // Asignar servicios aleatorios
-            $randomServices = $services->random(rand(1, 4));
-            $totalPrice = 0;
-
-            foreach ($randomServices as $service) {
-                $price = $service->base_price;
-                $reservation->services()->attach($service->id, [
-                    'price' => $price,
-                    'duration' => 60,
-                    'notes' => 'Servicio de prueba',
-                ]);
-                $totalPrice += $price;
-            }
-
-            $reservation->update(['total_price' => $totalPrice]);
+            $reservation->services()->attach($randomServices->pluck('id'));
         }
     }
 }

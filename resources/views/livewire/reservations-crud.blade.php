@@ -39,7 +39,7 @@
             @foreach($services as $service)
                 <div>
                     <input type="checkbox" value="{{ $service->id }}" wire:model="selectedServices">
-                    {{ $service->name }} ({{ $service->price }} €)
+                    {{ $service->name }} ({{ $service->base_price }} €)
                 </div>
             @endforeach
 
@@ -75,6 +75,7 @@
                 <td>
                     @foreach($reservation->services as $service)
                         {{ $service->name }}<br>
+
                     @endforeach
                 </td>
                 <td>
