@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\ContactFormSubmitEvent;
+use App\Events\ContactFormEvent;
 use Illuminate\Http\Request;
 
 class emailController extends Controller
@@ -20,7 +20,7 @@ class emailController extends Controller
             'message' => 'required|string|max:2000',
         ]);
 
-        ContactFormSubmitEvent::dispatch(
+        ContactFormEvent::dispatch(
             $validated['title'],
             $validated['email'],
             $validated['message']

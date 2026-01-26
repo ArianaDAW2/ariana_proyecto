@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class ContactFormMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -23,15 +23,15 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nuevo mensaje de contacto: ' . $this->title,
             replyTo: [$this->email],
+            subject: 'Nuevo mensaje de contacto: ' . $this->title,
         );
     }
 
     public function content(): Content
     {
         return new Content(
-            view: 'emails.contact',
+            view: 'emails.contact-form',
         );
     }
 }

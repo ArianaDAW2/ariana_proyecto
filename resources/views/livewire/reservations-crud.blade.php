@@ -3,7 +3,7 @@
     @can('create', App\Models\Reservation::class)
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model="user_id">
-                <option value="">{{ __('private.client') }}</option>
+                <option value="">-----------</option>
                 @foreach($users as $user)
                     <option value="{{ $user->id }}">{{ $user->name }}</option>
                 @endforeach
@@ -32,13 +32,14 @@
             </select>
             @error('status') <span>{{ $message }}</span> @enderror
 
-            <input type="number" step="0.01" wire:model="total_price" placeholder="{{ __('private.total_price') }}">
+            <input type="number" wire:model="total_price"
+                   placeholder="{{ number_format($total_price, 2) }}" readonly>
             @error('total_price') <span>{{ $message }}</span> @enderror
 
             <label>{{ __('private.services') }}:</label>
             @foreach($services as $service)
                 <div>
-                    <input type="checkbox" value="{{ $service->id }}" wire:model="selectedServices">
+                    <input type="checkbox" value="{{ $service->id }}" wire:model.live="selectedServices">
                     {{ $service->name }} ({{ $service->base_price }} €)
                 </div>
             @endforeach

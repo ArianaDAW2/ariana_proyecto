@@ -10,6 +10,7 @@ class ReservationCreatedListener
 {
     public function handle(ReservationCreatedEvent $event): void
     {
+
         Mail::to($event->reservation->user->email)->send(
             new ReservationCreatedMail($event->reservation)
         );

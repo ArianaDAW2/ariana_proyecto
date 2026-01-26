@@ -34,6 +34,12 @@ class ReservationsCrud extends Component
         return (new ReservationRequest())->rules($this->reservationId);
     }
 
+    public function updatedSelectedServices()
+    {
+        $this->total_price = Service::whereIn('id', $this->selectedServices)
+            ->sum('base_price');
+    }
+
     public function render(Request $request)
     {
         $this->authorize('view', Reservation::class);
@@ -45,7 +51,7 @@ class ReservationsCrud extends Component
             'reservations' => $reservations,
             'users' => $users,
             'pets' => Pet::all(),
-            'services' => Service::all(),
+            'services' => Service::active()->get(),
         ]);
     }
 
@@ -54,11 +60,14 @@ class ReservationsCrud extends Component
         $this->authorize('create', Reservation::class);
 
         $validated = $this->validate();
+
         $reservation = Reservation::create($validated);
 
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
+
+        $reservation->load('user');
         ReservationCreatedEvent::dispatch($reservation);
 
         $this->resetForm();
