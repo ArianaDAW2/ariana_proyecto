@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use App\Events\ContactFormEvent;
 use Illuminate\Http\Request;
 
-class emailController extends Controller
+class documentsController extends Controller
 {
-    public function show()
+    //Contact Email
+    public function show_contact()
     {
         return view('public.contact');
     }
 
-    public function send(Request $request)
+    public function send_contact(Request $request)
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
@@ -28,4 +29,5 @@ class emailController extends Controller
 
         return back()->with('status', __('public.message_sent'));
     }
+    //PDF
 }

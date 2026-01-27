@@ -9,7 +9,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('public.contact.send') }}"
+        <form method="POST" action="{{ route('document.contact.send') }}"
               class="bg-white w-full max-w-[500px] shadow-lg p-6 rounded-lg">
             @csrf
 

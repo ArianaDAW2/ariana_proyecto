@@ -25,11 +25,11 @@ class RouteServiceProvider extends ServiceProvider
             ->prefix('public')
             ->name('public.')
             ->group(base_path('routes/web/public.php'));
-        // Emails
+        // Emails - PDF
         Route::middleware('web')
-            ->prefix('public')
-            ->name('public.')
-            ->group(base_path('routes/web/emails.php'));
+            ->prefix('document')
+            ->name('document.')
+            ->group(base_path('routes/web/documents.php'));
 
         // Web privada !-> Redirige al login
         Route::middleware(['web', 'auth', 'verified'])
