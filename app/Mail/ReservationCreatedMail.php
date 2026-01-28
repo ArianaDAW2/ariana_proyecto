@@ -5,6 +5,7 @@ namespace App\Mail;
 use App\Models\Reservation;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -13,7 +14,9 @@ class ReservationCreatedMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public function __construct(public Reservation $reservation)
+    public function __construct(
+        public Reservation $reservation,
+        public string      $pdfContent)
     {
     }
 
@@ -33,6 +36,11 @@ class ReservationCreatedMail extends Mailable
 
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromData(
+                fn() => $this->pdfContent,
+                'reservation-' . $this->reservation->id . '.pdf'
+            )->withMime('application/pdf'),
+        ];
     }
 }
