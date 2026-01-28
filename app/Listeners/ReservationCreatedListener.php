@@ -13,10 +13,12 @@ class ReservationCreatedListener
     {
 
         // Procesar el PDF de forma síncrona para obtener el contenido
-        $pdfContent = (new ProcesarPDF($event->reservation))->handle();
+        $pdfContent = (new procesarPDF($event->reservation))->handle();
 
         Mail::to($event->reservation->user->email)->send(
-            new ReservationCreatedMail($event->reservation)
+            new ReservationCreatedMail(
+                $event->reservation,
+                $pdfContent)
         );
     }
 }
