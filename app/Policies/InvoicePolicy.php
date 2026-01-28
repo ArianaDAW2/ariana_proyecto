@@ -17,12 +17,12 @@ class InvoicePolicy
         return $user?->hasPermissionTo('manage_payments') ?? false;
     }
 
-    public function update(?User $user, Invoice $invoice): bool
+    public function update(?User $user): bool
     {
         return $user?->hasPermissionTo('manage_payments') ?? false;
     }
 
-    public function delete(?User $user, Invoice $invoice): bool
+    public function delete(?User $user): bool
     {
         return $user?->hasPermissionTo('manage_payments') ?? false;
     }

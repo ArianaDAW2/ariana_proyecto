@@ -7,7 +7,7 @@ use App\Http\Requests\ServiceRequest;
 use App\Models\Service;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-class servicesCrudController extends Controller
+class servicesAPICrud extends Controller
 {
     use AuthorizesRequests;
 

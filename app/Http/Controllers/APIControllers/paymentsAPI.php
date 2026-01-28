@@ -8,7 +8,7 @@ use App\Models\Payment;
 use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-class paymentsController extends Controller
+class paymentsAPI extends Controller
 {
     use AuthorizesRequests;
 

@@ -33,7 +33,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"invoices":{"current_page":1,"data":[{"id":1,"reservation_id":1,"invoice_number":"FAC-00001","total":"190.00","status":"paid","issued_at":"2026-01-23 18:31:10","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"reservation":{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-23","end_date":"2026-01-26","status":"confirmed","total_price":"190.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}},{"id":2,"reservation_id":2,"invoice_number":"FAC-00002","total":"100.00","status":"unpaid","issued_at":"2026-01-23 18:31:10","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"reservation":{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-01-28","end_date":"2026-01-31","status":"confirmed","total_price":"100.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}}],"first_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/invoices","per_page":10,"prev_page_url":null,"to":2,"total":2},"reservations":[{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-23","end_date":"2026-01-26","status":"confirmed","total_price":"190.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-01-28","end_date":"2026-01-31","status":"confirmed","total_price":"100.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}]}'
+        content: '{"invoices":{"current_page":1,"data":[{"id":1,"reservation_id":1,"invoice_number":"FAC-00001","total":"50.00","status":"paid","issued_at":"2026-01-27 00:10:32","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"reservation":{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-27","end_date":"2026-01-30","status":"confirmed","total_price":"50.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}},{"id":2,"reservation_id":2,"invoice_number":"FAC-00002","total":"540.00","status":"unpaid","issued_at":"2026-01-27 00:10:32","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"reservation":{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-02-01","end_date":"2026-02-04","status":"confirmed","total_price":"540.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}}],"first_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/invoices","per_page":10,"prev_page_url":null,"to":2,"total":2},"reservations":[{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-27","end_date":"2026-01-30","status":"confirmed","total_price":"50.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-02-01","end_date":"2026-02-04","status":"confirmed","total_price":"540.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -109,7 +109,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: unpaid
+        example: paid
         type: string
         enumValues:
           - paid
@@ -122,7 +122,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: false
-        example: '2026-01-23T18:56:00'
+        example: '2026-01-28T01:08:53'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -132,15 +132,15 @@ endpoints:
       reservation_id: architecto
       invoice_number: architecto
       total: 39
-      status: unpaid
-      issued_at: '2026-01-23T18:56:00'
+      status: paid
+      issued_at: '2026-01-28T01:08:53'
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -186,7 +186,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"reservation_id":1,"invoice_number":"FAC-00001","total":"190.00","status":"paid","issued_at":"2026-01-23 18:31:10","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"reservation":{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-23","end_date":"2026-01-26","status":"confirmed","total_price":"190.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}}'
+        content: '{"id":1,"reservation_id":1,"invoice_number":"FAC-00001","total":"50.00","status":"paid","issued_at":"2026-01-27 00:10:32","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"reservation":{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-27","end_date":"2026-01-30","status":"confirmed","total_price":"50.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -196,7 +196,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -275,7 +275,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: paid
+        example: unpaid
         type: string
         enumValues:
           - paid
@@ -288,7 +288,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: false
-        example: '2026-01-23T18:56:01'
+        example: '2026-01-28T01:08:53'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -298,15 +298,15 @@ endpoints:
       reservation_id: architecto
       invoice_number: architecto
       total: 39
-      status: paid
-      issued_at: '2026-01-23T18:56:01'
+      status: unpaid
+      issued_at: '2026-01-28T01:08:53'
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -353,7 +353,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -387,7 +387,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"records":{"current_page":1,"data":[{"id":1,"pet_id":1,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Max","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":2,"pet_id":2,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nina","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":2,"user_id":4,"name":"Nina","species":"Gato","breed":"Persa","age":12,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":3,"pet_id":3,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Zeus","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":3,"user_id":6,"name":"Zeus","species":"Perro","breed":"Labrador","age":8,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":4,"pet_id":4,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nala","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":4,"user_id":6,"name":"Nala","species":"Gato","breed":"Siam\u00e9s","age":14,"weight":4.2,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":5,"pet_id":5,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Bruno","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":5,"user_id":7,"name":"Bruno","species":"Perro","breed":"Bulldog Franc\u00e9s","age":2,"weight":12,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":6,"pet_id":6,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Mia","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":6,"user_id":7,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":7,"pet_id":7,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Rocky","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":7,"user_id":8,"name":"Rocky","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":8,"pet_id":8,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Kira","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":8,"user_id":8,"name":"Kira","species":"Gato","breed":"Bengal\u00ed","age":2,"weight":5.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":9,"pet_id":9,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Toby","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Labrador","age":9,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":10,"pet_id":10,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Mia","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"pet":{"id":10,"user_id":9,"name":"Mia","species":"Gato","breed":"Persa","age":5,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}}],"first_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","path":"http:\/\/localhost:8000\/api\/medical-records","per_page":10,"prev_page_url":null,"to":10,"total":12},"pets":[{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":2,"user_id":4,"name":"Nina","species":"Gato","breed":"Persa","age":12,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Zeus","species":"Perro","breed":"Labrador","age":8,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Nala","species":"Gato","breed":"Siam\u00e9s","age":14,"weight":4.2,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Bruno","species":"Perro","breed":"Bulldog Franc\u00e9s","age":2,"weight":12,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Rocky","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Kira","species":"Gato","breed":"Bengal\u00ed","age":2,"weight":5.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Labrador","age":9,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Mia","species":"Gato","breed":"Persa","age":5,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":11,"user_id":10,"name":"Zeus","species":"Perro","breed":"Pastor Alem\u00e1n","age":8,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":12,"user_id":10,"name":"Nala","species":"Gato","breed":"Maine Coon","age":9,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}],"veterinarians":[{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}]}'
+        content: '{"records":{"current_page":1,"data":[{"id":1,"pet_id":1,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Toby","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":2,"pet_id":2,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Cleo","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":2,"user_id":4,"name":"Cleo","species":"Gato","breed":"Bengal\u00ed","age":8,"weight":5.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":3,"pet_id":3,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Thor","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":3,"user_id":6,"name":"Thor","species":"Perro","breed":"Pastor Alem\u00e1n","age":10,"weight":35,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":4,"pet_id":4,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Mia","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":4,"user_id":6,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":5,"pet_id":5,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Rocky","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":5,"user_id":7,"name":"Rocky","species":"Perro","breed":"Labrador","age":6,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":6,"pet_id":6,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Luna","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Siam\u00e9s","age":1,"weight":4.2,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":7,"pet_id":7,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Max","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":7,"user_id":8,"name":"Max","species":"Perro","breed":"Labrador","age":5,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":8,"pet_id":8,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nina","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":2,"weight":5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":9,"pet_id":9,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Toby","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":10,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}},{"id":10,"pet_id":10,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Cleo","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":10,"user_id":9,"name":"Cleo","species":"Gato","breed":"Maine Coon","age":2,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}}],"first_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","path":"http:\/\/localhost:8000\/api\/medical-records","per_page":10,"prev_page_url":null,"to":10,"total":12},"pets":[{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":2,"user_id":4,"name":"Cleo","species":"Gato","breed":"Bengal\u00ed","age":8,"weight":5.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Thor","species":"Perro","breed":"Pastor Alem\u00e1n","age":10,"weight":35,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Rocky","species":"Perro","breed":"Labrador","age":6,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Siam\u00e9s","age":1,"weight":4.2,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Max","species":"Perro","breed":"Labrador","age":5,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":2,"weight":5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":10,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Cleo","species":"Gato","breed":"Maine Coon","age":2,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":11,"user_id":10,"name":"Rocky","species":"Perro","breed":"Labrador","age":3,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":12,"user_id":10,"name":"Luna","species":"Gato","breed":"Maine Coon","age":3,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}],"veterinarians":[{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -397,7 +397,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -492,7 +492,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -538,7 +538,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"pet":null,"veterinarian":null}'
+        content: '{"id":1,"pet_id":1,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Toby","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"pet":{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"veterinarian":{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -548,7 +548,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -656,7 +656,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -703,7 +703,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -737,7 +737,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"reservations":{"current_page":1,"data":[{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-23","end_date":"2026-01-26","status":"confirmed","total_price":"190.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"services":[{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":6,"price":"40.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":9,"price":"50.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":13,"name":"Animales ex\u00f3ticos","description":"Atenci\u00f3n especial por especie","base_price":"100.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":13,"price":"100.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}}]},{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-01-28","end_date":"2026-01-31","status":"confirmed","total_price":"100.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":2,"user_id":4,"name":"Nina","species":"Gato","breed":"Persa","age":12,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"services":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":2,"service_id":1,"price":"20.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":2,"service_id":5,"price":"40.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":2,"service_id":6,"price":"40.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}}]}],"first_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/reservations","per_page":10,"prev_page_url":null,"to":2,"total":2},"users":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:07.000000Z","updated_at":"2026-01-23T18:31:07.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"pets":[{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":2,"user_id":4,"name":"Nina","species":"Gato","breed":"Persa","age":12,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Zeus","species":"Perro","breed":"Labrador","age":8,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Nala","species":"Gato","breed":"Siam\u00e9s","age":14,"weight":4.2,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Bruno","species":"Perro","breed":"Bulldog Franc\u00e9s","age":2,"weight":12,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Rocky","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Kira","species":"Gato","breed":"Bengal\u00ed","age":2,"weight":5.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Labrador","age":9,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Mia","species":"Gato","breed":"Persa","age":5,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":11,"user_id":10,"name":"Zeus","species":"Perro","breed":"Pastor Alem\u00e1n","age":8,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},{"id":12,"user_id":10,"name":"Nala","species":"Gato","breed":"Maine Coon","age":9,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null}],"services":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":"35.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":"25.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":"30.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":"35.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":11,"name":"Urgencias 24h","description":"Ambulancia y atenci\u00f3n 24h","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":12,"name":"Dentista","description":"Tratamiento dental y limpieza","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":13,"name":"Animales ex\u00f3ticos","description":"Atenci\u00f3n especial por especie","base_price":"100.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}]}'
+        content: '{"reservations":{"current_page":1,"data":[{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-27","end_date":"2026-01-30","status":"confirmed","total_price":"50.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"services":[{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","pivot":{"reservation_id":1,"service_id":10,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}}]},{"id":2,"user_id":4,"pet_id":2,"start_date":"2026-02-01","end_date":"2026-02-04","status":"confirmed","total_price":"540.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":2,"user_id":4,"name":"Cleo","species":"Gato","breed":"Bengal\u00ed","age":8,"weight":5.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"services":[{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","pivot":{"reservation_id":2,"service_id":5,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","pivot":{"reservation_id":2,"service_id":8,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}}]}],"first_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/reservations","per_page":10,"prev_page_url":null,"to":2,"total":2},"users":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"pets":[{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":2,"user_id":4,"name":"Cleo","species":"Gato","breed":"Bengal\u00ed","age":8,"weight":5.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Thor","species":"Perro","breed":"Pastor Alem\u00e1n","age":10,"weight":35,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Rocky","species":"Perro","breed":"Labrador","age":6,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Siam\u00e9s","age":1,"weight":4.2,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Max","species":"Perro","breed":"Labrador","age":5,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":2,"weight":5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":10,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Cleo","species":"Gato","breed":"Maine Coon","age":2,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":11,"user_id":10,"name":"Rocky","species":"Perro","breed":"Labrador","age":3,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},{"id":12,"user_id":10,"name":"Luna","species":"Gato","breed":"Maine Coon","age":3,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null}],"services":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":"35.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":"25.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":"30.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":"35.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":11,"name":"Urgencias 24h","description":"Ambulancia y atenci\u00f3n 24h","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":12,"name":"Dentista","description":"Tratamiento dental y limpieza","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":13,"name":"Animales ex\u00f3ticos","description":"Atenci\u00f3n especial por especie","base_price":"100.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -747,7 +747,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -802,7 +802,7 @@ endpoints:
         name: start_date
         description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
         required: true
-        example: '2022-02-16'
+        example: '2022-02-20'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -813,7 +813,7 @@ endpoints:
         name: end_date
         description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
         required: true
-        example: '2052-02-16'
+        example: '2052-02-21'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -824,7 +824,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: pending
+        example: confirmed
         type: string
         enumValues:
           - pending
@@ -848,9 +848,9 @@ endpoints:
     cleanBodyParameters:
       user_id: architecto
       pet_id: architecto
-      start_date: '2022-02-16'
-      end_date: '2052-02-16'
-      status: pending
+      start_date: '2022-02-20'
+      end_date: '2052-02-21'
+      status: confirmed
       total_price: 39
     fileParameters: []
     responses: []
@@ -858,7 +858,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -904,7 +904,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-23","end_date":"2026-01-26","status":"confirmed","total_price":"190.00","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null},"services":[{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":6,"price":"40.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":9,"price":"50.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}},{"id":13,"name":"Animales ex\u00f3ticos","description":"Atenci\u00f3n especial por especie","base_price":"100.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","pivot":{"reservation_id":1,"service_id":13,"price":"100.00","duration":60,"notes":"Servicio de prueba","created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}}]}'
+        content: '{"id":1,"user_id":4,"pet_id":1,"start_date":"2026-01-27","end_date":"2026-01-30","status":"confirmed","total_price":"50.00","created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"user":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},"pet":{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null},"services":[{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","pivot":{"reservation_id":1,"service_id":10,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -914,7 +914,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -982,7 +982,7 @@ endpoints:
         name: start_date
         description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
         required: true
-        example: '2022-02-16'
+        example: '2022-02-20'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -993,7 +993,7 @@ endpoints:
         name: end_date
         description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
         required: true
-        example: '2052-02-16'
+        example: '2052-02-21'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1028,8 +1028,8 @@ endpoints:
     cleanBodyParameters:
       user_id: architecto
       pet_id: architecto
-      start_date: '2022-02-16'
-      end_date: '2052-02-16'
+      start_date: '2022-02-20'
+      end_date: '2052-02-21'
       status: pending
       total_price: 39
     fileParameters: []
@@ -1038,7 +1038,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1085,7 +1085,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1119,7 +1119,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"services":{"current_page":1,"data":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":"35.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":"25.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":"30.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":"35.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/services?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/services?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/services?page=2","path":"http:\/\/localhost:8000\/api\/services","per_page":10,"prev_page_url":null,"to":10,"total":13}}'
+        content: '{"services":{"current_page":1,"data":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":"35.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":"25.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":"30.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":"35.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/services?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/services?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/services?page=2","path":"http:\/\/localhost:8000\/api\/services","per_page":10,"prev_page_url":null,"to":10,"total":13}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1129,7 +1129,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1195,7 +1195,7 @@ endpoints:
         name: is_active
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1205,14 +1205,14 @@ endpoints:
       name: b
       description: 'Eius et animi quos velit et.'
       base_price: 60
-      is_active: false
+      is_active: true
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1258,7 +1258,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z"}'
+        content: '{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1268,7 +1268,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1347,7 +1347,7 @@ endpoints:
         name: is_active
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1357,14 +1357,14 @@ endpoints:
       name: b
       description: 'Eius et animi quos velit et.'
       base_price: 60
-      is_active: false
+      is_active: true
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1411,7 +1411,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1445,7 +1445,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"pets":{"current_page":1,"data":[{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":2,"user_id":4,"name":"Nina","species":"Gato","breed":"Persa","age":12,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":3,"user_id":6,"name":"Zeus","species":"Perro","breed":"Labrador","age":8,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":4,"user_id":6,"name":"Nala","species":"Gato","breed":"Siam\u00e9s","age":14,"weight":4.2,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":5,"user_id":7,"name":"Bruno","species":"Perro","breed":"Bulldog Franc\u00e9s","age":2,"weight":12,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":6,"user_id":7,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":7,"user_id":8,"name":"Rocky","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":8,"user_id":8,"name":"Kira","species":"Gato","breed":"Bengal\u00ed","age":2,"weight":5.5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Labrador","age":9,"weight":28,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":10,"user_id":9,"name":"Mia","species":"Gato","breed":"Persa","age":5,"weight":5,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}}],"first_page_url":"http:\/\/localhost:8000\/api\/pets?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","path":"http:\/\/localhost:8000\/api\/pets","per_page":10,"prev_page_url":null,"to":10,"total":12},"owner":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:07.000000Z","updated_at":"2026-01-23T18:31:07.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}]}'
+        content: '{"pets":{"current_page":1,"data":[{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":2,"user_id":4,"name":"Cleo","species":"Gato","breed":"Bengal\u00ed","age":8,"weight":5.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":3,"user_id":6,"name":"Thor","species":"Perro","breed":"Pastor Alem\u00e1n","age":10,"weight":35,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":4,"user_id":6,"name":"Mia","species":"Gato","breed":"Maine Coon","age":12,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":5,"user_id":7,"name":"Rocky","species":"Perro","breed":"Labrador","age":6,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Siam\u00e9s","age":1,"weight":4.2,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":7,"user_id":8,"name":"Max","species":"Perro","breed":"Labrador","age":5,"weight":28,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":2,"weight":5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":9,"user_id":9,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":10,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}},{"id":10,"user_id":9,"name":"Cleo","species":"Gato","breed":"Maine Coon","age":2,"weight":7.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}}],"first_page_url":"http:\/\/localhost:8000\/api\/pets?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","path":"http:\/\/localhost:8000\/api\/pets","per_page":10,"prev_page_url":null,"to":10,"total":12},"owner":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1455,7 +1455,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1574,7 +1574,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1620,7 +1620,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"user_id":4,"name":"Max","species":"Perro","breed":"Pastor Alem\u00e1n","age":2,"weight":35,"notes":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}}'
+        content: '{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Golden Retriever","age":6,"weight":30.5,"notes":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","deleted_at":null,"owner":{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1630,7 +1630,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1762,7 +1762,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1809,7 +1809,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1843,7 +1843,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"users":{"current_page":1,"data":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:07.000000Z","updated_at":"2026-01-23T18:31:07.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:08.000000Z","updated_at":"2026-01-23T18:31:08.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:09.000000Z","updated_at":"2026-01-23T18:31:09.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:10.000000Z","updated_at":"2026-01-23T18:31:10.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"first_page_url":"http:\/\/localhost:8000\/api\/users?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/users?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/users?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/users","per_page":10,"prev_page_url":null,"to":10,"total":10}}'
+        content: '{"users":{"current_page":1,"data":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:31.000000Z","updated_at":"2026-01-27T00:10:31.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:32.000000Z","updated_at":"2026-01-27T00:10:32.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"first_page_url":"http:\/\/localhost:8000\/api\/users?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/users?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/users?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/users","per_page":10,"prev_page_url":null,"to":10,"total":10}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1853,7 +1853,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1924,7 +1924,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -1970,7 +1970,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-23T18:31:07.000000Z","updated_at":"2026-01-23T18:31:07.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"}'
+        content: '{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-01-27T00:10:30.000000Z","updated_at":"2026-01-27T00:10:30.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1980,7 +1980,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -2064,7 +2064,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -2111,7 +2111,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null
@@ -2145,7 +2145,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '[{"id":1,"amount":"190.00","payment_method":"credit_card","paid_at":"2026-01-23T18:31:10.000000Z"}]'
+        content: '[{"id":1,"amount":"50.00","payment_method":"credit_card","paid_at":"2026-01-27T00:10:32.000000Z"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -2155,7 +2155,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer admin'
+      - 'Bearer 1|admin'
     controller: null
     method: null
     route: null

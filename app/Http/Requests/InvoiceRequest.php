@@ -13,6 +13,7 @@ class InvoiceRequest extends FormRequest
 
     public function rules($invoiceId = null): array
     {
+        $invoiceId = $this->route('invoice')?->id;
         return [
             'reservation_id' => ['required', 'exists:reservations,id'],
             'invoice_number' => [

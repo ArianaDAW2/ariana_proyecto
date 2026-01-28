@@ -8,7 +8,7 @@ use App\Models\Invoice;
 use App\Models\Reservation;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-class invoicesCrudController extends Controller
+class invoicesAPICrud extends Controller
 {
     use AuthorizesRequests;
 
@@ -26,7 +26,7 @@ class invoicesCrudController extends Controller
 
     public function index()
     {
-        $this->authorize('view', invoice::class);
+        $this->authorize('view', Invoice::class);
 
         return response()->json([
             'invoices' => Invoice::with('reservation')->paginate(10),

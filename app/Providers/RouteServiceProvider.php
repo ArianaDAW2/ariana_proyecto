@@ -16,7 +16,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // API
-        Route::middleware('api')
+        Route::middleware(['api', 'auth:sanctum'])
             ->prefix('api')
             ->group(base_path('routes/api.php'));
 

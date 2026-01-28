@@ -8,7 +8,7 @@ use App\Models\Pet;
 use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-class petsCrudController extends Controller
+class petsAPICrud extends Controller
 {
     use AuthorizesRequests;
 

@@ -9,7 +9,7 @@ use App\Models\Pet;
 use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-class medicalRecordsCrudController extends Controller
+class medicalRecordsAPICrud extends Controller
 {
     use AuthorizesRequests;
 
@@ -45,27 +45,27 @@ class medicalRecordsCrudController extends Controller
     public function store(MedicalRecordRequest $request)
     {
         $this->authorize('create', MedicalRecord::class);
-        $record = MedicalRecord::create($request->validated());
-        return response()->json($record, 201);
+        $medicalRecord = MedicalRecord::create($request->validated());
+        return response()->json($medicalRecord, 201);
     }
 
-    public function show(MedicalRecord $record)
+    public function show(MedicalRecord $medicalRecord)
     {
-        $this->authorize('view', $record);
-        return response()->json($record->load(['pet', 'veterinarian']));
+        $this->authorize('view', $medicalRecord);
+        return response()->json($medicalRecord->load('pet', 'veterinarian'));
     }
 
-    public function update(MedicalRecordRequest $request, MedicalRecord $record)
+    public function update(MedicalRecordRequest $request, MedicalRecord $medicalRecord)
     {
-        $this->authorize('update', $record);
-        $record->update($request->validated());
-        return response()->json($record->load(['pet', 'veterinarian']));
+        $this->authorize('update', $medicalRecord);
+        $medicalRecord->update($request->validated());
+        return response()->json($medicalRecord->load(['pet', 'veterinarian']));
     }
 
-    public function destroy(MedicalRecord $record)
+    public function destroy(MedicalRecord $medicalRecord)
     {
-        $this->authorize('delete', $record);
-        $record->delete();
+        $this->authorize('delete', $medicalRecord);
+        $medicalRecord->delete();
         return response()->json(null, 204);
     }
 }

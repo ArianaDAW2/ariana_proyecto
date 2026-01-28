@@ -11,7 +11,7 @@ class MedicalRecordRequest extends FormRequest
         return true;
     }
 
-    public function rules($recordId = null): array
+    public function rules(): array
     {
         return [
             'pet_id' => ['required', 'exists:pets,id'],

@@ -175,7 +175,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 23, 2026</li>
+        <li>Last updated: January 28, 2026</li>
     </ul>
 </div>
 
@@ -259,22 +259,22 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;reservation_id&quot;: 1,
                 &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-                &quot;total&quot;: &quot;190.00&quot;,
+                &quot;total&quot;: &quot;50.00&quot;,
                 &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-23 18:31:10&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;reservation&quot;: {
                     &quot;id&quot;: 1,
                     &quot;user_id&quot;: 4,
                     &quot;pet_id&quot;: 1,
-                    &quot;start_date&quot;: &quot;2026-01-23&quot;,
-                    &quot;end_date&quot;: &quot;2026-01-26&quot;,
+                    &quot;start_date&quot;: &quot;2026-01-27&quot;,
+                    &quot;end_date&quot;: &quot;2026-01-30&quot;,
                     &quot;status&quot;: &quot;confirmed&quot;,
-                    &quot;total_price&quot;: &quot;190.00&quot;,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;total_price&quot;: &quot;50.00&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 }
             },
@@ -282,22 +282,22 @@ access-control-allow-origin: *
                 &quot;id&quot;: 2,
                 &quot;reservation_id&quot;: 2,
                 &quot;invoice_number&quot;: &quot;FAC-00002&quot;,
-                &quot;total&quot;: &quot;100.00&quot;,
+                &quot;total&quot;: &quot;540.00&quot;,
                 &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-23 18:31:10&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;reservation&quot;: {
                     &quot;id&quot;: 2,
                     &quot;user_id&quot;: 4,
                     &quot;pet_id&quot;: 2,
-                    &quot;start_date&quot;: &quot;2026-01-28&quot;,
-                    &quot;end_date&quot;: &quot;2026-01-31&quot;,
+                    &quot;start_date&quot;: &quot;2026-02-01&quot;,
+                    &quot;end_date&quot;: &quot;2026-02-04&quot;,
                     &quot;status&quot;: &quot;confirmed&quot;,
-                    &quot;total_price&quot;: &quot;100.00&quot;,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;total_price&quot;: &quot;540.00&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 }
             }
@@ -338,24 +338,24 @@ access-control-allow-origin: *
             &quot;id&quot;: 1,
             &quot;user_id&quot;: 4,
             &quot;pet_id&quot;: 1,
-            &quot;start_date&quot;: &quot;2026-01-23&quot;,
-            &quot;end_date&quot;: &quot;2026-01-26&quot;,
+            &quot;start_date&quot;: &quot;2026-01-27&quot;,
+            &quot;end_date&quot;: &quot;2026-01-30&quot;,
             &quot;status&quot;: &quot;confirmed&quot;,
-            &quot;total_price&quot;: &quot;190.00&quot;,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;total_price&quot;: &quot;50.00&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 2,
             &quot;user_id&quot;: 4,
             &quot;pet_id&quot;: 2,
-            &quot;start_date&quot;: &quot;2026-01-28&quot;,
-            &quot;end_date&quot;: &quot;2026-01-31&quot;,
+            &quot;start_date&quot;: &quot;2026-02-01&quot;,
+            &quot;end_date&quot;: &quot;2026-02-04&quot;,
             &quot;status&quot;: &quot;confirmed&quot;,
-            &quot;total_price&quot;: &quot;100.00&quot;,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;total_price&quot;: &quot;540.00&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         }
     ]
@@ -469,8 +469,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"unpaid\",
-    \"issued_at\": \"2026-01-23T18:56:00\"
+    \"status\": \"paid\",
+    \"issued_at\": \"2026-01-28T01:08:53\"
 }"
 </code></pre></div>
 
@@ -490,8 +490,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "unpaid",
-    "issued_at": "2026-01-23T18:56:00"
+    "status": "paid",
+    "issued_at": "2026-01-28T01:08:53"
 };
 
 fetch(url, {
@@ -631,10 +631,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-invoices"
-               value="unpaid"
+               value="paid"
                data-component="body">
     <br>
-<p>Example: <code>unpaid</code></p>
+<p>Example: <code>paid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
@@ -645,10 +645,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="POSTapi-invoices"
-               value="2026-01-23T18:56:00"
+               value="2026-01-28T01:08:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-01-23T18:56:00</code></p>
+<p>Must be a valid date. Example: <code>2026-01-28T01:08:53</code></p>
         </div>
         </form>
 
@@ -707,22 +707,22 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;reservation_id&quot;: 1,
     &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-    &quot;total&quot;: &quot;190.00&quot;,
+    &quot;total&quot;: &quot;50.00&quot;,
     &quot;status&quot;: &quot;paid&quot;,
-    &quot;issued_at&quot;: &quot;2026-01-23 18:31:10&quot;,
-    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+    &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
     &quot;deleted_at&quot;: null,
     &quot;reservation&quot;: {
         &quot;id&quot;: 1,
         &quot;user_id&quot;: 4,
         &quot;pet_id&quot;: 1,
-        &quot;start_date&quot;: &quot;2026-01-23&quot;,
-        &quot;end_date&quot;: &quot;2026-01-26&quot;,
+        &quot;start_date&quot;: &quot;2026-01-27&quot;,
+        &quot;end_date&quot;: &quot;2026-01-30&quot;,
         &quot;status&quot;: &quot;confirmed&quot;,
-        &quot;total_price&quot;: &quot;190.00&quot;,
-        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+        &quot;total_price&quot;: &quot;50.00&quot;,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
         &quot;deleted_at&quot;: null
     }
 }</code>
@@ -848,8 +848,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"paid\",
-    \"issued_at\": \"2026-01-23T18:56:01\"
+    \"status\": \"unpaid\",
+    \"issued_at\": \"2026-01-28T01:08:53\"
 }"
 </code></pre></div>
 
@@ -869,8 +869,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "paid",
-    "issued_at": "2026-01-23T18:56:01"
+    "status": "unpaid",
+    "issued_at": "2026-01-28T01:08:53"
 };
 
 fetch(url, {
@@ -1027,10 +1027,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-invoices--id-"
-               value="paid"
+               value="unpaid"
                data-component="body">
     <br>
-<p>Example: <code>paid</code></p>
+<p>Example: <code>unpaid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
@@ -1041,10 +1041,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="PUTapi-invoices--id-"
-               value="2026-01-23T18:56:01"
+               value="2026-01-28T01:08:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-01-23T18:56:01</code></p>
+<p>Must be a valid date. Example: <code>2026-01-28T01:08:53</code></p>
         </div>
         </form>
 
@@ -1245,23 +1245,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;pet_id&quot;: 1,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Max&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 1,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Max&quot;,
+                    &quot;name&quot;: &quot;Toby&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                    &quot;age&quot;: 2,
-                    &quot;weight&quot;: 35,
+                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                    &quot;age&quot;: 6,
+                    &quot;weight&quot;: 30.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1272,8 +1272,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1281,23 +1281,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 2,
                 &quot;pet_id&quot;: 2,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nina&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Cleo&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 2,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Nina&quot;,
+                    &quot;name&quot;: &quot;Cleo&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Persa&quot;,
-                    &quot;age&quot;: 12,
-                    &quot;weight&quot;: 5,
+                    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                    &quot;age&quot;: 8,
+                    &quot;weight&quot;: 5.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1308,8 +1308,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1317,23 +1317,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 3,
                 &quot;pet_id&quot;: 3,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Zeus&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Thor&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 3,
                     &quot;user_id&quot;: 6,
-                    &quot;name&quot;: &quot;Zeus&quot;,
+                    &quot;name&quot;: &quot;Thor&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Labrador&quot;,
-                    &quot;age&quot;: 8,
-                    &quot;weight&quot;: 28,
+                    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+                    &quot;age&quot;: 10,
+                    &quot;weight&quot;: 35,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1344,8 +1344,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1353,23 +1353,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 4,
                 &quot;pet_id&quot;: 4,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nala&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Mia&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 4,
                     &quot;user_id&quot;: 6,
-                    &quot;name&quot;: &quot;Nala&quot;,
+                    &quot;name&quot;: &quot;Mia&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-                    &quot;age&quot;: 14,
-                    &quot;weight&quot;: 4.2,
+                    &quot;breed&quot;: &quot;Maine Coon&quot;,
+                    &quot;age&quot;: 12,
+                    &quot;weight&quot;: 7.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1380,8 +1380,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1389,23 +1389,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;pet_id&quot;: 5,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 5,
                     &quot;user_id&quot;: 7,
-                    &quot;name&quot;: &quot;Bruno&quot;,
+                    &quot;name&quot;: &quot;Rocky&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-                    &quot;age&quot;: 2,
-                    &quot;weight&quot;: 12,
+                    &quot;breed&quot;: &quot;Labrador&quot;,
+                    &quot;age&quot;: 6,
+                    &quot;weight&quot;: 28,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1416,8 +1416,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1425,23 +1425,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;pet_id&quot;: 6,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Mia&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 6,
                     &quot;user_id&quot;: 7,
-                    &quot;name&quot;: &quot;Mia&quot;,
+                    &quot;name&quot;: &quot;Luna&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Maine Coon&quot;,
-                    &quot;age&quot;: 12,
-                    &quot;weight&quot;: 7.5,
+                    &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+                    &quot;age&quot;: 1,
+                    &quot;weight&quot;: 4.2,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1452,8 +1452,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1461,23 +1461,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 7,
                 &quot;pet_id&quot;: 7,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Max&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 7,
                     &quot;user_id&quot;: 8,
-                    &quot;name&quot;: &quot;Rocky&quot;,
+                    &quot;name&quot;: &quot;Max&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                    &quot;age&quot;: 6,
-                    &quot;weight&quot;: 30.5,
+                    &quot;breed&quot;: &quot;Labrador&quot;,
+                    &quot;age&quot;: 5,
+                    &quot;weight&quot;: 28,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1488,8 +1488,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1497,23 +1497,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 8,
                 &quot;pet_id&quot;: 8,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Kira&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nina&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 8,
                     &quot;user_id&quot;: 8,
-                    &quot;name&quot;: &quot;Kira&quot;,
+                    &quot;name&quot;: &quot;Nina&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                    &quot;breed&quot;: &quot;Persa&quot;,
                     &quot;age&quot;: 2,
-                    &quot;weight&quot;: 5.5,
+                    &quot;weight&quot;: 5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1524,8 +1524,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1536,20 +1536,20 @@ access-control-allow-origin: *
                 &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 9,
                     &quot;user_id&quot;: 9,
                     &quot;name&quot;: &quot;Toby&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Labrador&quot;,
-                    &quot;age&quot;: 9,
-                    &quot;weight&quot;: 28,
+                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                    &quot;age&quot;: 10,
+                    &quot;weight&quot;: 30.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1560,8 +1560,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -1569,23 +1569,23 @@ access-control-allow-origin: *
                 &quot;id&quot;: 10,
                 &quot;pet_id&quot;: 10,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Mia&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Cleo&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;pet&quot;: {
                     &quot;id&quot;: 10,
                     &quot;user_id&quot;: 9,
-                    &quot;name&quot;: &quot;Mia&quot;,
+                    &quot;name&quot;: &quot;Cleo&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Persa&quot;,
-                    &quot;age&quot;: 5,
-                    &quot;weight&quot;: 5,
+                    &quot;breed&quot;: &quot;Maine Coon&quot;,
+                    &quot;age&quot;: 2,
+                    &quot;weight&quot;: 7.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;veterinarian&quot;: {
@@ -1596,8 +1596,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             }
@@ -1643,105 +1643,105 @@ access-control-allow-origin: *
         {
             &quot;id&quot;: 1,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Max&quot;,
+            &quot;name&quot;: &quot;Toby&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 35,
+            &quot;breed&quot;: &quot;Golden Retriever&quot;,
+            &quot;age&quot;: 6,
+            &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 2,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Nina&quot;,
+            &quot;name&quot;: &quot;Cleo&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 12,
-            &quot;weight&quot;: 5,
+            &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+            &quot;age&quot;: 8,
+            &quot;weight&quot;: 5.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 3,
             &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Zeus&quot;,
+            &quot;name&quot;: &quot;Thor&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 8,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+            &quot;age&quot;: 10,
+            &quot;weight&quot;: 35,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 4,
             &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Nala&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-            &quot;age&quot;: 14,
-            &quot;weight&quot;: 4.2,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;user_id&quot;: 7,
-            &quot;name&quot;: &quot;Bruno&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 12,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;user_id&quot;: 7,
             &quot;name&quot;: &quot;Mia&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Maine Coon&quot;,
             &quot;age&quot;: 12,
             &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;user_id&quot;: 7,
+            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;species&quot;: &quot;Perro&quot;,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 6,
+            &quot;weight&quot;: 28,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;user_id&quot;: 7,
+            &quot;name&quot;: &quot;Luna&quot;,
+            &quot;species&quot;: &quot;Gato&quot;,
+            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+            &quot;age&quot;: 1,
+            &quot;weight&quot;: 4.2,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 7,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;name&quot;: &quot;Max&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 6,
-            &quot;weight&quot;: 30.5,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 5,
+            &quot;weight&quot;: 28,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 8,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Kira&quot;,
+            &quot;name&quot;: &quot;Nina&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+            &quot;breed&quot;: &quot;Persa&quot;,
             &quot;age&quot;: 2,
-            &quot;weight&quot;: 5.5,
+            &quot;weight&quot;: 5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
@@ -1749,51 +1749,51 @@ access-control-allow-origin: *
             &quot;user_id&quot;: 9,
             &quot;name&quot;: &quot;Toby&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 9,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Golden Retriever&quot;,
+            &quot;age&quot;: 10,
+            &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 10,
             &quot;user_id&quot;: 9,
-            &quot;name&quot;: &quot;Mia&quot;,
+            &quot;name&quot;: &quot;Cleo&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 5,
-            &quot;weight&quot;: 5,
+            &quot;breed&quot;: &quot;Maine Coon&quot;,
+            &quot;age&quot;: 2,
+            &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 11,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Zeus&quot;,
+            &quot;name&quot;: &quot;Rocky&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 8,
-            &quot;weight&quot;: 35,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 3,
+            &quot;weight&quot;: 28,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 12,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Nala&quot;,
+            &quot;name&quot;: &quot;Luna&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 9,
+            &quot;age&quot;: 3,
             &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         }
     ],
@@ -1806,8 +1806,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         }
     ]
@@ -2154,8 +2154,40 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;pet&quot;: null,
-    &quot;veterinarian&quot;: null
+    &quot;id&quot;: 1,
+    &quot;pet_id&quot;: 1,
+    &quot;veterinarian_id&quot;: 2,
+    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
+    &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
+    &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;deleted_at&quot;: null,
+    &quot;pet&quot;: {
+        &quot;id&quot;: 1,
+        &quot;user_id&quot;: 4,
+        &quot;name&quot;: &quot;Toby&quot;,
+        &quot;species&quot;: &quot;Perro&quot;,
+        &quot;breed&quot;: &quot;Golden Retriever&quot;,
+        &quot;age&quot;: 6,
+        &quot;weight&quot;: 30.5,
+        &quot;notes&quot;: null,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+        &quot;deleted_at&quot;: null
+    },
+    &quot;veterinarian&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;veterinario&quot;,
+        &quot;email&quot;: &quot;vet@mail.es&quot;,
+        &quot;email_verified_at&quot;: null,
+        &quot;two_factor_confirmed_at&quot;: null,
+        &quot;current_team_id&quot;: null,
+        &quot;profile_photo_path&quot;: null,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+        &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -2674,12 +2706,12 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;user_id&quot;: 4,
                 &quot;pet_id&quot;: 1,
-                &quot;start_date&quot;: &quot;2026-01-23&quot;,
-                &quot;end_date&quot;: &quot;2026-01-26&quot;,
+                &quot;start_date&quot;: &quot;2026-01-27&quot;,
+                &quot;end_date&quot;: &quot;2026-01-30&quot;,
                 &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: &quot;190.00&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;total_price&quot;: &quot;50.00&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;user&quot;: {
                     &quot;id&quot;: 4,
@@ -2689,76 +2721,37 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 },
                 &quot;pet&quot;: {
                     &quot;id&quot;: 1,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Max&quot;,
+                    &quot;name&quot;: &quot;Toby&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                    &quot;age&quot;: 2,
-                    &quot;weight&quot;: 35,
+                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                    &quot;age&quot;: 6,
+                    &quot;weight&quot;: 30.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;services&quot;: [
                     {
-                        &quot;id&quot;: 6,
-                        &quot;name&quot;: &quot;Hopitalizaci&oacute;n&quot;,
-                        &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
-                        &quot;base_price&quot;: &quot;40.00&quot;,
-                        &quot;is_active&quot;: 1,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 1,
-                            &quot;service_id&quot;: 6,
-                            &quot;price&quot;: &quot;40.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
-                        }
-                    },
-                    {
-                        &quot;id&quot;: 9,
-                        &quot;name&quot;: &quot;Sesi&oacute;n de fotos&quot;,
-                        &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
+                        &quot;id&quot;: 10,
+                        &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
+                        &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
                         &quot;base_price&quot;: &quot;50.00&quot;,
                         &quot;is_active&quot;: 0,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                         &quot;pivot&quot;: {
                             &quot;reservation_id&quot;: 1,
-                            &quot;service_id&quot;: 9,
-                            &quot;price&quot;: &quot;50.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
-                        }
-                    },
-                    {
-                        &quot;id&quot;: 13,
-                        &quot;name&quot;: &quot;Animales ex&oacute;ticos&quot;,
-                        &quot;description&quot;: &quot;Atenci&oacute;n especial por especie&quot;,
-                        &quot;base_price&quot;: &quot;100.00&quot;,
-                        &quot;is_active&quot;: 0,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 1,
-                            &quot;service_id&quot;: 13,
-                            &quot;price&quot;: &quot;100.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                            &quot;service_id&quot;: 10,
+                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
                         }
                     }
                 ]
@@ -2767,12 +2760,12 @@ access-control-allow-origin: *
                 &quot;id&quot;: 2,
                 &quot;user_id&quot;: 4,
                 &quot;pet_id&quot;: 2,
-                &quot;start_date&quot;: &quot;2026-01-28&quot;,
-                &quot;end_date&quot;: &quot;2026-01-31&quot;,
+                &quot;start_date&quot;: &quot;2026-02-01&quot;,
+                &quot;end_date&quot;: &quot;2026-02-04&quot;,
                 &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: &quot;100.00&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;total_price&quot;: &quot;540.00&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;user&quot;: {
                     &quot;id&quot;: 4,
@@ -2782,76 +2775,52 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 },
                 &quot;pet&quot;: {
                     &quot;id&quot;: 2,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Nina&quot;,
+                    &quot;name&quot;: &quot;Cleo&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Persa&quot;,
-                    &quot;age&quot;: 12,
-                    &quot;weight&quot;: 5,
+                    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                    &quot;age&quot;: 8,
+                    &quot;weight&quot;: 5.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;services&quot;: [
-                    {
-                        &quot;id&quot;: 1,
-                        &quot;name&quot;: &quot;Alojamiento dog&amp;cat hotel&quot;,
-                        &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
-                        &quot;base_price&quot;: &quot;20.00&quot;,
-                        &quot;is_active&quot;: 1,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 2,
-                            &quot;service_id&quot;: 1,
-                            &quot;price&quot;: &quot;20.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
-                        }
-                    },
                     {
                         &quot;id&quot;: 5,
                         &quot;name&quot;: &quot;Adiestramiento B&aacute;sico&quot;,
                         &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
                         &quot;base_price&quot;: &quot;40.00&quot;,
                         &quot;is_active&quot;: 1,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                         &quot;pivot&quot;: {
                             &quot;reservation_id&quot;: 2,
                             &quot;service_id&quot;: 5,
-                            &quot;price&quot;: &quot;40.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
                         }
                     },
                     {
-                        &quot;id&quot;: 6,
-                        &quot;name&quot;: &quot;Hopitalizaci&oacute;n&quot;,
-                        &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
-                        &quot;base_price&quot;: &quot;40.00&quot;,
-                        &quot;is_active&quot;: 1,
-                        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                        &quot;id&quot;: 8,
+                        &quot;name&quot;: &quot;Ciruj&iacute;a&quot;,
+                        &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
+                        &quot;base_price&quot;: &quot;500.00&quot;,
+                        &quot;is_active&quot;: 0,
+                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                         &quot;pivot&quot;: {
                             &quot;reservation_id&quot;: 2,
-                            &quot;service_id&quot;: 6,
-                            &quot;price&quot;: &quot;40.00&quot;,
-                            &quot;duration&quot;: 60,
-                            &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                            &quot;service_id&quot;: 8,
+                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
                         }
                     }
                 ]
@@ -2897,8 +2866,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2909,8 +2878,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2921,8 +2890,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2933,8 +2902,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2945,8 +2914,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2957,8 +2926,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2969,8 +2938,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2981,8 +2950,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2993,8 +2962,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -3005,8 +2974,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         }
     ],
@@ -3014,105 +2983,105 @@ access-control-allow-origin: *
         {
             &quot;id&quot;: 1,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Max&quot;,
+            &quot;name&quot;: &quot;Toby&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 35,
+            &quot;breed&quot;: &quot;Golden Retriever&quot;,
+            &quot;age&quot;: 6,
+            &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 2,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Nina&quot;,
+            &quot;name&quot;: &quot;Cleo&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 12,
-            &quot;weight&quot;: 5,
+            &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+            &quot;age&quot;: 8,
+            &quot;weight&quot;: 5.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 3,
             &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Zeus&quot;,
+            &quot;name&quot;: &quot;Thor&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 8,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+            &quot;age&quot;: 10,
+            &quot;weight&quot;: 35,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 4,
             &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Nala&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-            &quot;age&quot;: 14,
-            &quot;weight&quot;: 4.2,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;user_id&quot;: 7,
-            &quot;name&quot;: &quot;Bruno&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 12,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;user_id&quot;: 7,
             &quot;name&quot;: &quot;Mia&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Maine Coon&quot;,
             &quot;age&quot;: 12,
             &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;user_id&quot;: 7,
+            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;species&quot;: &quot;Perro&quot;,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 6,
+            &quot;weight&quot;: 28,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;user_id&quot;: 7,
+            &quot;name&quot;: &quot;Luna&quot;,
+            &quot;species&quot;: &quot;Gato&quot;,
+            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+            &quot;age&quot;: 1,
+            &quot;weight&quot;: 4.2,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 7,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;name&quot;: &quot;Max&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 6,
-            &quot;weight&quot;: 30.5,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 5,
+            &quot;weight&quot;: 28,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 8,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Kira&quot;,
+            &quot;name&quot;: &quot;Nina&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+            &quot;breed&quot;: &quot;Persa&quot;,
             &quot;age&quot;: 2,
-            &quot;weight&quot;: 5.5,
+            &quot;weight&quot;: 5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
@@ -3120,51 +3089,51 @@ access-control-allow-origin: *
             &quot;user_id&quot;: 9,
             &quot;name&quot;: &quot;Toby&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 9,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Golden Retriever&quot;,
+            &quot;age&quot;: 10,
+            &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 10,
             &quot;user_id&quot;: 9,
-            &quot;name&quot;: &quot;Mia&quot;,
+            &quot;name&quot;: &quot;Cleo&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 5,
-            &quot;weight&quot;: 5,
+            &quot;breed&quot;: &quot;Maine Coon&quot;,
+            &quot;age&quot;: 2,
+            &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 11,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Zeus&quot;,
+            &quot;name&quot;: &quot;Rocky&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 8,
-            &quot;weight&quot;: 35,
+            &quot;breed&quot;: &quot;Labrador&quot;,
+            &quot;age&quot;: 3,
+            &quot;weight&quot;: 28,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 12,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Nala&quot;,
+            &quot;name&quot;: &quot;Luna&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 9,
+            &quot;age&quot;: 3,
             &quot;weight&quot;: 7.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;deleted_at&quot;: null
         }
     ],
@@ -3175,8 +3144,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
             &quot;base_price&quot;: &quot;20.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 2,
@@ -3184,8 +3153,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
             &quot;base_price&quot;: &quot;35.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 3,
@@ -3193,8 +3162,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
             &quot;base_price&quot;: &quot;25.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 4,
@@ -3202,8 +3171,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
             &quot;base_price&quot;: &quot;30.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 5,
@@ -3211,8 +3180,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
             &quot;base_price&quot;: &quot;40.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 6,
@@ -3220,8 +3189,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
             &quot;base_price&quot;: &quot;40.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 7,
@@ -3229,8 +3198,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
             &quot;base_price&quot;: &quot;35.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 8,
@@ -3238,8 +3207,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
             &quot;base_price&quot;: &quot;500.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 9,
@@ -3247,8 +3216,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 10,
@@ -3256,8 +3225,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 11,
@@ -3265,8 +3234,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Ambulancia y atenci&oacute;n 24h&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 12,
@@ -3274,8 +3243,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Tratamiento dental y limpieza&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         },
         {
             &quot;id&quot;: 13,
@@ -3283,8 +3252,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Atenci&oacute;n especial por especie&quot;,
             &quot;base_price&quot;: &quot;100.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
         }
     ]
 }</code>
@@ -3396,9 +3365,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-16\",
-    \"end_date\": \"2052-02-16\",
-    \"status\": \"pending\",
+    \"start_date\": \"2022-02-20\",
+    \"end_date\": \"2052-02-21\",
+    \"status\": \"confirmed\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -3418,9 +3387,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-16",
-    "end_date": "2052-02-16",
-    "status": "pending",
+    "start_date": "2022-02-20",
+    "end_date": "2052-02-21",
+    "status": "confirmed",
     "total_price": 39
 };
 
@@ -3549,10 +3518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-reservations"
-               value="2022-02-16"
+               value="2022-02-20"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-16</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-20</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -3561,10 +3530,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-reservations"
-               value="2052-02-16"
+               value="2052-02-21"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-16</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-21</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -3573,10 +3542,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-reservations"
-               value="pending"
+               value="confirmed"
                data-component="body">
     <br>
-<p>Example: <code>pending</code></p>
+<p>Example: <code>confirmed</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -3649,12 +3618,12 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;user_id&quot;: 4,
     &quot;pet_id&quot;: 1,
-    &quot;start_date&quot;: &quot;2026-01-23&quot;,
-    &quot;end_date&quot;: &quot;2026-01-26&quot;,
+    &quot;start_date&quot;: &quot;2026-01-27&quot;,
+    &quot;end_date&quot;: &quot;2026-01-30&quot;,
     &quot;status&quot;: &quot;confirmed&quot;,
-    &quot;total_price&quot;: &quot;190.00&quot;,
-    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+    &quot;total_price&quot;: &quot;50.00&quot;,
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
     &quot;deleted_at&quot;: null,
     &quot;user&quot;: {
         &quot;id&quot;: 4,
@@ -3664,76 +3633,37 @@ access-control-allow-origin: *
         &quot;two_factor_confirmed_at&quot;: null,
         &quot;current_team_id&quot;: null,
         &quot;profile_photo_path&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
         &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
     },
     &quot;pet&quot;: {
         &quot;id&quot;: 1,
         &quot;user_id&quot;: 4,
-        &quot;name&quot;: &quot;Max&quot;,
+        &quot;name&quot;: &quot;Toby&quot;,
         &quot;species&quot;: &quot;Perro&quot;,
-        &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-        &quot;age&quot;: 2,
-        &quot;weight&quot;: 35,
+        &quot;breed&quot;: &quot;Golden Retriever&quot;,
+        &quot;age&quot;: 6,
+        &quot;weight&quot;: 30.5,
         &quot;notes&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
         &quot;deleted_at&quot;: null
     },
     &quot;services&quot;: [
         {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Hopitalizaci&oacute;n&quot;,
-            &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
-            &quot;base_price&quot;: &quot;40.00&quot;,
-            &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;pivot&quot;: {
-                &quot;reservation_id&quot;: 1,
-                &quot;service_id&quot;: 6,
-                &quot;price&quot;: &quot;40.00&quot;,
-                &quot;duration&quot;: 60,
-                &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
-            }
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Sesi&oacute;n de fotos&quot;,
-            &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
+            &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;pivot&quot;: {
                 &quot;reservation_id&quot;: 1,
-                &quot;service_id&quot;: 9,
-                &quot;price&quot;: &quot;50.00&quot;,
-                &quot;duration&quot;: 60,
-                &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
-            }
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Animales ex&oacute;ticos&quot;,
-            &quot;description&quot;: &quot;Atenci&oacute;n especial por especie&quot;,
-            &quot;base_price&quot;: &quot;100.00&quot;,
-            &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;pivot&quot;: {
-                &quot;reservation_id&quot;: 1,
-                &quot;service_id&quot;: 13,
-                &quot;price&quot;: &quot;100.00&quot;,
-                &quot;duration&quot;: 60,
-                &quot;notes&quot;: &quot;Servicio de prueba&quot;,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;service_id&quot;: 10,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             }
         }
     ]
@@ -3859,8 +3789,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-16\",
-    \"end_date\": \"2052-02-16\",
+    \"start_date\": \"2022-02-20\",
+    \"end_date\": \"2052-02-21\",
     \"status\": \"pending\",
     \"total_price\": 39
 }"
@@ -3881,8 +3811,8 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-16",
-    "end_date": "2052-02-16",
+    "start_date": "2022-02-20",
+    "end_date": "2052-02-21",
     "status": "pending",
     "total_price": 39
 };
@@ -4029,10 +3959,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2022-02-16"
+               value="2022-02-20"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-16</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-20</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -4041,10 +3971,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2052-02-16"
+               value="2052-02-21"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-16</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-21</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -4273,8 +4203,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
                 &quot;base_price&quot;: &quot;20.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 2,
@@ -4282,8 +4212,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
                 &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 3,
@@ -4291,8 +4221,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
                 &quot;base_price&quot;: &quot;25.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 4,
@@ -4300,8 +4230,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
                 &quot;base_price&quot;: &quot;30.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 5,
@@ -4309,8 +4239,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
                 &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 6,
@@ -4318,8 +4248,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
                 &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 7,
@@ -4327,8 +4257,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
                 &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 8,
@@ -4336,8 +4266,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
                 &quot;base_price&quot;: &quot;500.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 9,
@@ -4345,8 +4275,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
                 &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             },
             {
                 &quot;id&quot;: 10,
@@ -4354,8 +4284,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
                 &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/services?page=1&quot;,
@@ -4505,7 +4435,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": false
+    \"is_active\": true
 }"
 </code></pre></div>
 
@@ -4525,7 +4455,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": false
+    "is_active": true
 };
 
 fetch(url, {
@@ -4678,7 +4608,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -4739,8 +4669,8 @@ access-control-allow-origin: *
     &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
     &quot;base_price&quot;: &quot;20.00&quot;,
     &quot;is_active&quot;: 1,
-    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -4864,7 +4794,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": false
+    \"is_active\": true
 }"
 </code></pre></div>
 
@@ -4884,7 +4814,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": false
+    "is_active": true
 };
 
 fetch(url, {
@@ -5054,7 +4984,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -5254,14 +5184,14 @@ access-control-allow-origin: *
             {
                 &quot;id&quot;: 1,
                 &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Max&quot;,
+                &quot;name&quot;: &quot;Toby&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                &quot;age&quot;: 2,
-                &quot;weight&quot;: 35,
+                &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                &quot;age&quot;: 6,
+                &quot;weight&quot;: 30.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 4,
@@ -5271,22 +5201,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 2,
                 &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Nina&quot;,
+                &quot;name&quot;: &quot;Cleo&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 12,
-                &quot;weight&quot;: 5,
+                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                &quot;age&quot;: 8,
+                &quot;weight&quot;: 5.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 4,
@@ -5296,22 +5226,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 3,
                 &quot;user_id&quot;: 6,
-                &quot;name&quot;: &quot;Zeus&quot;,
+                &quot;name&quot;: &quot;Thor&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Labrador&quot;,
-                &quot;age&quot;: 8,
-                &quot;weight&quot;: 28,
+                &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+                &quot;age&quot;: 10,
+                &quot;weight&quot;: 35,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 6,
@@ -5321,22 +5251,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 4,
                 &quot;user_id&quot;: 6,
-                &quot;name&quot;: &quot;Nala&quot;,
+                &quot;name&quot;: &quot;Mia&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-                &quot;age&quot;: 14,
-                &quot;weight&quot;: 4.2,
+                &quot;breed&quot;: &quot;Maine Coon&quot;,
+                &quot;age&quot;: 12,
+                &quot;weight&quot;: 7.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 6,
@@ -5346,22 +5276,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 5,
                 &quot;user_id&quot;: 7,
-                &quot;name&quot;: &quot;Bruno&quot;,
+                &quot;name&quot;: &quot;Rocky&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-                &quot;age&quot;: 2,
-                &quot;weight&quot;: 12,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 6,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 7,
@@ -5371,22 +5301,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 6,
                 &quot;user_id&quot;: 7,
-                &quot;name&quot;: &quot;Mia&quot;,
+                &quot;name&quot;: &quot;Luna&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Maine Coon&quot;,
-                &quot;age&quot;: 12,
-                &quot;weight&quot;: 7.5,
+                &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+                &quot;age&quot;: 1,
+                &quot;weight&quot;: 4.2,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 7,
@@ -5396,22 +5326,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 7,
                 &quot;user_id&quot;: 8,
-                &quot;name&quot;: &quot;Rocky&quot;,
+                &quot;name&quot;: &quot;Max&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                &quot;age&quot;: 6,
-                &quot;weight&quot;: 30.5,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 5,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 8,
@@ -5421,22 +5351,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 8,
                 &quot;user_id&quot;: 8,
-                &quot;name&quot;: &quot;Kira&quot;,
+                &quot;name&quot;: &quot;Nina&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                &quot;breed&quot;: &quot;Persa&quot;,
                 &quot;age&quot;: 2,
-                &quot;weight&quot;: 5.5,
+                &quot;weight&quot;: 5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 8,
@@ -5446,8 +5376,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -5456,12 +5386,12 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 9,
                 &quot;name&quot;: &quot;Toby&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Labrador&quot;,
-                &quot;age&quot;: 9,
-                &quot;weight&quot;: 28,
+                &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                &quot;age&quot;: 10,
+                &quot;weight&quot;: 30.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 9,
@@ -5471,22 +5401,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 10,
                 &quot;user_id&quot;: 9,
-                &quot;name&quot;: &quot;Mia&quot;,
+                &quot;name&quot;: &quot;Cleo&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 5,
-                &quot;weight&quot;: 5,
+                &quot;breed&quot;: &quot;Maine Coon&quot;,
+                &quot;age&quot;: 2,
+                &quot;weight&quot;: 7.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 9,
@@ -5496,8 +5426,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             }
@@ -5548,8 +5478,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5560,8 +5490,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5572,8 +5502,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5584,8 +5514,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5596,8 +5526,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5608,8 +5538,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5620,8 +5550,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5632,8 +5562,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5644,8 +5574,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5656,8 +5586,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         }
     ]
@@ -6034,14 +5964,14 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;id&quot;: 1,
     &quot;user_id&quot;: 4,
-    &quot;name&quot;: &quot;Max&quot;,
+    &quot;name&quot;: &quot;Toby&quot;,
     &quot;species&quot;: &quot;Perro&quot;,
-    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-    &quot;age&quot;: 2,
-    &quot;weight&quot;: 35,
+    &quot;breed&quot;: &quot;Golden Retriever&quot;,
+    &quot;age&quot;: 6,
+    &quot;weight&quot;: 30.5,
     &quot;notes&quot;: null,
-    &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
     &quot;deleted_at&quot;: null,
     &quot;owner&quot;: {
         &quot;id&quot;: 4,
@@ -6051,8 +5981,8 @@ access-control-allow-origin: *
         &quot;two_factor_confirmed_at&quot;: null,
         &quot;current_team_id&quot;: null,
         &quot;profile_photo_path&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
         &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
     }
 }</code>
@@ -6605,8 +6535,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6617,8 +6547,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6629,8 +6559,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6641,8 +6571,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6653,8 +6583,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:08.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6665,8 +6595,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6677,8 +6607,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6689,8 +6619,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:09.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6701,8 +6631,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6713,8 +6643,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             }
         ],
@@ -7071,8 +7001,8 @@ access-control-allow-origin: *
     &quot;two_factor_confirmed_at&quot;: null,
     &quot;current_team_id&quot;: null,
     &quot;profile_photo_path&quot;: null,
-    &quot;created_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-23T18:31:07.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
 }</code>
  </pre>
@@ -7559,9 +7489,9 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">[
     {
         &quot;id&quot;: 1,
-        &quot;amount&quot;: &quot;190.00&quot;,
+        &quot;amount&quot;: &quot;50.00&quot;,
         &quot;payment_method&quot;: &quot;credit_card&quot;,
-        &quot;paid_at&quot;: &quot;2026-01-23T18:31:10.000000Z&quot;
+        &quot;paid_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
     }
 ]</code>
  </pre>

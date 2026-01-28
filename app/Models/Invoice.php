@@ -23,7 +23,7 @@ class Invoice extends Model
         return $this->belongsTo(Reservation::class);
     }
 
-    public function payments(): Invoice|\Illuminate\Database\Eloquent\Relations\HasMany
+    public function payments(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Payment::class);
     }
