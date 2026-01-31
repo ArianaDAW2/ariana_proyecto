@@ -3,7 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\ReservationCreatedEvent;
-use App\Jobs\procesarPDF;
+use App\Jobs\resservationCreatedMailJob;
 use App\Mail\ReservationCreatedMail;
 use Illuminate\Support\Facades\Mail;
 
@@ -13,7 +13,7 @@ class ReservationCreatedListener
     {
 
         // Procesar el PDF de forma síncrona para obtener el contenido
-        $pdfContent = (new procesarPDF($event->reservation))->handle();
+        $pdfContent = (new resservationCreatedMailJob($event->reservation))->handle();
 
         Mail::to($event->reservation->user->email)->send(
             new ReservationCreatedMail(

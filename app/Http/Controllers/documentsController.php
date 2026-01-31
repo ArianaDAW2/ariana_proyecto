@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\AdminMessageEvent;
 use App\Events\ContactFormEvent;
 use Illuminate\Http\Request;
 
 class documentsController extends Controller
 {
-    //Contact Email
+    //ContactEmail ===========================================================
     public function show_contact()
     {
         return view('public.contact');
@@ -29,5 +30,26 @@ class documentsController extends Controller
 
         return back()->with('status', __('public.message_sent'));
     }
-    //PDF
+
+    //AdminMessage =============================================================
+    public function show_adminMessage()
+    {
+        return view('admin.extra.create');
+    }
+
+    public function send_adminMessage(Request $request)
+    {
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'message' => 'required|string|max:5000',
+        ]);
+
+        AdminMessageEvent::dispatch(
+            $validated['title'],
+            $validated['message']
+        );
+
+        return redirect()->back()
+            ->with('success', 'Mensaje enviado a todos los usuarios.');
+    }
 }

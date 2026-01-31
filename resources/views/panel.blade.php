@@ -12,18 +12,9 @@
             <nav class="space-y-2">
                 <h3 class="text-gray-500 uppercase text-xs font-semibold mb-2">{{ __('private.admin_panel') }}</h3>
 
-                <a href="{{ route('admin.users') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.users') }}</a>
-                <a href="{{ route('admin.pets') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.pets') }}</a>
-                <a href="{{ route('admin.reservations') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.reservations') }}</a>
-                <a href="{{ route('admin.medical-records') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.medical_records') }}</a>
-                <a href="{{ route('admin.services') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.services') }}</a>
-                <a href="{{ route('admin.invoices') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.invoices') }}</a>
+                <a href="{{ route('document.admin.extra.create') }}"
+                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.global_message') }}</a>
+
                 <a href="{{ route('admin.payments') }}"
                    class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.payments') }}</a>
             </nav>

@@ -16,7 +16,7 @@ use Illuminate\Queue\SerializesModels;
  * Este Job implementa ShouldQueue, lo que significa que puede ejecutarse
  * de forma asíncrona en segundo plano a través del sistema de colas de Laravel
  */
-class procesarPDF implements ShouldQueue
+class resservationCreatedMailJob implements ShouldQueue
 {
     // Dispatchable: Permite despachar el Job con Job::dispatch()
     // InteractsWithQueue: Permite interactuar con la cola (reintentos, eliminar, etc.)

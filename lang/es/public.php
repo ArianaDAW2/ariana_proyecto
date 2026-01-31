@@ -34,7 +34,7 @@ return [
     //Contacto
     'contact' => 'CONTACTO',
     'email' => 'Correo',
-    'message' => 'Mensaje',
+    'extra' => 'Mensaje',
     'your_title' => 'Título',
     'your_email' => 'Tu correo electrónico',
     'your_message' => 'Tu mensaje',

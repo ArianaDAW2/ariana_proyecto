@@ -13,7 +13,7 @@ class ContactFormEvent
     public function __construct(
         public string $title,
         public string $email,
-        public string $message
+        public string $contactMessage
     )
     {
     }

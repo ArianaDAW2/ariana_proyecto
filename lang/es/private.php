@@ -1,6 +1,8 @@
 <?php
 
 return [
+    //personal
+    'global_message' => 'Mensaje global',
     //Facturas
     'reservation' => 'Reserva',
     'invoice_number' => 'Número factura',

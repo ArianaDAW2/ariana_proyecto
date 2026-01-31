@@ -1,6 +1,8 @@
 <?php
 
 return [
+    //personal
+    'global_message' => 'Global Message ',
     //Facturas
     'reservation' => 'Reservation',
     'invoice_number' => 'Invoice number',
@@ -89,5 +91,5 @@ return [
     'go_to_medical_records' => 'Go to Medical Records',
     'go_to_services' => 'Go to Services',
     'go_to_invoices' => 'Go to Invoices',
-    
+
 ];

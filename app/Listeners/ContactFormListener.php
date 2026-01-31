@@ -13,7 +13,7 @@ class ContactFormListener
         Mail::to('ariana.irissa@gmail.com')->send(new ContactFormMail(
             $event->title,
             $event->email,
-            $event->message
+            $event->contactMessage
         ));
     }
 }

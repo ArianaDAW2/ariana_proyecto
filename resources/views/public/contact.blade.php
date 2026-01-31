@@ -28,7 +28,7 @@
             </div>
 
             <div class="mb-4">
-                <x-label for="message" value="{{ __('public.message') }}"/>
+                <x-label for="message" value="{{ __('public.extra') }}"/>
                 <textarea id="message" name="message" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
                           rows="4" placeholder="{{ __('public.your_message') }}"
                           required>{{ old('message') }}</textarea>

@@ -34,10 +34,10 @@ return [
     //Conctacto
     'contact' => 'CONTACT',
     'email' => 'Email',
-    'message' => 'Message',
+    'extra' => 'Message',
     'your_title' => 'Title',
     'your_email' => 'Your email',
-    'your_message' => 'Your message',
+    'your_message' => 'Your extra',
     'send' => 'Send',
     //Guest
     'dashboard' => 'Dashboard',
