@@ -7,7 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-md mx-auto sm:px-6 lg:px-8">
-            <form method="POST" action="{{ route('document.admin.extra.send') }}"
+            <form method="POST" action="{{ route('document.admin.message') }}"
                   class="bg-white w-full max-w-[500px] shadow-lg p-6 rounded-lg">
                 @csrf
 

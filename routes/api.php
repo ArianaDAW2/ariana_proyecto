@@ -5,7 +5,7 @@ use App\Http\Controllers\APIControllers\{
     medicalRecordsAPICrud,
     paymentsAPI,
     petsAPICrud,
-    reservationsAPICrud,
+    resservationsAPICrud,
     servicesAPICrud,
     usersAPICrud
 };
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('invoices', invoicesAPICrud::class);
 Route::apiResource('medical-records', medicalRecordsAPICrud::class);
-Route::apiResource('reservations', reservationsAPICrud::class);
+Route::apiResource('reservations', resservationsAPICrud::class);
 Route::apiResource('services', servicesAPICrud::class);
 Route::apiResource('pets', petsAPICrud::class);
 Route::apiResource('users', usersAPICrud::class);

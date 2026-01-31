@@ -19,7 +19,7 @@ class InvoiceSeeder extends Seeder
                 'invoice_number' => 'FAC-' . str_pad($reservation->id, 5, '0', STR_PAD_LEFT),
                 'total' => $reservation->total_price,
                 'status' => $index % 2 == 0 ? 'paid' : 'unpaid',
-                'issued_at' => Carbon::now(),
+                'issued_at' => $reservation->start_date,
             ]);
         }
     }

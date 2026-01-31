@@ -12,4 +12,6 @@ Route::post('/contact-send', [documentsController::class, 'send_contact'])
 Route::get('/admin/extra/create', [documentsController::class, 'show_adminMessage'])
     ->name('admin.extra.create');
 Route::post('/admin/extra/send', [documentsController::class, 'send_adminMessage'])
-    ->name('admin.extra.send');
+    ->name('admin.message');
+Route::get('/pdf/invoices', [documentsController::class, 'print_invoices'])
+    ->name('print.invoices');

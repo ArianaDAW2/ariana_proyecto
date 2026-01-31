@@ -9,7 +9,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 
 
@@ -28,7 +27,6 @@ class AdminMessageJob implements ShouldQueue
         $this->body = $body;
 
         $this->onQueue('emails');
-        Artisan::call('admin:message');
 
     }
 

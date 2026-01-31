@@ -26,3 +26,9 @@ Thumbs.db
 # Project exclude paths
 /storage/app/
 /storage/framework/
+/bootstrap/cache/*
+/storage/framework/cache/*
+# .gitignore
+--cache-directory/
+coverage/
+.phpunit.cache/

@@ -24,7 +24,7 @@
             </select>
             @error('status') <span>{{ $message }}</span> @enderror
 
-            <input type="datetime-local" wire:model="issued_at">
+            <input type="date" wire:model="issued_at">
             @error('issued_at') <span>{{ $message }}</span> @enderror
 
             <button type="submit">
@@ -34,7 +34,10 @@
     @endcan
 
     <hr>
-
+    <a href="{{ route('document.print.invoices') }}" class="btn btn-primary">
+        Facturas del trimestre anterior
+    </a>
+    <hr>
     {{-- LISTADO --}}
     <table>
         <thead>

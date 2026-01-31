@@ -66,10 +66,10 @@ class InvoicesCrud extends Component
     public function update()
     {
         $invoice = Invoice::findOrFail($this->invoiceId);
+
         $this->authorize('update', $invoice);
 
         $validated = $this->validate();
-
         $invoice->update($validated);
 
         $this->resetForm();

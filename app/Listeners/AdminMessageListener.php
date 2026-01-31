@@ -5,6 +5,7 @@ namespace App\Listeners;
 use App\Events\AdminMessageEvent;
 use App\Jobs\AdminMessageJob;
 use App\Models\User;
+use Illuminate\Support\Facades\Artisan;
 
 class AdminMessageListener
 {
@@ -22,5 +23,8 @@ class AdminMessageListener
                 $event->body
             );
         }
+        //worker: emails 1 vez
+        Artisan::call('admin:message');
+
     }
 }

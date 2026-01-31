@@ -13,26 +13,33 @@ class ReservationSeeder extends Seeder
 {
     public function run(): void
     {
-        $client = User::where('email', 'client@mail.es')->first();
-        $pets = Pet::where('user_id', $client->id)->get();
+        $clients = User::role('Cliente')->get();
         $services = Service::all();
 
-        if ($pets->isEmpty() || $services->isEmpty()) return;
+        if ($services->isEmpty()) return;
 
-        foreach ($pets as $index => $pet) {
-            $randomServices = $services->random(rand(1, 4));
-            $totalPrice = $randomServices->sum('base_price');
+        foreach ($clients as $client) {
+            $pets = Pet::where('user_id', $client->id)->get();
 
-            $reservation = Reservation::create([
-                'user_id' => $client->id,
-                'pet_id' => $pet->id,
-                'start_date' => Carbon::now()->addDays($index * 5),
-                'end_date' => Carbon::now()->addDays($index * 5 + 3),
-                'status' => 'confirmed',
-                'total_price' => $totalPrice,
-            ]);
+            if ($pets->isEmpty()) continue;
 
-            $reservation->services()->attach($randomServices->pluck('id'));
+            foreach ($pets as $index => $pet) {
+                $randomServices = $services->random(rand(1, min(5, $services->count())));
+                $totalPrice = $randomServices->sum('base_price');
+
+                $startDate = Carbon::now()->addDays(rand(-120, 30));
+
+                $reservation = Reservation::create([
+                    'user_id' => $client->id,
+                    'pet_id' => $pet->id,
+                    'start_date' => $startDate,
+                    'end_date' => $startDate->copy()->addDays(rand(5, 30)),
+                    'status' => ['pending', 'confirmed', 'cancelled'][rand(0, 2)],
+                    'total_price' => $totalPrice,
+                ]);
+
+                $reservation->services()->attach($randomServices->pluck('id'));
+            }
         }
     }
 }

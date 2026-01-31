@@ -23,7 +23,7 @@ class InvoiceRequest extends FormRequest
             ],
             'total' => ['required', 'numeric', 'min:0'],
             'status' => ['required', 'in:paid,unpaid'],
-            'issued_at' => ['nullable', 'date'],
+            'issued_at' => ['required', 'date'],
         ];
     }
 }

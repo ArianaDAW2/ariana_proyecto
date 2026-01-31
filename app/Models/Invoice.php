@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -27,6 +28,15 @@ class Invoice extends Model
     {
         return $this->hasMany(Payment::class);
     }
+
     //Scopes
 
+    public function scopetrimestral($query)
+    {
+        $startDate = Carbon::now()->subQuarter()->startOfQuarter();
+        $endDate = Carbon::now()->subQuarter()->endOfQuarter();
+
+        return $query->whereBetween('issued_at', [$startDate, $endDate])
+            ->where('status', 'paid');
+    }
 }

@@ -11,7 +11,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 
-class reservationsAPICrud extends Controller
+class resservationsAPICrud extends Controller
 {
     use AuthorizesRequests;
 

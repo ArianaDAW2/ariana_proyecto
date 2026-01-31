@@ -1,4 +1,3 @@
-<!-- resources/views/emails/reservation-confirmation.blade.php -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,18 +15,15 @@
 
     <!-- Content -->
     <div style="padding: 32px;">
-        <h2 style="color: #15803d; margin: 0 0 16px 0; font-size: 20px;">¡Gracias por tu
-            reserva {{ $reservation->user->name }}!</h2>
+        <h2 style="color: #15803d; margin: 0 0 16px 0; font-size: 20px;">¡Bienvenido, {{ $user->name }}!</h2>
 
         <div style="background-color: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #16a34a;">
-            <p>Hola {{ $reservation->client_name }},</p>
-            <p>Tu reserva ha sido confirmada:</p>
+            <p style="margin: 0; white-space: pre-wrap; color: #374151;">Gracias por registrarte en HotelForPets.</p>
+            <p> Ahoras formas parte de la familia</p>
+            <p>Ya puedes:</p>
             <ul>
-                <li><strong>Fecha:</strong> {{ $reservation->start_date }}</li>
-                <li><strong>Mascota:</strong> {{ $reservation->pet->name }}</li>
-            </ul>
-
-            <p>¡Te esperamos!</p>
+                <li>Hacer reservas de hospedaje</li>
+                <li>Agendar citas veterinarias</li>
             </ul>
         </div>
     </div>
@@ -38,7 +34,7 @@
             HotelForPets - Cuidamos a tu mascota como familia 🐕
         </p>
         <p style="margin: 8px 0 0 0; color: #6b7280; font-size: 12px;">
-            @todos los derechos reservados a HoterForPets
+            Este mensaje fue enviado a todos los usuarios registrados.
         </p>
     </div>
 </div>

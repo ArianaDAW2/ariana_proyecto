@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Events\AdminMessageEvent;
 use App\Events\ContactFormEvent;
+use App\Models\Invoice;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class documentsController extends Controller
 {
-    //ContactEmail ===========================================================
+    //ContactEmail ===========================================================================
     public function show_contact()
     {
         return view('public.contact');
@@ -31,7 +34,7 @@ class documentsController extends Controller
         return back()->with('status', __('public.message_sent'));
     }
 
-    //AdminMessage =============================================================
+    //AdminMessage ===========================================================================
     public function show_adminMessage()
     {
         return view('admin.extra.create');
@@ -51,5 +54,27 @@ class documentsController extends Controller
 
         return redirect()->back()
             ->with('success', 'Mensaje enviado a todos los usuarios.');
+    }
+
+    //Facturas ========================================================================
+
+
+    public function print_invoices()
+    {
+        $startDate = Carbon::now()->subQuarter()->startOfQuarter();
+        $endDate = Carbon::now()->subQuarter()->endOfQuarter();
+
+        $invoices = Invoice::trimestral()
+            ->with('reservation.user')
+            ->get();
+
+        $pdf = Pdf::loadView('pdf.invoices', [
+            'invoices' => $invoices,
+            'startDate' => $startDate,
+            'endDate' => $endDate,
+            'total' => $invoices->sum('total'),
+        ]);
+
+        return $pdf->download('facturas-trimestre-' . $startDate->format('Y-m') . '.pdf');
     }
 }

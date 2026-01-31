@@ -3,22 +3,22 @@
 namespace App\Listeners;
 
 use App\Events\ReservationCreatedEvent;
-use App\Jobs\resservationCreatedMailJob;
 use App\Mail\ReservationCreatedMail;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Mail;
 
 class ReservationCreatedListener
 {
     public function handle(ReservationCreatedEvent $event): void
     {
-
-        // Procesar el PDF de forma síncrona para obtener el contenido
-        $pdfContent = (new resservationCreatedMailJob($event->reservation))->handle();
+        $pdf = Pdf::loadView('pdf.reservation', [
+            'reservation' => $event->reservation
+        ]);
 
         Mail::to($event->reservation->user->email)->send(
             new ReservationCreatedMail(
                 $event->reservation,
-                $pdfContent)
-        );
+                $pdf->output()
+            ));
     }
 }
