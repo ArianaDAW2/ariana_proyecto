@@ -18,6 +18,11 @@ class Reservation extends Model
         'total_price',
     ];
 
+    protected $casts = [
+        'start_date' => 'date',
+        'end_date' => 'date',
+    ];
+
     //Relaciones
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {

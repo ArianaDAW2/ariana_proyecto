@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Events\CheckOutPetEvent;
 use App\Events\ReservationCreatedEvent;
 use App\Models\Reservation;
 use App\Models\User;
@@ -93,6 +94,7 @@ class ReservationsCrud extends Component
         $reservation = Reservation::findOrFail($this->reservationId);
         $this->authorize('update', $reservation);
 
+        $oldStatus = $reservation->status;
         $validated = $this->validate();
 
         $reservation->update($validated);
@@ -100,7 +102,10 @@ class ReservationsCrud extends Component
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
-
+        if ($oldStatus !== 'completed' && $reservation->status === 'completed') {
+            $reservation->load('user', 'pet');
+            CheckOutPetEvent::dispatch($reservation);
+        }
         $this->resetForm();
     }
 
