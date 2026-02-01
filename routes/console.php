@@ -19,3 +19,5 @@ Schedule::call(function () {
         ReservationReminderEvent::dispatch($reservation);
     }
 })->dailyAt('10:00');
+
+Schedule::command('admin:cancel')->dailyAt('11:00');
