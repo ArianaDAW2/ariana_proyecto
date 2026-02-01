@@ -75,6 +75,16 @@ class documentsController extends Controller
             'total' => $invoices->sum('total'),
         ]);
 
-        return $pdf->download('facturas-trimestre-' . $startDate->format('Y-m') . '.pdf');
+        return $pdf->download('Facturas-trimestre-' . $startDate->format('Y-m') . '.pdf');
     }
+
+    public function print_morosos()
+    {
+        $invoices = Invoice::morosos()->get();
+
+        $pdf = Pdf::loadView('pdf.morosos', compact('invoices'));
+
+        return $pdf->download('morosos.pdf');
+    }
+
 }

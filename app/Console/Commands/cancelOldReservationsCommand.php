@@ -23,7 +23,7 @@ class cancelOldReservationsCommand extends Command
             $reservation->update(['status' => 'cancelled']);
             CancelOldReservationsJob::dispatch($reservation);
         }
-        Artisan::call('admin:message');
+        //Artisan::call('admin:oneQueue');
         $this->info("Reservas pendientes canceladas: {$reservations->count()}");
     }
 }

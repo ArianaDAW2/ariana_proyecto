@@ -18,6 +18,10 @@
     @endcan
 
     <hr>
+    <a href="{{ route('document.print.morosos') }}" class="btn btn-primary">
+        Descargar Morosos PDF
+    </a>
+    <hr>
 
     {{-- LISTADO --}}
     <table>

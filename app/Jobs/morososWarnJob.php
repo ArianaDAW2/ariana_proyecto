@@ -2,30 +2,27 @@
 
 namespace App\Jobs;
 
-use App\Mail\CancelOldReservationsMail;
-use App\Models\Reservation;
+use App\Mail\morososWarnMail;
+use App\Models\Invoice;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 
-class CancelOldReservationsJob implements ShouldQueue
+class morososWarnJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public function __construct(public Reservation $reservation)
+    public function __construct(public Invoice $invoice)
     {
-
     }
 
     public function handle(): void
     {
         sleep(10);
-        Mail::to($this->reservation->user->email)->send(
-            new CancelOldReservationsMail($this->reservation)
-        );
+        Mail::to($this->invoice->reservation->user->email)
+            ->send(new morososWarnMail($this->invoice));
     }
 }

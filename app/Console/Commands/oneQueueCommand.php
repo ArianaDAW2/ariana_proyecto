@@ -5,9 +5,9 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
-class AdminMessageCommand extends Command
+class oneQueueCommand extends Command
 {
-    protected $signature = 'admin:message';
+    protected $signature = 'admin:oneQueue';
     protected $description = 'php artisan queue:work';
 
     public function handle(): void

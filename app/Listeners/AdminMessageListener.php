@@ -23,8 +23,8 @@ class AdminMessageListener
                 $event->body
             );
         }
-        //worker: emails 1 vez
-        Artisan::call('admin:message');
+        //worker:  1 vez
+        //Artisan::call('admin:oneQueue');
 
     }
 }

@@ -39,4 +39,10 @@ class Invoice extends Model
         return $query->whereBetween('issued_at', [$startDate, $endDate])
             ->where('status', 'paid');
     }
+
+    public function scopemorosos($query)
+    {
+        return $query->where('status', 'unpaid')
+            ->with('reservation.user');
+    }
 }

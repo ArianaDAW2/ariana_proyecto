@@ -26,7 +26,7 @@ class AdminMessageJob implements ShouldQueue
         $this->title = $title;
         $this->body = $body;
 
-        $this->onQueue('emails');
+        //$this->onQueue('emails');
 
     }
 
