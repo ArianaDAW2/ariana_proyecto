@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\Pet;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -45,10 +46,12 @@ class ReservationsCrud extends Component
     {
         $this->authorize('view', Reservation::class);
 
+        $files = Storage::files('contracts');
         $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
         $users = User::all();
 
         return view('livewire.reservations-crud', [
+            'files' => $files,
             'reservations' => $reservations,
             'users' => $users,
             'pets' => Pet::all(),

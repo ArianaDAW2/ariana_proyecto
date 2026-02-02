@@ -5,19 +5,14 @@ use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 use App\Events\ReservationReminderEvent;
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
-})->purpose('Display an inspiring quote');
-
 //24 h reservas
-Schedule::call(function () {
-    $reservations = Reservation::whereDate('start_date', today()->addDay())
-        ->where('status', 'confirmed')
-        ->get();
-
-    foreach ($reservations as $reservation) {
-        ReservationReminderEvent::dispatch($reservation);
-    }
-})->dailyAt('10:00');
-
+Schedule::command('admin:pre-reminder')->dailyAt('11:00');
 Schedule::command('admin:cancel')->dailyAt('11:00');
+Schedule::command('admin:pos-reminder')->dailyAt('11:00');
+
+/*
+ *
+ * crontab -e
+ * * * * * * cd /opt/lampp/htdocs/proyectos/ariana_proyecto && /opt/lampp/bin/php artisan schedule:run >> /dev/null 2>&1
+ *
+ */

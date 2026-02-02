@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Events\AdminMessageEvent;
 use App\Events\ContactFormEvent;
+use App\Jobs\GeneratePetContractJob;
 use App\Models\Invoice;
+use App\Models\Reservation;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class documentsController extends Controller
 {
@@ -78,6 +81,7 @@ class documentsController extends Controller
         return $pdf->download('Facturas-trimestre-' . $startDate->format('Y-m') . '.pdf');
     }
 
+//Morosos ===========================================================================================
     public function print_morosos()
     {
         $invoices = Invoice::morosos()->get();
@@ -85,6 +89,25 @@ class documentsController extends Controller
         $pdf = Pdf::loadView('pdf.morosos', compact('invoices'));
 
         return $pdf->download('morosos.pdf');
+    }
+
+//Reservas firma ===========================================================================================
+
+    public function print_reservations()
+    {
+        $reservations = Reservation::with(['user', 'pet', 'services'])->get();
+
+        foreach ($reservations as $reservation) {
+            GeneratePetContractJob::dispatch($reservation);
+        }
+
+        return back()->with('success', "Generando {$reservations->count()} reportes...");
+    }
+
+    public function download_reservations($filename)
+    {
+        return Storage::download("contracts/{$filename}");
+
     }
 
 }

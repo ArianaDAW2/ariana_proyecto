@@ -47,7 +47,27 @@
             <button type="submit">{{ $isEdit ? __('private.update') : __('private.create_reservation') }}</button>
         </form>
     @endcan
+    <hr>
+    <a href="{{ route('document.print.reservations') }}" class="btn btn-primary">
+        Generar Contratos
+    </a>
 
+    <hr>
+    <h1>Contratos Generados</h1>
+
+    @if(count($files) > 0)
+        <ul>
+            @foreach($files as $file)
+                <li>
+                    <a href="{{ route('document.download.reservations', basename($file)) }}">
+                        {{ basename($file) }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    @else
+        <p>No hay contratos generados.</p>
+    @endif
     <hr>
 
     {{-- LISTADO --}}

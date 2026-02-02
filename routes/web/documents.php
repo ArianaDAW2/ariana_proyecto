@@ -19,3 +19,8 @@ Route::get('/pdf/invoices', [documentsController::class, 'print_invoices'])
 //Usuarios morosos
 Route::get('/admin/morosos', [documentsController::class, 'print_morosos'])
     ->name('print.morosos');
+//Reservas
+Route::get('/admin/contracts', [documentsController::class, 'print_reservations'])
+    ->name('print.reservations');
+Route::get('/admin/contracts/{filename}', [documentsController::class, 'download_reservations'])
+    ->name('download.reservations');

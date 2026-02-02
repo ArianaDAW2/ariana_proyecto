@@ -5,17 +5,17 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
-class oneQueueCommand extends Command
+class queueWorkCommand extends Command
 {
-    protected $signature = 'admin:oneQueue';
+    protected $signature = 'admin:queue';
     protected $description = 'php artisan queue:work';
 
     public function handle(): void
     {
-        $this->info('Procesando cola de emails...');
+        $this->info('Procesando colas');
 
-        Artisan::call('queue:work', [
-            '--once' => true,
+        $this->call('queue:work', [
+            '--stop-when-empty' => true,
         ]);
 
         $this->info('Completado');
