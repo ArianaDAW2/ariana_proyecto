@@ -14,7 +14,7 @@ class ServiceRequest extends FormRequest
     public function rules($serviceId = null): array
     {
         return [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:50'],
             'description' => ['nullable', 'string'],
             'base_price' => ['required', 'numeric', 'min:0'],
             'is_active' => ['required', 'boolean'],

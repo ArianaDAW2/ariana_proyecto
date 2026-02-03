@@ -15,9 +15,9 @@ class PetRequest extends FormRequest
     {
         return [
             'user_id' => ['required', 'exists:users,id'],
-            'name' => ['required', 'string', 'max:255'],
-            'species' => ['required', 'string', 'max:100'],
-            'breed' => ['nullable', 'string', 'max:100'],
+            'name' => ['required', 'string', 'max:50'],
+            'species' => ['required', 'string', 'max:50'],
+            'breed' => ['nullable', 'string', 'max:50'],
             'age' => ['required', 'integer', 'min:0'],
             'weight' => ['required', 'numeric', 'min:0'],
             'notes' => ['nullable', 'string'],

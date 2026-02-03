@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.2 API revisada">
-      <change beforePath="$PROJECT_DIR$/.scribe/endpoints.cache/00.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.scribe/endpoints.cache/00.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scribe/endpoints/00.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.scribe/endpoints/00.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/documentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/documentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/scribe.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/scribe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scribe/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scribe/index.blade.php" afterDir="false" />
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.2 sqlite funcional y controladores revisados">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/InvoiceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/InvoiceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PetRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PetRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ServiceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ServiceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,80 +236,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Pest.Main.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.width": "400",
-    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.x": "609",
-    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.y": "238",
-    "laravel_idea.dialogs.codeGeneration.window.createMailable.width": "400",
-    "laravel_idea.dialogs.codeGeneration.window.createMailable.x": "356",
-    "laravel_idea.dialogs.codeGeneration.window.createMailable.y": "305",
-    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.width": "403",
-    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.x": "437",
-    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.y": "491",
-    "laravel_idea.dialogs.code_generation:createConsoleCommand.width": "400",
-    "laravel_idea.dialogs.code_generation:createConsoleCommand.x": "474",
-    "laravel_idea.dialogs.code_generation:createConsoleCommand.y": "435",
-    "laravel_idea.dialogs.code_generation:createController.width": "400",
-    "laravel_idea.dialogs.code_generation:createController.x": "713",
-    "laravel_idea.dialogs.code_generation:createController.y": "376",
-    "laravel_idea.dialogs.code_generation:createDatabaseMigration.width": "400",
-    "laravel_idea.dialogs.code_generation:createDatabaseMigration.x": "588",
-    "laravel_idea.dialogs.code_generation:createDatabaseMigration.y": "189",
-    "laravel_idea.dialogs.code_generation:createEvent.width": "400",
-    "laravel_idea.dialogs.code_generation:createEvent.x": "356",
-    "laravel_idea.dialogs.code_generation:createEvent.y": "346",
-    "laravel_idea.dialogs.code_generation:createFeatureTest.width": "400",
-    "laravel_idea.dialogs.code_generation:createFeatureTest.x": "200",
-    "laravel_idea.dialogs.code_generation:createFeatureTest.y": "257",
-    "laravel_idea.dialogs.code_generation:createFormRequest.width": "400",
-    "laravel_idea.dialogs.code_generation:createFormRequest.x": "439",
-    "laravel_idea.dialogs.code_generation:createFormRequest.y": "508",
-    "laravel_idea.dialogs.code_generation:createJob.width": "437",
-    "laravel_idea.dialogs.code_generation:createJob.x": "260",
-    "laravel_idea.dialogs.code_generation:createJob.y": "362",
-    "laravel_idea.dialogs.code_generation:createListener.width": "400",
-    "laravel_idea.dialogs.code_generation:createListener.x": "356",
-    "laravel_idea.dialogs.code_generation:createListener.y": "338",
-    "laravel_idea.dialogs.code_generation:createLivewireComponent.width": "400",
-    "laravel_idea.dialogs.code_generation:createLivewireComponent.x": "439",
-    "laravel_idea.dialogs.code_generation:createLivewireComponent.y": "537",
-    "laravel_idea.dialogs.code_generation:createLivewireForm.width": "400",
-    "laravel_idea.dialogs.code_generation:createLivewireForm.x": "439",
-    "laravel_idea.dialogs.code_generation:createLivewireForm.y": "519",
-    "laravel_idea.dialogs.code_generation:createMailable.width": "400",
-    "laravel_idea.dialogs.code_generation:createMailable.x": "404",
-    "laravel_idea.dialogs.code_generation:createMailable.y": "297",
-    "laravel_idea.dialogs.code_generation:createServiceProvider.width": "400",
-    "laravel_idea.dialogs.code_generation:createServiceProvider.x": "439",
-    "laravel_idea.dialogs.code_generation:createServiceProvider.y": "532",
-    "laravel_idea.dialogs.code_generation:createView.width": "400",
-    "laravel_idea.dialogs.code_generation:createView.x": "1237",
-    "laravel_idea.dialogs.code_generation:createView.y": "397",
-    "last_opened_file_path": "/opt/lampp/htdocs/proyectos/ariana_proyecto/resources/views/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Pest.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.x&quot;: &quot;609&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.y&quot;: &quot;238&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.x&quot;: &quot;356&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.y&quot;: &quot;305&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.width&quot;: &quot;403&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.x&quot;: &quot;437&quot;,
+    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.y&quot;: &quot;491&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.x&quot;: &quot;474&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.y&quot;: &quot;435&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createController.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createController.x&quot;: &quot;713&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createController.y&quot;: &quot;376&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.x&quot;: &quot;588&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.y&quot;: &quot;189&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createEvent.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createEvent.x&quot;: &quot;356&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createEvent.y&quot;: &quot;346&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.x&quot;: &quot;200&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.y&quot;: &quot;257&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFormRequest.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFormRequest.x&quot;: &quot;439&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createFormRequest.y&quot;: &quot;508&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createJob.width&quot;: &quot;437&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createJob.x&quot;: &quot;260&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createJob.y&quot;: &quot;362&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createListener.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createListener.x&quot;: &quot;356&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createListener.y&quot;: &quot;338&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.x&quot;: &quot;439&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.y&quot;: &quot;537&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.x&quot;: &quot;439&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.y&quot;: &quot;519&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createMailable.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createMailable.x&quot;: &quot;404&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createMailable.y&quot;: &quot;297&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.x&quot;: &quot;439&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.y&quot;: &quot;532&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createView.width&quot;: &quot;400&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createView.x&quot;: &quot;1237&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createView.y&quot;: &quot;397&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/opt/lampp/htdocs/proyectos/ariana_proyecto/resources/views/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/public" />
@@ -398,15 +396,8 @@
       <workItem from="1769968157672" duration="26415000" />
       <workItem from="1770070599665" duration="13806000" />
       <workItem from="1770118469811" duration="516000" />
-      <workItem from="1770122993903" duration="6793000" />
-    </task>
-    <task id="LOCAL-00002" summary="DataBase and Seeders Ready:V1">
-      <option name="closed" value="true" />
-      <created>1765203406231</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1765203406231</updated>
+      <workItem from="1770122993903" duration="6960000" />
+      <workItem from="1770132380787" duration="1868000" />
     </task>
     <task id="LOCAL-00003" summary="To do list updated:V2">
       <option name="closed" value="true" />
@@ -792,7 +783,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770084751330</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="0.8.13.2 sqlite funcional y controladores revisados">
+      <option name="closed" value="true" />
+      <created>1770130025837</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1770130025838</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -827,7 +826,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="9.4 Primer CRUD y Rutas Base" />
     <MESSAGE value="9.5 CRUDs" />
     <MESSAGE value="9.5.1 cambios en las rutas" />
     <MESSAGE value="9.5.2 Preparando test y views" />
@@ -852,7 +850,8 @@
     <MESSAGE value="0.8.13.2 Comandos revisados" />
     <MESSAGE value="0.8.13.2 eventos listener revisados" />
     <MESSAGE value="0.8.13.2 API revisada" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.2 API revisada" />
+    <MESSAGE value="0.8.13.2 sqlite funcional y controladores revisados" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.2 sqlite funcional y controladores revisados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

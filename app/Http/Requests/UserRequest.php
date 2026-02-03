@@ -18,11 +18,11 @@ class UserRequest extends FormRequest
             'name' => [
                 'required',
                 'string',
-                'max:255'],
+                'max:50'],
             'email' => [
                 'required',
                 'email',
-                'max:255',
+                'max:100',
                 'unique:users,email,' . $userId,
             ],
             'password' => [
