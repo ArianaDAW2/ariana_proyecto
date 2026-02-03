@@ -30,20 +30,18 @@ class resservationsAPICrud extends Controller
     public function index()
     {
         $this->authorize('view', Reservation::class);
-        $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
-        $users = User::all();
+
+        $reservations = Reservation::paginate(10);
 
         return response()->json([
             'reservations' => $reservations,
-            'users' => $users,
-            'pets' => Pet::all(),
-            'services' => Service::all(),
         ]);
     }
 
     public function store(ReservationRequest $request)
     {
         $this->authorize('create', Reservation::class);
+
         $reservation = Reservation::create($request->validated());
         return response()->json($reservation, 201);
     }
@@ -51,19 +49,22 @@ class resservationsAPICrud extends Controller
     public function show(Reservation $reservation)
     {
         $this->authorize('view', $reservation);
-        return response()->json($reservation->load('user', 'pet', 'services'));
+
+        return response()->json($reservation);
     }
 
     public function update(ReservationRequest $request, Reservation $reservation)
     {
         $this->authorize('update', $reservation);
+
         $reservation->update($request->validated());
-        return response()->json($reservation->load('user', 'pet', 'services'));
+        return response()->json($reservation);
     }
 
     public function destroy(Reservation $reservation)
     {
         $this->authorize('delete', $reservation);
+        
         $reservation->delete();
         return response()->json(null, 204);
     }

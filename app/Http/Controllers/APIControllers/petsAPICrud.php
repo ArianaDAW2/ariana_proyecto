@@ -26,18 +26,18 @@ class petsAPICrud extends Controller
 
     public function index()
     {
-
         $this->authorize('view', Pet::class);
-        $pets = Pet::with('owner')->paginate(10);
+
+        $pets = Pet::paginate(10);
         return response()->json([
             'pets' => $pets,
-            'owner' => User::all(),
         ]);
     }
 
     public function store(PetRequest $request)
     {
         $this->authorize('create', Pet::class);
+
         $pet = Pet::create($request->validated());
         return response()->json($pet, 201);
     }
@@ -45,19 +45,21 @@ class petsAPICrud extends Controller
     public function show(Pet $pet)
     {
         $this->authorize('view', $pet);
-        return response()->json($pet->load('owner'));
+        return response()->json($pet);
     }
 
     public function update(PetRequest $request, Pet $pet)
     {
         $this->authorize('update', $pet);
+
         $pet->update($request->validated());
-        return response()->json($pet->load('owner'));
+        return response()->json($pet);
     }
 
     public function destroy(Pet $pet)
     {
         $this->authorize('delete', $pet);
+
         $pet->delete();
         return response()->json(null, 204);
     }
