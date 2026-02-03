@@ -46,17 +46,8 @@ class adminController extends Controller
     public function payments()
     {
         return view('admin.payments', [
-            'payments' => Payment::select(
-                'id',
-                'amount',
-                'payment_method',
-                'paid_at'
-            )->get()
+            'payments' => Payment::all()
         ]);
     }
-
-    public $minWeight = 0;
-    public $maxWeight = 200;
-
 
 }

@@ -22,8 +22,6 @@ class DashboardController extends Controller
 
         return view('client.my_reservations', [
             'reservations' => $reservations,
-            'pets' => Pet::all(),
-            'services' => Service::all(),
         ]);
     }
 
@@ -37,7 +35,7 @@ class DashboardController extends Controller
     public function top_services()
     {
         return view('client.top_services', [
-            'services' => Service::topServices()->paginate(10)
+            'services' => Service::topServices()->paginate(20)
         ]);
     }
 }

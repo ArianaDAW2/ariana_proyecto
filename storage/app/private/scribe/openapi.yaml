@@ -1,0 +1,3453 @@
+openapi: 3.0.3
+info:
+  title: 'HotelForPets API Documentation'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+tags:
+  -
+    name: Endpoints
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: 'You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.'
+security:
+  -
+    default: []
+paths:
+  /api/invoices:
+    get:
+      summary: ''
+      operationId: getApiInvoices
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  invoices:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        reservation_id: 1
+                        invoice_number: FAC-00001
+                        total: 100
+                        status: paid
+                        issued_at: '2026-02-04 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        reservation_id: 2
+                        invoice_number: FAC-00002
+                        total: 150
+                        status: unpaid
+                        issued_at: '2026-01-29 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        reservation_id: 3
+                        invoice_number: FAC-00003
+                        total: 125
+                        status: paid
+                        issued_at: '2025-12-23 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        reservation_id: 4
+                        invoice_number: FAC-00004
+                        total: 70
+                        status: unpaid
+                        issued_at: '2025-11-30 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 5
+                        reservation_id: 5
+                        invoice_number: FAC-00005
+                        total: 130
+                        status: paid
+                        issued_at: '2026-01-22 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 6
+                        reservation_id: 6
+                        invoice_number: FAC-00006
+                        total: 30
+                        status: unpaid
+                        issued_at: '2026-01-29 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 7
+                        reservation_id: 7
+                        invoice_number: FAC-00007
+                        total: 45
+                        status: paid
+                        issued_at: '2026-02-10 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 8
+                        reservation_id: 8
+                        invoice_number: FAC-00008
+                        total: 35
+                        status: unpaid
+                        issued_at: '2025-10-13 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 9
+                        reservation_id: 9
+                        invoice_number: FAC-00009
+                        total: 160
+                        status: paid
+                        issued_at: '2026-02-07 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 10
+                        reservation_id: 10
+                        invoice_number: FAC-00010
+                        total: 75
+                        status: unpaid
+                        issued_at: '2026-01-14 00:00:00'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                    first_page_url: 'http://localhost:8000/api/invoices?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/invoices?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/invoices?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/invoices?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/invoices?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/invoices?page=2'
+                    path: 'http://localhost:8000/api/invoices'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 14
+                properties:
+                  invoices:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            reservation_id: 1
+                            invoice_number: FAC-00001
+                            total: 100
+                            status: paid
+                            issued_at: '2026-02-04 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            reservation_id: 2
+                            invoice_number: FAC-00002
+                            total: 150
+                            status: unpaid
+                            issued_at: '2026-01-29 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            reservation_id: 3
+                            invoice_number: FAC-00003
+                            total: 125
+                            status: paid
+                            issued_at: '2025-12-23 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            reservation_id: 4
+                            invoice_number: FAC-00004
+                            total: 70
+                            status: unpaid
+                            issued_at: '2025-11-30 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 5
+                            reservation_id: 5
+                            invoice_number: FAC-00005
+                            total: 130
+                            status: paid
+                            issued_at: '2026-01-22 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 6
+                            reservation_id: 6
+                            invoice_number: FAC-00006
+                            total: 30
+                            status: unpaid
+                            issued_at: '2026-01-29 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 7
+                            reservation_id: 7
+                            invoice_number: FAC-00007
+                            total: 45
+                            status: paid
+                            issued_at: '2026-02-10 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 8
+                            reservation_id: 8
+                            invoice_number: FAC-00008
+                            total: 35
+                            status: unpaid
+                            issued_at: '2025-10-13 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 9
+                            reservation_id: 9
+                            invoice_number: FAC-00009
+                            total: 160
+                            status: paid
+                            issued_at: '2026-02-07 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 10
+                            reservation_id: 10
+                            invoice_number: FAC-00010
+                            total: 75
+                            status: unpaid
+                            issued_at: '2026-01-14 00:00:00'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            reservation_id:
+                              type: integer
+                              example: 1
+                            invoice_number:
+                              type: string
+                              example: FAC-00001
+                            total:
+                              type: integer
+                              example: 100
+                            status:
+                              type: string
+                              example: paid
+                            issued_at:
+                              type: string
+                              example: '2026-02-04 00:00:00'
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            deleted_at:
+                              type: string
+                              example: null
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/invoices?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/invoices?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/invoices?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/invoices?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/invoices?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/invoices?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/invoices'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 14
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiInvoices
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reservation_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the reservations table.'
+                  example: architecto
+                invoice_number:
+                  type: string
+                  description: ''
+                  example: architecto
+                total:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 39
+                status:
+                  type: string
+                  description: ''
+                  example: paid
+                  enum:
+                    - paid
+                    - unpaid
+                issued_at:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2026-02-03T15:05:24'
+              required:
+                - reservation_id
+                - invoice_number
+                - total
+                - status
+                - issued_at
+  '/api/invoices/{id}':
+    get:
+      summary: ''
+      operationId: getApiInvoicesId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  reservation_id: 1
+                  invoice_number: FAC-00001
+                  total: 100
+                  status: paid
+                  issued_at: '2026-02-04 00:00:00'
+                  created_at: '2026-02-03T13:31:58.000000Z'
+                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  deleted_at: null
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  reservation_id:
+                    type: integer
+                    example: 1
+                  invoice_number:
+                    type: string
+                    example: FAC-00001
+                  total:
+                    type: integer
+                    example: 100
+                  status:
+                    type: string
+                    example: paid
+                  issued_at:
+                    type: string
+                    example: '2026-02-04 00:00:00'
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  deleted_at:
+                    type: string
+                    example: null
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiInvoicesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reservation_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the reservations table.'
+                  example: architecto
+                invoice_number:
+                  type: string
+                  description: ''
+                  example: architecto
+                total:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 39
+                status:
+                  type: string
+                  description: ''
+                  example: paid
+                  enum:
+                    - paid
+                    - unpaid
+                issued_at:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2026-02-03T15:05:24'
+              required:
+                - reservation_id
+                - invoice_number
+                - total
+                - status
+                - issued_at
+    delete:
+      summary: ''
+      operationId: deleteApiInvoicesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the invoice.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/medical-records:
+    get:
+      summary: ''
+      operationId: getApiMedicalRecords
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  records:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        pet_id: 1
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Rocky'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        pet_id: 2
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Luna'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        pet_id: 3
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Max'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        pet_id: 4
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Nina'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 5
+                        pet_id: 5
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Zeus'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 6
+                        pet_id: 6
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Luna'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 7
+                        pet_id: 7
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Zeus'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 8
+                        pet_id: 8
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Nina'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 9
+                        pet_id: 9
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Bruno'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 10
+                        pet_id: 10
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria para Nala'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                    first_page_url: 'http://localhost:8000/api/medical-records?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/medical-records?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/medical-records?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/medical-records?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/medical-records?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/medical-records?page=2'
+                    path: 'http://localhost:8000/api/medical-records'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 12
+                properties:
+                  records:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            pet_id: 1
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Rocky'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            pet_id: 2
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Luna'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            pet_id: 3
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Max'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            pet_id: 4
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Nina'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 5
+                            pet_id: 5
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Zeus'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 6
+                            pet_id: 6
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Luna'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 7
+                            pet_id: 7
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Zeus'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 8
+                            pet_id: 8
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Nina'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 9
+                            pet_id: 9
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Bruno'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 10
+                            pet_id: 10
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria para Nala'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            pet_id:
+                              type: integer
+                              example: 1
+                            veterinarian_id:
+                              type: integer
+                              example: 2
+                            diagnosis:
+                              type: string
+                              example: 'Revisión rutinaria para Rocky'
+                            treatment:
+                              type: string
+                              example: 'Ninguno necesario. Todo en orden.'
+                            notes:
+                              type: string
+                              example: 'La mascota se comporta bien durante la revisión.'
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            deleted_at:
+                              type: string
+                              example: null
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/medical-records?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/medical-records?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/medical-records?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/medical-records?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/medical-records?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/medical-records?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/medical-records'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 12
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiMedicalRecords
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                pet_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the pets table.'
+                  example: architecto
+                veterinarian_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                diagnosis:
+                  type: string
+                  description: ''
+                  example: architecto
+                treatment:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+                notes:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+              required:
+                - pet_id
+                - veterinarian_id
+                - diagnosis
+  '/api/medical-records/{id}':
+    get:
+      summary: ''
+      operationId: getApiMedicalRecordsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  pet_id: 1
+                  veterinarian_id: 2
+                  diagnosis: 'Revisión rutinaria para Rocky'
+                  treatment: 'Ninguno necesario. Todo en orden.'
+                  notes: 'La mascota se comporta bien durante la revisión.'
+                  created_at: '2026-02-03T13:31:58.000000Z'
+                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  deleted_at: null
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  pet_id:
+                    type: integer
+                    example: 1
+                  veterinarian_id:
+                    type: integer
+                    example: 2
+                  diagnosis:
+                    type: string
+                    example: 'Revisión rutinaria para Rocky'
+                  treatment:
+                    type: string
+                    example: 'Ninguno necesario. Todo en orden.'
+                  notes:
+                    type: string
+                    example: 'La mascota se comporta bien durante la revisión.'
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  deleted_at:
+                    type: string
+                    example: null
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiMedicalRecordsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                pet_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the pets table.'
+                  example: architecto
+                veterinarian_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                diagnosis:
+                  type: string
+                  description: ''
+                  example: architecto
+                treatment:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+                notes:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+              required:
+                - pet_id
+                - veterinarian_id
+                - diagnosis
+    delete:
+      summary: ''
+      operationId: deleteApiMedicalRecordsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the medical record.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/reservations:
+    get:
+      summary: ''
+      operationId: getApiReservations
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  reservations:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        user_id: 1
+                        pet_id: 1
+                        start_date: '2026-02-03T23:00:00.000000Z'
+                        end_date: '2026-02-07T23:00:00.000000Z'
+                        status: pending
+                        total_price: 100
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        user_id: 1
+                        pet_id: 1
+                        start_date: '2026-01-28T23:00:00.000000Z'
+                        end_date: '2026-02-02T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: 150
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        user_id: 4
+                        pet_id: 1
+                        start_date: '2025-12-22T23:00:00.000000Z'
+                        end_date: '2025-12-28T23:00:00.000000Z'
+                        status: cancelled
+                        total_price: 125
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        user_id: 4
+                        pet_id: 2
+                        start_date: '2025-11-29T23:00:00.000000Z'
+                        end_date: '2025-11-30T23:00:00.000000Z'
+                        status: completed
+                        total_price: 70
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 5
+                        user_id: 6
+                        pet_id: 3
+                        start_date: '2026-01-21T23:00:00.000000Z'
+                        end_date: '2026-01-26T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: 130
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 6
+                        user_id: 6
+                        pet_id: 4
+                        start_date: '2026-01-28T23:00:00.000000Z'
+                        end_date: '2026-02-03T23:00:00.000000Z'
+                        status: cancelled
+                        total_price: 30
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 7
+                        user_id: 7
+                        pet_id: 5
+                        start_date: '2026-02-09T23:00:00.000000Z'
+                        end_date: '2026-02-12T23:00:00.000000Z'
+                        status: cancelled
+                        total_price: 45
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 8
+                        user_id: 7
+                        pet_id: 6
+                        start_date: '2025-10-12T22:00:00.000000Z'
+                        end_date: '2025-10-16T22:00:00.000000Z'
+                        status: completed
+                        total_price: 35
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 9
+                        user_id: 8
+                        pet_id: 7
+                        start_date: '2026-02-06T23:00:00.000000Z'
+                        end_date: '2026-02-11T23:00:00.000000Z'
+                        status: pending
+                        total_price: 160
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 10
+                        user_id: 8
+                        pet_id: 8
+                        start_date: '2026-01-13T23:00:00.000000Z'
+                        end_date: '2026-01-17T23:00:00.000000Z'
+                        status: cancelled
+                        total_price: 75
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                    first_page_url: 'http://localhost:8000/api/reservations?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/reservations?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/reservations?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/reservations?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/reservations?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/reservations?page=2'
+                    path: 'http://localhost:8000/api/reservations'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 14
+                properties:
+                  reservations:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            user_id: 1
+                            pet_id: 1
+                            start_date: '2026-02-03T23:00:00.000000Z'
+                            end_date: '2026-02-07T23:00:00.000000Z'
+                            status: pending
+                            total_price: 100
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            user_id: 1
+                            pet_id: 1
+                            start_date: '2026-01-28T23:00:00.000000Z'
+                            end_date: '2026-02-02T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: 150
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            user_id: 4
+                            pet_id: 1
+                            start_date: '2025-12-22T23:00:00.000000Z'
+                            end_date: '2025-12-28T23:00:00.000000Z'
+                            status: cancelled
+                            total_price: 125
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            user_id: 4
+                            pet_id: 2
+                            start_date: '2025-11-29T23:00:00.000000Z'
+                            end_date: '2025-11-30T23:00:00.000000Z'
+                            status: completed
+                            total_price: 70
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 5
+                            user_id: 6
+                            pet_id: 3
+                            start_date: '2026-01-21T23:00:00.000000Z'
+                            end_date: '2026-01-26T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: 130
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 6
+                            user_id: 6
+                            pet_id: 4
+                            start_date: '2026-01-28T23:00:00.000000Z'
+                            end_date: '2026-02-03T23:00:00.000000Z'
+                            status: cancelled
+                            total_price: 30
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 7
+                            user_id: 7
+                            pet_id: 5
+                            start_date: '2026-02-09T23:00:00.000000Z'
+                            end_date: '2026-02-12T23:00:00.000000Z'
+                            status: cancelled
+                            total_price: 45
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 8
+                            user_id: 7
+                            pet_id: 6
+                            start_date: '2025-10-12T22:00:00.000000Z'
+                            end_date: '2025-10-16T22:00:00.000000Z'
+                            status: completed
+                            total_price: 35
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 9
+                            user_id: 8
+                            pet_id: 7
+                            start_date: '2026-02-06T23:00:00.000000Z'
+                            end_date: '2026-02-11T23:00:00.000000Z'
+                            status: pending
+                            total_price: 160
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 10
+                            user_id: 8
+                            pet_id: 8
+                            start_date: '2026-01-13T23:00:00.000000Z'
+                            end_date: '2026-01-17T23:00:00.000000Z'
+                            status: cancelled
+                            total_price: 75
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            user_id:
+                              type: integer
+                              example: 1
+                            pet_id:
+                              type: integer
+                              example: 1
+                            start_date:
+                              type: string
+                              example: '2026-02-03T23:00:00.000000Z'
+                            end_date:
+                              type: string
+                              example: '2026-02-07T23:00:00.000000Z'
+                            status:
+                              type: string
+                              example: pending
+                            total_price:
+                              type: integer
+                              example: 100
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:58.000000Z'
+                            deleted_at:
+                              type: string
+                              example: null
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/reservations?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/reservations?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/reservations?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/reservations?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/reservations?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/reservations?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/reservations'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 14
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiReservations
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                pet_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the pets table.'
+                  example: architecto
+                start_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
+                  example: '2022-02-27'
+                end_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
+                  example: '2052-02-27'
+                status:
+                  type: string
+                  description: ''
+                  example: confirmed
+                  enum:
+                    - pending
+                    - confirmed
+                    - completed
+                    - cancelled
+                total_price:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 39
+              required:
+                - user_id
+                - pet_id
+                - start_date
+                - end_date
+                - status
+                - total_price
+  '/api/reservations/{id}':
+    get:
+      summary: ''
+      operationId: getApiReservationsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  user_id: 1
+                  pet_id: 1
+                  start_date: '2026-02-03T23:00:00.000000Z'
+                  end_date: '2026-02-07T23:00:00.000000Z'
+                  status: pending
+                  total_price: 100
+                  created_at: '2026-02-03T13:31:58.000000Z'
+                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  deleted_at: null
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  user_id:
+                    type: integer
+                    example: 1
+                  pet_id:
+                    type: integer
+                    example: 1
+                  start_date:
+                    type: string
+                    example: '2026-02-03T23:00:00.000000Z'
+                  end_date:
+                    type: string
+                    example: '2026-02-07T23:00:00.000000Z'
+                  status:
+                    type: string
+                    example: pending
+                  total_price:
+                    type: integer
+                    example: 100
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:58.000000Z'
+                  deleted_at:
+                    type: string
+                    example: null
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiReservationsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                pet_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the pets table.'
+                  example: architecto
+                start_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
+                  example: '2022-02-27'
+                end_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
+                  example: '2052-02-27'
+                status:
+                  type: string
+                  description: ''
+                  example: confirmed
+                  enum:
+                    - pending
+                    - confirmed
+                    - completed
+                    - cancelled
+                total_price:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 39
+              required:
+                - user_id
+                - pet_id
+                - start_date
+                - end_date
+                - status
+                - total_price
+    delete:
+      summary: ''
+      operationId: deleteApiReservationsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the reservation.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/services:
+    get:
+      summary: ''
+      operationId: getApiServices
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  services:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        name: 'Alojamiento dog&cat hotel'
+                        description: 'Habitación cómoda con paseos diarios.'
+                        base_price: 20
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 2
+                        name: 'Juegos y comodidades extra'
+                        description: 'Añadido: webcam, comida húmeda y juegos constantes.'
+                        base_price: 35
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 3
+                        name: 'Peluquería Canina Y Felina'
+                        description: 'Baño, corte de pelo y uñas.'
+                        base_price: 25
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 4
+                        name: 'Consulta Veterinaria'
+                        description: 'Revisión general y aviso de pagos extra por llamada.'
+                        base_price: 30
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 5
+                        name: 'Adiestramiento Básico'
+                        description: 'Sesión de obediencia básica y juegos.'
+                        base_price: 40
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 6
+                        name: Hopitalización
+                        description: 'Cuidados intensivos.'
+                        base_price: 40
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 7
+                        name: 'Consulta online'
+                        description: 'Consulta a través de videollamada o llamada básica.'
+                        base_price: 35
+                        is_active: 1
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 8
+                        name: Cirujía
+                        description: 'Mayoría de operaciones.'
+                        base_price: 500
+                        is_active: 0
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 9
+                        name: 'Sesión de fotos'
+                        description: 'Prometo que no blanqueamos dinero con esto'
+                        base_price: 50
+                        is_active: 0
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                      -
+                        id: 10
+                        name: 'Aromaterapia y SPA'
+                        description: 'Cuidados especiales para la felicidad de tu mascota'
+                        base_price: 50
+                        is_active: 0
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                    first_page_url: 'http://localhost:8000/api/services?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/services?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/services?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/services?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/services?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/services?page=2'
+                    path: 'http://localhost:8000/api/services'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 13
+                properties:
+                  services:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            name: 'Alojamiento dog&cat hotel'
+                            description: 'Habitación cómoda con paseos diarios.'
+                            base_price: 20
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 2
+                            name: 'Juegos y comodidades extra'
+                            description: 'Añadido: webcam, comida húmeda y juegos constantes.'
+                            base_price: 35
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 3
+                            name: 'Peluquería Canina Y Felina'
+                            description: 'Baño, corte de pelo y uñas.'
+                            base_price: 25
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 4
+                            name: 'Consulta Veterinaria'
+                            description: 'Revisión general y aviso de pagos extra por llamada.'
+                            base_price: 30
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 5
+                            name: 'Adiestramiento Básico'
+                            description: 'Sesión de obediencia básica y juegos.'
+                            base_price: 40
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 6
+                            name: Hopitalización
+                            description: 'Cuidados intensivos.'
+                            base_price: 40
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 7
+                            name: 'Consulta online'
+                            description: 'Consulta a través de videollamada o llamada básica.'
+                            base_price: 35
+                            is_active: 1
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 8
+                            name: Cirujía
+                            description: 'Mayoría de operaciones.'
+                            base_price: 500
+                            is_active: 0
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 9
+                            name: 'Sesión de fotos'
+                            description: 'Prometo que no blanqueamos dinero con esto'
+                            base_price: 50
+                            is_active: 0
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                          -
+                            id: 10
+                            name: 'Aromaterapia y SPA'
+                            description: 'Cuidados especiales para la felicidad de tu mascota'
+                            base_price: 50
+                            is_active: 0
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            name:
+                              type: string
+                              example: 'Alojamiento dog&cat hotel'
+                            description:
+                              type: string
+                              example: 'Habitación cómoda con paseos diarios.'
+                            base_price:
+                              type: integer
+                              example: 20
+                            is_active:
+                              type: integer
+                              example: 1
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:57.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:57.000000Z'
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/services?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/services?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/services?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/services?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/services?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/services?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/services'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 13
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiServices
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: b
+                description:
+                  type: string
+                  description: ''
+                  example: 'Eius et animi quos velit et.'
+                  nullable: true
+                base_price:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 60
+                is_active:
+                  type: boolean
+                  description: ''
+                  example: false
+              required:
+                - name
+                - base_price
+                - is_active
+  '/api/services/{id}':
+    get:
+      summary: ''
+      operationId: getApiServicesId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  name: 'Alojamiento dog&cat hotel'
+                  description: 'Habitación cómoda con paseos diarios.'
+                  base_price: 20
+                  is_active: 1
+                  created_at: '2026-02-03T13:31:57.000000Z'
+                  updated_at: '2026-02-03T13:31:57.000000Z'
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: 'Alojamiento dog&cat hotel'
+                  description:
+                    type: string
+                    example: 'Habitación cómoda con paseos diarios.'
+                  base_price:
+                    type: integer
+                    example: 20
+                  is_active:
+                    type: integer
+                    example: 1
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:57.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:57.000000Z'
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiServicesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: b
+                description:
+                  type: string
+                  description: ''
+                  example: 'Eius et animi quos velit et.'
+                  nullable: true
+                base_price:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 60
+                is_active:
+                  type: boolean
+                  description: ''
+                  example: false
+              required:
+                - name
+                - base_price
+                - is_active
+    delete:
+      summary: ''
+      operationId: deleteApiServicesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the service.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/pets:
+    get:
+      summary: ''
+      operationId: getApiPets
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  pets:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        user_id: 4
+                        name: Rocky
+                        species: Perro
+                        breed: 'Bulldog Francés'
+                        age: 10
+                        weight: 12
+                        notes: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        user_id: 4
+                        name: Luna
+                        species: Gato
+                        breed: Bengalí
+                        age: 3
+                        weight: 5.5
+                        notes: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        user_id: 6
+                        name: Max
+                        species: Perro
+                        breed: 'Golden Retriever'
+                        age: 7
+                        weight: 30.5
+                        notes: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        user_id: 6
+                        name: Nina
+                        species: Gato
+                        breed: Persa
+                        age: 11
+                        weight: 5
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 5
+                        user_id: 7
+                        name: Zeus
+                        species: Perro
+                        breed: 'Bulldog Francés'
+                        age: 5
+                        weight: 12
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 6
+                        user_id: 7
+                        name: Luna
+                        species: Gato
+                        breed: 'Maine Coon'
+                        age: 7
+                        weight: 7.5
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 7
+                        user_id: 8
+                        name: Zeus
+                        species: Perro
+                        breed: Labrador
+                        age: 2
+                        weight: 28
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 8
+                        user_id: 8
+                        name: Nina
+                        species: Gato
+                        breed: Persa
+                        age: 3
+                        weight: 5
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 9
+                        user_id: 9
+                        name: Bruno
+                        species: Perro
+                        breed: 'Pastor Alemán'
+                        age: 10
+                        weight: 35
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                      -
+                        id: 10
+                        user_id: 9
+                        name: Nala
+                        species: Gato
+                        breed: Persa
+                        age: 13
+                        weight: 5
+                        notes: null
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        deleted_at: null
+                    first_page_url: 'http://localhost:8000/api/pets?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/pets?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/pets?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/pets?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/pets?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/pets?page=2'
+                    path: 'http://localhost:8000/api/pets'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 12
+                properties:
+                  pets:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            user_id: 4
+                            name: Rocky
+                            species: Perro
+                            breed: 'Bulldog Francés'
+                            age: 10
+                            weight: 12
+                            notes: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            user_id: 4
+                            name: Luna
+                            species: Gato
+                            breed: Bengalí
+                            age: 3
+                            weight: 5.5
+                            notes: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            user_id: 6
+                            name: Max
+                            species: Perro
+                            breed: 'Golden Retriever'
+                            age: 7
+                            weight: 30.5
+                            notes: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            user_id: 6
+                            name: Nina
+                            species: Gato
+                            breed: Persa
+                            age: 11
+                            weight: 5
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 5
+                            user_id: 7
+                            name: Zeus
+                            species: Perro
+                            breed: 'Bulldog Francés'
+                            age: 5
+                            weight: 12
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 6
+                            user_id: 7
+                            name: Luna
+                            species: Gato
+                            breed: 'Maine Coon'
+                            age: 7
+                            weight: 7.5
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 7
+                            user_id: 8
+                            name: Zeus
+                            species: Perro
+                            breed: Labrador
+                            age: 2
+                            weight: 28
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 8
+                            user_id: 8
+                            name: Nina
+                            species: Gato
+                            breed: Persa
+                            age: 3
+                            weight: 5
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 9
+                            user_id: 9
+                            name: Bruno
+                            species: Perro
+                            breed: 'Pastor Alemán'
+                            age: 10
+                            weight: 35
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                          -
+                            id: 10
+                            user_id: 9
+                            name: Nala
+                            species: Gato
+                            breed: Persa
+                            age: 13
+                            weight: 5
+                            notes: null
+                            created_at: '2026-02-03T13:31:58.000000Z'
+                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            deleted_at: null
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            user_id:
+                              type: integer
+                              example: 4
+                            name:
+                              type: string
+                              example: Rocky
+                            species:
+                              type: string
+                              example: Perro
+                            breed:
+                              type: string
+                              example: 'Bulldog Francés'
+                            age:
+                              type: integer
+                              example: 10
+                            weight:
+                              type: integer
+                              example: 12
+                            notes:
+                              type: string
+                              example: null
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:57.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:57.000000Z'
+                            deleted_at:
+                              type: string
+                              example: null
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/pets?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/pets?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/pets?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/pets?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/pets?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/pets?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/pets'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 12
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiPets
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'n'
+                species:
+                  type: string
+                  description: 'Must not be greater than 100 characters.'
+                  example: g
+                breed:
+                  type: string
+                  description: 'Must not be greater than 100 characters.'
+                  example: z
+                  nullable: true
+                age:
+                  type: integer
+                  description: 'Must be at least 0.'
+                  example: 77
+                weight:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 8
+                notes:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+              required:
+                - user_id
+                - name
+                - species
+                - age
+                - weight
+  '/api/pets/{id}':
+    get:
+      summary: ''
+      operationId: getApiPetsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  user_id: 4
+                  name: Rocky
+                  species: Perro
+                  breed: 'Bulldog Francés'
+                  age: 10
+                  weight: 12
+                  notes: null
+                  created_at: '2026-02-03T13:31:57.000000Z'
+                  updated_at: '2026-02-03T13:31:57.000000Z'
+                  deleted_at: null
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  user_id:
+                    type: integer
+                    example: 4
+                  name:
+                    type: string
+                    example: Rocky
+                  species:
+                    type: string
+                    example: Perro
+                  breed:
+                    type: string
+                    example: 'Bulldog Francés'
+                  age:
+                    type: integer
+                    example: 10
+                  weight:
+                    type: integer
+                    example: 12
+                  notes:
+                    type: string
+                    example: null
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:57.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:57.000000Z'
+                  deleted_at:
+                    type: string
+                    example: null
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiPetsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the users table.'
+                  example: architecto
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'n'
+                species:
+                  type: string
+                  description: 'Must not be greater than 100 characters.'
+                  example: g
+                breed:
+                  type: string
+                  description: 'Must not be greater than 100 characters.'
+                  example: z
+                  nullable: true
+                age:
+                  type: integer
+                  description: 'Must be at least 0.'
+                  example: 77
+                weight:
+                  type: number
+                  description: 'Must be at least 0.'
+                  example: 8
+                notes:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: true
+              required:
+                - user_id
+                - name
+                - species
+                - age
+                - weight
+    delete:
+      summary: ''
+      operationId: deleteApiPetsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the pet.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/users:
+    get:
+      summary: ''
+      operationId: getApiUsers
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  users:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        name: admin
+                        email: admin@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:55.000000Z'
+                        updated_at: '2026-02-03T13:31:55.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 2
+                        name: veterinario
+                        email: vet@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:56.000000Z'
+                        updated_at: '2026-02-03T13:31:56.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=v&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 3
+                        name: recepcionista
+                        email: recep@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:56.000000Z'
+                        updated_at: '2026-02-03T13:31:56.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=r&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 4
+                        name: cliente
+                        email: client@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:56.000000Z'
+                        updated_at: '2026-02-03T13:31:56.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 5
+                        name: cuidador
+                        email: cuid@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:56.000000Z'
+                        updated_at: '2026-02-03T13:31:56.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 6
+                        name: cliente1
+                        email: cliente1@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 7
+                        name: cliente2
+                        email: cliente2@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 8
+                        name: cliente3
+                        email: cliente3@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 9
+                        name: cliente4
+                        email: cliente4@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                      -
+                        id: 10
+                        name: cliente5
+                        email: cliente5@mail.es
+                        email_verified_at: null
+                        current_team_id: null
+                        profile_photo_path: null
+                        created_at: '2026-02-03T13:31:57.000000Z'
+                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        two_factor_confirmed_at: null
+                        profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                    first_page_url: 'http://localhost:8000/api/users?page=1'
+                    from: 1
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/users?page=2'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/users?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: 'http://localhost:8000/api/users?page=2'
+                        label: '2'
+                        page: 2
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/users?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/users?page=2'
+                    path: 'http://localhost:8000/api/users'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 11
+                properties:
+                  users:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            name: admin
+                            email: admin@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:55.000000Z'
+                            updated_at: '2026-02-03T13:31:55.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 2
+                            name: veterinario
+                            email: vet@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:56.000000Z'
+                            updated_at: '2026-02-03T13:31:56.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=v&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 3
+                            name: recepcionista
+                            email: recep@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:56.000000Z'
+                            updated_at: '2026-02-03T13:31:56.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=r&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 4
+                            name: cliente
+                            email: client@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:56.000000Z'
+                            updated_at: '2026-02-03T13:31:56.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 5
+                            name: cuidador
+                            email: cuid@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:56.000000Z'
+                            updated_at: '2026-02-03T13:31:56.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 6
+                            name: cliente1
+                            email: cliente1@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 7
+                            name: cliente2
+                            email: cliente2@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 8
+                            name: cliente3
+                            email: cliente3@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 9
+                            name: cliente4
+                            email: cliente4@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                          -
+                            id: 10
+                            name: cliente5
+                            email: cliente5@mail.es
+                            email_verified_at: null
+                            current_team_id: null
+                            profile_photo_path: null
+                            created_at: '2026-02-03T13:31:57.000000Z'
+                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            two_factor_confirmed_at: null
+                            profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            name:
+                              type: string
+                              example: admin
+                            email:
+                              type: string
+                              example: admin@mail.es
+                            email_verified_at:
+                              type: string
+                              example: null
+                            current_team_id:
+                              type: string
+                              example: null
+                            profile_photo_path:
+                              type: string
+                              example: null
+                            created_at:
+                              type: string
+                              example: '2026-02-03T13:31:55.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2026-02-03T13:31:55.000000Z'
+                            two_factor_confirmed_at:
+                              type: string
+                              example: null
+                            profile_photo_url:
+                              type: string
+                              example: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/users?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/users?page=2'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            page: null
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/users?page=1'
+                            label: '1'
+                            page: 1
+                            active: true
+                          -
+                            url: 'http://localhost:8000/api/users?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/users?page=2'
+                            label: 'Next &raquo;'
+                            page: 2
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            page:
+                              type: string
+                              example: null
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost:8000/api/users?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost:8000/api/users'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 11
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      operationId: postApiUsers
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: b
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: zbailey@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: '-0pBNvYgxw'
+              required:
+                - name
+                - email
+                - password
+  '/api/users/{id}':
+    get:
+      summary: ''
+      operationId: getApiUsersId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  name: admin
+                  email: admin@mail.es
+                  email_verified_at: null
+                  current_team_id: null
+                  profile_photo_path: null
+                  created_at: '2026-02-03T13:31:55.000000Z'
+                  updated_at: '2026-02-03T13:31:55.000000Z'
+                  two_factor_confirmed_at: null
+                  profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: admin
+                  email:
+                    type: string
+                    example: admin@mail.es
+                  email_verified_at:
+                    type: string
+                    example: null
+                  current_team_id:
+                    type: string
+                    example: null
+                  profile_photo_path:
+                    type: string
+                    example: null
+                  created_at:
+                    type: string
+                    example: '2026-02-03T13:31:55.000000Z'
+                  updated_at:
+                    type: string
+                    example: '2026-02-03T13:31:55.000000Z'
+                  two_factor_confirmed_at:
+                    type: string
+                    example: null
+                  profile_photo_url:
+                    type: string
+                    example: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
+      tags:
+        - Endpoints
+    put:
+      summary: ''
+      operationId: putApiUsersId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: b
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: zbailey@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: '-0pBNvYgxw'
+              required:
+                - name
+                - email
+                - password
+    delete:
+      summary: ''
+      operationId: deleteApiUsersId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the user.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/payments:
+    get:
+      summary: ''
+      operationId: getApiPayments
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  current_page: 1
+                  data:
+                    -
+                      id: 1
+                      invoice_id: 1
+                      user_id: 1
+                      amount: '100.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-855BB397
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 2
+                      invoice_id: 3
+                      user_id: 4
+                      amount: '125.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-8F8F44E3
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 3
+                      invoice_id: 5
+                      user_id: 6
+                      amount: '130.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-D991A513
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 4
+                      invoice_id: 7
+                      user_id: 7
+                      amount: '45.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-A78CCC97
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 5
+                      invoice_id: 9
+                      user_id: 8
+                      amount: '160.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-69F474E3
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 6
+                      invoice_id: 11
+                      user_id: 9
+                      amount: '40.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-8BDBE67E
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                    -
+                      id: 7
+                      invoice_id: 13
+                      user_id: 10
+                      amount: '85.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-846B7F66
+                      paid_at: '2026-02-03T13:31:58.000000Z'
+                      created_at: '2026-02-03T13:31:58.000000Z'
+                      updated_at: '2026-02-03T13:31:58.000000Z'
+                  first_page_url: 'http://localhost:8000/api/payments?page=1'
+                  from: 1
+                  last_page: 1
+                  last_page_url: 'http://localhost:8000/api/payments?page=1'
+                  links:
+                    -
+                      url: null
+                      label: '&laquo; Previous'
+                      page: null
+                      active: false
+                    -
+                      url: 'http://localhost:8000/api/payments?page=1'
+                      label: '1'
+                      page: 1
+                      active: true
+                    -
+                      url: null
+                      label: 'Next &raquo;'
+                      page: null
+                      active: false
+                  next_page_url: null
+                  path: 'http://localhost:8000/api/payments'
+                  per_page: 10
+                  prev_page_url: null
+                  to: 7
+                  total: 7
+                properties:
+                  current_page:
+                    type: integer
+                    example: 1
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        invoice_id: 1
+                        user_id: 1
+                        amount: '100.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-855BB397
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 2
+                        invoice_id: 3
+                        user_id: 4
+                        amount: '125.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-8F8F44E3
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 3
+                        invoice_id: 5
+                        user_id: 6
+                        amount: '130.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-D991A513
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 4
+                        invoice_id: 7
+                        user_id: 7
+                        amount: '45.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-A78CCC97
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 5
+                        invoice_id: 9
+                        user_id: 8
+                        amount: '160.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-69F474E3
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 6
+                        invoice_id: 11
+                        user_id: 9
+                        amount: '40.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-8BDBE67E
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                      -
+                        id: 7
+                        invoice_id: 13
+                        user_id: 10
+                        amount: '85.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-846B7F66
+                        paid_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-03T13:31:58.000000Z'
+                        updated_at: '2026-02-03T13:31:58.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        invoice_id:
+                          type: integer
+                          example: 1
+                        user_id:
+                          type: integer
+                          example: 1
+                        amount:
+                          type: string
+                          example: '100.00'
+                        payment_method:
+                          type: string
+                          example: credit_card
+                        status:
+                          type: string
+                          example: completed
+                        transaction_id:
+                          type: string
+                          example: TRX-855BB397
+                        paid_at:
+                          type: string
+                          example: '2026-02-03T13:31:58.000000Z'
+                        created_at:
+                          type: string
+                          example: '2026-02-03T13:31:58.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2026-02-03T13:31:58.000000Z'
+                  first_page_url:
+                    type: string
+                    example: 'http://localhost:8000/api/payments?page=1'
+                  from:
+                    type: integer
+                    example: 1
+                  last_page:
+                    type: integer
+                    example: 1
+                  last_page_url:
+                    type: string
+                    example: 'http://localhost:8000/api/payments?page=1'
+                  links:
+                    type: array
+                    example:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        page: null
+                        active: false
+                      -
+                        url: 'http://localhost:8000/api/payments?page=1'
+                        label: '1'
+                        page: 1
+                        active: true
+                      -
+                        url: null
+                        label: 'Next &raquo;'
+                        page: null
+                        active: false
+                    items:
+                      type: object
+                      properties:
+                        url:
+                          type: string
+                          example: null
+                        label:
+                          type: string
+                          example: '&laquo; Previous'
+                        page:
+                          type: string
+                          example: null
+                        active:
+                          type: boolean
+                          example: false
+                  next_page_url:
+                    type: string
+                    example: null
+                  path:
+                    type: string
+                    example: 'http://localhost:8000/api/payments'
+                  per_page:
+                    type: integer
+                    example: 10
+                  prev_page_url:
+                    type: string
+                    example: null
+                  to:
+                    type: integer
+                    example: 7
+                  total:
+                    type: integer
+                    example: 7
+      tags:
+        - Endpoints

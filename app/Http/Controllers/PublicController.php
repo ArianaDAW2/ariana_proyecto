@@ -24,6 +24,7 @@ class PublicController extends Controller
 
     public function services(Request $request)
     {
+        //hay que ir a la vista de servicios para ver que es 'inactive'
         if ($request->status == 'inactive') {
             return view('public.services', [
                 'services' => Service::InActive()->paginate(10),

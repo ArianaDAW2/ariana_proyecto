@@ -101,7 +101,7 @@ class documentsController extends Controller
             GeneratePetContractJob::dispatch($reservation);
         }
 
-        return back()->with('success', "Generando {$reservations->count()} reportes...");
+        return back();
     }
 
     public function download_reservations($filename)

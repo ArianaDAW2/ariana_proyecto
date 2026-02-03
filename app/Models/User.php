@@ -58,7 +58,7 @@ class User extends Authenticatable
     }
 
 //scopes
-//Usuarios premium
+//Usuarios que más han gastado
     public function scopeTopBuyers($query)
     {
         return $query->role('Cliente')
