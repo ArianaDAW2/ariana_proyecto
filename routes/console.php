@@ -5,7 +5,7 @@ use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 use App\Events\ReservationReminderEvent;
 
-//24 h reservas
+
 Schedule::command('admin:pre-reminder')->dailyAt('11:00');
 Schedule::command('admin:cancel')->dailyAt('11:00');
 Schedule::command('admin:pos-reminder')->dailyAt('11:00');

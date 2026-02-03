@@ -16,7 +16,7 @@ class cancelOldReservationsCommand extends Command
     public function handle(): void
     {
         $reservations = Reservation::where('status', 'pending')
-            ->where('start_date', '<', now()->subDays())
+            ->where('start_date', '<', now()->subDays(1))
             ->get();
 
         foreach ($reservations as $reservation) {

@@ -13,7 +13,7 @@ class ReservationReminderCommand extends Command
 
     public function handle(): void
     {
-        $reservations = Reservation::whereDate('start_date', today()->addDay())
+        $reservations = Reservation::whereDate('start_date', today()->addDay(1))
             ->where('status', 'pending')
             ->get();
 

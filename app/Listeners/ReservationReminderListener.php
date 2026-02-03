@@ -4,9 +4,10 @@ namespace App\Listeners;
 
 use App\Events\ReservationReminderEvent;
 use App\Mail\ReservationReminderMail;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Mail;
 
-class ReservationReminderListener
+class ReservationReminderListener implements ShouldQueue
 {
     public function __construct()
     {

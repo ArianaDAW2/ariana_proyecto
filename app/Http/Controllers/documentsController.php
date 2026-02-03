@@ -23,9 +23,9 @@ class documentsController extends Controller
     public function send_contact(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'message' => 'required|string|max:2000',
+            'title' => 'required|string|max:50',
+            'email' => 'required|email|max:50',
+            'message' => 'required|string|max:255',
         ]);
 
         ContactFormEvent::dispatch(
@@ -91,7 +91,7 @@ class documentsController extends Controller
         return $pdf->download('morosos.pdf');
     }
 
-//Reservas firma ===========================================================================================
+//Contratos ===========================================================================================
 
     public function print_reservations()
     {
