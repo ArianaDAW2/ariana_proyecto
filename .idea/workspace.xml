@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.4 cruds hasta pet">
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.4 git ignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/InvoiceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/InvoiceRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PetRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PetRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ReservationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ReservationRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ServiceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ServiceRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/InvoicesCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/InvoicesCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/LanguageSwitcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/LanguageSwitcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/MedicalRecordsCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/MedicalRecordsCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/PetsCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/PetsCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,15 +392,8 @@
       <workItem from="1770070599665" duration="13806000" />
       <workItem from="1770118469811" duration="516000" />
       <workItem from="1770122993903" duration="6960000" />
-      <workItem from="1770132380787" duration="6267000" />
-    </task>
-    <task id="LOCAL-00005" summary="V4:Tailwind installed">
-      <option name="closed" value="true" />
-      <created>1766510979070</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1766510979070</updated>
+      <workItem from="1770132380787" duration="6294000" />
+      <workItem from="1770154622278" duration="1139000" />
     </task>
     <task id="LOCAL-00006" summary="V5:Xdebug Ready for test">
       <option name="closed" value="true" />
@@ -795,7 +779,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770135115437</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="0.8.13.4 cruds hasta pet">
+      <option name="closed" value="true" />
+      <created>1770138691744</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1770138691744</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -830,7 +822,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.10 CRUDs listos" />
     <MESSAGE value="0.10.1 2 livewares sin crud" />
     <MESSAGE value="0.3.7.9 arreglando webs y pensando donde poner los scopes" />
     <MESSAGE value="0.3.7.9 scopes a dashboard" />
@@ -855,7 +846,8 @@
     <MESSAGE value="0.8.13.3 request" />
     <MESSAGE value="0.8.13.4 jobs y listeners" />
     <MESSAGE value="0.8.13.4 cruds hasta pet" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.4 cruds hasta pet" />
+    <MESSAGE value="0.8.13.4 git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.4 git ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

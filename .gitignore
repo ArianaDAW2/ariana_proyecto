@@ -32,3 +32,5 @@ Thumbs.db
 --cache-directory/
 coverage/
 .phpunit.cache/
+--cache-directory/*
+.scribe/
