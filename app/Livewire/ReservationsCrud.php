@@ -33,27 +33,28 @@ class ReservationsCrud extends Component
 
     protected function rules()
     {
-        return (new ReservationRequest())->rules($this->reservationId);
+        return (new ReservationRequest())->rules();
     }
 
+    //Sincronización de costes
     public function updatedSelectedServices()
     {
         $this->total_price = Service::whereIn('id', $this->selectedServices)
             ->sum('base_price');
     }
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', Reservation::class);
 
-        $files = Storage::files('contracts');
-        $reservations = Reservation::with(['user', 'pet', 'services'])->paginate(10);
-        $users = User::all();
+        $reservations = Reservation::with(['user', 'pet', 'services'])
+            ->paginate(10);
+
 
         return view('livewire.reservations-crud', [
-            'files' => $files,
+            'files' => Storage::files('contracts'),
             'reservations' => $reservations,
-            'users' => $users,
+            'users' => User::all(),
             'pets' => Pet::all(),
             'services' => Service::active()->get(),
         ]);
@@ -70,7 +71,7 @@ class ReservationsCrud extends Component
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
-
+        //lógica del evento
         $reservation->load('user');
         ReservationCreatedEvent::dispatch($reservation);
 
@@ -97,14 +98,15 @@ class ReservationsCrud extends Component
         $reservation = Reservation::findOrFail($this->reservationId);
         $this->authorize('update', $reservation);
 
-        $oldStatus = $reservation->status;
         $validated = $this->validate();
 
         $reservation->update($validated);
-
+        //Lógica de la sincronización
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
+        //Otro evento
+        $oldStatus = $reservation->status;
         if ($oldStatus != 'completed' && $reservation->status == 'completed') {
             $reservation->load('user', 'pet');
             CheckOutPetEvent::dispatch($reservation);

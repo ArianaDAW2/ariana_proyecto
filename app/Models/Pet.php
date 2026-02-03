@@ -27,6 +27,8 @@ class Pet extends Model
     {
         return $this->hasMany(MedicalRecord::class);
     }
+
+
     //Scopes
     //filtrar por especie y nombre de mascota ordenando estos
     public function scopeFilter($query, $species = null, $sortByName = false)

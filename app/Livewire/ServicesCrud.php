@@ -24,7 +24,7 @@ class ServicesCrud extends Component
 
     protected function rules()
     {
-        return (new ServiceRequest())->rules($this->serviceId);
+        return (new ServiceRequest())->rules();
     }
 
     public function render()

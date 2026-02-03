@@ -27,16 +27,4 @@ class MedicalRecordPolicy
     {
         return $user?->hasPermissionTo('manage_medical_records') ?? false;
     }
-
-    /*softdeletes SIN HACER
-        public function restore(User $user): bool
-        {
-            return $user->hasPermissionTo('manage_medical_records');
-        }
-
-        public function forceDelete(User $user): bool
-        {
-            return $user->hasPermissionTo('manage_medical_records');
-        }
-    */
 }

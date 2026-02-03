@@ -39,12 +39,8 @@ class UsersCrud extends Component
         $this->authorize('create', User::class);
 
         $validated = $this->validate();
-
-        User::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'password' => Hash::make($validated['password']),
-        ]);
+        $validated['password'] = Hash::make($validated['password']);
+        User::create($validated);
 
         $this->resetForm();
     }
@@ -66,13 +62,13 @@ class UsersCrud extends Component
 
         $validated = $this->validate();
 
-        $user->update([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'password' => $validated['password']
-                ? Hash::make($validated['password'])
-                : $user->password,
-        ]);
+        if (!empty($validated['password'])) {
+            $validated['password'] = Hash::make($validated['password']);
+        } else {
+            unset($validated['password']);
+        }
+
+        $user->update($validated);
 
         $this->resetForm();
     }
@@ -85,6 +81,12 @@ class UsersCrud extends Component
 
     private function resetForm()
     {
-        $this->reset(['userId', 'name', 'email', 'password', 'isEdit']);
+        $this->reset([
+            'userId',
+            'name',
+            'email',
+            'password',
+            'isEdit'
+        ]);
     }
 }

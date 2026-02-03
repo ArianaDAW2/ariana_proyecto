@@ -24,7 +24,7 @@ class ContactFormMail extends Mailable
     {
         return new Envelope(
             replyTo: [$this->email],
-            subject: 'Nuevo mensaje de contacto: ' . $this->title,
+            subject: 'Contacto: ' . $this->title,
         );
     }
 

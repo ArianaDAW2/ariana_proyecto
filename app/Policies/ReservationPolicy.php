@@ -26,18 +26,7 @@ class ReservationPolicy
 
     public function delete(?User $user): bool
     {
-        return $user?->hasPermissionTo('manage_users') ?? false;
+        return $user?->hasPermissionTo('manage_reservations') ?? false;
     }
 
-    /*softdeletes SIN HACER
-        public function restore(User $user, Reservation $reservation): bool
-        {
-            return $user->hasPermissionTo('manage_reservations');
-        }
-
-        public function forceDelete(User $user, Reservation $reservation): bool
-        {
-            return $user->hasPermissionTo('manage_reservations');
-        }
-    */
 }

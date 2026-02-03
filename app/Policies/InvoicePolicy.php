@@ -26,16 +26,5 @@ class InvoicePolicy
     {
         return $user?->hasPermissionTo('manage_payments') ?? false;
     }
-
-    /*softdeletes SIN HACER
-        public function restore(User $user, Invoice $invoice): bool
-        {
-            return $user->hasPermissionTo('manage_payments');
-        }
-
-        public function forceDelete(User $user, Invoice $invoice): bool
-        {
-            return $user->hasPermissionTo('manage_payments');
-        }
-    */
+    
 }

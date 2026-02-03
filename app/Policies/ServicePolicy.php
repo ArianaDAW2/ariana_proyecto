@@ -28,15 +28,4 @@ class ServicePolicy
         return $user?->hasPermissionTo('manage_services') ?? false;
     }
 
-    /*softdeletes SIN HACER
-        public function restore(User $user): bool
-        {
-            return $user->hasPermissionTo('manage_services');
-        }
-
-        public function forceDelete(User $user): bool
-        {
-            return $user->hasPermissionTo('manage_services');
-        }
-    */
 }

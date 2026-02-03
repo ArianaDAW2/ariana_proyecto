@@ -27,15 +27,4 @@ class UserPolicy
         return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    /*Softdeletes Sin terminar
-        public function restore(User $user, User $model): bool
-        {
-            return $user->hasPermissionTo('manage_users');
-        }
-
-        public function forceDelete(User $user, User $model): bool
-        {
-            return $user->hasPermissionTo('manage_users');
-        }
-    */
 }

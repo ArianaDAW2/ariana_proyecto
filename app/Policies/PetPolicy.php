@@ -27,15 +27,4 @@ class PetPolicy
         return $user?->hasPermissionTo('manage_users') ?? false;
     }
 
-    /*softdeletes SIN HACER
-        public function restore(User $user, Pet $pet): bool
-        {
-            return $user->hasPermissionTo('manage_users');
-        }
-
-        public function forceDelete(User $user, Pet $pet): bool
-        {
-            return $user->hasPermissionTo('manage_users');
-        }
-    */
 }
