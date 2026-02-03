@@ -11,7 +11,7 @@ class ServiceRequest extends FormRequest
         return true;
     }
 
-    public function rules($serviceId = null): array
+    public function rules(): array
     {
         return [
             'name' => ['required', 'string', 'max:50'],

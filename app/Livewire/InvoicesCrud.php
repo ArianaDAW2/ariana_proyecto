@@ -25,7 +25,7 @@ class InvoicesCrud extends Component
 
     protected function rules()
     {
-        return (new InvoiceRequest())->rules($this->invoiceId);
+        return (new InvoiceRequest())->rules();
     }
 
     public function render()

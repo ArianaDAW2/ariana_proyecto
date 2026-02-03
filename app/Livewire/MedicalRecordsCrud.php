@@ -5,7 +5,6 @@ namespace App\Livewire;
 use App\Models\MedicalRecord;
 use App\Models\Pet;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -27,7 +26,7 @@ class MedicalRecordsCrud extends Component
 
     protected function rules()
     {
-        return (new MedicalRecordRequest())->rules($this->recordId);
+        return (new MedicalRecordRequest())->rules();
     }
 
     public function render()

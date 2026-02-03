@@ -35,11 +35,11 @@ class PetsCrud extends Component
 
     protected function rules()
     {
-        return (new PetRequest())->rules($this->petId);
+        return (new PetRequest())->rules();
     }
 
 
-    public function render(Request $request)
+    public function render()
     {
         $this->authorize('view', Pet::class);
 
@@ -84,6 +84,7 @@ class PetsCrud extends Component
     public function update()
     {
         $pet = Pet::findOrFail($this->petId);
+        
         $this->authorize('update', $pet);
 
         $validated = $this->validate();

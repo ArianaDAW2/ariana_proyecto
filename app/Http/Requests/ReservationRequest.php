@@ -11,7 +11,7 @@ class ReservationRequest extends FormRequest
         return true;
     }
 
-    public function rules($reservationId = null): array
+    public function rules(): array
     {
         return [
             'user_id' => ['required', 'exists:users,id'],

@@ -11,7 +11,7 @@ class InvoiceRequest extends FormRequest
         return true;
     }
 
-    public function rules($invoiceId = null): array
+    public function rules(): array
     {
         return [
             'reservation_id' => ['required', 'exists:reservations,id'],

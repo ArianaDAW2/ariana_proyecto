@@ -11,7 +11,7 @@ class PetRequest extends FormRequest
         return true;
     }
 
-    public function rules($petId = null): array
+    public function rules(): array
     {
         return [
             'user_id' => ['required', 'exists:users,id'],

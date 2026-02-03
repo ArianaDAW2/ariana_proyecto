@@ -12,8 +12,6 @@ class LanguageSwitcher extends Component
     public $availableLocales = [
         'es' => '🇪🇸 Español',
         'en' => '🇬🇧 English',
-        // 'fr' => '🇫🇷 Français',
-        // 'de' => '🇩🇪 Deutsch',
     ];
 
     public function mount()
