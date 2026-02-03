@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class MedicalRecord extends Model
 {
-    use SoftDeletes;
 
     protected $fillable = [
         'pet_id',

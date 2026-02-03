@@ -27,13 +27,10 @@ class paymentsAPI extends Controller
     public function payment()
     {
         $this->authorize('view', Invoice::class);
+        
         return response()->json(
-            Payment::select(
-                'id',
-                'amount',
-                'payment_method',
-                'paid_at'
-            )->get());
+            Payment::paginate(10)
+        );
     }
 
 

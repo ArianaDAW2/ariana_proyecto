@@ -46,8 +46,8 @@ class documentsController extends Controller
     public function send_adminMessage(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'message' => 'required|string|max:5000',
+            'title' => 'required|string|max:100',
+            'message' => 'required|string|max:3000',
         ]);
 
         AdminMessageEvent::dispatch(

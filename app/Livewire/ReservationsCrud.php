@@ -105,7 +105,7 @@ class ReservationsCrud extends Component
         if (!empty($this->selectedServices)) {
             $reservation->services()->sync($this->selectedServices);
         }
-        if ($oldStatus !== 'completed' && $reservation->status === 'completed') {
+        if ($oldStatus != 'completed' && $reservation->status == 'completed') {
             $reservation->load('user', 'pet');
             CheckOutPetEvent::dispatch($reservation);
         }

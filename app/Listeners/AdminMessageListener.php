@@ -23,8 +23,7 @@ class AdminMessageListener
                 $event->body
             );
         }
-        //worker:  1 vez
-        //Artisan::call('admin:oneQueue');
+        //Artisan::call('admin:queue');
 
     }
 }

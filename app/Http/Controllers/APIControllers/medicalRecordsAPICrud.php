@@ -30,14 +30,10 @@ class medicalRecordsAPICrud extends Controller
 
         $this->authorize('view', MedicalRecord::class);
 
-        $records = MedicalRecord::with(['pet', 'veterinarian'])->paginate(10);
-        $pets = Pet::all();
-        $veterinarians = User::role('Veterinario')->get();
+        $records = MedicalRecord::paginate(10);
 
         return response()->json([
             'records' => $records,
-            'pets' => $pets,
-            'veterinarians' => $veterinarians,
         ]);
 
     }
@@ -45,6 +41,7 @@ class medicalRecordsAPICrud extends Controller
     public function store(MedicalRecordRequest $request)
     {
         $this->authorize('create', MedicalRecord::class);
+
         $medicalRecord = MedicalRecord::create($request->validated());
         return response()->json($medicalRecord, 201);
     }
@@ -52,19 +49,22 @@ class medicalRecordsAPICrud extends Controller
     public function show(MedicalRecord $medicalRecord)
     {
         $this->authorize('view', $medicalRecord);
-        return response()->json($medicalRecord->load('pet', 'veterinarian'));
+
+        return response()->json($medicalRecord);
     }
 
     public function update(MedicalRecordRequest $request, MedicalRecord $medicalRecord)
     {
         $this->authorize('update', $medicalRecord);
+
         $medicalRecord->update($request->validated());
-        return response()->json($medicalRecord->load(['pet', 'veterinarian']));
+        return response()->json($medicalRecord);
     }
 
     public function destroy(MedicalRecord $medicalRecord)
     {
         $this->authorize('delete', $medicalRecord);
+
         $medicalRecord->delete();
         return response()->json(null, 204);
     }

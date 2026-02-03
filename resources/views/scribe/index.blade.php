@@ -175,7 +175,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 28, 2026</li>
+        <li>Last updated: February 3, 2026</li>
     </ul>
 </div>
 
@@ -192,7 +192,7 @@
 You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).&lt;/aside&gt;</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_AUTH_KEY}"</code></strong>.</p>
+<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer admin"</code></strong>.</p>
 <p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
 <p>You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.</p>
 
@@ -215,7 +215,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/invoices" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -226,7 +226,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -259,53 +259,117 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;reservation_id&quot;: 1,
                 &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-                &quot;total&quot;: &quot;50.00&quot;,
+                &quot;total&quot;: &quot;100.00&quot;,
                 &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;reservation&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;user_id&quot;: 4,
-                    &quot;pet_id&quot;: 1,
-                    &quot;start_date&quot;: &quot;2026-01-27&quot;,
-                    &quot;end_date&quot;: &quot;2026-01-30&quot;,
-                    &quot;status&quot;: &quot;confirmed&quot;,
-                    &quot;total_price&quot;: &quot;50.00&quot;,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                }
+                &quot;issued_at&quot;: &quot;2026-02-04 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
-                &quot;id&quot;: 2,
-                &quot;reservation_id&quot;: 2,
-                &quot;invoice_number&quot;: &quot;FAC-00002&quot;,
-                &quot;total&quot;: &quot;540.00&quot;,
+                &quot;id&quot;: 3,
+                &quot;reservation_id&quot;: 3,
+                &quot;invoice_number&quot;: &quot;FAC-00003&quot;,
+                &quot;total&quot;: &quot;30.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-16 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 4,
+                &quot;reservation_id&quot;: 4,
+                &quot;invoice_number&quot;: &quot;FAC-00004&quot;,
+                &quot;total&quot;: &quot;90.00&quot;,
                 &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;reservation&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;user_id&quot;: 4,
-                    &quot;pet_id&quot;: 2,
-                    &quot;start_date&quot;: &quot;2026-02-01&quot;,
-                    &quot;end_date&quot;: &quot;2026-02-04&quot;,
-                    &quot;status&quot;: &quot;confirmed&quot;,
-                    &quot;total_price&quot;: &quot;540.00&quot;,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                }
+                &quot;issued_at&quot;: &quot;2026-02-26 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 5,
+                &quot;reservation_id&quot;: 5,
+                &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
+                &quot;total&quot;: &quot;150.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-12-11 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;reservation_id&quot;: 6,
+                &quot;invoice_number&quot;: &quot;FAC-00006&quot;,
+                &quot;total&quot;: &quot;35.00&quot;,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2025-11-18 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;reservation_id&quot;: 7,
+                &quot;invoice_number&quot;: &quot;FAC-00007&quot;,
+                &quot;total&quot;: &quot;55.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-10-18 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;reservation_id&quot;: 8,
+                &quot;invoice_number&quot;: &quot;FAC-00008&quot;,
+                &quot;total&quot;: &quot;130.00&quot;,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-17 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;reservation_id&quot;: 9,
+                &quot;invoice_number&quot;: &quot;FAC-00009&quot;,
+                &quot;total&quot;: &quot;130.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-11-06 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;reservation_id&quot;: 10,
+                &quot;invoice_number&quot;: &quot;FAC-00010&quot;,
+                &quot;total&quot;: &quot;75.00&quot;,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2025-10-17 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;reservation_id&quot;: 11,
+                &quot;invoice_number&quot;: &quot;FAC-00011&quot;,
+                &quot;total&quot;: &quot;120.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-12-07 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 1,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -320,45 +384,25 @@ access-control-allow-origin: *
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: null,
+                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
+                &quot;page&quot;: 2,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: null,
+        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost:8000/api/invoices&quot;,
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 2,
-        &quot;total&quot;: 2
-    },
-    &quot;reservations&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;user_id&quot;: 4,
-            &quot;pet_id&quot;: 1,
-            &quot;start_date&quot;: &quot;2026-01-27&quot;,
-            &quot;end_date&quot;: &quot;2026-01-30&quot;,
-            &quot;status&quot;: &quot;confirmed&quot;,
-            &quot;total_price&quot;: &quot;50.00&quot;,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;user_id&quot;: 4,
-            &quot;pet_id&quot;: 2,
-            &quot;start_date&quot;: &quot;2026-02-01&quot;,
-            &quot;end_date&quot;: &quot;2026-02-04&quot;,
-            &quot;status&quot;: &quot;confirmed&quot;,
-            &quot;total_price&quot;: &quot;540.00&quot;,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        }
-    ]
+        &quot;to&quot;: 10,
+        &quot;total&quot;: 13
+    }
 }</code>
  </pre>
     </span>
@@ -416,10 +460,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-invoices"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -462,15 +506,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/invoices" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"paid\",
-    \"issued_at\": \"2026-01-28T01:08:53\"
+    \"status\": \"unpaid\",
+    \"issued_at\": \"2026-02-03T03:01:41\"
 }"
 </code></pre></div>
 
@@ -481,7 +525,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -490,8 +534,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "paid",
-    "issued_at": "2026-01-28T01:08:53"
+    "status": "unpaid",
+    "issued_at": "2026-02-03T03:01:41"
 };
 
 fetch(url, {
@@ -558,10 +602,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-invoices"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -631,24 +675,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-invoices"
-               value="paid"
+               value="unpaid"
                data-component="body">
     <br>
-<p>Example: <code>paid</code></p>
+<p>Example: <code>unpaid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>issued_at</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="POSTapi-invoices"
-               value="2026-01-28T01:08:53"
+               value="2026-02-03T03:01:41"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-01-28T01:08:53</code></p>
+<p>Must be a valid date. Example: <code>2026-02-03T03:01:41</code></p>
         </div>
         </form>
 
@@ -667,7 +711,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/invoices/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -678,7 +722,7 @@ Must be one of:
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -707,24 +751,12 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;reservation_id&quot;: 1,
     &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-    &quot;total&quot;: &quot;50.00&quot;,
+    &quot;total&quot;: &quot;100.00&quot;,
     &quot;status&quot;: &quot;paid&quot;,
-    &quot;issued_at&quot;: &quot;2026-01-27 00:10:32&quot;,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;deleted_at&quot;: null,
-    &quot;reservation&quot;: {
-        &quot;id&quot;: 1,
-        &quot;user_id&quot;: 4,
-        &quot;pet_id&quot;: 1,
-        &quot;start_date&quot;: &quot;2026-01-27&quot;,
-        &quot;end_date&quot;: &quot;2026-01-30&quot;,
-        &quot;status&quot;: &quot;confirmed&quot;,
-        &quot;total_price&quot;: &quot;50.00&quot;,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-        &quot;deleted_at&quot;: null
-    }
+    &quot;issued_at&quot;: &quot;2026-02-04 00:00:00&quot;,
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;deleted_at&quot;: null
 }</code>
  </pre>
     </span>
@@ -782,10 +814,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-invoices--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -841,15 +873,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/invoices/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"unpaid\",
-    \"issued_at\": \"2026-01-28T01:08:53\"
+    \"status\": \"paid\",
+    \"issued_at\": \"2026-02-03T03:01:41\"
 }"
 </code></pre></div>
 
@@ -860,7 +892,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -869,8 +901,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "unpaid",
-    "issued_at": "2026-01-28T01:08:53"
+    "status": "paid",
+    "issued_at": "2026-02-03T03:01:41"
 };
 
 fetch(url, {
@@ -941,10 +973,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-invoices--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1027,24 +1059,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-invoices--id-"
-               value="unpaid"
+               value="paid"
                data-component="body">
     <br>
-<p>Example: <code>unpaid</code></p>
+<p>Example: <code>paid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>issued_at</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="PUTapi-invoices--id-"
-               value="2026-01-28T01:08:53"
+               value="2026-02-03T03:01:41"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-01-28T01:08:53</code></p>
+<p>Must be a valid date. Example: <code>2026-02-03T03:01:41</code></p>
         </div>
         </form>
 
@@ -1063,7 +1095,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/invoices/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1074,7 +1106,7 @@ Must be one of:
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1142,10 +1174,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-invoices--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1201,7 +1233,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/medical-records" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1212,7 +1244,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1245,181 +1277,56 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;pet_id&quot;: 1,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Toby&quot;,
-                    &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                    &quot;age&quot;: 6,
-                    &quot;weight&quot;: 30.5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 2,
                 &quot;pet_id&quot;: 2,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Cleo&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Cleo&quot;,
-                    &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-                    &quot;age&quot;: 8,
-                    &quot;weight&quot;: 5.5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 3,
                 &quot;pet_id&quot;: 3,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Thor&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Zeus&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 3,
-                    &quot;user_id&quot;: 6,
-                    &quot;name&quot;: &quot;Thor&quot;,
-                    &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                    &quot;age&quot;: 10,
-                    &quot;weight&quot;: 35,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 4,
                 &quot;pet_id&quot;: 4,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Mia&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Kira&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 4,
-                    &quot;user_id&quot;: 6,
-                    &quot;name&quot;: &quot;Mia&quot;,
-                    &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Maine Coon&quot;,
-                    &quot;age&quot;: 12,
-                    &quot;weight&quot;: 7.5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 5,
                 &quot;pet_id&quot;: 5,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Max&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 5,
-                    &quot;user_id&quot;: 7,
-                    &quot;name&quot;: &quot;Rocky&quot;,
-                    &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Labrador&quot;,
-                    &quot;age&quot;: 6,
-                    &quot;weight&quot;: 28,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 6,
@@ -1428,106 +1335,31 @@ access-control-allow-origin: *
                 &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 6,
-                    &quot;user_id&quot;: 7,
-                    &quot;name&quot;: &quot;Luna&quot;,
-                    &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-                    &quot;age&quot;: 1,
-                    &quot;weight&quot;: 4.2,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 7,
                 &quot;pet_id&quot;: 7,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Max&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 7,
-                    &quot;user_id&quot;: 8,
-                    &quot;name&quot;: &quot;Max&quot;,
-                    &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Labrador&quot;,
-                    &quot;age&quot;: 5,
-                    &quot;weight&quot;: 28,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 8,
                 &quot;pet_id&quot;: 8,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nina&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 8,
-                    &quot;user_id&quot;: 8,
-                    &quot;name&quot;: &quot;Nina&quot;,
-                    &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Persa&quot;,
-                    &quot;age&quot;: 2,
-                    &quot;weight&quot;: 5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 9,
@@ -1536,34 +1368,9 @@ access-control-allow-origin: *
                 &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 9,
-                    &quot;user_id&quot;: 9,
-                    &quot;name&quot;: &quot;Toby&quot;,
-                    &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                    &quot;age&quot;: 10,
-                    &quot;weight&quot;: 30.5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 10,
@@ -1572,34 +1379,9 @@ access-control-allow-origin: *
                 &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Cleo&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;deleted_at&quot;: null,
-                &quot;pet&quot;: {
-                    &quot;id&quot;: 10,
-                    &quot;user_id&quot;: 9,
-                    &quot;name&quot;: &quot;Cleo&quot;,
-                    &quot;species&quot;: &quot;Gato&quot;,
-                    &quot;breed&quot;: &quot;Maine Coon&quot;,
-                    &quot;age&quot;: 2,
-                    &quot;weight&quot;: 7.5,
-                    &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;deleted_at&quot;: null
-                },
-                &quot;veterinarian&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;veterinario&quot;,
-                    &quot;email&quot;: &quot;vet@mail.es&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;two_factor_confirmed_at&quot;: null,
-                    &quot;current_team_id&quot;: null,
-                    &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-                }
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/medical-records?page=1&quot;,
@@ -1638,179 +1420,7 @@ access-control-allow-origin: *
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
         &quot;total&quot;: 12
-    },
-    &quot;pets&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Toby&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 6,
-            &quot;weight&quot;: 30.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Cleo&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-            &quot;age&quot;: 8,
-            &quot;weight&quot;: 5.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Thor&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 10,
-            &quot;weight&quot;: 35,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Mia&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 12,
-            &quot;weight&quot;: 7.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;user_id&quot;: 7,
-            &quot;name&quot;: &quot;Rocky&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 6,
-            &quot;weight&quot;: 28,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;user_id&quot;: 7,
-            &quot;name&quot;: &quot;Luna&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-            &quot;age&quot;: 1,
-            &quot;weight&quot;: 4.2,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Max&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 5,
-            &quot;weight&quot;: 28,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Nina&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;user_id&quot;: 9,
-            &quot;name&quot;: &quot;Toby&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 10,
-            &quot;weight&quot;: 30.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;user_id&quot;: 9,
-            &quot;name&quot;: &quot;Cleo&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 7.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Rocky&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 3,
-            &quot;weight&quot;: 28,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Luna&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 3,
-            &quot;weight&quot;: 7.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        }
-    ],
-    &quot;veterinarians&quot;: [
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;veterinario&quot;,
-            &quot;email&quot;: &quot;vet@mail.es&quot;,
-            &quot;email_verified_at&quot;: null,
-            &quot;two_factor_confirmed_at&quot;: null,
-            &quot;current_team_id&quot;: null,
-            &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-        }
-    ]
+    }
 }</code>
  </pre>
     </span>
@@ -1868,10 +1478,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-medical-records"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1914,7 +1524,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/medical-records" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1933,7 +1543,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2010,10 +1620,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-medical-records"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2117,7 +1727,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/medical-records/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2128,7 +1738,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2157,37 +1767,12 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;pet_id&quot;: 1,
     &quot;veterinarian_id&quot;: 2,
-    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Toby&quot;,
+    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
     &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
     &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;deleted_at&quot;: null,
-    &quot;pet&quot;: {
-        &quot;id&quot;: 1,
-        &quot;user_id&quot;: 4,
-        &quot;name&quot;: &quot;Toby&quot;,
-        &quot;species&quot;: &quot;Perro&quot;,
-        &quot;breed&quot;: &quot;Golden Retriever&quot;,
-        &quot;age&quot;: 6,
-        &quot;weight&quot;: 30.5,
-        &quot;notes&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-        &quot;deleted_at&quot;: null
-    },
-    &quot;veterinarian&quot;: {
-        &quot;id&quot;: 2,
-        &quot;name&quot;: &quot;veterinario&quot;,
-        &quot;email&quot;: &quot;vet@mail.es&quot;,
-        &quot;email_verified_at&quot;: null,
-        &quot;two_factor_confirmed_at&quot;: null,
-        &quot;current_team_id&quot;: null,
-        &quot;profile_photo_path&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-        &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
-    }
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;deleted_at&quot;: null
 }</code>
  </pre>
     </span>
@@ -2245,10 +1830,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-medical-records--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2304,7 +1889,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/medical-records/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -2323,7 +1908,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2404,10 +1989,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-medical-records--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2524,7 +2109,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/medical-records/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2535,7 +2120,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2603,10 +2188,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-medical-records--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2662,7 +2247,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/reservations" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2673,7 +2258,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2704,14 +2289,90 @@ access-control-allow-origin: *
         &quot;data&quot;: [
             {
                 &quot;id&quot;: 1,
+                &quot;user_id&quot;: 1,
+                &quot;pet_id&quot;: 1,
+                &quot;start_date&quot;: &quot;2026-02-03T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;pending&quot;,
+                &quot;total_price&quot;: &quot;100.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;admin&quot;,
+                    &quot;email&quot;: &quot;admin@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;user_id&quot;: 4,
+                    &quot;name&quot;: &quot;Bruno&quot;,
+                    &quot;species&quot;: &quot;Perro&quot;,
+                    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+                    &quot;age&quot;: 8,
+                    &quot;weight&quot;: 12,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: []
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;user_id&quot;: 1,
+                &quot;pet_id&quot;: 1,
+                &quot;start_date&quot;: &quot;2026-01-28T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-02T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;150.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;admin&quot;,
+                    &quot;email&quot;: &quot;admin@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;user_id&quot;: 4,
+                    &quot;name&quot;: &quot;Bruno&quot;,
+                    &quot;species&quot;: &quot;Perro&quot;,
+                    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+                    &quot;age&quot;: 8,
+                    &quot;weight&quot;: 12,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: []
+            },
+            {
+                &quot;id&quot;: 3,
                 &quot;user_id&quot;: 4,
                 &quot;pet_id&quot;: 1,
-                &quot;start_date&quot;: &quot;2026-01-27&quot;,
-                &quot;end_date&quot;: &quot;2026-01-30&quot;,
+                &quot;start_date&quot;: &quot;2026-02-15T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-20T23:00:00.000000Z&quot;,
                 &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: &quot;50.00&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;total_price&quot;: &quot;30.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;user&quot;: {
                     &quot;id&quot;: 4,
@@ -2721,51 +2382,51 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 },
                 &quot;pet&quot;: {
                     &quot;id&quot;: 1,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Toby&quot;,
+                    &quot;name&quot;: &quot;Bruno&quot;,
                     &quot;species&quot;: &quot;Perro&quot;,
-                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                    &quot;age&quot;: 6,
-                    &quot;weight&quot;: 30.5,
+                    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+                    &quot;age&quot;: 8,
+                    &quot;weight&quot;: 12,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;services&quot;: [
                     {
-                        &quot;id&quot;: 10,
-                        &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
-                        &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
-                        &quot;base_price&quot;: &quot;50.00&quot;,
-                        &quot;is_active&quot;: 0,
-                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
+                        &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
+                        &quot;base_price&quot;: &quot;30.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                         &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 1,
-                            &quot;service_id&quot;: 10,
-                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                            &quot;reservation_id&quot;: 3,
+                            &quot;service_id&quot;: 4,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
                         }
                     }
                 ]
             },
             {
-                &quot;id&quot;: 2,
+                &quot;id&quot;: 4,
                 &quot;user_id&quot;: 4,
                 &quot;pet_id&quot;: 2,
-                &quot;start_date&quot;: &quot;2026-02-01&quot;,
-                &quot;end_date&quot;: &quot;2026-02-04&quot;,
-                &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: &quot;540.00&quot;,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2026-02-25T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-28T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;pending&quot;,
+                &quot;total_price&quot;: &quot;90.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;user&quot;: {
                     &quot;id&quot;: 4,
@@ -2775,52 +2436,571 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 },
                 &quot;pet&quot;: {
                     &quot;id&quot;: 2,
                     &quot;user_id&quot;: 4,
-                    &quot;name&quot;: &quot;Cleo&quot;,
+                    &quot;name&quot;: &quot;Luna&quot;,
                     &quot;species&quot;: &quot;Gato&quot;,
                     &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-                    &quot;age&quot;: 8,
+                    &quot;age&quot;: 14,
                     &quot;weight&quot;: 5.5,
                     &quot;notes&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                     &quot;deleted_at&quot;: null
                 },
                 &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 4,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 3,
+                        &quot;name&quot;: &quot;Peluquer&iacute;a Canina Y Felina&quot;,
+                        &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
+                        &quot;base_price&quot;: &quot;25.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 4,
+                            &quot;service_id&quot;: 3,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
+                        &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
+                        &quot;base_price&quot;: &quot;30.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 4,
+                            &quot;service_id&quot;: 4,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 5,
+                &quot;user_id&quot;: 6,
+                &quot;pet_id&quot;: 3,
+                &quot;start_date&quot;: &quot;2025-12-10T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-12-15T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;cancelled&quot;,
+                &quot;total_price&quot;: &quot;150.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;name&quot;: &quot;cliente1&quot;,
+                    &quot;email&quot;: &quot;cliente1@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;user_id&quot;: 6,
+                    &quot;name&quot;: &quot;Zeus&quot;,
+                    &quot;species&quot;: &quot;Perro&quot;,
+                    &quot;breed&quot;: &quot;Labrador&quot;,
+                    &quot;age&quot;: 6,
+                    &quot;weight&quot;: 28,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;Alojamiento dog&amp;cat hotel&quot;,
+                        &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
+                        &quot;base_price&quot;: &quot;20.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 5,
+                            &quot;service_id&quot;: 1,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 5,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 3,
+                        &quot;name&quot;: &quot;Peluquer&iacute;a Canina Y Felina&quot;,
+                        &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
+                        &quot;base_price&quot;: &quot;25.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 5,
+                            &quot;service_id&quot;: 3,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
+                        &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
+                        &quot;base_price&quot;: &quot;30.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 5,
+                            &quot;service_id&quot;: 4,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
                     {
                         &quot;id&quot;: 5,
                         &quot;name&quot;: &quot;Adiestramiento B&aacute;sico&quot;,
                         &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
                         &quot;base_price&quot;: &quot;40.00&quot;,
                         &quot;is_active&quot;: 1,
-                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                         &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 2,
+                            &quot;reservation_id&quot;: 5,
                             &quot;service_id&quot;: 5,
-                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;user_id&quot;: 6,
+                &quot;pet_id&quot;: 4,
+                &quot;start_date&quot;: &quot;2025-11-17T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-11-23T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;total_price&quot;: &quot;35.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;name&quot;: &quot;cliente1&quot;,
+                    &quot;email&quot;: &quot;cliente1@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;user_id&quot;: 6,
+                    &quot;name&quot;: &quot;Kira&quot;,
+                    &quot;species&quot;: &quot;Gato&quot;,
+                    &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+                    &quot;age&quot;: 14,
+                    &quot;weight&quot;: 4.2,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 6,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;user_id&quot;: 7,
+                &quot;pet_id&quot;: 5,
+                &quot;start_date&quot;: &quot;2025-10-17T22:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-10-22T22:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;total_price&quot;: &quot;55.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 7,
+                    &quot;name&quot;: &quot;cliente2&quot;,
+                    &quot;email&quot;: &quot;cliente2@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 5,
+                    &quot;user_id&quot;: 7,
+                    &quot;name&quot;: &quot;Max&quot;,
+                    &quot;species&quot;: &quot;Perro&quot;,
+                    &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+                    &quot;age&quot;: 2,
+                    &quot;weight&quot;: 35,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 3,
+                        &quot;name&quot;: &quot;Peluquer&iacute;a Canina Y Felina&quot;,
+                        &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
+                        &quot;base_price&quot;: &quot;25.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 7,
+                            &quot;service_id&quot;: 3,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
                         }
                     },
                     {
-                        &quot;id&quot;: 8,
-                        &quot;name&quot;: &quot;Ciruj&iacute;a&quot;,
-                        &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
-                        &quot;base_price&quot;: &quot;500.00&quot;,
-                        &quot;is_active&quot;: 0,
-                        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
+                        &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
+                        &quot;base_price&quot;: &quot;30.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                         &quot;pivot&quot;: {
-                            &quot;reservation_id&quot;: 2,
-                            &quot;service_id&quot;: 8,
-                            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                            &quot;reservation_id&quot;: 7,
+                            &quot;service_id&quot;: 4,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;user_id&quot;: 7,
+                &quot;pet_id&quot;: 6,
+                &quot;start_date&quot;: &quot;2026-01-16T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-01-19T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;130.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 7,
+                    &quot;name&quot;: &quot;cliente2&quot;,
+                    &quot;email&quot;: &quot;cliente2@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;user_id&quot;: 7,
+                    &quot;name&quot;: &quot;Luna&quot;,
+                    &quot;species&quot;: &quot;Gato&quot;,
+                    &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+                    &quot;age&quot;: 11,
+                    &quot;weight&quot;: 4.2,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 8,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 3,
+                        &quot;name&quot;: &quot;Peluquer&iacute;a Canina Y Felina&quot;,
+                        &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
+                        &quot;base_price&quot;: &quot;25.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 8,
+                            &quot;service_id&quot;: 3,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
+                        &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
+                        &quot;base_price&quot;: &quot;30.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 8,
+                            &quot;service_id&quot;: 4,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Hopitalizaci&oacute;n&quot;,
+                        &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
+                        &quot;base_price&quot;: &quot;40.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 8,
+                            &quot;service_id&quot;: 6,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;user_id&quot;: 8,
+                &quot;pet_id&quot;: 7,
+                &quot;start_date&quot;: &quot;2025-11-05T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-11-07T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;130.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;cliente3&quot;,
+                    &quot;email&quot;: &quot;cliente3@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 7,
+                    &quot;user_id&quot;: 8,
+                    &quot;name&quot;: &quot;Rocky&quot;,
+                    &quot;species&quot;: &quot;Perro&quot;,
+                    &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                    &quot;age&quot;: 9,
+                    &quot;weight&quot;: 30.5,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;Alojamiento dog&amp;cat hotel&quot;,
+                        &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
+                        &quot;base_price&quot;: &quot;20.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 9,
+                            &quot;service_id&quot;: 1,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 9,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 5,
+                        &quot;name&quot;: &quot;Adiestramiento B&aacute;sico&quot;,
+                        &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
+                        &quot;base_price&quot;: &quot;40.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 9,
+                            &quot;service_id&quot;: 5,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 7,
+                        &quot;name&quot;: &quot;Consulta online&quot;,
+                        &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 9,
+                            &quot;service_id&quot;: 7,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;user_id&quot;: 8,
+                &quot;pet_id&quot;: 8,
+                &quot;start_date&quot;: &quot;2025-10-16T22:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-10-22T22:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;total_price&quot;: &quot;75.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;deleted_at&quot;: null,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;cliente3&quot;,
+                    &quot;email&quot;: &quot;cliente3@mail.es&quot;,
+                    &quot;email_verified_at&quot;: null,
+                    &quot;two_factor_confirmed_at&quot;: null,
+                    &quot;current_team_id&quot;: null,
+                    &quot;profile_photo_path&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+                },
+                &quot;pet&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;user_id&quot;: 8,
+                    &quot;name&quot;: &quot;Luna&quot;,
+                    &quot;species&quot;: &quot;Gato&quot;,
+                    &quot;breed&quot;: &quot;Persa&quot;,
+                    &quot;age&quot;: 5,
+                    &quot;weight&quot;: 5,
+                    &quot;notes&quot;: null,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;deleted_at&quot;: null
+                },
+                &quot;services&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
+                        &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
+                        &quot;base_price&quot;: &quot;35.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 10,
+                            &quot;service_id&quot;: 2,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 5,
+                        &quot;name&quot;: &quot;Adiestramiento B&aacute;sico&quot;,
+                        &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
+                        &quot;base_price&quot;: &quot;40.00&quot;,
+                        &quot;is_active&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;reservation_id&quot;: 10,
+                            &quot;service_id&quot;: 5,
+                            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
                         }
                     }
                 ]
@@ -2828,8 +3008,8 @@ access-control-allow-origin: *
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/reservations?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 1,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/reservations?page=1&quot;,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/reservations?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -2844,18 +3024,24 @@ access-control-allow-origin: *
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: null,
+                &quot;url&quot;: &quot;http://localhost:8000/api/reservations?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/reservations?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
+                &quot;page&quot;: 2,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: null,
+        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/reservations?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost:8000/api/reservations&quot;,
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 2,
-        &quot;total&quot;: 2
+        &quot;to&quot;: 10,
+        &quot;total&quot;: 14
     },
     &quot;users&quot;: [
         {
@@ -2866,8 +3052,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2878,8 +3064,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2890,8 +3076,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2902,8 +3088,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2914,8 +3100,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2926,8 +3112,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2938,8 +3124,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2950,8 +3136,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2962,8 +3148,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -2974,8 +3160,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         }
     ],
@@ -2983,66 +3169,66 @@ access-control-allow-origin: *
         {
             &quot;id&quot;: 1,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Toby&quot;,
+            &quot;name&quot;: &quot;Bruno&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 6,
-            &quot;weight&quot;: 30.5,
+            &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+            &quot;age&quot;: 8,
+            &quot;weight&quot;: 12,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 2,
             &quot;user_id&quot;: 4,
-            &quot;name&quot;: &quot;Cleo&quot;,
+            &quot;name&quot;: &quot;Luna&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-            &quot;age&quot;: 8,
+            &quot;age&quot;: 14,
             &quot;weight&quot;: 5.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 3,
             &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Thor&quot;,
-            &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-            &quot;age&quot;: 10,
-            &quot;weight&quot;: 35,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;user_id&quot;: 6,
-            &quot;name&quot;: &quot;Mia&quot;,
-            &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 12,
-            &quot;weight&quot;: 7.5,
-            &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;user_id&quot;: 7,
-            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;name&quot;: &quot;Zeus&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
             &quot;breed&quot;: &quot;Labrador&quot;,
             &quot;age&quot;: 6,
             &quot;weight&quot;: 28,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;user_id&quot;: 6,
+            &quot;name&quot;: &quot;Kira&quot;,
+            &quot;species&quot;: &quot;Gato&quot;,
+            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+            &quot;age&quot;: 14,
+            &quot;weight&quot;: 4.2,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;deleted_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;user_id&quot;: 7,
+            &quot;name&quot;: &quot;Max&quot;,
+            &quot;species&quot;: &quot;Perro&quot;,
+            &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+            &quot;age&quot;: 2,
+            &quot;weight&quot;: 35,
+            &quot;notes&quot;: null,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
@@ -3051,37 +3237,37 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Luna&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-            &quot;age&quot;: 1,
+            &quot;age&quot;: 11,
             &quot;weight&quot;: 4.2,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 7,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Max&quot;,
+            &quot;name&quot;: &quot;Rocky&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 5,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Golden Retriever&quot;,
+            &quot;age&quot;: 9,
+            &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 8,
             &quot;user_id&quot;: 8,
-            &quot;name&quot;: &quot;Nina&quot;,
+            &quot;name&quot;: &quot;Luna&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
             &quot;breed&quot;: &quot;Persa&quot;,
-            &quot;age&quot;: 2,
+            &quot;age&quot;: 5,
             &quot;weight&quot;: 5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
@@ -3090,11 +3276,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Toby&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
             &quot;breed&quot;: &quot;Golden Retriever&quot;,
-            &quot;age&quot;: 10,
+            &quot;age&quot;: 7,
             &quot;weight&quot;: 30.5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
@@ -3102,38 +3288,38 @@ access-control-allow-origin: *
             &quot;user_id&quot;: 9,
             &quot;name&quot;: &quot;Cleo&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 2,
-            &quot;weight&quot;: 7.5,
+            &quot;breed&quot;: &quot;Persa&quot;,
+            &quot;age&quot;: 8,
+            &quot;weight&quot;: 5,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 11,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Rocky&quot;,
+            &quot;name&quot;: &quot;Thor&quot;,
             &quot;species&quot;: &quot;Perro&quot;,
-            &quot;breed&quot;: &quot;Labrador&quot;,
-            &quot;age&quot;: 3,
-            &quot;weight&quot;: 28,
+            &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+            &quot;age&quot;: 7,
+            &quot;weight&quot;: 12,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         },
         {
             &quot;id&quot;: 12,
             &quot;user_id&quot;: 10,
-            &quot;name&quot;: &quot;Luna&quot;,
+            &quot;name&quot;: &quot;Kira&quot;,
             &quot;species&quot;: &quot;Gato&quot;,
-            &quot;breed&quot;: &quot;Maine Coon&quot;,
-            &quot;age&quot;: 3,
-            &quot;weight&quot;: 7.5,
+            &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+            &quot;age&quot;: 2,
+            &quot;weight&quot;: 4.2,
             &quot;notes&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;deleted_at&quot;: null
         }
     ],
@@ -3144,8 +3330,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
             &quot;base_price&quot;: &quot;20.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 2,
@@ -3153,8 +3339,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
             &quot;base_price&quot;: &quot;35.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 3,
@@ -3162,8 +3348,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
             &quot;base_price&quot;: &quot;25.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 4,
@@ -3171,8 +3357,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
             &quot;base_price&quot;: &quot;30.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 5,
@@ -3180,8 +3366,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
             &quot;base_price&quot;: &quot;40.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 6,
@@ -3189,8 +3375,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
             &quot;base_price&quot;: &quot;40.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 7,
@@ -3198,8 +3384,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
             &quot;base_price&quot;: &quot;35.00&quot;,
             &quot;is_active&quot;: 1,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 8,
@@ -3207,8 +3393,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
             &quot;base_price&quot;: &quot;500.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 9,
@@ -3216,8 +3402,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 10,
@@ -3225,8 +3411,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 11,
@@ -3234,8 +3420,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Ambulancia y atenci&oacute;n 24h&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 12,
@@ -3243,8 +3429,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Tratamiento dental y limpieza&quot;,
             &quot;base_price&quot;: &quot;50.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         },
         {
             &quot;id&quot;: 13,
@@ -3252,8 +3438,8 @@ access-control-allow-origin: *
             &quot;description&quot;: &quot;Atenci&oacute;n especial por especie&quot;,
             &quot;base_price&quot;: &quot;100.00&quot;,
             &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
         }
     ]
 }</code>
@@ -3313,10 +3499,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-reservations"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3359,15 +3545,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/reservations" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-20\",
-    \"end_date\": \"2052-02-21\",
-    \"status\": \"confirmed\",
+    \"start_date\": \"2022-02-26\",
+    \"end_date\": \"2052-02-27\",
+    \"status\": \"cancelled\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -3379,7 +3565,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3387,9 +3573,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-20",
-    "end_date": "2052-02-21",
-    "status": "confirmed",
+    "start_date": "2022-02-26",
+    "end_date": "2052-02-27",
+    "status": "cancelled",
     "total_price": 39
 };
 
@@ -3457,10 +3643,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-reservations"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3518,10 +3704,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-reservations"
-               value="2022-02-20"
+               value="2022-02-26"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-20</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-26</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -3530,10 +3716,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-reservations"
-               value="2052-02-21"
+               value="2052-02-27"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-21</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-27</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -3542,10 +3728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-reservations"
-               value="confirmed"
+               value="cancelled"
                data-component="body">
     <br>
-<p>Example: <code>confirmed</code></p>
+<p>Example: <code>cancelled</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -3578,7 +3764,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/reservations/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -3589,7 +3775,7 @@ Must be one of:
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3616,57 +3802,41 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;id&quot;: 1,
-    &quot;user_id&quot;: 4,
+    &quot;user_id&quot;: 1,
     &quot;pet_id&quot;: 1,
-    &quot;start_date&quot;: &quot;2026-01-27&quot;,
-    &quot;end_date&quot;: &quot;2026-01-30&quot;,
-    &quot;status&quot;: &quot;confirmed&quot;,
-    &quot;total_price&quot;: &quot;50.00&quot;,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;start_date&quot;: &quot;2026-02-03T23:00:00.000000Z&quot;,
+    &quot;end_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
+    &quot;status&quot;: &quot;pending&quot;,
+    &quot;total_price&quot;: &quot;100.00&quot;,
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
     &quot;deleted_at&quot;: null,
     &quot;user&quot;: {
-        &quot;id&quot;: 4,
-        &quot;name&quot;: &quot;cliente&quot;,
-        &quot;email&quot;: &quot;client@mail.es&quot;,
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;admin&quot;,
+        &quot;email&quot;: &quot;admin@mail.es&quot;,
         &quot;email_verified_at&quot;: null,
         &quot;two_factor_confirmed_at&quot;: null,
         &quot;current_team_id&quot;: null,
         &quot;profile_photo_path&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-        &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
+        &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+        &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
     },
     &quot;pet&quot;: {
         &quot;id&quot;: 1,
         &quot;user_id&quot;: 4,
-        &quot;name&quot;: &quot;Toby&quot;,
+        &quot;name&quot;: &quot;Bruno&quot;,
         &quot;species&quot;: &quot;Perro&quot;,
-        &quot;breed&quot;: &quot;Golden Retriever&quot;,
-        &quot;age&quot;: 6,
-        &quot;weight&quot;: 30.5,
+        &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+        &quot;age&quot;: 8,
+        &quot;weight&quot;: 12,
         &quot;notes&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
         &quot;deleted_at&quot;: null
     },
-    &quot;services&quot;: [
-        {
-            &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
-            &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
-            &quot;base_price&quot;: &quot;50.00&quot;,
-            &quot;is_active&quot;: 0,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;pivot&quot;: {
-                &quot;reservation_id&quot;: 1,
-                &quot;service_id&quot;: 10,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
-            }
-        }
-    ]
+    &quot;services&quot;: []
 }</code>
  </pre>
     </span>
@@ -3724,10 +3894,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-reservations--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3783,14 +3953,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/reservations/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-20\",
-    \"end_date\": \"2052-02-21\",
+    \"start_date\": \"2022-02-26\",
+    \"end_date\": \"2052-02-27\",
     \"status\": \"pending\",
     \"total_price\": 39
 }"
@@ -3803,7 +3973,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3811,8 +3981,8 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-20",
-    "end_date": "2052-02-21",
+    "start_date": "2022-02-26",
+    "end_date": "2052-02-27",
     "status": "pending",
     "total_price": 39
 };
@@ -3885,10 +4055,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-reservations--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3959,10 +4129,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2022-02-20"
+               value="2022-02-26"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-20</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-26</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -3971,10 +4141,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2052-02-21"
+               value="2052-02-27"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-21</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-27</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -4019,7 +4189,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/reservations/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4030,7 +4200,7 @@ Must be one of:
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4098,10 +4268,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-reservations--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -4157,7 +4327,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/services" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4168,7 +4338,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4203,8 +4373,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
                 &quot;base_price&quot;: &quot;20.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 2,
@@ -4212,8 +4382,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
                 &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 3,
@@ -4221,8 +4391,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
                 &quot;base_price&quot;: &quot;25.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 4,
@@ -4230,8 +4400,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
                 &quot;base_price&quot;: &quot;30.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 5,
@@ -4239,8 +4409,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
                 &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 6,
@@ -4248,8 +4418,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
                 &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 7,
@@ -4257,8 +4427,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
                 &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 8,
@@ -4266,8 +4436,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
                 &quot;base_price&quot;: &quot;500.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 9,
@@ -4275,8 +4445,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
                 &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             },
             {
                 &quot;id&quot;: 10,
@@ -4284,8 +4454,8 @@ access-control-allow-origin: *
                 &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
                 &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/services?page=1&quot;,
@@ -4382,10 +4552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-services"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -4428,14 +4598,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/services" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": true
+    \"is_active\": false
 }"
 </code></pre></div>
 
@@ -4446,7 +4616,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4455,7 +4625,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": true
+    "is_active": false
 };
 
 fetch(url, {
@@ -4522,10 +4692,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-services"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -4608,7 +4778,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
@@ -4627,7 +4797,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/services/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4638,7 +4808,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4669,8 +4839,8 @@ access-control-allow-origin: *
     &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
     &quot;base_price&quot;: &quot;20.00&quot;,
     &quot;is_active&quot;: 1,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -4728,10 +4898,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-services--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -4787,7 +4957,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/services/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4805,7 +4975,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4885,10 +5055,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-services--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -5003,7 +5173,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/services/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5014,7 +5184,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5082,10 +5252,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-services--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -5141,7 +5311,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/pets" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5152,7 +5322,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5184,14 +5354,14 @@ access-control-allow-origin: *
             {
                 &quot;id&quot;: 1,
                 &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Toby&quot;,
+                &quot;name&quot;: &quot;Bruno&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                &quot;age&quot;: 6,
-                &quot;weight&quot;: 30.5,
+                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+                &quot;age&quot;: 8,
+                &quot;weight&quot;: 12,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 4,
@@ -5201,22 +5371,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 2,
                 &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Cleo&quot;,
+                &quot;name&quot;: &quot;Luna&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
                 &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-                &quot;age&quot;: 8,
+                &quot;age&quot;: 14,
                 &quot;weight&quot;: 5.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 4,
@@ -5226,22 +5396,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 3,
                 &quot;user_id&quot;: 6,
-                &quot;name&quot;: &quot;Thor&quot;,
+                &quot;name&quot;: &quot;Zeus&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                &quot;age&quot;: 10,
-                &quot;weight&quot;: 35,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 6,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 6,
@@ -5251,22 +5421,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 4,
                 &quot;user_id&quot;: 6,
-                &quot;name&quot;: &quot;Mia&quot;,
+                &quot;name&quot;: &quot;Kira&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Maine Coon&quot;,
-                &quot;age&quot;: 12,
-                &quot;weight&quot;: 7.5,
+                &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
+                &quot;age&quot;: 14,
+                &quot;weight&quot;: 4.2,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 6,
@@ -5276,22 +5446,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 5,
                 &quot;user_id&quot;: 7,
-                &quot;name&quot;: &quot;Rocky&quot;,
+                &quot;name&quot;: &quot;Max&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Labrador&quot;,
-                &quot;age&quot;: 6,
-                &quot;weight&quot;: 28,
+                &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
+                &quot;age&quot;: 2,
+                &quot;weight&quot;: 35,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 7,
@@ -5301,8 +5471,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -5312,11 +5482,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;Luna&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
                 &quot;breed&quot;: &quot;Siam&eacute;s&quot;,
-                &quot;age&quot;: 1,
+                &quot;age&quot;: 11,
                 &quot;weight&quot;: 4.2,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 7,
@@ -5326,22 +5496,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 7,
                 &quot;user_id&quot;: 8,
-                &quot;name&quot;: &quot;Max&quot;,
+                &quot;name&quot;: &quot;Rocky&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Labrador&quot;,
-                &quot;age&quot;: 5,
-                &quot;weight&quot;: 28,
+                &quot;breed&quot;: &quot;Golden Retriever&quot;,
+                &quot;age&quot;: 9,
+                &quot;weight&quot;: 30.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 8,
@@ -5351,22 +5521,22 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
             {
                 &quot;id&quot;: 8,
                 &quot;user_id&quot;: 8,
-                &quot;name&quot;: &quot;Nina&quot;,
+                &quot;name&quot;: &quot;Luna&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
                 &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 2,
+                &quot;age&quot;: 5,
                 &quot;weight&quot;: 5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 8,
@@ -5376,8 +5546,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -5387,11 +5557,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;Toby&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
                 &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                &quot;age&quot;: 10,
+                &quot;age&quot;: 7,
                 &quot;weight&quot;: 30.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 9,
@@ -5401,8 +5571,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             },
@@ -5411,12 +5581,12 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 9,
                 &quot;name&quot;: &quot;Cleo&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Maine Coon&quot;,
-                &quot;age&quot;: 2,
-                &quot;weight&quot;: 7.5,
+                &quot;breed&quot;: &quot;Persa&quot;,
+                &quot;age&quot;: 8,
+                &quot;weight&quot;: 5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;deleted_at&quot;: null,
                 &quot;owner&quot;: {
                     &quot;id&quot;: 9,
@@ -5426,8 +5596,8 @@ access-control-allow-origin: *
                     &quot;two_factor_confirmed_at&quot;: null,
                     &quot;current_team_id&quot;: null,
                     &quot;profile_photo_path&quot;: null,
-                    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
                 }
             }
@@ -5478,8 +5648,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5490,8 +5660,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5502,8 +5672,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5514,8 +5684,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5526,8 +5696,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5538,8 +5708,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5550,8 +5720,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5562,8 +5732,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5574,8 +5744,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         },
         {
@@ -5586,8 +5756,8 @@ access-control-allow-origin: *
             &quot;two_factor_confirmed_at&quot;: null,
             &quot;current_team_id&quot;: null,
             &quot;profile_photo_path&quot;: null,
-            &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
             &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
         }
     ]
@@ -5648,10 +5818,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-pets"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -5694,7 +5864,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/pets" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -5715,7 +5885,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5794,10 +5964,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-pets"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -5925,7 +6095,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/pets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5936,7 +6106,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5964,14 +6134,14 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;id&quot;: 1,
     &quot;user_id&quot;: 4,
-    &quot;name&quot;: &quot;Toby&quot;,
+    &quot;name&quot;: &quot;Bruno&quot;,
     &quot;species&quot;: &quot;Perro&quot;,
-    &quot;breed&quot;: &quot;Golden Retriever&quot;,
-    &quot;age&quot;: 6,
-    &quot;weight&quot;: 30.5,
+    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+    &quot;age&quot;: 8,
+    &quot;weight&quot;: 12,
     &quot;notes&quot;: null,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
     &quot;deleted_at&quot;: null,
     &quot;owner&quot;: {
         &quot;id&quot;: 4,
@@ -5981,8 +6151,8 @@ access-control-allow-origin: *
         &quot;two_factor_confirmed_at&quot;: null,
         &quot;current_team_id&quot;: null,
         &quot;profile_photo_path&quot;: null,
-        &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
         &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
     }
 }</code>
@@ -6042,10 +6212,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-pets--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -6101,7 +6271,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/pets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -6122,7 +6292,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6205,10 +6375,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-pets--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -6349,7 +6519,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/pets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6360,7 +6530,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6428,10 +6598,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-pets--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -6487,7 +6657,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/users" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6498,7 +6668,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6535,8 +6705,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6547,8 +6717,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6559,8 +6729,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6571,8 +6741,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6583,8 +6753,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6595,8 +6765,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6607,8 +6777,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:31.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6619,8 +6789,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:50.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6631,8 +6801,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -6643,8 +6813,8 @@ access-control-allow-origin: *
                 &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             }
         ],
@@ -6736,10 +6906,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-users"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -6782,7 +6952,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/users" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -6799,7 +6969,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6874,10 +7044,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-users"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -6957,7 +7127,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/users/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6968,7 +7138,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7001,8 +7171,8 @@ access-control-allow-origin: *
     &quot;two_factor_confirmed_at&quot;: null,
     &quot;current_team_id&quot;: null,
     &quot;profile_photo_path&quot;: null,
-    &quot;created_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-01-27T00:10:30.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T01:54:49.000000Z&quot;,
     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
 }</code>
  </pre>
@@ -7061,10 +7231,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-users--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -7120,7 +7290,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/users/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -7137,7 +7307,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7216,10 +7386,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-users--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -7312,7 +7482,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/users/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -7323,7 +7493,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7391,10 +7561,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-users--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -7450,7 +7620,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/payments" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -7461,7 +7631,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Authorization": "Bearer admin",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7486,14 +7656,125 @@ content-type: application/json
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">[
-    {
-        &quot;id&quot;: 1,
-        &quot;amount&quot;: &quot;50.00&quot;,
-        &quot;payment_method&quot;: &quot;credit_card&quot;,
-        &quot;paid_at&quot;: &quot;2026-01-27T00:10:32.000000Z&quot;
-    }
-]</code>
+<code class="language-json" style="max-height: 300px;">{
+    &quot;current_page&quot;: 1,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;invoice_id&quot;: 1,
+            &quot;user_id&quot;: 1,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-C1E235C3&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;invoice_id&quot;: 3,
+            &quot;user_id&quot;: 4,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-47FDF8A8&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;invoice_id&quot;: 5,
+            &quot;user_id&quot;: 6,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-82F8B042&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;invoice_id&quot;: 7,
+            &quot;user_id&quot;: 7,
+            &quot;amount&quot;: &quot;55.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-57B2F8E7&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;invoice_id&quot;: 9,
+            &quot;user_id&quot;: 8,
+            &quot;amount&quot;: &quot;130.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-97426292&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;invoice_id&quot;: 11,
+            &quot;user_id&quot;: 9,
+            &quot;amount&quot;: &quot;120.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-5CD54DF5&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;invoice_id&quot;: 13,
+            &quot;user_id&quot;: 10,
+            &quot;amount&quot;: &quot;165.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-8F79A394&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-03T01:54:51.000000Z&quot;
+        }
+    ],
+    &quot;first_page_url&quot;: &quot;http://localhost:8000/api/payments?page=1&quot;,
+    &quot;from&quot;: 1,
+    &quot;last_page&quot;: 1,
+    &quot;last_page_url&quot;: &quot;http://localhost:8000/api/payments?page=1&quot;,
+    &quot;links&quot;: [
+        {
+            &quot;url&quot;: null,
+            &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+            &quot;page&quot;: null,
+            &quot;active&quot;: false
+        },
+        {
+            &quot;url&quot;: &quot;http://localhost:8000/api/payments?page=1&quot;,
+            &quot;label&quot;: &quot;1&quot;,
+            &quot;page&quot;: 1,
+            &quot;active&quot;: true
+        },
+        {
+            &quot;url&quot;: null,
+            &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+            &quot;page&quot;: null,
+            &quot;active&quot;: false
+        }
+    ],
+    &quot;next_page_url&quot;: null,
+    &quot;path&quot;: &quot;http://localhost:8000/api/payments&quot;,
+    &quot;per_page&quot;: 10,
+    &quot;prev_page_url&quot;: null,
+    &quot;to&quot;: 7,
+    &quot;total&quot;: 7
+}</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-payments" hidden>
@@ -7550,10 +7831,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-payments"
-               value="Bearer {YOUR_AUTH_KEY}"
+               value="Bearer admin"
                data-component="header">
     <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+<p>Example: <code>Bearer admin</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
