@@ -16,10 +16,10 @@ class InvoiceSeeder extends Seeder
         foreach ($reservations as $index => $reservation) {
             Invoice::create([
                 'reservation_id' => $reservation->id,
-                'invoice_number' => 'FAC-' . str_pad($reservation->id, 5, '0', STR_PAD_LEFT),
+                'invoice_number' => 'HFP-' . $reservation->id,
                 'total' => $reservation->total_price,
                 'status' => $index % 2 == 0 ? 'paid' : 'unpaid',
-                'issued_at' => $reservation->start_date,
+                'issued_at' => $reservation->end_date,
             ]);
         }
     }

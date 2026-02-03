@@ -11,7 +11,8 @@ class PaymentSeeder extends Seeder
 {
     public function run(): void
     {
-        $paidInvoices = Invoice::with('reservation')->where('status', 'paid')->get();
+        $paidInvoices = Invoice::with('reservation')
+            ->where('status', 'paid')->get();
 
         foreach ($paidInvoices as $invoice) {
             Payment::create([
@@ -20,8 +21,8 @@ class PaymentSeeder extends Seeder
                 'amount' => $invoice->total,
                 'payment_method' => 'credit_card',
                 'status' => 'completed',
-                'transaction_id' => 'TRX-' . strtoupper(bin2hex(random_bytes(4))),
-                'paid_at' => Carbon::now(),
+                'transaction_id' => 'TRX-' . $invoice->id,
+                'paid_at' => $invoice->issued_at,
             ]);
         }
     }

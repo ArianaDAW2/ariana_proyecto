@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.4 git ignore">
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.5 Hasta factorys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/ReservationsCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/ReservationsCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/ServicesCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/ServicesCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/UsersCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/UsersCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Pet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/InvoicePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/InvoicePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/MedicalRecordPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/MedicalRecordPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/PetPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/PetPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/ReservationPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ReservationPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/ServicePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ServicePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/InvoiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/InvoiceFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/MedicalRecordFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/MedicalRecordFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/PaymentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PaymentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PetFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ReservationsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReservationsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ServiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ServiceFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2025_12_30_161450_create_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_12_30_161450_create_payments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/InvoiceSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/InvoiceSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/MedicalRecordSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MedicalRecordSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PaymentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PaymentSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,15 +397,7 @@
       <workItem from="1770118469811" duration="516000" />
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
-      <workItem from="1770154622278" duration="6130000" />
-    </task>
-    <task id="LOCAL-00007" summary="V6:Nodejs update comp tailwind">
-      <option name="closed" value="true" />
-      <created>1766517959656</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1766517959656</updated>
+      <workItem from="1770154622278" duration="7224000" />
     </task>
     <task id="LOCAL-00008" summary="V7:Views and CSS Headers, footers and base">
       <option name="closed" value="true" />
@@ -806,7 +783,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770156579648</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="0.8.13.5 Hasta factorys">
+      <option name="closed" value="true" />
+      <created>1770161670202</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1770161670204</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,7 +826,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.10.1 2 livewares sin crud" />
     <MESSAGE value="0.3.7.9 arreglando webs y pensando donde poner los scopes" />
     <MESSAGE value="0.3.7.9 scopes a dashboard" />
     <MESSAGE value="0.3.7.9 scopes a my_reservation" />
@@ -866,7 +850,8 @@
     <MESSAGE value="0.8.13.4 jobs y listeners" />
     <MESSAGE value="0.8.13.4 cruds hasta pet" />
     <MESSAGE value="0.8.13.4 git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.4 git ignore" />
+    <MESSAGE value="0.8.13.5 Hasta factorys" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.5 Hasta factorys" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

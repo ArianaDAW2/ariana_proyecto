@@ -18,8 +18,8 @@ class PaymentFactory extends Factory
             'user_id' => User::factory(),
             'amount' => $this->faker->randomFloat(2, 10, 500),
             'payment_method' => $this->faker->randomElement(['paypal', 'credit_card', 'bank_transfer']),
-            'status' => $this->faker->randomElement(['pending', 'completed', 'failed']),
-            'transaction_id' => $this->faker->optional()->uuid(),
+            'status' => $this->faker->randomElement(['pending', 'completed']),
+            'transaction_id' => $this->faker->optional()->numberBetween(1, 99999),
             'paid_at' => $this->faker->optional()->dateTimeBetween('-1 year', 'now'),
         ];
     }
