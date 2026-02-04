@@ -20,14 +20,26 @@
             @foreach($reservations as $reservation)
                 <tr class="grid grid-cols-6">
                     <td>{{ $reservation->pet->name }}</td>
-                    <td>{{ $reservation->start_date }}</td>
-                    <td>{{ $reservation->end_date }}</td>
+                    <td>{{ $reservation->start_date->format('d/m/Y') }}</td>
+                    <td>{{ $reservation->end_date->format('d/m/Y') }}</td>
                     <td>{{ ucfirst($reservation->status) }}</td>
                     <td>{{ $reservation->total_price }} €</td>
                     <td>
-                        @foreach($reservation->services as $service)
-                            {{ $service->name }}<br>
-                        @endforeach
+                        <x-dropdown align="left" width="48">
+                            <x-slot name="trigger">
+                                <button class="px-3 py-1 bg-gray-200 rounded-md hover:bg-gray-300">
+                                    Ver servicios ({{ $reservation->services->count() }})
+                                </button>
+                            </x-slot>
+
+                            <x-slot name="content">
+                                @foreach($reservation->services as $service)
+                                    <x-dropdown-link href="#">
+                                        {{ $service->name }}
+                                    </x-dropdown-link>
+                                @endforeach
+                            </x-slot>
+                        </x-dropdown>
                     </td>
 
                 </tr>

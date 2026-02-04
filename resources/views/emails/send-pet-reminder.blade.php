@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <title>HotelForPets</title>
+
     <meta charset="utf-8">
 </head>
-<body>
-<h1>¡Hoy termina la estancia de {{ $reservation->pet->name }}!</h1>
 
-<p>Hola {{ $reservation->user->name }},</p>
+<body
+    style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f0fdf4; margin: 0; padding: 20px;">
+<div
+    style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
 
-<p>Te recordamos que hoy <strong>{{ $reservation->end_date->format('d/m/Y') }}</strong> finaliza la reserva de tu
-    mascota.</p>
+    <!-- Header -->
+    <div style="background-color: #16a34a; padding: 24px; text-align: center;">
+        <h1 style="color: #ffffff; margin: 0; font-size: 24px;">🐾 HotelForPets</h1>
+    </div>
 
-<h3>Detalles:</h3>
-<ul>
-    <li><strong>Mascota:</strong> {{ $reservation->pet->name }}</li>
-    <li><strong>Fecha de recogida:</strong> {{ $reservation->end_date->format('d/m/Y') }}</li>
-</ul>
+    <!-- Content -->
+    <div style="padding: 32px;">
+        <h2 style="color: #15803d; margin: 0 0 16px 0; font-size: 20px;">¡Hoy termina la estancia de {{
+                $reservation->pet->name }}!</h2>
 
-<p>Te esperamos en nuestra clínica.</p>
+        <div style="background-color: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #16a34a;">
+            <p style="margin: 0; color: #374151;">
+            <p>Hola {{ $reservation->user->name }},</p>
 
-<p>Gracias,<br>Clínica Veterinaria</p>
+            <p>Te recordamos que hoy <strong>{{ $reservation->end_date->format('d/m/Y') }}</strong> finaliza la
+                reserva de tu
+                mascota.</p>
+
+            <h3>Detalles:</h3>
+            <ul>
+                <li><strong>Mascota:</strong> {{ $reservation->pet->name }}</li>
+                <li><strong>Fecha de recogida:</strong> {{ $reservation->end_date->format('d/m/Y') }}</li>
+            </ul>
+
+            <p>Te esperamos en nuestra clínica.</p>
+
+            <p>Gracias,<br>Clínica Veterinaria</p>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #dcfce7; padding: 20px; text-align: center;">
+        <p style="margin: 0; color: #166534; font-size: 14px;">
+            HotelForPets - Cuidamos a tu mascota como familia 🐕
+        </p>
+        <p style="margin: 8px 0 0 0; color: #6b7280; font-size: 12px;">
+            Este mensaje fue enviado a todos los usuarios registrados.
+        </p>
+    </div>
+</div>
 </body>
+
 </html>

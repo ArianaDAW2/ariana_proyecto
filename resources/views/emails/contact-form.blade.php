@@ -15,9 +15,6 @@
         <p style="white-space: pre-wrap;">{{ $contactMessage }}</p>
     </div>
 
-    <p style="color: #6b7280; font-size: 14px;">
-        Puedes responder directamente a este correo para contactar con el remitente.
-    </p>
 </div>
 </body>
 </html>

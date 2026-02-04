@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.5 Hasta factorys">
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.8 mails revisados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PaymentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PaymentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2025_12_30_161450_create_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_12_30_161450_create_payments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/InvoiceSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/InvoiceSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/MedicalRecordSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MedicalRecordSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PaymentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PaymentSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/my_reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/my_reservations.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/admin-message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/admin-message.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/cancel-old-reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/cancel-old-reservations.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/check-out-pet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/check-out-pet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/contact-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/contact-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/morosos-warn.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/morosos-warn.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/reservation-reminder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/reservation-reminder.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/send-pet-reminder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/send-pet-reminder.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/051450e65a44c4aafcd3300355267733.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/051450e65a44c4aafcd3300355267733.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,15 +403,8 @@
       <workItem from="1770118469811" duration="516000" />
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
-      <workItem from="1770154622278" duration="7224000" />
-    </task>
-    <task id="LOCAL-00008" summary="V7:Views and CSS Headers, footers and base">
-      <option name="closed" value="true" />
-      <created>1766693089968</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1766693089968</updated>
+      <workItem from="1770154622278" duration="7231000" />
+      <workItem from="1770200461925" duration="4051000" />
     </task>
     <task id="LOCAL-00009" summary="V7.1:ignore this">
       <option name="closed" value="true" />
@@ -791,7 +790,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770161670204</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="0.8.13.5 Seeders">
+      <option name="closed" value="true" />
+      <created>1770162668821</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1770162668821</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -826,8 +833,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.3.7.9 arreglando webs y pensando donde poner los scopes" />
-    <MESSAGE value="0.3.7.9 scopes a dashboard" />
     <MESSAGE value="0.3.7.9 scopes a my_reservation" />
     <MESSAGE value="0.5.13.1 Traducción terminada" />
     <MESSAGE value="0.5.13.5 1 listener, 1 evento, 1 email" />
@@ -851,7 +856,9 @@
     <MESSAGE value="0.8.13.4 cruds hasta pet" />
     <MESSAGE value="0.8.13.4 git ignore" />
     <MESSAGE value="0.8.13.5 Hasta factorys" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.5 Hasta factorys" />
+    <MESSAGE value="0.8.13.5 Seeders" />
+    <MESSAGE value="0.8.13.8 mails revisados" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.8 mails revisados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
