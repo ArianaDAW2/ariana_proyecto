@@ -12,10 +12,6 @@ class PublicController extends Controller
         return view('public.home');
     }
 
-    public function contact()
-    {
-        return view('public.contact');
-    }
 
     public function gallery()
     {

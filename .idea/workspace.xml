@@ -4,26 +4,126 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.9.1 APIs">
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" afterDir="false" />
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.9.3.8 test Controladores">
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/MedicalRecordsApiTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/AdminControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/DashboardControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/documentsControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PublicControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MedicalRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MedicalRecord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Pet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ReservationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ReservationService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/medicalRecordsAPICrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/medicalRecordsAPICrud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/CreateNewUser.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/CreateNewUser.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/PasswordValidationRules.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/PasswordValidationRules.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/ResetUserPassword.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/ResetUserPassword.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/UpdateUserPassword.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/UpdateUserPassword.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/UpdateUserProfileInformation.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/UpdateUserProfileInformation.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Fortify/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Fortify/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Jetstream/DeleteUser.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Jetstream/DeleteUser.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Jetstream/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Jetstream/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/Jetstream/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/Jetstream/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Actions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Actions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Console/Commands/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Console/Commands/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Console/Commands/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Console/Commands/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Console/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Console/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Console/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Console/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Events/AdminMessageEvent.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Events/AdminMessageEvent.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Events/ContactFormEvent.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Events/ContactFormEvent.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Events/ReservationCreatedEvent.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Events/ReservationCreatedEvent.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Events/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Events/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Events/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/invoicesAPICrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/invoicesAPICrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/medicalRecordsAPICrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/medicalRecordsAPICrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/paymentsAPI.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/paymentsAPI.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/petsAPICrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/petsAPICrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/servicesAPICrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/servicesAPICrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/usersAPICrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/APIControllers/usersAPICrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/Controller.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/Controller.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/DashboardController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/DashboardController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/PublicController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/PublicController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/adminController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/adminController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/documentsController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/documentsController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Middleware/SetLocaleMiddleware.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Middleware/SetLocaleMiddleware.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Middleware/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Middleware/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Middleware/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Middleware/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/InvoiceRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/InvoiceRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/MedicalRecordRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/MedicalRecordRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/PetRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/PetRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/ReservationRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/ReservationRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/ServiceRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/ServiceRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/UserRequest.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/UserRequest.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/Requests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/Requests/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Http/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Http/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Jobs/AdminMessageJob.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Jobs/AdminMessageJob.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Jobs/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Jobs/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Jobs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Jobs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Listeners/AdminMessageListener.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Listeners/AdminMessageListener.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Listeners/ContactFormListener.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Listeners/ContactFormListener.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Listeners/ReservationCreatedListener.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Listeners/ReservationCreatedListener.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Listeners/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Listeners/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Listeners/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Listeners/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/InvoicesCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/InvoicesCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/LanguageSwitcher.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/LanguageSwitcher.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/MedicalRecordsCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/MedicalRecordsCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/PetsCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/PetsCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/ReservationsCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/ReservationsCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/ServicesCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/ServicesCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/UsersCrud.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/UsersCrud.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Livewire/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Livewire/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Mail/AdminMessageMail.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Mail/AdminMessageMail.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Mail/ContactFormMail.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Mail/ContactFormMail.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Mail/ReservationCreatedMail.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Mail/ReservationCreatedMail.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Mail/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Mail/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Mail/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Mail/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/Invoice.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/Invoice.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/MedicalRecord.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/MedicalRecord.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/Payment.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/Payment.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/Pet.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/Pet.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/Reservation.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/Reservation.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/ReservationService.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/ReservationService.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/Service.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/Service.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/User.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Models/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/InvoicePolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/InvoicePolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/MedicalRecordPolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/MedicalRecordPolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/PetPolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/PetPolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/ReservationPolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/ReservationPolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/ServicePolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/ServicePolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/UserPolicy.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/UserPolicy.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Policies/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Policies/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/AppServiceProvider.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/AppServiceProvider.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/AuthServiceProvider.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/AuthServiceProvider.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/FortifyServiceProvider.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/FortifyServiceProvider.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/JetstreamServiceProvider.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/JetstreamServiceProvider.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/RouteServiceProvider.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/RouteServiceProvider.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Providers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Providers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/Components/AppLayout.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/Components/AppLayout.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/Components/GuestLayout.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/Components/GuestLayout.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/Components/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/Components/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/Components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/Components/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/View/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/View/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ReservationsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReservationFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d10cb725fa6e833d5e92aef2c4f2f03c.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d10cb725fa6e833d5e92aef2c4f2f03c.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/HomeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/WebTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RoutesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Pest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Pest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,14 +352,36 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Pest.AdminControllerTest.php.executor": "Run",
+    "Pest.AdminControllerTest.php::it admin can access panel.executor": "Run",
+    "Pest.AdminControllerTest.php::it admin can access pets.executor": "Run",
+    "Pest.AdminControllerTest.php::it guest cannot access admin panel.executor": "Run",
+    "Pest.AdminControllerTest.php::it recepcionista can access admin panel.executor": "Run",
+    "Pest.AdminControllerTest.php::it veterinario can access admin panel.executor": "Run",
+    "Pest.DashboardControllerTest.php.executor": "Run",
     "Pest.EmailVerificationTest.php::email can be verified.executor": "Run",
     "Pest.InvoicesApiTest.php.executor": "Run",
+    "Pest.InvoicesApiTest.php::it admin can create invoice.executor": "Run",
+    "Pest.InvoicesApiTest.php::it admin can delete invoice.executor": "Run",
+    "Pest.InvoicesApiTest.php::it admin can list invoices.executor": "Run",
+    "Pest.InvoicesApiTest.php::it admin can update invoice.executor": "Run",
+    "Pest.InvoicesApiTest.php::it admin can view single invoice.executor": "Run",
+    "Pest.InvoicesApiTest.php::it cannot create invoice with invalid status.executor": "Run",
+    "Pest.InvoicesApiTest.php::it cannot create invoice with negative total.executor": "Run",
     "Pest.InvoicesApiTest.php::it guest cannot access invoices.executor": "Run",
+    "Pest.InvoicesApiTest.php::it recepcionista can list invoices.executor": "Run",
     "Pest.InvoicesApiTest.php::it user without permission cannot create invoice.executor": "Run",
     "Pest.InvoicesApiTest.php::it user without permission cannot list invoices.executor": "Run",
     "Pest.Main.executor": "Debug",
+    "Pest.MedicalRecordsApiTest.php.executor": "Run",
+    "Pest.MedicalRecordsApiTest.php::it guest cannot access medical records.executor": "Run",
+    "Pest.PublicControllerTest.php.executor": "Run",
+    "Pest.PublicControllerTest.php::it guest can access inactive services.executor": "Run",
+    "Pest.PublicControllerTest.php::it guest can access services.executor": "Run",
     "Pest.RegistrationTest.php::new users can register.executor": "Run",
     "Pest.WebTest.php::it Contact Working.executor": "Run",
+    "Pest.documentsControllerTest.php.executor": "Run",
+    "Pest.documentsControllerTest.php::it guest cannot access admin message page.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -320,7 +442,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "to.speed.mode.migration.done": "true"
   },
   "keyToStringList": {
@@ -340,42 +462,42 @@
       <recent name="$PROJECT_DIR$/routes/DELETE" />
     </key>
   </component>
-  <component name="RunManager" selected="Pest.InvoicesApiTest.php::it user without permission cannot create invoice">
+  <component name="RunManager" selected="Pest.PublicControllerTest.php">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
-    <configuration name="InvoicesApiTest.php" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" scope="File" />
-      <method v="2" />
-    </configuration>
-    <configuration name="InvoicesApiTest.php::it guest cannot access invoices" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it guest cannot access invoices" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="InvoicesApiTest.php::it user without permission cannot create invoice" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it user without permission cannot create invoice" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="InvoicesApiTest.php::it user without permission cannot list invoices" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it user without permission cannot list invoices" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PestRunConfigurationType">
       <PestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
-    <configuration name="RoutesTest.php::it Contact Working" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/RoutesTest.php" method="it Contact Working" scope="Method" />
+    <configuration name="PublicControllerTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/PublicControllerTest.php" scope="File" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PublicControllerTest.php::it guest can access inactive services" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/PublicControllerTest.php" method="it guest can access inactive services" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PublicControllerTest.php::it guest can access services" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/PublicControllerTest.php" method="it guest can access services" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="documentsControllerTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Http/documentsControllerTest.php" scope="File" />
+      <method v="2" />
+    </configuration>
+    <configuration name="documentsControllerTest.php::it guest cannot access admin message page" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Http/documentsControllerTest.php" method="it guest cannot access admin message page" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Pest.InvoicesApiTest.php::it user without permission cannot create invoice" />
-        <item itemvalue="Pest.InvoicesApiTest.php::it user without permission cannot list invoices" />
-        <item itemvalue="Pest.InvoicesApiTest.php::it guest cannot access invoices" />
-        <item itemvalue="Pest.InvoicesApiTest.php" />
-        <item itemvalue="Pest.RoutesTest.php::it Contact Working" />
+        <item itemvalue="Pest.PublicControllerTest.php" />
+        <item itemvalue="Pest.PublicControllerTest.php::it guest can access inactive services" />
+        <item itemvalue="Pest.PublicControllerTest.php::it guest can access services" />
+        <item itemvalue="Pest.documentsControllerTest.php" />
+        <item itemvalue="Pest.documentsControllerTest.php::it guest cannot access admin message page" />
       </list>
     </recent_temporary>
   </component>
@@ -448,15 +570,7 @@
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
       <workItem from="1770154622278" duration="7231000" />
-      <workItem from="1770200461925" duration="10722000" />
-    </task>
-    <task id="LOCAL-00012" summary="V-8.0 Interface finished">
-      <option name="closed" value="true" />
-      <created>1767020357137</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1767020357137</updated>
+      <workItem from="1770200461925" duration="14653000" />
     </task>
     <task id="LOCAL-00013" summary="V-8.1 Livewire installed">
       <option name="closed" value="true" />
@@ -842,7 +956,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770209046431</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="0.9.1 APIs">
+      <option name="closed" value="true" />
+      <created>1770212162094</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1770212162095</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,7 +999,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.5.13.5 1 smtp configurado" />
     <MESSAGE value="0.5.13.5 1 arreglo en el crud de Reservas y el pivote, 2/5 email 2/5 listener 2/5 event" />
     <MESSAGE value="0.6.16.2/5 Crud reservas arreglado" />
     <MESSAGE value="0.6.16.2/5 preparando el terreno para los PDF" />
@@ -902,7 +1023,8 @@
     <MESSAGE value="0.8.13.9 pdfs" />
     <MESSAGE value="0.9.0 TESTs" />
     <MESSAGE value="0.9.1 APIs" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.9.1 APIs" />
+    <MESSAGE value="0.9.3.8 test Controladores" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.9.3.8 test Controladores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -924,7 +1046,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php</url>
-          <option name="timeStamp" value="21" />
+          <line>163</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

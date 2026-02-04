@@ -5,8 +5,6 @@ namespace App\Http\Controllers\APIControllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MedicalRecordRequest;
 use App\Models\MedicalRecord;
-use App\Models\Pet;
-use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class medicalRecordsAPICrud extends Controller

@@ -29,7 +29,7 @@
                     <td><?php echo e($service->name); ?></td>
                     <td><?php echo e($service->description); ?></td>
                     <td>
-                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($request->status === 'inactive' || !$service->base_price): ?>
+                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($request->status == 'inactive' || !$service->base_price): ?>
                             <?php echo e(__('public.unknown')); ?> €
                         <?php else: ?>
                             <?php echo e($service->base_price); ?> €
