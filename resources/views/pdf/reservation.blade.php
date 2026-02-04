@@ -169,12 +169,10 @@
             <span class="value">{{ $reservation->pet->age }} años</span>
         </div>
     @endif
-    @if($reservation->pet->weight)
-        <div class="info-row">
-            <span class="label">Peso:</span>
-            <span class="value">{{ $reservation->pet->weight }} kg</span>
-        </div>
-    @endif
+    <div class="info-row">
+        <span class="label">Peso:</span>
+        <span class="value">{{ $reservation->pet->weight }} kg</span>
+    </div>
     @if($reservation->pet->notes)
         <div class="info-row">
             <span class="label">Notas sobre la mascota:</span>
@@ -210,23 +208,14 @@
         </tr>
         </thead>
         <tbody>
-        @if($reservation->services && $reservation->services->count() > 0)
-            @foreach($reservation->services as $service)
-                <tr>
-                    <td>{{ $service->name }}</td>
-                    <td>{{ $service->description }}</td>
-                    <td style="text-align: right;">${{ number_format($service->base_price, 2) }}</td>
-                </tr>
-            @endforeach
-        @else
+        @foreach($reservation->services as $service)
             <tr>
-                <td colspan="2">Hospedaje
-                    ({{ \Carbon\Carbon::parse($reservation->start_date)->diffInDays(\Carbon\Carbon::parse($reservation->end_date)) }}
-                    días)
-                </td>
-                <td style="text-align: right;">${{ number_format($reservation->total_price, 2) }}</td>
+                <td>{{ $service->name }}</td>
+                <td>{{ $service->description }}</td>
+                <td style="text-align: right;">${{ number_format($service->base_price, 2) }}</td>
             </tr>
-        @endif
+        @endforeach
+
         <tr class="total-row">
             <td colspan="2"><strong>TOTAL</strong></td>
             <td style="text-align: right;"><strong>${{ number_format($reservation->total_price, 2) }}</strong></td>

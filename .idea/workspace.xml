@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.8 mails revisados">
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.9 pdfs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/my_reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/my_reservations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/admin-message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/admin-message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/cancel-old-reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/cancel-old-reservations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/check-out-pet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/check-out-pet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/contact-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/contact-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/morosos-warn.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/morosos-warn.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/reservation-reminder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/reservation-reminder.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/send-pet-reminder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/send-pet-reminder.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/051450e65a44c4aafcd3300355267733.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/051450e65a44c4aafcd3300355267733.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pdf/PetContract.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/PetContract.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pdf/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/reservation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -404,15 +397,7 @@
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
       <workItem from="1770154622278" duration="7231000" />
-      <workItem from="1770200461925" duration="4051000" />
-    </task>
-    <task id="LOCAL-00009" summary="V7.1:ignore this">
-      <option name="closed" value="true" />
-      <created>1766693846435</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1766693846435</updated>
+      <workItem from="1770200461925" duration="7018000" />
     </task>
     <task id="LOCAL-00010" summary="V7.2:Mobile and Navigation structure finished">
       <option name="closed" value="true" />
@@ -798,7 +783,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770162668821</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="0.8.13.8 mails revisados">
+      <option name="closed" value="true" />
+      <created>1770204532055</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1770204532055</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -833,7 +826,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.3.7.9 scopes a my_reservation" />
     <MESSAGE value="0.5.13.1 Traducción terminada" />
     <MESSAGE value="0.5.13.5 1 listener, 1 evento, 1 email" />
     <MESSAGE value="0.5.13.5 1 smtp configurado" />
@@ -858,7 +850,8 @@
     <MESSAGE value="0.8.13.5 Hasta factorys" />
     <MESSAGE value="0.8.13.5 Seeders" />
     <MESSAGE value="0.8.13.8 mails revisados" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.8 mails revisados" />
+    <MESSAGE value="0.8.13.9 pdfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.9 pdfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
