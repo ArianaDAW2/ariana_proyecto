@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.9 pdfs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pdf/PetContract.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/PetContract.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pdf/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/reservation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web/documents.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/documents.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,15 +395,7 @@
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
       <workItem from="1770154622278" duration="7231000" />
-      <workItem from="1770200461925" duration="7018000" />
-    </task>
-    <task id="LOCAL-00010" summary="V7.2:Mobile and Navigation structure finished">
-      <option name="closed" value="true" />
-      <created>1766767375735</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1766767375736</updated>
+      <workItem from="1770200461925" duration="7500000" />
     </task>
     <task id="LOCAL-00011" summary="V7.3:Polish, footer rdy, home rdy, menu mobile need fix">
       <option name="closed" value="true" />
@@ -791,7 +781,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770204532055</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="0.8.13.9 pdfs">
+      <option name="closed" value="true" />
+      <created>1770208449456</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1770208449457</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

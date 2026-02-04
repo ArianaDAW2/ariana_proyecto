@@ -20,7 +20,7 @@
                     <td>{{ $service->name }}</td>
                     <td>{{ $service->description }}</td>
                     <td>
-                        @if($request->status === 'inactive' || !$service->base_price)
+                        @if($request->status == 'inactive' || !$service->base_price)
                             {{ __('public.unknown') }} €
                         @else
                             {{ $service->base_price }} €
