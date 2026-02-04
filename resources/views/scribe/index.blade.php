@@ -175,7 +175,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 3, 2026</li>
+        <li>Last updated: February 4, 2026</li>
     </ul>
 </div>
 
@@ -240,7 +240,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-invoices">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (403):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -252,157 +252,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;invoices&quot;: {
-        &quot;current_page&quot;: 1,
-        &quot;data&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;reservation_id&quot;: 1,
-                &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-                &quot;total&quot;: 100,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-04 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;reservation_id&quot;: 2,
-                &quot;invoice_number&quot;: &quot;FAC-00002&quot;,
-                &quot;total&quot;: 150,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-29 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 3,
-                &quot;reservation_id&quot;: 3,
-                &quot;invoice_number&quot;: &quot;FAC-00003&quot;,
-                &quot;total&quot;: 125,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2025-12-23 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 4,
-                &quot;reservation_id&quot;: 4,
-                &quot;invoice_number&quot;: &quot;FAC-00004&quot;,
-                &quot;total&quot;: 70,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2025-11-30 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 5,
-                &quot;reservation_id&quot;: 5,
-                &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
-                &quot;total&quot;: 130,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-22 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 6,
-                &quot;reservation_id&quot;: 6,
-                &quot;invoice_number&quot;: &quot;FAC-00006&quot;,
-                &quot;total&quot;: 30,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-29 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 7,
-                &quot;reservation_id&quot;: 7,
-                &quot;invoice_number&quot;: &quot;FAC-00007&quot;,
-                &quot;total&quot;: 45,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-10 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 8,
-                &quot;reservation_id&quot;: 8,
-                &quot;invoice_number&quot;: &quot;FAC-00008&quot;,
-                &quot;total&quot;: 35,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2025-10-13 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 9,
-                &quot;reservation_id&quot;: 9,
-                &quot;invoice_number&quot;: &quot;FAC-00009&quot;,
-                &quot;total&quot;: 160,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-07 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 10,
-                &quot;reservation_id&quot;: 10,
-                &quot;invoice_number&quot;: &quot;FAC-00010&quot;,
-                &quot;total&quot;: 75,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-14 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            }
-        ],
-        &quot;first_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
-        &quot;from&quot;: 1,
-        &quot;last_page&quot;: 2,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
-        &quot;links&quot;: [
-            {
-                &quot;url&quot;: null,
-                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
-                &quot;page&quot;: null,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
-                &quot;label&quot;: &quot;1&quot;,
-                &quot;page&quot;: 1,
-                &quot;active&quot;: true
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
-                &quot;label&quot;: &quot;2&quot;,
-                &quot;page&quot;: 2,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
-                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: 2,
-                &quot;active&quot;: false
-            }
-        ],
-        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
-        &quot;path&quot;: &quot;http://localhost:8000/api/invoices&quot;,
-        &quot;per_page&quot;: 10,
-        &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 10,
-        &quot;total&quot;: 14
-    }
+    &quot;message&quot;: &quot;This action is unauthorized.&quot;
 }</code>
  </pre>
     </span>
@@ -514,7 +364,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"invoice_number\": \"architecto\",
     \"total\": 39,
     \"status\": \"paid\",
-    \"issued_at\": \"2026-02-03T15:05:24\"
+    \"issued_at\": \"2026-02-04T16:06:52\"
 }"
 </code></pre></div>
 
@@ -535,7 +385,7 @@ let body = {
     "invoice_number": "architecto",
     "total": 39,
     "status": "paid",
-    "issued_at": "2026-02-03T15:05:24"
+    "issued_at": "2026-02-04T16:06:52"
 };
 
 fetch(url, {
@@ -689,10 +539,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="POSTapi-invoices"
-               value="2026-02-03T15:05:24"
+               value="2026-02-04T16:06:52"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-03T15:05:24</code></p>
+<p>Must be a valid date. Example: <code>2026-02-04T16:06:52</code></p>
         </div>
         </form>
 
@@ -710,7 +560,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/invoices/1" \
+    --get "http://localhost:8000/api/invoices/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -718,7 +568,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/1"
+    "http://localhost:8000/api/invoices/5"
 );
 
 const headers = {
@@ -736,7 +586,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-invoices--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (403):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -748,15 +598,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 1,
-    &quot;reservation_id&quot;: 1,
-    &quot;invoice_number&quot;: &quot;FAC-00001&quot;,
-    &quot;total&quot;: 100,
-    &quot;status&quot;: &quot;paid&quot;,
-    &quot;issued_at&quot;: &quot;2026-02-04 00:00:00&quot;,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-    &quot;deleted_at&quot;: null
+    &quot;message&quot;: &quot;This action is unauthorized.&quot;
 }</code>
  </pre>
     </span>
@@ -851,10 +693,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-invoices--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>1</code></p>
+<p>The ID of the invoice. Example: <code>5</code></p>
             </div>
                     </form>
 
@@ -872,7 +714,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/invoices/1" \
+    "http://localhost:8000/api/invoices/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -881,14 +723,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"invoice_number\": \"architecto\",
     \"total\": 39,
     \"status\": \"paid\",
-    \"issued_at\": \"2026-02-03T15:05:24\"
+    \"issued_at\": \"2026-02-04T16:06:52\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/1"
+    "http://localhost:8000/api/invoices/5"
 );
 
 const headers = {
@@ -902,7 +744,7 @@ let body = {
     "invoice_number": "architecto",
     "total": 39,
     "status": "paid",
-    "issued_at": "2026-02-03T15:05:24"
+    "issued_at": "2026-02-04T16:06:52"
 };
 
 fetch(url, {
@@ -1010,10 +852,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-invoices--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>1</code></p>
+<p>The ID of the invoice. Example: <code>5</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1073,10 +915,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="PUTapi-invoices--id-"
-               value="2026-02-03T15:05:24"
+               value="2026-02-04T16:06:52"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-03T15:05:24</code></p>
+<p>Must be a valid date. Example: <code>2026-02-04T16:06:52</code></p>
         </div>
         </form>
 
@@ -1094,7 +936,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/invoices/1" \
+    "http://localhost:8000/api/invoices/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1102,7 +944,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/1"
+    "http://localhost:8000/api/invoices/5"
 );
 
 const headers = {
@@ -1211,10 +1053,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-invoices--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>1</code></p>
+<p>The ID of the invoice. Example: <code>5</code></p>
             </div>
                     </form>
 
@@ -1273,17 +1115,6 @@ access-control-allow-origin: *
     &quot;records&quot;: {
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;pet_id&quot;: 1,
-                &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
-                &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
-                &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
             {
                 &quot;id&quot;: 2,
                 &quot;pet_id&quot;: 2,
@@ -1382,6 +1213,17 @@ access-control-allow-origin: *
                 &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
                 &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;pet_id&quot;: 11,
+                &quot;veterinarian_id&quot;: 2,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
+                &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
+                &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/medical-records?page=1&quot;,
@@ -1419,7 +1261,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 12
+        &quot;total&quot;: 11
     }
 }</code>
  </pre>
@@ -1726,7 +1568,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/medical-records/1" \
+    --get "http://localhost:8000/api/medical-records/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1734,7 +1576,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/1"
+    "http://localhost:8000/api/medical-records/2"
 );
 
 const headers = {
@@ -1764,10 +1606,10 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 1,
-    &quot;pet_id&quot;: 1,
+    &quot;id&quot;: 2,
+    &quot;pet_id&quot;: 2,
     &quot;veterinarian_id&quot;: 2,
-    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Rocky&quot;,
+    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
     &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
     &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
     &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
@@ -1867,10 +1709,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-medical-records--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>1</code></p>
+<p>The ID of the medical record. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -1888,7 +1730,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/medical-records/1" \
+    "http://localhost:8000/api/medical-records/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -1904,7 +1746,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/1"
+    "http://localhost:8000/api/medical-records/2"
 );
 
 const headers = {
@@ -2026,10 +1868,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-medical-records--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>1</code></p>
+<p>The ID of the medical record. Example: <code>2</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2108,7 +1950,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/medical-records/1" \
+    "http://localhost:8000/api/medical-records/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2116,7 +1958,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/1"
+    "http://localhost:8000/api/medical-records/2"
 );
 
 const headers = {
@@ -2225,10 +2067,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-medical-records--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>1</code></p>
+<p>The ID of the medical record. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -2287,54 +2129,6 @@ access-control-allow-origin: *
     &quot;reservations&quot;: {
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;user_id&quot;: 1,
-                &quot;pet_id&quot;: 1,
-                &quot;start_date&quot;: &quot;2026-02-03T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;pending&quot;,
-                &quot;total_price&quot;: 100,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;user_id&quot;: 1,
-                &quot;pet_id&quot;: 1,
-                &quot;start_date&quot;: &quot;2026-01-28T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-02T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: 150,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 3,
-                &quot;user_id&quot;: 4,
-                &quot;pet_id&quot;: 1,
-                &quot;start_date&quot;: &quot;2025-12-22T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2025-12-28T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;cancelled&quot;,
-                &quot;total_price&quot;: 125,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 4,
-                &quot;user_id&quot;: 4,
-                &quot;pet_id&quot;: 2,
-                &quot;start_date&quot;: &quot;2025-11-29T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2025-11-30T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;completed&quot;,
-                &quot;total_price&quot;: 70,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
             {
                 &quot;id&quot;: 5,
                 &quot;user_id&quot;: 6,
@@ -2406,6 +2200,54 @@ access-control-allow-origin: *
                 &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
                 &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;user_id&quot;: 9,
+                &quot;pet_id&quot;: 9,
+                &quot;start_date&quot;: &quot;2025-12-21T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-12-27T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: 40,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 12,
+                &quot;user_id&quot;: 9,
+                &quot;pet_id&quot;: 10,
+                &quot;start_date&quot;: &quot;2026-02-09T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-14T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;pending&quot;,
+                &quot;total_price&quot;: 35,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;user_id&quot;: 10,
+                &quot;pet_id&quot;: 11,
+                &quot;start_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;total_price&quot;: 85,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 14,
+                &quot;user_id&quot;: 10,
+                &quot;pet_id&quot;: 12,
+                &quot;start_date&quot;: &quot;2026-03-04T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-03-06T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;cancelled&quot;,
+                &quot;total_price&quot;: 75,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/reservations?page=1&quot;,
@@ -2443,7 +2285,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 14
+        &quot;total&quot;: 12
     }
 }</code>
  </pre>
@@ -2554,9 +2396,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-27\",
-    \"end_date\": \"2052-02-27\",
-    \"status\": \"confirmed\",
+    \"start_date\": \"2022-02-28\",
+    \"end_date\": \"2052-02-28\",
+    \"status\": \"completed\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2576,9 +2418,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-27",
-    "end_date": "2052-02-27",
-    "status": "confirmed",
+    "start_date": "2022-02-28",
+    "end_date": "2052-02-28",
+    "status": "completed",
     "total_price": 39
 };
 
@@ -2707,10 +2549,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-reservations"
-               value="2022-02-27"
+               value="2022-02-28"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-27</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-28</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -2719,10 +2561,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-reservations"
-               value="2052-02-27"
+               value="2052-02-28"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-27</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-28</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2731,10 +2573,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-reservations"
-               value="confirmed"
+               value="completed"
                data-component="body">
     <br>
-<p>Example: <code>confirmed</code></p>
+<p>Example: <code>completed</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -2766,7 +2608,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/reservations/1" \
+    --get "http://localhost:8000/api/reservations/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2774,7 +2616,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/1"
+    "http://localhost:8000/api/reservations/5"
 );
 
 const headers = {
@@ -2804,13 +2646,13 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 1,
-    &quot;user_id&quot;: 1,
-    &quot;pet_id&quot;: 1,
-    &quot;start_date&quot;: &quot;2026-02-03T23:00:00.000000Z&quot;,
-    &quot;end_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
-    &quot;status&quot;: &quot;pending&quot;,
-    &quot;total_price&quot;: 100,
+    &quot;id&quot;: 5,
+    &quot;user_id&quot;: 6,
+    &quot;pet_id&quot;: 3,
+    &quot;start_date&quot;: &quot;2026-01-21T23:00:00.000000Z&quot;,
+    &quot;end_date&quot;: &quot;2026-01-26T23:00:00.000000Z&quot;,
+    &quot;status&quot;: &quot;confirmed&quot;,
+    &quot;total_price&quot;: 130,
     &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
     &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
     &quot;deleted_at&quot;: null
@@ -2908,10 +2750,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-reservations--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>1</code></p>
+<p>The ID of the reservation. Example: <code>5</code></p>
             </div>
                     </form>
 
@@ -2929,16 +2771,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/reservations/1" \
+    "http://localhost:8000/api/reservations/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-27\",
-    \"end_date\": \"2052-02-27\",
-    \"status\": \"confirmed\",
+    \"start_date\": \"2022-02-28\",
+    \"end_date\": \"2052-02-28\",
+    \"status\": \"pending\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2946,7 +2788,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/1"
+    "http://localhost:8000/api/reservations/5"
 );
 
 const headers = {
@@ -2958,9 +2800,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-27",
-    "end_date": "2052-02-27",
-    "status": "confirmed",
+    "start_date": "2022-02-28",
+    "end_date": "2052-02-28",
+    "status": "pending",
     "total_price": 39
 };
 
@@ -3069,10 +2911,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-reservations--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>1</code></p>
+<p>The ID of the reservation. Example: <code>5</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -3106,10 +2948,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2022-02-27"
+               value="2022-02-28"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-27</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-28</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -3118,10 +2960,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2052-02-27"
+               value="2052-02-28"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-27</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-28</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -3130,10 +2972,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-reservations--id-"
-               value="confirmed"
+               value="pending"
                data-component="body">
     <br>
-<p>Example: <code>confirmed</code></p>
+<p>Example: <code>pending</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -3165,7 +3007,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/reservations/1" \
+    "http://localhost:8000/api/reservations/5" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -3173,7 +3015,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/1"
+    "http://localhost:8000/api/reservations/5"
 );
 
 const headers = {
@@ -3282,10 +3124,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-reservations--id-"
-               value="1"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>1</code></p>
+<p>The ID of the reservation. Example: <code>5</code></p>
             </div>
                     </form>
 
@@ -3408,15 +3250,6 @@ access-control-allow-origin: *
                 &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
             },
             {
-                &quot;id&quot;: 8,
-                &quot;name&quot;: &quot;Ciruj&iacute;a&quot;,
-                &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
-                &quot;base_price&quot;: 500,
-                &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
-            },
-            {
                 &quot;id&quot;: 9,
                 &quot;name&quot;: &quot;Sesi&oacute;n de fotos&quot;,
                 &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
@@ -3429,6 +3262,15 @@ access-control-allow-origin: *
                 &quot;id&quot;: 10,
                 &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
                 &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
+                &quot;base_price&quot;: 50,
+                &quot;is_active&quot;: 0,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;name&quot;: &quot;Urgencias 24h&quot;,
+                &quot;description&quot;: &quot;Ambulancia y atenci&oacute;n 24h&quot;,
                 &quot;base_price&quot;: 50,
                 &quot;is_active&quot;: 0,
                 &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
@@ -3470,7 +3312,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 13
+        &quot;total&quot;: 12
     }
 }</code>
  </pre>
@@ -3709,7 +3551,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>b</code></p>
+<p>Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -3941,7 +3783,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": false
+    \"is_active\": true
 }"
 </code></pre></div>
 
@@ -3961,7 +3803,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": false
+    "is_active": true
 };
 
 fetch(url, {
@@ -4085,7 +3927,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>b</code></p>
+<p>Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4131,7 +3973,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -4329,19 +4171,6 @@ access-control-allow-origin: *
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
-                &quot;id&quot;: 1,
-                &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Rocky&quot;,
-                &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-                &quot;age&quot;: 10,
-                &quot;weight&quot;: 12,
-                &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
                 &quot;id&quot;: 2,
                 &quot;user_id&quot;: 4,
                 &quot;name&quot;: &quot;Luna&quot;,
@@ -4453,6 +4282,19 @@ access-control-allow-origin: *
                 &quot;breed&quot;: &quot;Persa&quot;,
                 &quot;age&quot;: 13,
                 &quot;weight&quot;: 5,
+                &quot;notes&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;user_id&quot;: 10,
+                &quot;name&quot;: &quot;Bruno&quot;,
+                &quot;species&quot;: &quot;Perro&quot;,
+                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
+                &quot;age&quot;: 9,
+                &quot;weight&quot;: 12,
                 &quot;notes&quot;: null,
                 &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
@@ -4751,7 +4593,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="n"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>n</code></p>
+<p>Must not be greater than 50 characters. Example: <code>n</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>species</code></b>&nbsp;&nbsp;
@@ -4763,7 +4605,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="g"
                data-component="body">
     <br>
-<p>Must not be greater than 100 characters. Example: <code>g</code></p>
+<p>Must not be greater than 50 characters. Example: <code>g</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>breed</code></b>&nbsp;&nbsp;
@@ -4775,7 +4617,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="z"
                data-component="body">
     <br>
-<p>Must not be greater than 100 characters. Example: <code>z</code></p>
+<p>Must not be greater than 50 characters. Example: <code>z</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>age</code></b>&nbsp;&nbsp;
@@ -4829,7 +4671,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/pets/1" \
+    --get "http://localhost:8000/api/pets/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -4837,7 +4679,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/1"
+    "http://localhost:8000/api/pets/2"
 );
 
 const headers = {
@@ -4867,13 +4709,13 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 1,
+    &quot;id&quot;: 2,
     &quot;user_id&quot;: 4,
-    &quot;name&quot;: &quot;Rocky&quot;,
-    &quot;species&quot;: &quot;Perro&quot;,
-    &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-    &quot;age&quot;: 10,
-    &quot;weight&quot;: 12,
+    &quot;name&quot;: &quot;Luna&quot;,
+    &quot;species&quot;: &quot;Gato&quot;,
+    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+    &quot;age&quot;: 3,
+    &quot;weight&quot;: 5.5,
     &quot;notes&quot;: null,
     &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
     &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
@@ -4972,10 +4814,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-pets--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>1</code></p>
+<p>The ID of the pet. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -4993,7 +4835,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/pets/1" \
+    "http://localhost:8000/api/pets/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -5011,7 +4853,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/1"
+    "http://localhost:8000/api/pets/2"
 );
 
 const headers = {
@@ -5135,10 +4977,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-pets--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>1</code></p>
+<p>The ID of the pet. Example: <code>2</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -5163,7 +5005,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="n"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>n</code></p>
+<p>Must not be greater than 50 characters. Example: <code>n</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>species</code></b>&nbsp;&nbsp;
@@ -5175,7 +5017,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="g"
                data-component="body">
     <br>
-<p>Must not be greater than 100 characters. Example: <code>g</code></p>
+<p>Must not be greater than 50 characters. Example: <code>g</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>breed</code></b>&nbsp;&nbsp;
@@ -5187,7 +5029,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="z"
                data-component="body">
     <br>
-<p>Must not be greater than 100 characters. Example: <code>z</code></p>
+<p>Must not be greater than 50 characters. Example: <code>z</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>age</code></b>&nbsp;&nbsp;
@@ -5241,7 +5083,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/pets/1" \
+    "http://localhost:8000/api/pets/2" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -5249,7 +5091,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/1"
+    "http://localhost:8000/api/pets/2"
 );
 
 const headers = {
@@ -5358,10 +5200,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-pets--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>1</code></p>
+<p>The ID of the pet. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -5813,7 +5655,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>b</code></p>
+<p>Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -5825,7 +5667,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="zbailey@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>zbailey@example.net</code></p>
+<p>Must be a valid email address. Must not be greater than 100 characters. Example: <code>zbailey@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -6168,7 +6010,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>b</code></p>
+<p>Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -6180,7 +6022,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="zbailey@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>zbailey@example.net</code></p>
+<p>Must be a valid email address. Must not be greater than 100 characters. Example: <code>zbailey@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -6389,30 +6231,6 @@ access-control-allow-origin: *
     &quot;current_page&quot;: 1,
     &quot;data&quot;: [
         {
-            &quot;id&quot;: 1,
-            &quot;invoice_id&quot;: 1,
-            &quot;user_id&quot;: 1,
-            &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;payment_method&quot;: &quot;credit_card&quot;,
-            &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-855BB397&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;invoice_id&quot;: 3,
-            &quot;user_id&quot;: 4,
-            &quot;amount&quot;: &quot;125.00&quot;,
-            &quot;payment_method&quot;: &quot;credit_card&quot;,
-            &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-8F8F44E3&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
-        },
-        {
             &quot;id&quot;: 3,
             &quot;invoice_id&quot;: 5,
             &quot;user_id&quot;: 6,
@@ -6501,8 +6319,8 @@ access-control-allow-origin: *
     &quot;path&quot;: &quot;http://localhost:8000/api/payments&quot;,
     &quot;per_page&quot;: 10,
     &quot;prev_page_url&quot;: null,
-    &quot;to&quot;: 7,
-    &quot;total&quot;: 7
+    &quot;to&quot;: 5,
+    &quot;total&quot;: 5
 }</code>
  </pre>
     </span>

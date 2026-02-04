@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Invoice;
 use App\Models\Reservation;
 use Database\Seeders\RolePermissionUserSeeder;
+use Laravel\Sanctum\PersonalAccessToken;
 use Laravel\Sanctum\Sanctum;
 
 beforeEach(function () {
@@ -17,6 +18,7 @@ beforeEach(function () {
 | Autenticación
 |--------------------------------------------------------------------------
 */
+
 
 it('guest cannot access invoices', function () {
     $response = $this->getJson('/api/invoices');
@@ -252,4 +254,23 @@ it('cannot create invoice with non-existent reservation', function () {
 
     $response->assertStatus(422)
         ->assertJsonValidationErrors(['reservation_id']);
+});
+it('can authenticate with custom hashed token', function () {
+    $user = User::factory()->create();
+    $user->assignRole('Admin');
+
+    //token
+    PersonalAccessToken::create([
+        'tokenable_type' => User::class,
+        'tokenable_id' => $user->id,
+        'name' => 'api-key',
+        'token' => hash('sha256', 'mi-token-secreto'),
+        'abilities' => ['*'],
+    ]);
+
+    $response = $this->withHeaders([
+        'Authorization' => 'Bearer mi-token-secreto',
+    ])->getJson('/api/invoices');
+
+    $response->assertStatus(200);
 });

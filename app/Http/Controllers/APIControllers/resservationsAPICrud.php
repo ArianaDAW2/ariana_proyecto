@@ -4,10 +4,7 @@ namespace App\Http\Controllers\APIControllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ReservationRequest;
-use App\Models\Pet;
 use App\Models\Reservation;
-use App\Models\Service;
-use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 
@@ -64,7 +61,7 @@ class resservationsAPICrud extends Controller
     public function destroy(Reservation $reservation)
     {
         $this->authorize('delete', $reservation);
-        
+
         $reservation->delete();
         return response()->json(null, 204);
     }

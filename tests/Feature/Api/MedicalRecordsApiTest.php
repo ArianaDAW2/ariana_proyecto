@@ -4,6 +4,7 @@ use App\Models\User;
 use App\Models\Pet;
 use App\Models\MedicalRecord;
 use Database\Seeders\RolePermissionUserSeeder;
+use Laravel\Sanctum\PersonalAccessToken;
 use Laravel\Sanctum\Sanctum;
 
 beforeEach(function () {
@@ -12,7 +13,7 @@ beforeEach(function () {
 
 /*
 |--------------------------------------------------------------------------
-| Autenticación
+| Guest
 |--------------------------------------------------------------------------
 */
 
@@ -24,7 +25,7 @@ it('guest cannot access medical records', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Sin permisos
+| Cliente
 |--------------------------------------------------------------------------
 */
 
@@ -228,4 +229,23 @@ it('cannot create medical record with non-existent veterinarian', function () {
 
     $response->assertStatus(422)
         ->assertJsonValidationErrors(['veterinarian_id']);
+});
+it('can authenticate with custom hashed token', function () {
+    $user = User::factory()->create();
+    $user->assignRole('Admin');
+
+    //Token
+    PersonalAccessToken::create([
+        'tokenable_type' => User::class,
+        'tokenable_id' => $user->id,
+        'name' => 'api-key',
+        'token' => hash('sha256', 'mi-token-secreto'),
+        'abilities' => ['*'],
+    ]);
+
+    $response = $this->withHeaders([
+        'Authorization' => 'Bearer mi-token-secreto',
+    ])->getJson('/api/medical-records');
+
+    $response->assertStatus(200);
 });

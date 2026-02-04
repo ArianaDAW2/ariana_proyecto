@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "HotelForPets API Documentation",
-        "_postman_id": "96d3f6b2-3fac-4776-abdc-1801e2d1cf97",
+        "_postman_id": "b081a539-0548-49b9-8355-7f45ed949330",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -58,8 +58,8 @@
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"invoices\":{\"current_page\":1,\"data\":[{\"id\":1,\"reservation_id\":1,\"invoice_number\":\"FAC-00001\",\"total\":100,\"status\":\"paid\",\"issued_at\":\"2026-02-04 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":2,\"reservation_id\":2,\"invoice_number\":\"FAC-00002\",\"total\":150,\"status\":\"unpaid\",\"issued_at\":\"2026-01-29 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":3,\"reservation_id\":3,\"invoice_number\":\"FAC-00003\",\"total\":125,\"status\":\"paid\",\"issued_at\":\"2025-12-23 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":4,\"reservation_id\":4,\"invoice_number\":\"FAC-00004\",\"total\":70,\"status\":\"unpaid\",\"issued_at\":\"2025-11-30 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"reservation_id\":5,\"invoice_number\":\"FAC-00005\",\"total\":130,\"status\":\"paid\",\"issued_at\":\"2026-01-22 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"reservation_id\":6,\"invoice_number\":\"FAC-00006\",\"total\":30,\"status\":\"unpaid\",\"issued_at\":\"2026-01-29 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"reservation_id\":7,\"invoice_number\":\"FAC-00007\",\"total\":45,\"status\":\"paid\",\"issued_at\":\"2026-02-10 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"reservation_id\":8,\"invoice_number\":\"FAC-00008\",\"total\":35,\"status\":\"unpaid\",\"issued_at\":\"2025-10-13 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"reservation_id\":9,\"invoice_number\":\"FAC-00009\",\"total\":160,\"status\":\"paid\",\"issued_at\":\"2026-02-07 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"reservation_id\":10,\"invoice_number\":\"FAC-00010\",\"total\":75,\"status\":\"unpaid\",\"issued_at\":\"2026-01-14 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/invoices\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":14}}",
+                            "code": 403,
+                            "body": "{\n    \"message\": \"This action is unauthorized.\"\n}",
                             "name": ""
                         }
                     ]
@@ -86,7 +86,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"reservation_id\":\"architecto\",\"invoice_number\":\"architecto\",\"total\":39,\"status\":\"paid\",\"issued_at\":\"2026-02-03T15:05:24\"}"
+                            "raw": "{\"reservation_id\":\"architecto\",\"invoice_number\":\"architecto\",\"total\":39,\"status\":\"paid\",\"issued_at\":\"2026-02-04T16:06:52\"}"
                         },
                         "description": ""
                     },
@@ -104,7 +104,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the invoice."
                                 }
                             ]
@@ -139,8 +139,8 @@
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"id\":1,\"reservation_id\":1,\"invoice_number\":\"FAC-00001\",\"total\":100,\"status\":\"paid\",\"issued_at\":\"2026-02-04 00:00:00\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}",
+                            "code": 403,
+                            "body": "{\n    \"message\": \"This action is unauthorized.\"\n}",
                             "name": ""
                         }
                     ]
@@ -157,7 +157,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the invoice."
                                 }
                             ]
@@ -175,7 +175,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"reservation_id\":\"architecto\",\"invoice_number\":\"architecto\",\"total\":39,\"status\":\"paid\",\"issued_at\":\"2026-02-03T15:05:24\"}"
+                            "raw": "{\"reservation_id\":\"architecto\",\"invoice_number\":\"architecto\",\"total\":39,\"status\":\"paid\",\"issued_at\":\"2026-02-04T16:06:52\"}"
                         },
                         "description": ""
                     },
@@ -193,7 +193,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the invoice."
                                 }
                             ]
@@ -254,7 +254,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"records\":{\"current_page\":1,\"data\":[{\"id\":1,\"pet_id\":1,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Rocky\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":2,\"pet_id\":2,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Luna\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":3,\"pet_id\":3,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Max\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":4,\"pet_id\":4,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nina\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"pet_id\":5,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Zeus\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"pet_id\":6,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Luna\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"pet_id\":7,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Zeus\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"pet_id\":8,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nina\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"pet_id\":9,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Bruno\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"pet_id\":10,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nala\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}}",
+                            "body": "{\"records\":{\"current_page\":1,\"data\":[{\"id\":2,\"pet_id\":2,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Luna\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":3,\"pet_id\":3,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Max\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":4,\"pet_id\":4,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nina\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"pet_id\":5,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Zeus\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"pet_id\":6,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Luna\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"pet_id\":7,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Zeus\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"pet_id\":8,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nina\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"pet_id\":9,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Bruno\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"pet_id\":10,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Nala\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":11,\"pet_id\":11,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Bruno\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/medical-records\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":11}}",
                             "name": ""
                         }
                     ]
@@ -299,7 +299,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the medical record."
                                 }
                             ]
@@ -335,7 +335,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"id\":1,\"pet_id\":1,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Rocky\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}",
+                            "body": "{\"id\":2,\"pet_id\":2,\"veterinarian_id\":2,\"diagnosis\":\"Revisi\\u00f3n rutinaria para Luna\",\"treatment\":\"Ninguno necesario. Todo en orden.\",\"notes\":\"La mascota se comporta bien durante la revisi\\u00f3n.\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}",
                             "name": ""
                         }
                     ]
@@ -352,7 +352,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the medical record."
                                 }
                             ]
@@ -388,7 +388,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the medical record."
                                 }
                             ]
@@ -449,7 +449,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"reservations\":{\"current_page\":1,\"data\":[{\"id\":1,\"user_id\":1,\"pet_id\":1,\"start_date\":\"2026-02-03T23:00:00.000000Z\",\"end_date\":\"2026-02-07T23:00:00.000000Z\",\"status\":\"pending\",\"total_price\":100,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":2,\"user_id\":1,\"pet_id\":1,\"start_date\":\"2026-01-28T23:00:00.000000Z\",\"end_date\":\"2026-02-02T23:00:00.000000Z\",\"status\":\"confirmed\",\"total_price\":150,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":3,\"user_id\":4,\"pet_id\":1,\"start_date\":\"2025-12-22T23:00:00.000000Z\",\"end_date\":\"2025-12-28T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":125,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":4,\"user_id\":4,\"pet_id\":2,\"start_date\":\"2025-11-29T23:00:00.000000Z\",\"end_date\":\"2025-11-30T23:00:00.000000Z\",\"status\":\"completed\",\"total_price\":70,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"user_id\":6,\"pet_id\":3,\"start_date\":\"2026-01-21T23:00:00.000000Z\",\"end_date\":\"2026-01-26T23:00:00.000000Z\",\"status\":\"confirmed\",\"total_price\":130,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"user_id\":6,\"pet_id\":4,\"start_date\":\"2026-01-28T23:00:00.000000Z\",\"end_date\":\"2026-02-03T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":30,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"user_id\":7,\"pet_id\":5,\"start_date\":\"2026-02-09T23:00:00.000000Z\",\"end_date\":\"2026-02-12T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":45,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"user_id\":7,\"pet_id\":6,\"start_date\":\"2025-10-12T22:00:00.000000Z\",\"end_date\":\"2025-10-16T22:00:00.000000Z\",\"status\":\"completed\",\"total_price\":35,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"user_id\":8,\"pet_id\":7,\"start_date\":\"2026-02-06T23:00:00.000000Z\",\"end_date\":\"2026-02-11T23:00:00.000000Z\",\"status\":\"pending\",\"total_price\":160,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"user_id\":8,\"pet_id\":8,\"start_date\":\"2026-01-13T23:00:00.000000Z\",\"end_date\":\"2026-01-17T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":75,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":14}}",
+                            "body": "{\"reservations\":{\"current_page\":1,\"data\":[{\"id\":5,\"user_id\":6,\"pet_id\":3,\"start_date\":\"2026-01-21T23:00:00.000000Z\",\"end_date\":\"2026-01-26T23:00:00.000000Z\",\"status\":\"confirmed\",\"total_price\":130,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"user_id\":6,\"pet_id\":4,\"start_date\":\"2026-01-28T23:00:00.000000Z\",\"end_date\":\"2026-02-03T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":30,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"user_id\":7,\"pet_id\":5,\"start_date\":\"2026-02-09T23:00:00.000000Z\",\"end_date\":\"2026-02-12T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":45,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"user_id\":7,\"pet_id\":6,\"start_date\":\"2025-10-12T22:00:00.000000Z\",\"end_date\":\"2025-10-16T22:00:00.000000Z\",\"status\":\"completed\",\"total_price\":35,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"user_id\":8,\"pet_id\":7,\"start_date\":\"2026-02-06T23:00:00.000000Z\",\"end_date\":\"2026-02-11T23:00:00.000000Z\",\"status\":\"pending\",\"total_price\":160,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"user_id\":8,\"pet_id\":8,\"start_date\":\"2026-01-13T23:00:00.000000Z\",\"end_date\":\"2026-01-17T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":75,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":11,\"user_id\":9,\"pet_id\":9,\"start_date\":\"2025-12-21T23:00:00.000000Z\",\"end_date\":\"2025-12-27T23:00:00.000000Z\",\"status\":\"confirmed\",\"total_price\":40,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":12,\"user_id\":9,\"pet_id\":10,\"start_date\":\"2026-02-09T23:00:00.000000Z\",\"end_date\":\"2026-02-14T23:00:00.000000Z\",\"status\":\"pending\",\"total_price\":35,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":13,\"user_id\":10,\"pet_id\":11,\"start_date\":\"2026-02-07T23:00:00.000000Z\",\"end_date\":\"2026-02-12T23:00:00.000000Z\",\"status\":\"completed\",\"total_price\":85,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":14,\"user_id\":10,\"pet_id\":12,\"start_date\":\"2026-03-04T23:00:00.000000Z\",\"end_date\":\"2026-03-06T23:00:00.000000Z\",\"status\":\"cancelled\",\"total_price\":75,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/reservations\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}}",
                             "name": ""
                         }
                     ]
@@ -476,7 +476,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"user_id\":\"architecto\",\"pet_id\":\"architecto\",\"start_date\":\"2022-02-27\",\"end_date\":\"2052-02-27\",\"status\":\"confirmed\",\"total_price\":39}"
+                            "raw": "{\"user_id\":\"architecto\",\"pet_id\":\"architecto\",\"start_date\":\"2022-02-28\",\"end_date\":\"2052-02-28\",\"status\":\"completed\",\"total_price\":39}"
                         },
                         "description": ""
                     },
@@ -494,7 +494,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the reservation."
                                 }
                             ]
@@ -530,7 +530,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"id\":1,\"user_id\":1,\"pet_id\":1,\"start_date\":\"2026-02-03T23:00:00.000000Z\",\"end_date\":\"2026-02-07T23:00:00.000000Z\",\"status\":\"pending\",\"total_price\":100,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}",
+                            "body": "{\"id\":5,\"user_id\":6,\"pet_id\":3,\"start_date\":\"2026-01-21T23:00:00.000000Z\",\"end_date\":\"2026-01-26T23:00:00.000000Z\",\"status\":\"confirmed\",\"total_price\":130,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}",
                             "name": ""
                         }
                     ]
@@ -547,7 +547,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the reservation."
                                 }
                             ]
@@ -565,7 +565,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"user_id\":\"architecto\",\"pet_id\":\"architecto\",\"start_date\":\"2022-02-27\",\"end_date\":\"2052-02-27\",\"status\":\"confirmed\",\"total_price\":39}"
+                            "raw": "{\"user_id\":\"architecto\",\"pet_id\":\"architecto\",\"start_date\":\"2022-02-28\",\"end_date\":\"2052-02-28\",\"status\":\"pending\",\"total_price\":39}"
                         },
                         "description": ""
                     },
@@ -583,7 +583,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the reservation."
                                 }
                             ]
@@ -644,7 +644,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"services\":{\"current_page\":1,\"data\":[{\"id\":1,\"name\":\"Alojamiento dog&cat hotel\",\"description\":\"Habitaci\\u00f3n c\\u00f3moda con paseos diarios.\",\"base_price\":20,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":2,\"name\":\"Juegos y comodidades extra\",\"description\":\"A\\u00f1adido: webcam, comida h\\u00fameda y juegos constantes.\",\"base_price\":35,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":3,\"name\":\"Peluquer\\u00eda Canina Y Felina\",\"description\":\"Ba\\u00f1o, corte de pelo y u\\u00f1as.\",\"base_price\":25,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":4,\"name\":\"Consulta Veterinaria\",\"description\":\"Revisi\\u00f3n general y aviso de pagos extra por llamada.\",\"base_price\":30,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":5,\"name\":\"Adiestramiento B\\u00e1sico\",\"description\":\"Sesi\\u00f3n de obediencia b\\u00e1sica y juegos.\",\"base_price\":40,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":6,\"name\":\"Hopitalizaci\\u00f3n\",\"description\":\"Cuidados intensivos.\",\"base_price\":40,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":7,\"name\":\"Consulta online\",\"description\":\"Consulta a trav\\u00e9s de videollamada o llamada b\\u00e1sica.\",\"base_price\":35,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":8,\"name\":\"Ciruj\\u00eda\",\"description\":\"Mayor\\u00eda de operaciones.\",\"base_price\":500,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":9,\"name\":\"Sesi\\u00f3n de fotos\",\"description\":\"Prometo que no blanqueamos dinero con esto\",\"base_price\":50,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":10,\"name\":\"Aromaterapia y SPA\",\"description\":\"Cuidados especiales para la felicidad de tu mascota\",\"base_price\":50,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":13}}",
+                            "body": "{\"services\":{\"current_page\":1,\"data\":[{\"id\":1,\"name\":\"Alojamiento dog&cat hotel\",\"description\":\"Habitaci\\u00f3n c\\u00f3moda con paseos diarios.\",\"base_price\":20,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":2,\"name\":\"Juegos y comodidades extra\",\"description\":\"A\\u00f1adido: webcam, comida h\\u00fameda y juegos constantes.\",\"base_price\":35,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":3,\"name\":\"Peluquer\\u00eda Canina Y Felina\",\"description\":\"Ba\\u00f1o, corte de pelo y u\\u00f1as.\",\"base_price\":25,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":4,\"name\":\"Consulta Veterinaria\",\"description\":\"Revisi\\u00f3n general y aviso de pagos extra por llamada.\",\"base_price\":30,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":5,\"name\":\"Adiestramiento B\\u00e1sico\",\"description\":\"Sesi\\u00f3n de obediencia b\\u00e1sica y juegos.\",\"base_price\":40,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":6,\"name\":\"Hopitalizaci\\u00f3n\",\"description\":\"Cuidados intensivos.\",\"base_price\":40,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":7,\"name\":\"Consulta online\",\"description\":\"Consulta a trav\\u00e9s de videollamada o llamada b\\u00e1sica.\",\"base_price\":35,\"is_active\":1,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":9,\"name\":\"Sesi\\u00f3n de fotos\",\"description\":\"Prometo que no blanqueamos dinero con esto\",\"base_price\":50,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":10,\"name\":\"Aromaterapia y SPA\",\"description\":\"Cuidados especiales para la felicidad de tu mascota\",\"base_price\":50,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"},{\"id\":11,\"name\":\"Urgencias 24h\",\"description\":\"Ambulancia y atenci\\u00f3n 24h\",\"base_price\":50,\"is_active\":0,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\"}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/services\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}}",
                             "name": ""
                         }
                     ]
@@ -760,7 +760,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"b\",\"description\":\"Eius et animi quos velit et.\",\"base_price\":60,\"is_active\":false}"
+                            "raw": "{\"name\":\"b\",\"description\":\"Eius et animi quos velit et.\",\"base_price\":60,\"is_active\":true}"
                         },
                         "description": ""
                     },
@@ -839,7 +839,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"pets\":{\"current_page\":1,\"data\":[{\"id\":1,\"user_id\":4,\"name\":\"Rocky\",\"species\":\"Perro\",\"breed\":\"Bulldog Franc\\u00e9s\",\"age\":10,\"weight\":12,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null},{\"id\":2,\"user_id\":4,\"name\":\"Luna\",\"species\":\"Gato\",\"breed\":\"Bengal\\u00ed\",\"age\":3,\"weight\":5.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null},{\"id\":3,\"user_id\":6,\"name\":\"Max\",\"species\":\"Perro\",\"breed\":\"Golden Retriever\",\"age\":7,\"weight\":30.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null},{\"id\":4,\"user_id\":6,\"name\":\"Nina\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":11,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"user_id\":7,\"name\":\"Zeus\",\"species\":\"Perro\",\"breed\":\"Bulldog Franc\\u00e9s\",\"age\":5,\"weight\":12,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"user_id\":7,\"name\":\"Luna\",\"species\":\"Gato\",\"breed\":\"Maine Coon\",\"age\":7,\"weight\":7.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"user_id\":8,\"name\":\"Zeus\",\"species\":\"Perro\",\"breed\":\"Labrador\",\"age\":2,\"weight\":28,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"user_id\":8,\"name\":\"Nina\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":3,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"user_id\":9,\"name\":\"Bruno\",\"species\":\"Perro\",\"breed\":\"Pastor Alem\\u00e1n\",\"age\":10,\"weight\":35,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"user_id\":9,\"name\":\"Nala\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":13,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}}",
+                            "body": "{\"pets\":{\"current_page\":1,\"data\":[{\"id\":2,\"user_id\":4,\"name\":\"Luna\",\"species\":\"Gato\",\"breed\":\"Bengal\\u00ed\",\"age\":3,\"weight\":5.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null},{\"id\":3,\"user_id\":6,\"name\":\"Max\",\"species\":\"Perro\",\"breed\":\"Golden Retriever\",\"age\":7,\"weight\":30.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null},{\"id\":4,\"user_id\":6,\"name\":\"Nina\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":11,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":5,\"user_id\":7,\"name\":\"Zeus\",\"species\":\"Perro\",\"breed\":\"Bulldog Franc\\u00e9s\",\"age\":5,\"weight\":12,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":6,\"user_id\":7,\"name\":\"Luna\",\"species\":\"Gato\",\"breed\":\"Maine Coon\",\"age\":7,\"weight\":7.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":7,\"user_id\":8,\"name\":\"Zeus\",\"species\":\"Perro\",\"breed\":\"Labrador\",\"age\":2,\"weight\":28,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":8,\"user_id\":8,\"name\":\"Nina\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":3,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":9,\"user_id\":9,\"name\":\"Bruno\",\"species\":\"Perro\",\"breed\":\"Pastor Alem\\u00e1n\",\"age\":10,\"weight\":35,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":10,\"user_id\":9,\"name\":\"Nala\",\"species\":\"Gato\",\"breed\":\"Persa\",\"age\":13,\"weight\":5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null},{\"id\":11,\"user_id\":10,\"name\":\"Bruno\",\"species\":\"Perro\",\"breed\":\"Bulldog Franc\\u00e9s\",\"age\":9,\"weight\":12,\"notes\":null,\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\",\"deleted_at\":null}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"label\":\"2\",\"page\":2,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"label\":\"Next &raquo;\",\"page\":2,\"active\":false}],\"next_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets?page=2\",\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/pets\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}}",
                             "name": ""
                         }
                     ]
@@ -884,7 +884,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the pet."
                                 }
                             ]
@@ -920,7 +920,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"id\":1,\"user_id\":4,\"name\":\"Rocky\",\"species\":\"Perro\",\"breed\":\"Bulldog Franc\\u00e9s\",\"age\":10,\"weight\":12,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null}",
+                            "body": "{\"id\":2,\"user_id\":4,\"name\":\"Luna\",\"species\":\"Gato\",\"breed\":\"Bengal\\u00ed\",\"age\":3,\"weight\":5.5,\"notes\":null,\"created_at\":\"2026-02-03T13:31:57.000000Z\",\"updated_at\":\"2026-02-03T13:31:57.000000Z\",\"deleted_at\":null}",
                             "name": ""
                         }
                     ]
@@ -937,7 +937,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the pet."
                                 }
                             ]
@@ -973,7 +973,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the pet."
                                 }
                             ]
@@ -1229,7 +1229,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"current_page\":1,\"data\":[{\"id\":1,\"invoice_id\":1,\"user_id\":1,\"amount\":\"100.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-855BB397\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":2,\"invoice_id\":3,\"user_id\":4,\"amount\":\"125.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-8F8F44E3\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":3,\"invoice_id\":5,\"user_id\":6,\"amount\":\"130.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-D991A513\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":4,\"invoice_id\":7,\"user_id\":7,\"amount\":\"45.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-A78CCC97\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":5,\"invoice_id\":9,\"user_id\":8,\"amount\":\"160.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-69F474E3\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":6,\"invoice_id\":11,\"user_id\":9,\"amount\":\"40.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-8BDBE67E\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":7,\"invoice_id\":13,\"user_id\":10,\"amount\":\"85.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-846B7F66\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"from\":1,\"last_page\":1,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"page\":null,\"active\":false}],\"next_page_url\":null,\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments\",\"per_page\":10,\"prev_page_url\":null,\"to\":7,\"total\":7}",
+                            "body": "{\"current_page\":1,\"data\":[{\"id\":3,\"invoice_id\":5,\"user_id\":6,\"amount\":\"130.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-D991A513\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":4,\"invoice_id\":7,\"user_id\":7,\"amount\":\"45.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-A78CCC97\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":5,\"invoice_id\":9,\"user_id\":8,\"amount\":\"160.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-69F474E3\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":6,\"invoice_id\":11,\"user_id\":9,\"amount\":\"40.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-8BDBE67E\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"},{\"id\":7,\"invoice_id\":13,\"user_id\":10,\"amount\":\"85.00\",\"payment_method\":\"credit_card\",\"status\":\"completed\",\"transaction_id\":\"TRX-846B7F66\",\"paid_at\":\"2026-02-03T13:31:58.000000Z\",\"created_at\":\"2026-02-03T13:31:58.000000Z\",\"updated_at\":\"2026-02-03T13:31:58.000000Z\"}],\"first_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"from\":1,\"last_page\":1,\"last_page_url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"page\":null,\"active\":false},{\"url\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments?page=1\",\"label\":\"1\",\"page\":1,\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"page\":null,\"active\":false}],\"next_page_url\":null,\"path\":\"http:\\\/\\\/localhost:8000\\\/api\\\/payments\",\"per_page\":10,\"prev_page_url\":null,\"to\":5,\"total\":5}",
                             "name": ""
                         }
                     ]
