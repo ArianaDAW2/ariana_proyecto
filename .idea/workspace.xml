@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.8.13.9 pdfs">
+    <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.9.1 APIs">
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web/documents.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/documents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MedicalRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MedicalRecord.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Pet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ReservationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ReservationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/HomeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/WebTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RoutesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Pest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Pest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,80 +249,87 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Pest.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.x&quot;: &quot;609&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.y&quot;: &quot;238&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.x&quot;: &quot;356&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createMailable.y&quot;: &quot;305&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.width&quot;: &quot;403&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.x&quot;: &quot;437&quot;,
-    &quot;laravel_idea.dialogs.codeGeneration.window.createServiceProvider.y&quot;: &quot;491&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.x&quot;: &quot;474&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createConsoleCommand.y&quot;: &quot;435&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createController.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createController.x&quot;: &quot;713&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createController.y&quot;: &quot;376&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.x&quot;: &quot;588&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createDatabaseMigration.y&quot;: &quot;189&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createEvent.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createEvent.x&quot;: &quot;356&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createEvent.y&quot;: &quot;346&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.x&quot;: &quot;200&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFeatureTest.y&quot;: &quot;257&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFormRequest.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFormRequest.x&quot;: &quot;439&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createFormRequest.y&quot;: &quot;508&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createJob.width&quot;: &quot;437&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createJob.x&quot;: &quot;260&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createJob.y&quot;: &quot;362&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createListener.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createListener.x&quot;: &quot;356&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createListener.y&quot;: &quot;338&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.x&quot;: &quot;439&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireComponent.y&quot;: &quot;537&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.x&quot;: &quot;439&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createLivewireForm.y&quot;: &quot;519&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createMailable.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createMailable.x&quot;: &quot;404&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createMailable.y&quot;: &quot;297&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.x&quot;: &quot;439&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createServiceProvider.y&quot;: &quot;532&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createView.width&quot;: &quot;400&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createView.x&quot;: &quot;1237&quot;,
-    &quot;laravel_idea.dialogs.code_generation:createView.y&quot;: &quot;397&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/opt/lampp/htdocs/proyectos/ariana_proyecto/resources/views/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Pest.EmailVerificationTest.php::email can be verified.executor": "Run",
+    "Pest.InvoicesApiTest.php.executor": "Run",
+    "Pest.InvoicesApiTest.php::it guest cannot access invoices.executor": "Run",
+    "Pest.InvoicesApiTest.php::it user without permission cannot create invoice.executor": "Run",
+    "Pest.InvoicesApiTest.php::it user without permission cannot list invoices.executor": "Run",
+    "Pest.Main.executor": "Debug",
+    "Pest.RegistrationTest.php::new users can register.executor": "Run",
+    "Pest.WebTest.php::it Contact Working.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.width": "400",
+    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.x": "609",
+    "laravel_idea.dialogs.codeGeneration.window.createDatabaseMigration.y": "238",
+    "laravel_idea.dialogs.codeGeneration.window.createMailable.width": "400",
+    "laravel_idea.dialogs.codeGeneration.window.createMailable.x": "356",
+    "laravel_idea.dialogs.codeGeneration.window.createMailable.y": "305",
+    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.width": "403",
+    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.x": "437",
+    "laravel_idea.dialogs.codeGeneration.window.createServiceProvider.y": "491",
+    "laravel_idea.dialogs.code_generation:createConsoleCommand.width": "400",
+    "laravel_idea.dialogs.code_generation:createConsoleCommand.x": "474",
+    "laravel_idea.dialogs.code_generation:createConsoleCommand.y": "435",
+    "laravel_idea.dialogs.code_generation:createController.width": "400",
+    "laravel_idea.dialogs.code_generation:createController.x": "713",
+    "laravel_idea.dialogs.code_generation:createController.y": "376",
+    "laravel_idea.dialogs.code_generation:createDatabaseMigration.width": "400",
+    "laravel_idea.dialogs.code_generation:createDatabaseMigration.x": "588",
+    "laravel_idea.dialogs.code_generation:createDatabaseMigration.y": "189",
+    "laravel_idea.dialogs.code_generation:createEvent.width": "400",
+    "laravel_idea.dialogs.code_generation:createEvent.x": "356",
+    "laravel_idea.dialogs.code_generation:createEvent.y": "346",
+    "laravel_idea.dialogs.code_generation:createFeatureTest.width": "400",
+    "laravel_idea.dialogs.code_generation:createFeatureTest.x": "200",
+    "laravel_idea.dialogs.code_generation:createFeatureTest.y": "252",
+    "laravel_idea.dialogs.code_generation:createFormRequest.width": "400",
+    "laravel_idea.dialogs.code_generation:createFormRequest.x": "439",
+    "laravel_idea.dialogs.code_generation:createFormRequest.y": "508",
+    "laravel_idea.dialogs.code_generation:createJob.width": "437",
+    "laravel_idea.dialogs.code_generation:createJob.x": "260",
+    "laravel_idea.dialogs.code_generation:createJob.y": "362",
+    "laravel_idea.dialogs.code_generation:createListener.width": "400",
+    "laravel_idea.dialogs.code_generation:createListener.x": "356",
+    "laravel_idea.dialogs.code_generation:createListener.y": "338",
+    "laravel_idea.dialogs.code_generation:createLivewireComponent.width": "400",
+    "laravel_idea.dialogs.code_generation:createLivewireComponent.x": "439",
+    "laravel_idea.dialogs.code_generation:createLivewireComponent.y": "537",
+    "laravel_idea.dialogs.code_generation:createLivewireForm.width": "400",
+    "laravel_idea.dialogs.code_generation:createLivewireForm.x": "439",
+    "laravel_idea.dialogs.code_generation:createLivewireForm.y": "519",
+    "laravel_idea.dialogs.code_generation:createMailable.width": "400",
+    "laravel_idea.dialogs.code_generation:createMailable.x": "404",
+    "laravel_idea.dialogs.code_generation:createMailable.y": "297",
+    "laravel_idea.dialogs.code_generation:createServiceProvider.width": "400",
+    "laravel_idea.dialogs.code_generation:createServiceProvider.x": "439",
+    "laravel_idea.dialogs.code_generation:createServiceProvider.y": "532",
+    "laravel_idea.dialogs.code_generation:createView.width": "400",
+    "laravel_idea.dialogs.code_generation:createView.x": "1237",
+    "laravel_idea.dialogs.code_generation:createView.y": "397",
+    "last_opened_file_path": "/opt/lampp/htdocs/proyectos/ariana_proyecto/resources/views/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/public" />
@@ -316,15 +340,44 @@
       <recent name="$PROJECT_DIR$/routes/DELETE" />
     </key>
   </component>
-  <component name="RunManager" selected="Pest.Main">
+  <component name="RunManager" selected="Pest.InvoicesApiTest.php::it user without permission cannot create invoice">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoicesApiTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" scope="File" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoicesApiTest.php::it guest cannot access invoices" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it guest cannot access invoices" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoicesApiTest.php::it user without permission cannot create invoice" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it user without permission cannot create invoice" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoicesApiTest.php::it user without permission cannot list invoices" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" method="it user without permission cannot list invoices" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PestRunConfigurationType">
       <PestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
+    <configuration name="RoutesTest.php::it Contact Working" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/RoutesTest.php" method="it Contact Working" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Pest.InvoicesApiTest.php::it user without permission cannot create invoice" />
+        <item itemvalue="Pest.InvoicesApiTest.php::it user without permission cannot list invoices" />
+        <item itemvalue="Pest.InvoicesApiTest.php::it guest cannot access invoices" />
+        <item itemvalue="Pest.InvoicesApiTest.php" />
+        <item itemvalue="Pest.RoutesTest.php::it Contact Working" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -395,15 +448,7 @@
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
       <workItem from="1770154622278" duration="7231000" />
-      <workItem from="1770200461925" duration="7500000" />
-    </task>
-    <task id="LOCAL-00011" summary="V7.3:Polish, footer rdy, home rdy, menu mobile need fix">
-      <option name="closed" value="true" />
-      <created>1766868445784</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1766868445784</updated>
+      <workItem from="1770200461925" duration="10722000" />
     </task>
     <task id="LOCAL-00012" summary="V-8.0 Interface finished">
       <option name="closed" value="true" />
@@ -789,7 +834,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770208449457</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="0.9.0 TESTs">
+      <option name="closed" value="true" />
+      <created>1770209046430</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1770209046431</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,8 +877,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.5.13.1 Traducción terminada" />
-    <MESSAGE value="0.5.13.5 1 listener, 1 evento, 1 email" />
     <MESSAGE value="0.5.13.5 1 smtp configurado" />
     <MESSAGE value="0.5.13.5 1 arreglo en el crud de Reservas y el pivote, 2/5 email 2/5 listener 2/5 event" />
     <MESSAGE value="0.6.16.2/5 Crud reservas arreglado" />
@@ -849,7 +900,9 @@
     <MESSAGE value="0.8.13.5 Seeders" />
     <MESSAGE value="0.8.13.8 mails revisados" />
     <MESSAGE value="0.8.13.9 pdfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.13.9 pdfs" />
+    <MESSAGE value="0.9.0 TESTs" />
+    <MESSAGE value="0.9.1 APIs" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.9.1 APIs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -868,6 +921,10 @@
           <url>file://$PROJECT_DIR$/app/Console/Commands/ReservationReminderCommand.php</url>
           <line>4</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php</url>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

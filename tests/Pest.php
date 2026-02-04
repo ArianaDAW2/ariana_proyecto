@@ -26,10 +26,14 @@ pest()->extend(Tests\TestCase::class)
 |
 */
 
-expect()->extend('toBeOne', function () {
-    return $this->toBe(1);
+
+expect()->extend('toBeValidEmail', function () {
+    return $this->toMatch('/^[^\s@]+@[^\s@]+\.[^\s@]+$/');
 });
 
+expect()->extend('toBePositive', function () {
+    return $this->toBeGreaterThan(0);
+});
 /*
 |--------------------------------------------------------------------------
 | Functions

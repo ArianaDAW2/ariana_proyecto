@@ -5,7 +5,6 @@ namespace App\Http\Controllers\APIControllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\InvoiceRequest;
 use App\Models\Invoice;
-use App\Models\Reservation;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class invoicesAPICrud extends Controller
