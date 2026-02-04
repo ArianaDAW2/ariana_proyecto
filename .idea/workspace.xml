@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d405b732-3c6f-4e8f-ba0b-41f3da03de0e" name="Changes" comment="0.9.3.8 test Controladores">
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/PaymentsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/PetsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/ReservationApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/ServicesApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Api/UserApiTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Cruds/MedicalRecordsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Cruds/PetsCrudTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scribe/endpoints.cache/00.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.scribe/endpoints.cache/00.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scribe/endpoints/00.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.scribe/endpoints/00.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/invoicesAPICrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/resservationsAPICrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIControllers/resservationsAPICrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scribe/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scribe/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/scribe/collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/scribe/collection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/scribe/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/private/scribe/openapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/InvoicesApiTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/MedicalRecordsApiTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/MedicalRecordsApiTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/src/PersonalAccessToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/src/PersonalAccessToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Cruds/InvoicesCrudTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Cruds/InvoicesCrudTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pestphp/pest/.temp/test-results" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -272,14 +258,17 @@
     "Pest.InvoicesApiTest.php::it recepcionista can list invoices.executor": "Run",
     "Pest.InvoicesApiTest.php::it user without permission cannot create invoice.executor": "Run",
     "Pest.InvoicesApiTest.php::it user without permission cannot list invoices.executor": "Run",
+    "Pest.InvoicesCrudTest.php.executor": "Run",
     "Pest.Main.executor": "Debug",
     "Pest.MedicalRecordsApiTest.php.executor": "Run",
     "Pest.MedicalRecordsApiTest.php::it can authenticate with custom hashed token.executor": "Run",
     "Pest.MedicalRecordsApiTest.php::it guest cannot access medical records.executor": "Run",
+    "Pest.MedicalRecordsTest.php.executor": "Run",
     "Pest.PaymentsApiTest.php.executor": "Run",
     "Pest.PaymentsApiTest.php::it can authenticate with custom hashed token.executor": "Run",
     "Pest.PetsApiTest.php.executor": "Run",
     "Pest.PetsApiTest.php::it guest cannot access pets.executor": "Run",
+    "Pest.PetsCrudTest.php.executor": "Run",
     "Pest.PublicControllerTest.php.executor": "Run",
     "Pest.PublicControllerTest.php::it guest can access inactive services.executor": "Run",
     "Pest.PublicControllerTest.php::it guest can access services.executor": "Run",
@@ -373,9 +362,13 @@
       <recent name="$PROJECT_DIR$/routes/DELETE" />
     </key>
   </component>
-  <component name="RunManager" selected="Pest.MedicalRecordsApiTest.php::it can authenticate with custom hashed token">
+  <component name="RunManager" selected="Pest.PetsCrudTest.php">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoicesCrudTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Cruds/InvoicesCrudTest.php" scope="File" />
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PestRunConfigurationType">
@@ -386,29 +379,25 @@
       <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/MedicalRecordsApiTest.php" method="it can authenticate with custom hashed token" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ServicesApiTest.php" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/ServicesApiTest.php" scope="File" />
+    <configuration name="MedicalRecordsTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Cruds/MedicalRecordsTest.php" scope="File" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PetsCrudTest.php" type="PestRunConfigurationType" temporary="true">
+      <PestRunner file="$PROJECT_DIR$/tests/Feature/Cruds/PetsCrudTest.php" scope="File" />
       <method v="2" />
     </configuration>
     <configuration name="UserApiTest.php" type="PestRunConfigurationType" temporary="true">
       <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/UserApiTest.php" scope="File" />
       <method v="2" />
     </configuration>
-    <configuration name="UserApiTest.php::it admin can update user" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/UserApiTest.php" method="it admin can update user" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="UserApiTest.php::it cliente cannot update user" type="PestRunConfigurationType" temporary="true">
-      <PestRunner file="$PROJECT_DIR$/tests/Feature/Api/UserApiTest.php" method="it cliente cannot update user" scope="Method" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Pest.PetsCrudTest.php" />
+        <item itemvalue="Pest.MedicalRecordsTest.php" />
+        <item itemvalue="Pest.InvoicesCrudTest.php" />
         <item itemvalue="Pest.MedicalRecordsApiTest.php::it can authenticate with custom hashed token" />
         <item itemvalue="Pest.UserApiTest.php" />
-        <item itemvalue="Pest.UserApiTest.php::it admin can update user" />
-        <item itemvalue="Pest.UserApiTest.php::it cliente cannot update user" />
-        <item itemvalue="Pest.ServicesApiTest.php" />
       </list>
     </recent_temporary>
   </component>
@@ -481,15 +470,7 @@
       <workItem from="1770122993903" duration="6960000" />
       <workItem from="1770132380787" duration="6294000" />
       <workItem from="1770154622278" duration="7231000" />
-      <workItem from="1770200461925" duration="20421000" />
-    </task>
-    <task id="LOCAL-00014" summary="8.2 Livewire + jetstream">
-      <option name="closed" value="true" />
-      <created>1767106803276</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1767106803276</updated>
+      <workItem from="1770200461925" duration="22616000" />
     </task>
     <task id="LOCAL-00015" summary="8.2.1 interfaz cambiada">
       <option name="closed" value="true" />
@@ -875,7 +856,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770216199378</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="0.9.3.8 test Controladores">
+      <option name="closed" value="true" />
+      <created>1770222870232</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1770222870234</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
