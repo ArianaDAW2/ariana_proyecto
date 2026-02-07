@@ -45,14 +45,12 @@ class ReservationsCrud extends Component
     }
 
     //Sincronización de mascotas
-    public function updatedPets($user_id)
+    public function updatedUserId()
     {
         $this->pet_id = null;
-        if ($user_id) {
-            $this->availablePets = Pet::where('user_id', $user_id)->get();
-        } else {
-            $this->availablePets = [];
-        }
+        $this->availablePets = Pet::where('user_id', $this->user_id)->get();
+
+
     }
 
     public function render()
@@ -67,7 +65,6 @@ class ReservationsCrud extends Component
             'files' => Storage::files('contracts'),
             'reservations' => $reservations,
             'users' => User::all(),
-            'pets' => Pet::all(),
             'services' => Service::active()->get(),
         ]);
     }
@@ -96,7 +93,7 @@ class ReservationsCrud extends Component
 
         $this->reservationId = $reservation->id;
         $this->user_id = $reservation->user_id;
-        $this->availablePets = Pet::where('user_id', $reservation->user_id)->get();
+        $this->availablePets = [];
         $this->pet_id = $reservation->pet_id;
         $this->start_date = $reservation->start_date->format('Y-m-d');
         $this->end_date = $reservation->end_date->format('Y-m-d');
