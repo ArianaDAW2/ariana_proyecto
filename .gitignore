@@ -34,3 +34,4 @@ Thumbs.db
 .phpunit.cache/
 --cache-directory/*
 .scribe/
+/bootstrap/cache/.gitignore
