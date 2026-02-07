@@ -21,7 +21,6 @@ class morososWarnJob implements ShouldQueue
 
     public function handle(): void
     {
-        sleep(10);
         Mail::to($this->invoice->reservation->user->email)
             ->send(new morososWarnMail($this->invoice));
     }
