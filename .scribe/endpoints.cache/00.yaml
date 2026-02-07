@@ -32,11 +32,8 @@ endpoints:
     responses:
       -
         custom: []
-        status: 403
-        content: |-
-          {
-              "message": "This action is unauthorized."
-          }
+        status: 200
+        content: '{"invoices":{"current_page":1,"data":[{"id":5,"reservation_id":5,"invoice_number":"FAC-00005","total":130,"status":"paid","issued_at":"2026-01-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":6,"reservation_id":6,"invoice_number":"FAC-00006","total":30,"status":"unpaid","issued_at":"2026-01-29 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":7,"reservation_id":7,"invoice_number":"FAC-00007","total":45,"status":"paid","issued_at":"2026-02-10 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":8,"reservation_id":8,"invoice_number":"FAC-00008","total":35,"status":"unpaid","issued_at":"2025-10-13 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":9,"reservation_id":9,"invoice_number":"FAC-00009","total":160,"status":"paid","issued_at":"2026-02-07 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":10,"reservation_id":10,"invoice_number":"FAC-00010","total":75,"status":"unpaid","issued_at":"2026-01-14 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":11,"reservation_id":11,"invoice_number":"FAC-00011","total":40,"status":"paid","issued_at":"2025-12-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":12,"reservation_id":12,"invoice_number":"FAC-00012","total":35,"status":"unpaid","issued_at":"2026-02-10 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":13,"reservation_id":13,"invoice_number":"FAC-00013","total":85,"status":"paid","issued_at":"2026-02-08 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":14,"reservation_id":14,"invoice_number":"FAC-00014","total":75,"status":"unpaid","issued_at":"2026-03-05 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/invoices","per_page":10,"prev_page_url":null,"to":10,"total":10}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -112,7 +109,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: paid
+        example: unpaid
         type: string
         enumValues:
           - paid
@@ -125,7 +122,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: true
-        example: '2026-02-04T16:06:52'
+        example: '2026-02-07T17:34:16'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -135,8 +132,8 @@ endpoints:
       reservation_id: architecto
       invoice_number: architecto
       total: 39
-      status: paid
-      issued_at: '2026-02-04T16:06:52'
+      status: unpaid
+      issued_at: '2026-02-07T17:34:16'
     fileParameters: []
     responses: []
     responseFields: []
@@ -188,11 +185,8 @@ endpoints:
     responses:
       -
         custom: []
-        status: 403
-        content: |-
-          {
-              "message": "This action is unauthorized."
-          }
+        status: 200
+        content: '{"id":5,"reservation_id":5,"invoice_number":"FAC-00005","total":130,"status":"paid","issued_at":"2026-01-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -294,7 +288,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: true
-        example: '2026-02-04T16:06:52'
+        example: '2026-02-07T17:34:16'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -305,7 +299,7 @@ endpoints:
       invoice_number: architecto
       total: 39
       status: paid
-      issued_at: '2026-02-04T16:06:52'
+      issued_at: '2026-02-07T17:34:16'
     fileParameters: []
     responses: []
     responseFields: []
@@ -808,7 +802,7 @@ endpoints:
         name: start_date
         description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
         required: true
-        example: '2022-02-28'
+        example: '2022-03-03'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -819,7 +813,7 @@ endpoints:
         name: end_date
         description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
         required: true
-        example: '2052-02-28'
+        example: '2052-03-02'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -830,7 +824,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: completed
+        example: confirmed
         type: string
         enumValues:
           - pending
@@ -854,9 +848,9 @@ endpoints:
     cleanBodyParameters:
       user_id: architecto
       pet_id: architecto
-      start_date: '2022-02-28'
-      end_date: '2052-02-28'
-      status: completed
+      start_date: '2022-03-03'
+      end_date: '2052-03-02'
+      status: confirmed
       total_price: 39
     fileParameters: []
     responses: []
@@ -988,7 +982,7 @@ endpoints:
         name: start_date
         description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
         required: true
-        example: '2022-02-28'
+        example: '2022-03-03'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -999,7 +993,7 @@ endpoints:
         name: end_date
         description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
         required: true
-        example: '2052-02-28'
+        example: '2052-03-02'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1010,7 +1004,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: pending
+        example: cancelled
         type: string
         enumValues:
           - pending
@@ -1034,9 +1028,9 @@ endpoints:
     cleanBodyParameters:
       user_id: architecto
       pet_id: architecto
-      start_date: '2022-02-28'
-      end_date: '2052-02-28'
-      status: pending
+      start_date: '2022-03-03'
+      end_date: '2052-03-02'
+      status: cancelled
       total_price: 39
     fileParameters: []
     responses: []
@@ -1201,7 +1195,7 @@ endpoints:
         name: is_active
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1211,7 +1205,7 @@ endpoints:
       name: b
       description: 'Eius et animi quos velit et.'
       base_price: 60
-      is_active: false
+      is_active: true
     fileParameters: []
     responses: []
     responseFields: []
@@ -1353,7 +1347,7 @@ endpoints:
         name: is_active
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1363,7 +1357,7 @@ endpoints:
       name: b
       description: 'Eius et animi quos velit et.'
       base_price: 60
-      is_active: true
+      is_active: false
     fileParameters: []
     responses: []
     responseFields: []

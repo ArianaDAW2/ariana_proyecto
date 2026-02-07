@@ -175,7 +175,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 4, 2026</li>
+        <li>Last updated: February 7, 2026</li>
     </ul>
 </div>
 
@@ -240,7 +240,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-invoices">
             <blockquote>
-            <p>Example response (403):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -252,7 +252,151 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;This action is unauthorized.&quot;
+    &quot;invoices&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 5,
+                &quot;reservation_id&quot;: 5,
+                &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
+                &quot;total&quot;: 130,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-22 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;reservation_id&quot;: 6,
+                &quot;invoice_number&quot;: &quot;FAC-00006&quot;,
+                &quot;total&quot;: 30,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-29 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;reservation_id&quot;: 7,
+                &quot;invoice_number&quot;: &quot;FAC-00007&quot;,
+                &quot;total&quot;: 45,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-10 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;reservation_id&quot;: 8,
+                &quot;invoice_number&quot;: &quot;FAC-00008&quot;,
+                &quot;total&quot;: 35,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2025-10-13 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;reservation_id&quot;: 9,
+                &quot;invoice_number&quot;: &quot;FAC-00009&quot;,
+                &quot;total&quot;: 160,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-07 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;reservation_id&quot;: 10,
+                &quot;invoice_number&quot;: &quot;FAC-00010&quot;,
+                &quot;total&quot;: 75,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-14 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;reservation_id&quot;: 11,
+                &quot;invoice_number&quot;: &quot;FAC-00011&quot;,
+                &quot;total&quot;: 40,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-12-22 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 12,
+                &quot;reservation_id&quot;: 12,
+                &quot;invoice_number&quot;: &quot;FAC-00012&quot;,
+                &quot;total&quot;: 35,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-10 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;reservation_id&quot;: 13,
+                &quot;invoice_number&quot;: &quot;FAC-00013&quot;,
+                &quot;total&quot;: 85,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-08 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 14,
+                &quot;reservation_id&quot;: 14,
+                &quot;invoice_number&quot;: &quot;FAC-00014&quot;,
+                &quot;total&quot;: 75,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-03-05 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            }
+        ],
+        &quot;first_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 1,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;page&quot;: null,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;page&quot;: 1,
+                &quot;active&quot;: true
+            },
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;page&quot;: null,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;next_page_url&quot;: null,
+        &quot;path&quot;: &quot;http://localhost:8000/api/invoices&quot;,
+        &quot;per_page&quot;: 10,
+        &quot;prev_page_url&quot;: null,
+        &quot;to&quot;: 10,
+        &quot;total&quot;: 10
+    }
 }</code>
  </pre>
     </span>
@@ -363,8 +507,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"paid\",
-    \"issued_at\": \"2026-02-04T16:06:52\"
+    \"status\": \"unpaid\",
+    \"issued_at\": \"2026-02-07T17:34:16\"
 }"
 </code></pre></div>
 
@@ -384,8 +528,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "paid",
-    "issued_at": "2026-02-04T16:06:52"
+    "status": "unpaid",
+    "issued_at": "2026-02-07T17:34:16"
 };
 
 fetch(url, {
@@ -525,10 +669,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-invoices"
-               value="paid"
+               value="unpaid"
                data-component="body">
     <br>
-<p>Example: <code>paid</code></p>
+<p>Example: <code>unpaid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
@@ -539,10 +683,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="POSTapi-invoices"
-               value="2026-02-04T16:06:52"
+               value="2026-02-07T17:34:16"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-04T16:06:52</code></p>
+<p>Must be a valid date. Example: <code>2026-02-07T17:34:16</code></p>
         </div>
         </form>
 
@@ -586,7 +730,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-invoices--id-">
             <blockquote>
-            <p>Example response (403):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -598,7 +742,15 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;This action is unauthorized.&quot;
+    &quot;id&quot;: 5,
+    &quot;reservation_id&quot;: 5,
+    &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
+    &quot;total&quot;: 130,
+    &quot;status&quot;: &quot;paid&quot;,
+    &quot;issued_at&quot;: &quot;2026-01-22 00:00:00&quot;,
+    &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+    &quot;deleted_at&quot;: null
 }</code>
  </pre>
     </span>
@@ -723,7 +875,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"invoice_number\": \"architecto\",
     \"total\": 39,
     \"status\": \"paid\",
-    \"issued_at\": \"2026-02-04T16:06:52\"
+    \"issued_at\": \"2026-02-07T17:34:16\"
 }"
 </code></pre></div>
 
@@ -744,7 +896,7 @@ let body = {
     "invoice_number": "architecto",
     "total": 39,
     "status": "paid",
-    "issued_at": "2026-02-04T16:06:52"
+    "issued_at": "2026-02-07T17:34:16"
 };
 
 fetch(url, {
@@ -915,10 +1067,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="PUTapi-invoices--id-"
-               value="2026-02-04T16:06:52"
+               value="2026-02-07T17:34:16"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-04T16:06:52</code></p>
+<p>Must be a valid date. Example: <code>2026-02-07T17:34:16</code></p>
         </div>
         </form>
 
@@ -2396,9 +2548,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-28\",
-    \"end_date\": \"2052-02-28\",
-    \"status\": \"completed\",
+    \"start_date\": \"2022-03-03\",
+    \"end_date\": \"2052-03-02\",
+    \"status\": \"confirmed\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2418,9 +2570,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-28",
-    "end_date": "2052-02-28",
-    "status": "completed",
+    "start_date": "2022-03-03",
+    "end_date": "2052-03-02",
+    "status": "confirmed",
     "total_price": 39
 };
 
@@ -2549,10 +2701,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-reservations"
-               value="2022-02-28"
+               value="2022-03-03"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-28</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -2561,10 +2713,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-reservations"
-               value="2052-02-28"
+               value="2052-03-02"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-28</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-02</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2573,10 +2725,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-reservations"
-               value="completed"
+               value="confirmed"
                data-component="body">
     <br>
-<p>Example: <code>completed</code></p>
+<p>Example: <code>confirmed</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -2778,9 +2930,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-02-28\",
-    \"end_date\": \"2052-02-28\",
-    \"status\": \"pending\",
+    \"start_date\": \"2022-03-03\",
+    \"end_date\": \"2052-03-02\",
+    \"status\": \"cancelled\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2800,9 +2952,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-02-28",
-    "end_date": "2052-02-28",
-    "status": "pending",
+    "start_date": "2022-03-03",
+    "end_date": "2052-03-02",
+    "status": "cancelled",
     "total_price": 39
 };
 
@@ -2948,10 +3100,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2022-02-28"
+               value="2022-03-03"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-02-28</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -2960,10 +3112,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2052-02-28"
+               value="2052-03-02"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-02-28</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-02</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2972,10 +3124,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-reservations--id-"
-               value="pending"
+               value="cancelled"
                data-component="body">
     <br>
-<p>Example: <code>pending</code></p>
+<p>Example: <code>cancelled</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -3424,7 +3576,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": false
+    \"is_active\": true
 }"
 </code></pre></div>
 
@@ -3444,7 +3596,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": false
+    "is_active": true
 };
 
 fetch(url, {
@@ -3597,7 +3749,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -3783,7 +3935,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": true
+    \"is_active\": false
 }"
 </code></pre></div>
 
@@ -3803,7 +3955,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": true
+    "is_active": false
 };
 
 fetch(url, {
@@ -3973,7 +4125,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
