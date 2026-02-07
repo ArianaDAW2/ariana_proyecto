@@ -26,8 +26,10 @@ class ReservationsCrud extends Component
     public $end_date;
     public $status = 'pending';
     public $total_price = 0;
+    //
     public $selectedServices = [];
-
+    public $availablePets = [];
+    //
     public $isEdit = false;
 
     protected function rules()
@@ -40,6 +42,17 @@ class ReservationsCrud extends Component
     {
         $this->total_price = Service::whereIn('id', $this->selectedServices)
             ->sum('base_price');
+    }
+
+    //Sincronización de mascotas
+    public function updatedPets($user_id)
+    {
+        $this->pet_id = null;
+        if ($user_id) {
+            $this->availablePets = Pet::where('user_id', $user_id)->get();
+        } else {
+            $this->availablePets = [];
+        }
     }
 
     public function render()
@@ -83,6 +96,7 @@ class ReservationsCrud extends Component
 
         $this->reservationId = $reservation->id;
         $this->user_id = $reservation->user_id;
+        $this->availablePets = Pet::where('user_id', $reservation->user_id)->get();
         $this->pet_id = $reservation->pet_id;
         $this->start_date = $reservation->start_date->format('Y-m-d');
         $this->end_date = $reservation->end_date->format('Y-m-d');

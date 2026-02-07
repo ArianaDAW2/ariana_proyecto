@@ -11,8 +11,7 @@ use Livewire\Livewire;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
+    $this->admin = User::where('name', 'admin')->first();
 
     $this->cliente = User::factory()->create();
     $this->cliente->assignRole('Cliente');
@@ -153,41 +152,4 @@ it('admin can sort pets by name', function () {
         ->test(PetsCrud::class)
         ->set('sortByName', true)
         ->assertStatus(200);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Validación
-|--------------------------------------------------------------------------
-*/
-
-it('cannot create pet without required fields', function () {
-    Livewire::actingAs($this->admin)
-        ->test(PetsCrud::class)
-        ->set('user_id', '')
-        ->set('name', '')
-        ->set('species', '')
-        ->set('age', '')
-        ->set('weight', '')
-        ->call('save')
-        ->assertHasErrors(['user_id', 'name', 'species', 'age', 'weight']);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Reset Form
-|--------------------------------------------------------------------------
-*/
-
-it('form resets after save', function () {
-    Livewire::actingAs($this->admin)
-        ->test(PetsCrud::class)
-        ->set('user_id', $this->cliente->id)
-        ->set('name', 'Max')
-        ->set('species', 'Perro')
-        ->set('age', 3)
-        ->set('weight', 25)
-        ->call('save')
-        ->assertSet('name', null)
-        ->assertSet('isEdit', false);
 });

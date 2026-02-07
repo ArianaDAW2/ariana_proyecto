@@ -2,7 +2,7 @@
     {{-- FORMULARIO --}}
     @can('create', App\Models\Reservation::class)
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
-            <select wire:model="user_id">
+            <select wire:model.live="user_id">
                 <option value="">-----------</option>
                 @foreach($users as $user)
                     <option value="{{ $user->id }}">{{ $user->name }}</option>
@@ -12,7 +12,7 @@
 
             <select wire:model="pet_id">
                 <option value="">{{ __('private.pet') }}</option>
-                @foreach($pets as $pet)
+                @foreach($availablePets as $pet)
                     <option value="{{ $pet->id }}">{{ $pet->name }}</option>
                 @endforeach
             </select>
