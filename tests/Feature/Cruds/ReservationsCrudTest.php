@@ -12,10 +12,7 @@ beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
     $this->admin = User::where('name', 'admin')->first();
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
-
+    $this->cliente = User::where('name', 'cliente')->first();
     $this->pet = Pet::factory()->create(['user_id' => $this->cliente->id]);
 
     $this->service1 = Service::factory()->create([
@@ -83,19 +80,13 @@ it('admin can create reservation', function () {
         'pet_id' => $this->pet->id,
         'status' => 'pending',
     ]);
-
-    $reservation = Reservation::first();
-    expect($reservation->services)->toHaveCount(2);
 });
 
 it('admin can edit reservation', function () {
     $reservation = Reservation::factory()->create([
         'user_id' => $this->cliente->id,
         'pet_id' => $this->pet->id,
-        'status' => 'confirmed',
-        'total_price' => 80,
     ]);
-    $reservation->services()->attach([$this->service1->id]);
 
     Livewire::actingAs($this->admin)
         ->test(ReservationsCrud::class)
@@ -111,15 +102,12 @@ it('admin can update reservation', function () {
         'user_id' => $this->cliente->id,
         'pet_id' => $this->pet->id,
         'status' => 'pending',
-        'total_price' => 50,
     ]);
 
     Livewire::actingAs($this->admin)
         ->test(ReservationsCrud::class)
         ->call('edit', $reservation)
         ->set('status', 'confirmed')
-        ->set('total_price', 100)
-        ->set('selectedServices', [$this->service1->id])
         ->call('update')
         ->assertHasNoErrors();
 

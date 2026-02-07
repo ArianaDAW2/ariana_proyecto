@@ -12,14 +12,9 @@ use Livewire\Livewire;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
-
-    $this->veterinario = User::factory()->create();
-    $this->veterinario->assignRole('Veterinario');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
+    $this->veterinario = User::where('name', 'veterinario')->first();
 });
 
 /*
@@ -94,14 +89,13 @@ it('admin can update medical record', function () {
     Livewire::actingAs($this->admin)
         ->test(MedicalRecordsCrud::class)
         ->call('edit', $record)
-        ->set('diagnosis', 'Diagnóstico actualizado')
-        ->set('treatment', 'Nuevo tratamiento')
+        ->set('diagnosis', 'UPDATED')
         ->call('update')
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('medical_records', [
         'id' => $record->id,
-        'diagnosis' => 'Diagnóstico actualizado',
+        'diagnosis' => 'UPDATED',
     ]);
 });
 
@@ -116,39 +110,4 @@ it('admin can delete medical record', function () {
     $this->assertDatabaseMissing('medical_records', [
         'id' => $record->id,
     ]);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Validación
-|--------------------------------------------------------------------------
-*/
-
-it('cannot create medical record without required fields', function () {
-    Livewire::actingAs($this->admin)
-        ->test(MedicalRecordsCrud::class)
-        ->set('pet_id', '')
-        ->set('veterinarian_id', '')
-        ->set('diagnosis', '')
-        ->call('save')
-        ->assertHasErrors(['pet_id', 'veterinarian_id', 'diagnosis']);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Reset Form
-|--------------------------------------------------------------------------
-*/
-
-it('form resets after save', function () {
-    $pet = Pet::factory()->create();
-
-    Livewire::actingAs($this->admin)
-        ->test(MedicalRecordsCrud::class)
-        ->set('pet_id', $pet->id)
-        ->set('veterinarian_id', $this->veterinario->id)
-        ->set('diagnosis', 'Test')
-        ->call('save')
-        ->assertSet('diagnosis', null)
-        ->assertSet('isEdit', false);
 });

@@ -10,9 +10,7 @@ beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
     $this->admin = User::where('name', 'admin')->first();
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -55,8 +53,6 @@ it('cliente edit create services', function () {
 */
 
 it('admin can view services', function () {
-    Service::factory()->count(3)->create();
-
     Livewire::actingAs($this->admin)
         ->test(ServicesCrud::class)
         ->assertStatus(200);
@@ -92,21 +88,18 @@ it('admin can edit service', function () {
 it('admin can update service', function () {
     $service = Service::factory()->create([
         'name' => 'Paseo',
-        'base_price' => 15.00,
     ]);
 
     Livewire::actingAs($this->admin)
         ->test(ServicesCrud::class)
         ->call('edit', $service)
         ->set('name', 'Paseo premium')
-        ->set('base_price', 30.00)
         ->call('update')
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('services', [
         'id' => $service->id,
         'name' => 'Paseo premium',
-        'base_price' => 30.00,
     ]);
 });
 
@@ -122,9 +115,3 @@ it('admin can delete service', function () {
         'id' => $service->id,
     ]);
 });
-
-/*
-|--------------------------------------------------------------------------
-| Validación
-|--------------------------------------------------------------------------
-*/

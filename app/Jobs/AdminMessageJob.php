@@ -32,8 +32,6 @@ class AdminMessageJob implements ShouldQueue
 
     public function handle(): void
     {
-        sleep(10);
-
         Mail::to($this->user->email)->send(
             new AdminMessageMail(
                 $this->title,

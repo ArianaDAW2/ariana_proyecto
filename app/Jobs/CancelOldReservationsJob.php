@@ -22,7 +22,6 @@ class CancelOldReservationsJob implements ShouldQueue
 
     public function handle(): void
     {
-        sleep(10);
         Mail::to($this->reservation->user->email)->send(
             new CancelOldReservationsMail($this->reservation)
         );

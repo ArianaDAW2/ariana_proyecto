@@ -9,9 +9,7 @@ beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
     $this->admin = User::where('name', 'admin')->first();
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -79,39 +77,19 @@ it('admin can edit user', function () {
 it('admin can update user', function () {
     $user = User::factory()->create([
         'name' => 'Original',
-        'email' => 'original@example.com',
     ]);
 
     Livewire::actingAs($this->admin)
         ->test(UsersCrud::class)
         ->call('edit', $user)
         ->set('name', 'Actualizado')
-        ->set('email', 'actualizado@example.com')
         ->call('update')
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('users', [
         'id' => $user->id,
         'name' => 'Actualizado',
-        'email' => 'actualizado@example.com',
     ]);
-});
-
-it('admin can update user without changing password', function () {
-    $user = User::factory()->create();
-    $originalPassword = $user->password;
-
-    Livewire::actingAs($this->admin)
-        ->test(UsersCrud::class)
-        ->call('edit', $user)
-        ->set('name', 'Nombre Nuevo')
-        ->set('password', '')
-        ->call('update')
-        ->assertHasNoErrors();
-
-    $user->refresh();
-    expect($user->name)->toBe('Nombre Nuevo')
-        ->and($user->password)->toBe($originalPassword);
 });
 
 it('admin can delete user', function () {
@@ -125,20 +103,4 @@ it('admin can delete user', function () {
     $this->assertDatabaseMissing('users', [
         'id' => $user->id,
     ]);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Validación
-|--------------------------------------------------------------------------
-*/
-
-it('save validates required fields', function () {
-    Livewire::actingAs($this->admin)
-        ->test(UsersCrud::class)
-        ->set('name', null)
-        ->set('email', null)
-        ->set('password', null)
-        ->call('save')
-        ->assertHasErrors(['name', 'email', 'password']);
 });

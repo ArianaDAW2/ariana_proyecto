@@ -12,9 +12,7 @@ beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
     $this->admin = User::where('name', 'admin')->first();
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -90,17 +88,13 @@ it('admin can update pet', function () {
     Livewire::actingAs($this->admin)
         ->test(PetsCrud::class)
         ->call('edit', $pet)
-        ->set('name', 'Rocky')
-        ->set('species', 'Gato')
-        ->set('breed', 'Siamés')
-        ->set('age', 5)
-        ->set('weight', 4.5)
+        ->set('name', 'UPDATED')
         ->call('update')
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('pets', [
         'id' => $pet->id,
-        'name' => 'Rocky',
+        'name' => 'UPDATED',
     ]);
 });
 
@@ -130,6 +124,9 @@ it('admin can filter pets by species', function () {
     Livewire::actingAs($this->admin)
         ->test(PetsCrud::class)
         ->set('filterSpecies', 'Perro')
+        ->assertViewHas('pets', function ($pets) {
+            return $pets->count() == 1 && $pets->first()->species == 'Perro';
+        })
         ->assertStatus(200);
 });
 
@@ -141,6 +138,9 @@ it('admin can filter pets by weight range', function () {
         ->test(PetsCrud::class)
         ->set('minWeight', 5)
         ->set('maxWeight', 20)
+        ->assertViewHas('pets', function ($pets) {
+            return $pets->count() == 1 && $pets->first()->weight == '10';
+        })
         ->assertStatus(200);
 });
 
@@ -151,5 +151,8 @@ it('admin can sort pets by name', function () {
     Livewire::actingAs($this->admin)
         ->test(PetsCrud::class)
         ->set('sortByName', true)
+        ->assertViewHas('pets', function ($pets) {
+            return $pets->first()->name == 'Alfa';
+        })
         ->assertStatus(200);
 });

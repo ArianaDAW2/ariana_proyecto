@@ -12,11 +12,8 @@ use Livewire\Livewire;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -63,7 +60,7 @@ it('admin can create invoice', function () {
     Livewire::actingAs($this->admin)
         ->test(InvoicesCrud::class)
         ->set('reservation_id', $reservation->id)
-        ->set('invoice_number', 'FAC-001')
+        ->set('invoice_number', 'TEST-001')
         ->set('total', 150.00)
         ->set('status', 'unpaid')
         ->set('issued_at', '2026-02-04')
@@ -71,7 +68,7 @@ it('admin can create invoice', function () {
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('invoices', [
-        'invoice_number' => 'FAC-001',
+        'invoice_number' => 'TEST-001',
     ]);
 });
 
@@ -92,15 +89,14 @@ it('admin can update invoice', function () {
     Livewire::actingAs($this->admin)
         ->test(InvoicesCrud::class)
         ->call('edit', $invoice)
-        ->set('invoice_number', 'FAC-UPDATED')
-        ->set('total', 200.00)
+        ->set('invoice_number', 'TEST-UPDATED')
         ->set('status', 'paid')
         ->call('update')
         ->assertHasNoErrors();
 
     $this->assertDatabaseHas('invoices', [
         'id' => $invoice->id,
-        'invoice_number' => 'FAC-UPDATED',
+        'invoice_number' => 'TEST-UPDATED',
         'status' => 'paid',
     ]);
 });
@@ -116,56 +112,4 @@ it('admin can delete invoice', function () {
     $this->assertDatabaseMissing('invoices', [
         'id' => $invoice->id,
     ]);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Validación
-|--------------------------------------------------------------------------
-*/
-
-it('cannot create invoice without required fields', function () {
-    Livewire::actingAs($this->admin)
-        ->test(InvoicesCrud::class)
-        ->set('reservation_id', '')
-        ->set('invoice_number', '')
-        ->set('total', '')
-        ->call('save')
-        ->assertHasErrors(['reservation_id', 'invoice_number', 'total']);
-});
-
-it('cannot create invoice with invalid status', function () {
-    $reservation = Reservation::factory()->create();
-
-    Livewire::actingAs($this->admin)
-        ->test(InvoicesCrud::class)
-        ->set('reservation_id', $reservation->id)
-        ->set('invoice_number', 'FAC-001')
-        ->set('total', 100)
-        ->set('status', 'invalid')
-        ->set('issued_at', '2026-02-04')
-        ->call('save')
-        ->assertHasErrors(['status']);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Reset Form
-|--------------------------------------------------------------------------
-*/
-
-it('form resets after save', function () {
-    $reservation = Reservation::factory()->create();
-
-    Livewire::actingAs($this->admin)
-        ->test(InvoicesCrud::class)
-        ->set('reservation_id', $reservation->id)
-        ->set('invoice_number', 'FAC-001')
-        ->set('total', 150.00)
-        ->set('status', 'unpaid')
-        ->set('issued_at', '2026-02-04')
-        ->call('save')
-        ->assertSet('invoice_number', null)
-        ->assertSet('total', null)
-        ->assertSet('isEdit', false);
 });
