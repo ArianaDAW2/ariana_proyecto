@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\Invoice::class)
+    @can('manage_payments')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model="reservation_id">
                 <option value="">{{ __('private.reservation') }}</option>
@@ -59,13 +59,13 @@
                 <td>{{ $invoice->status }}</td>
                 <td>{{ $invoice->issued_at }}</td>
                 <td>
-                    @can('update', $invoice)
+                    @can('manage_payments')
                         <button wire:click="edit({{ $invoice->id }})">
                             {{ __('private.edit') }}
                         </button>
                     @endcan
 
-                    @can('delete', $invoice)
+                    @can('manage_payments')
                         <button wire:click="delete({{ $invoice->id }})">
                             {{ __('private.delete') }}
                         </button>

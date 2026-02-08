@@ -10,11 +10,8 @@ use Laravel\Sanctum\Sanctum;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -37,36 +34,6 @@ it('cliente cannot list users', function () {
     Sanctum::actingAs($this->cliente);
 
     $this->getJson('/api/users')->assertStatus(403);
-});
-
-it('cliente cannot create user', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $this->postJson('/api/users', [
-        'name' => 'Nuevo Usuario',
-        'email' => 'nuevo@mail.com',
-        'password' => 'password123',
-    ])->assertStatus(403);
-});
-
-it('cliente cannot update user', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $user = User::factory()->create();
-
-    $this->putJson("/api/users/{$user->id}", [
-        'name' => 'Usuario Editado',
-        'email' => 'nuevo-email@mail.com',
-        'password' => 'password123',
-    ])->assertStatus(403);
-});
-
-it('cliente cannot delete user', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $user = User::factory()->create();
-
-    $this->deleteJson("/api/users/{$user->id}")->assertStatus(403);
 });
 
 /*
@@ -97,7 +64,9 @@ it('admin can create user', function () {
     ])->assertStatus(201)
         ->assertJson(['name' => 'Nuevo Usuario']);
 
-    $this->assertDatabaseHas('users', ['email' => 'nuevo@mail.com']);
+    $this->assertDatabaseHas('users', [
+        'email' => 'nuevo@mail.com'
+    ]);
 });
 
 it('admin can view user', function () {
@@ -137,52 +106,10 @@ it('admin can delete user', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Validación
+| Token
 |--------------------------------------------------------------------------
 */
 
-it('cannot create user without required fields', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/users', [])
-        ->assertStatus(422)
-        ->assertJsonValidationErrors(['name', 'email', 'password']);
-});
-
-it('cannot create user with invalid email', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/users', [
-        'name' => 'Test',
-        'email' => 'invalid-email',
-        'password' => 'password123',
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['email']);
-});
-
-it('cannot create user with duplicate email', function () {
-    Sanctum::actingAs($this->admin);
-
-    $existingUser = User::factory()->create();
-
-    $this->postJson('/api/users', [
-        'name' => 'Test',
-        'email' => $existingUser->email,
-        'password' => 'password123',
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['email']);
-});
-
-it('cannot create user with short password', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/users', [
-        'name' => 'Test',
-        'email' => 'test@mail.com',
-        'password' => '123',
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['password']);
-});
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');

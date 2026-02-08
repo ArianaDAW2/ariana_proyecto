@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\Pet::class)
+    @can('manage_users')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model="user_id">
                 <option value="">{{ __('private.owner') }}</option>
@@ -57,11 +57,11 @@
                 <td>{{ $pet->age }}</td>
                 <td>{{ $pet->weight }}</td>
                 <td>
-                    @can('update', $pet)
+                    @can('manage_users')
                         <button wire:click="edit({{ $pet->id }})">{{ __('private.edit') }}</button>
                     @endcan
 
-                    @can('delete', $pet)
+                    @can('manage_users')
                         <button wire:click="delete({{ $pet->id }})">{{ __('private.delete') }}</button>
                     @endcan
                 </td>

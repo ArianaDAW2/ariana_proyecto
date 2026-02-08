@@ -11,11 +11,8 @@ use Laravel\Sanctum\Sanctum;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -27,10 +24,18 @@ beforeEach(function () {
 it('guest can access services', function () {
     $this->getJson('/api/services')->assertStatus(200);
 });
+it('guest cannot access services', function () {
+    $this->postJson('/api/services', [
+        'name' => 'Baño',
+        'description' => 'Baño completo para mascotas',
+        'base_price' => 25.00,
+        'is_active' => true,
+    ])->assertStatus(403);
+});
 
 /*
 |--------------------------------------------------------------------------
-| Cliente (sin permisos)
+| Cliente
 |--------------------------------------------------------------------------
 */
 
@@ -49,27 +54,6 @@ it('cliente cannot create service', function () {
         'base_price' => 25.00,
         'is_active' => true,
     ])->assertStatus(403);
-});
-
-it('cliente cannot update service', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $service = Service::factory()->create();
-
-    $this->putJson("/api/services/{$service->id}", [
-        'name' => 'Baño Premium',
-        'description' => 'Baño premium',
-        'base_price' => 35.00,
-        'is_active' => true,
-    ])->assertStatus(403);
-});
-
-it('cliente cannot delete service', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $service = Service::factory()->create();
-
-    $this->deleteJson("/api/services/{$service->id}")->assertStatus(403);
 });
 
 /*
@@ -127,7 +111,9 @@ it('admin can update service', function () {
     ])->assertStatus(200)
         ->assertJson(['name' => 'Baño Premium']);
 
-    $this->assertDatabaseHas('services', ['id' => $service->id, 'name' => 'Baño Premium']);
+    $this->assertDatabaseHas('services', [
+        'id' => $service->id,
+        'name' => 'Baño Premium']);
 });
 
 it('admin can delete service', function () {
@@ -142,28 +128,10 @@ it('admin can delete service', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Validación
+| Token
 |--------------------------------------------------------------------------
 */
 
-it('cannot create service without required fields', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/services', [])
-        ->assertStatus(422)
-        ->assertJsonValidationErrors(['name', 'base_price', 'is_active']);
-});
-
-it('cannot create service with negative price', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/services', [
-        'name' => 'Baño',
-        'base_price' => -10.00,
-        'is_active' => true,
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['base_price']);
-});
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');

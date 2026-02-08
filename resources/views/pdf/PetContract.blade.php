@@ -32,7 +32,6 @@
         /* Header */
         .header {
             background: linear-gradient(135deg, #166534 0%, #22c55e 100%);
-            color: white;
             padding: 30px;
             text-align: center;
             position: relative;
@@ -71,7 +70,6 @@
 
         .bloque-header {
             background: linear-gradient(90deg, #166534, #15803d);
-            color: white;
             padding: 12px 20px;
             font-size: 16px;
             font-weight: 600;
@@ -79,7 +77,7 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .bloque-content {
             padding: 20px;
             background-color: #f0fdf4;
@@ -93,7 +91,6 @@
         }
 
         .dato-item {
-            background-color: white;
             padding: 12px 15px;
             border-radius: 8px;
             border-left: 4px solid #22c55e;
@@ -129,7 +126,6 @@
 
         th {
             background-color: #166534;
-            color: white;
             padding: 12px 15px;
             text-align: left;
             font-weight: 600;
@@ -174,11 +170,9 @@
 
         .termino-numero {
             background-color: #22c55e;
-            color: white;
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            display: flex;
             align-items: center;
             justify-content: center;
             font-size: 12px;
@@ -219,7 +213,6 @@
         /* Footer */
         .footer {
             background-color: #166534;
-            color: white;
             text-align: center;
             padding: 15px;
             font-size: 11px;
@@ -234,7 +227,6 @@
         /* Total destacado */
         .total-box {
             background: linear-gradient(135deg, #166534, #22c55e);
-            color: white;
             padding: 15px 20px;
             border-radius: 8px;
             display: flex;
@@ -336,7 +328,7 @@
                     @foreach($reservation->services as $service)
                         <tr>
                             <td>{{ $service->name }}</td>
-                            <td class="precio" style="text-align: right;">{{ number_format($service->price, 2) }} €
+                            <td class="precio" style="text-align: right;">{{ number_format($service->base_price, 2) }} €
                             </td>
                         </tr>
                     @endforeach

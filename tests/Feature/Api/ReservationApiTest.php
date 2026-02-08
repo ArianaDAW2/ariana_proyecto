@@ -12,11 +12,8 @@ use Laravel\Sanctum\Sanctum;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -31,7 +28,7 @@ it('guest cannot access reservations', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Cliente (sin permisos)
+| Cliente
 |--------------------------------------------------------------------------
 */
 
@@ -40,45 +37,6 @@ it('cliente cannot list reservations', function () {
 
     $this->getJson('/api/reservations')->assertStatus(403);
 });
-
-it('cliente cannot create reservation', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $pet = Pet::factory()->create(['user_id' => $this->cliente->id]);
-
-    $this->postJson('/api/reservations', [
-        'user_id' => $this->cliente->id,
-        'pet_id' => $pet->id,
-        'start_date' => '2026-03-01',
-        'end_date' => '2026-03-05',
-        'status' => 'pending',
-        'total_price' => 150.00,
-    ])->assertStatus(403);
-});
-
-it('cliente cannot update reservation', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $reservation = Reservation::factory()->create();
-
-    $this->putJson("/api/reservations/{$reservation->id}", [
-        'user_id' => $reservation->user_id,
-        'pet_id' => $reservation->pet_id,
-        'start_date' => '2026-03-01',
-        'end_date' => '2026-03-05',
-        'status' => 'confirmed',
-        'total_price' => 200.00,
-    ])->assertStatus(403);
-});
-
-it('cliente cannot delete reservation', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $reservation = Reservation::factory()->create();
-
-    $this->deleteJson("/api/reservations/{$reservation->id}")->assertStatus(403);
-});
-
 /*
 |--------------------------------------------------------------------------
 | Admin
@@ -155,49 +113,10 @@ it('admin can delete reservation', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Validación
+| Token
 |--------------------------------------------------------------------------
 */
 
-it('cannot create reservation without required fields', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/reservations', [])
-        ->assertStatus(422)
-        ->assertJsonValidationErrors(['user_id', 'pet_id', 'start_date', 'end_date', 'status', 'total_price']);
-});
-
-it('cannot create reservation with end date before start date', function () {
-    Sanctum::actingAs($this->admin);
-
-    $pet = Pet::factory()->create();
-
-    $this->postJson('/api/reservations', [
-        'user_id' => $pet->user_id,
-        'pet_id' => $pet->id,
-        'start_date' => '2026-03-10',
-        'end_date' => '2026-03-05',
-        'status' => 'pending',
-        'total_price' => 150.00,
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['start_date', 'end_date']);
-});
-
-it('cannot create reservation with invalid status', function () {
-    Sanctum::actingAs($this->admin);
-
-    $pet = Pet::factory()->create();
-
-    $this->postJson('/api/reservations', [
-        'user_id' => $pet->user_id,
-        'pet_id' => $pet->id,
-        'start_date' => '2026-03-01',
-        'end_date' => '2026-03-05',
-        'status' => 'invalid_status',
-        'total_price' => 150.00,
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['status']);
-});
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');

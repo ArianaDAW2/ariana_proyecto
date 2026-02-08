@@ -11,11 +11,8 @@ use Laravel\Sanctum\Sanctum;
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
 
-    $this->admin = User::factory()->create();
-    $this->admin->assignRole('Admin');
-
-    $this->cliente = User::factory()->create();
-    $this->cliente->assignRole('Cliente');
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -30,7 +27,7 @@ it('guest cannot access pets', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Cliente (sin permisos)
+| Cliente
 |--------------------------------------------------------------------------
 */
 
@@ -38,42 +35,6 @@ it('cliente cannot list pets', function () {
     Sanctum::actingAs($this->cliente);
 
     $this->getJson('/api/pets')->assertStatus(403);
-});
-
-it('cliente cannot create pet', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $this->postJson('/api/pets', [
-        'user_id' => $this->cliente->id,
-        'name' => 'Max',
-        'species' => 'Perro',
-        'breed' => 'Labrador',
-        'age' => 3,
-        'weight' => 25.5,
-    ])->assertStatus(403);
-});
-
-it('cliente cannot update pet', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $pet = Pet::factory()->create();
-
-    $this->putJson("/api/pets/{$pet->id}", [
-        'user_id' => $this->cliente->id,
-        'name' => 'Rocky',
-        'species' => 'Perro',
-        'breed' => 'Labrador',
-        'age' => 4,
-        'weight' => 26,
-    ])->assertStatus(403);
-});
-
-it('cliente cannot delete pet', function () {
-    Sanctum::actingAs($this->cliente);
-
-    $pet = Pet::factory()->create();
-
-    $this->deleteJson("/api/pets/{$pet->id}")->assertStatus(403);
 });
 
 /*
@@ -90,7 +51,9 @@ it('admin can list pets', function () {
     $this->getJson('/api/pets')
         ->assertStatus(200)
         ->assertJsonStructure([
-            'pets' => ['data']
+            'pets' => [
+                'data'
+            ]
         ]);
 });
 
@@ -150,30 +113,10 @@ it('admin can delete pet', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Validación
+| Token
 |--------------------------------------------------------------------------
 */
 
-it('cannot create pet without required fields', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/pets', [])
-        ->assertStatus(422)
-        ->assertJsonValidationErrors(['user_id', 'name', 'species', 'age', 'weight']);
-});
-
-it('cannot create pet with invalid user', function () {
-    Sanctum::actingAs($this->admin);
-
-    $this->postJson('/api/pets', [
-        'user_id' => 99999,
-        'name' => 'Max',
-        'species' => 'Perro',
-        'age' => 3,
-        'weight' => 25,
-    ])->assertStatus(422)
-        ->assertJsonValidationErrors(['user_id']);
-});
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');

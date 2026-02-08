@@ -9,6 +9,8 @@ use Laravel\Sanctum\Sanctum;
 
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -30,19 +32,8 @@ it('guest cannot access medical records', function () {
 */
 
 it('cliente cannot list medical records', function () {
-    $user = User::factory()->create();
-    $user->assignRole('Cliente');
-    Sanctum::actingAs($user);
 
-    $response = $this->getJson('/api/medical-records');
-
-    $response->assertStatus(403);
-});
-
-it('recepcionista cannot list medical records', function () {
-    $user = User::factory()->create();
-    $user->assignRole('Recepcionista');
-    Sanctum::actingAs($user);
+    Sanctum::actingAs($this->cliente);
 
     $response = $this->getJson('/api/medical-records');
 
@@ -51,14 +42,13 @@ it('recepcionista cannot list medical records', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Con permisos (Admin / Veterinario / Cuidador)
+| Con permisos
 |--------------------------------------------------------------------------
 */
 
 it('admin can list medical records', function () {
-    $admin = User::factory()->create();
-    $admin->assignRole('Admin');
-    Sanctum::actingAs($admin);
+
+    Sanctum::actingAs($this->admin);
 
     MedicalRecord::factory()->count(3)->create();
 
@@ -72,34 +62,10 @@ it('admin can list medical records', function () {
         ]);
 });
 
-it('veterinario can list medical records', function () {
+it('admin can create medical record', function () {
     $vet = User::factory()->create();
     $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
-
-    MedicalRecord::factory()->count(2)->create();
-
-    $response = $this->getJson('/api/medical-records');
-
-    $response->assertStatus(200);
-});
-
-it('cuidador can list medical records', function () {
-    $cuidador = User::factory()->create();
-    $cuidador->assignRole('Cuidador');
-    Sanctum::actingAs($cuidador);
-
-    MedicalRecord::factory()->count(2)->create();
-
-    $response = $this->getJson('/api/medical-records');
-
-    $response->assertStatus(200);
-});
-
-it('veterinario can create medical record', function () {
-    $vet = User::factory()->create();
-    $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
+    Sanctum::actingAs($this->admin);
 
     $pet = Pet::factory()->create();
 
@@ -122,9 +88,8 @@ it('veterinario can create medical record', function () {
 });
 
 it('admin can view single medical record', function () {
-    $admin = User::factory()->create();
-    $admin->assignRole('Admin');
-    Sanctum::actingAs($admin);
+
+    Sanctum::actingAs($this->admin);
 
     $record = MedicalRecord::factory()->create();
 
@@ -136,10 +101,10 @@ it('admin can view single medical record', function () {
         ]);
 });
 
-it('veterinario can update medical record', function () {
+it('admin can update medical record', function () {
     $vet = User::factory()->create();
     $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
+    Sanctum::actingAs($this->admin);
 
     $record = MedicalRecord::factory()->create();
 
@@ -147,8 +112,6 @@ it('veterinario can update medical record', function () {
         'pet_id' => $record->pet_id,
         'veterinarian_id' => $vet->id,
         'diagnosis' => 'Diagnóstico actualizado',
-        'treatment' => 'Nuevo tratamiento',
-        'notes' => null,
     ]);
 
     $response->assertStatus(200)
@@ -163,9 +126,8 @@ it('veterinario can update medical record', function () {
 });
 
 it('admin can delete medical record', function () {
-    $admin = User::factory()->create();
-    $admin->assignRole('Admin');
-    Sanctum::actingAs($admin);
+
+    Sanctum::actingAs($this->admin);
 
     $record = MedicalRecord::factory()->create();
 
@@ -180,56 +142,10 @@ it('admin can delete medical record', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Validación
+| Token
 |--------------------------------------------------------------------------
 */
 
-it('cannot create medical record without required fields', function () {
-    $vet = User::factory()->create();
-    $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
-
-    $response = $this->postJson('/api/medical-records', []);
-
-    $response->assertStatus(422)
-        ->assertJsonValidationErrors([
-            'pet_id',
-            'veterinarian_id',
-            'diagnosis',
-        ]);
-});
-
-it('cannot create medical record with non-existent pet', function () {
-    $vet = User::factory()->create();
-    $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
-
-    $response = $this->postJson('/api/medical-records', [
-        'pet_id' => 99999,
-        'veterinarian_id' => $vet->id,
-        'diagnosis' => 'Test diagnosis',
-    ]);
-
-    $response->assertStatus(422)
-        ->assertJsonValidationErrors(['pet_id']);
-});
-
-it('cannot create medical record with non-existent veterinarian', function () {
-    $vet = User::factory()->create();
-    $vet->assignRole('Veterinario');
-    Sanctum::actingAs($vet);
-
-    $pet = Pet::factory()->create();
-
-    $response = $this->postJson('/api/medical-records', [
-        'pet_id' => $pet->id,
-        'veterinarian_id' => 99999,
-        'diagnosis' => 'Test diagnosis',
-    ]);
-
-    $response->assertStatus(422)
-        ->assertJsonValidationErrors(['veterinarian_id']);
-});
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');

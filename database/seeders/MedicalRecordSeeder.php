@@ -11,9 +11,9 @@ class MedicalRecordSeeder extends Seeder
 {
     public function run(): void
     {
-        $vet = User::hasRole('Veterinario')->first();
+        $vet = User::where('name', 'veterinario')->first();
         $pets = Pet::all();
-        
+
         foreach ($pets as $pet) {
             MedicalRecord::create([
                 'pet_id' => $pet->id,

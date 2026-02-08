@@ -31,7 +31,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"invoices":{"current_page":1,"data":[{"id":5,"reservation_id":5,"invoice_number":"FAC-00005","total":130,"status":"paid","issued_at":"2026-01-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":6,"reservation_id":6,"invoice_number":"FAC-00006","total":30,"status":"unpaid","issued_at":"2026-01-29 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":7,"reservation_id":7,"invoice_number":"FAC-00007","total":45,"status":"paid","issued_at":"2026-02-10 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":8,"reservation_id":8,"invoice_number":"FAC-00008","total":35,"status":"unpaid","issued_at":"2025-10-13 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":9,"reservation_id":9,"invoice_number":"FAC-00009","total":160,"status":"paid","issued_at":"2026-02-07 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":10,"reservation_id":10,"invoice_number":"FAC-00010","total":75,"status":"unpaid","issued_at":"2026-01-14 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":11,"reservation_id":11,"invoice_number":"FAC-00011","total":40,"status":"paid","issued_at":"2025-12-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":12,"reservation_id":12,"invoice_number":"FAC-00012","total":35,"status":"unpaid","issued_at":"2026-02-10 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":13,"reservation_id":13,"invoice_number":"FAC-00013","total":85,"status":"paid","issued_at":"2026-02-08 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":14,"reservation_id":14,"invoice_number":"FAC-00014","total":75,"status":"unpaid","issued_at":"2026-03-05 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/invoices","per_page":10,"prev_page_url":null,"to":10,"total":10}}'
+        content: '{"invoices":{"current_page":1,"data":[{"id":1,"reservation_id":1,"invoice_number":"HFP-1","total":"100.00","status":"paid","issued_at":"2026-02-13 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":2,"reservation_id":2,"invoice_number":"HFP-2","total":"150.00","status":"unpaid","issued_at":"2026-02-08 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":3,"reservation_id":3,"invoice_number":"HFP-3","total":"95.00","status":"paid","issued_at":"2025-11-23 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":4,"reservation_id":4,"invoice_number":"HFP-4","total":"60.00","status":"unpaid","issued_at":"2026-03-08 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":5,"reservation_id":5,"invoice_number":"HFP-5","total":"150.00","status":"paid","issued_at":"2026-03-13 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":6,"reservation_id":6,"invoice_number":"HFP-6","total":"75.00","status":"unpaid","issued_at":"2026-01-17 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":7,"reservation_id":7,"invoice_number":"HFP-7","total":"70.00","status":"paid","issued_at":"2026-03-12 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":8,"reservation_id":8,"invoice_number":"HFP-8","total":"80.00","status":"unpaid","issued_at":"2025-11-15 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":9,"reservation_id":9,"invoice_number":"HFP-9","total":"75.00","status":"paid","issued_at":"2025-12-28 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":10,"reservation_id":10,"invoice_number":"HFP-10","total":"130.00","status":"unpaid","issued_at":"2025-11-24 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/invoices?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/invoices?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/invoices?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/invoices?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/invoices?page=2","path":"http:\/\/localhost:8000\/api\/invoices","per_page":10,"prev_page_url":null,"to":10,"total":14}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -107,7 +107,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: unpaid
+        example: paid
         type: string
         enumValues:
           - paid
@@ -120,7 +120,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: true
-        example: '2026-02-07T17:34:16'
+        example: '2026-02-08T15:09:31'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -130,8 +130,8 @@ endpoints:
       reservation_id: architecto
       invoice_number: architecto
       total: 39
-      status: unpaid
-      issued_at: '2026-02-07T17:34:16'
+      status: paid
+      issued_at: '2026-02-08T15:09:31'
     fileParameters: []
     responses: []
     responseFields: []
@@ -167,14 +167,14 @@ endpoints:
         name: id
         description: 'The ID of the invoice.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 5
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -184,7 +184,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":5,"reservation_id":5,"invoice_number":"FAC-00005","total":130,"status":"paid","issued_at":"2026-01-22 00:00:00","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}'
+        content: '{"id":1,"reservation_id":1,"invoice_number":"HFP-1","total":"100.00","status":"paid","issued_at":"2026-02-13 00:00:00","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -224,14 +224,14 @@ endpoints:
         name: id
         description: 'The ID of the invoice.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 5
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -286,7 +286,7 @@ endpoints:
         name: issued_at
         description: 'Must be a valid date.'
         required: true
-        example: '2026-02-07T17:34:16'
+        example: '2026-02-08T15:09:31'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -297,7 +297,7 @@ endpoints:
       invoice_number: architecto
       total: 39
       status: paid
-      issued_at: '2026-02-07T17:34:16'
+      issued_at: '2026-02-08T15:09:31'
     fileParameters: []
     responses: []
     responseFields: []
@@ -333,14 +333,14 @@ endpoints:
         name: id
         description: 'The ID of the invoice.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 5
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -385,7 +385,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"records":{"current_page":1,"data":[{"id":2,"pet_id":2,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Luna","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":3,"pet_id":3,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Max","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":4,"pet_id":4,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nina","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":5,"pet_id":5,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Zeus","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":6,"pet_id":6,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Luna","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":7,"pet_id":7,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Zeus","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":8,"pet_id":8,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nina","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":9,"pet_id":9,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Bruno","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":10,"pet_id":10,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Nala","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":11,"pet_id":11,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Bruno","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","path":"http:\/\/localhost:8000\/api\/medical-records","per_page":10,"prev_page_url":null,"to":10,"total":11}}'
+        content: '{"records":{"current_page":1,"data":[{"id":1,"pet_id":1,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":2,"pet_id":2,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":3,"pet_id":3,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":4,"pet_id":4,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":5,"pet_id":5,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":6,"pet_id":6,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":7,"pet_id":7,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":8,"pet_id":8,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":9,"pet_id":9,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null},{"id":10,"pet_id":10,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/medical-records?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/medical-records?page=2","path":"http:\/\/localhost:8000\/api\/medical-records","per_page":10,"prev_page_url":null,"to":10,"total":12}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -519,14 +519,14 @@ endpoints:
         name: id
         description: 'The ID of the medical record.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -536,7 +536,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":2,"pet_id":2,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria para Luna","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}'
+        content: '{"id":1,"pet_id":1,"veterinarian_id":2,"diagnosis":"Revisi\u00f3n rutinaria","treatment":"Ninguno necesario. Todo en orden.","notes":"La mascota se comporta bien durante la revisi\u00f3n.","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z","deleted_at":null}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -576,14 +576,14 @@ endpoints:
         name: id
         description: 'The ID of the medical record.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -683,14 +683,14 @@ endpoints:
         name: id
         description: 'The ID of the medical record.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -735,7 +735,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"reservations":{"current_page":1,"data":[{"id":5,"user_id":6,"pet_id":3,"start_date":"2026-01-21T23:00:00.000000Z","end_date":"2026-01-26T23:00:00.000000Z","status":"confirmed","total_price":130,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":6,"user_id":6,"pet_id":4,"start_date":"2026-01-28T23:00:00.000000Z","end_date":"2026-02-03T23:00:00.000000Z","status":"cancelled","total_price":30,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":7,"user_id":7,"pet_id":5,"start_date":"2026-02-09T23:00:00.000000Z","end_date":"2026-02-12T23:00:00.000000Z","status":"cancelled","total_price":45,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":8,"user_id":7,"pet_id":6,"start_date":"2025-10-12T22:00:00.000000Z","end_date":"2025-10-16T22:00:00.000000Z","status":"completed","total_price":35,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":9,"user_id":8,"pet_id":7,"start_date":"2026-02-06T23:00:00.000000Z","end_date":"2026-02-11T23:00:00.000000Z","status":"pending","total_price":160,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":10,"user_id":8,"pet_id":8,"start_date":"2026-01-13T23:00:00.000000Z","end_date":"2026-01-17T23:00:00.000000Z","status":"cancelled","total_price":75,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":11,"user_id":9,"pet_id":9,"start_date":"2025-12-21T23:00:00.000000Z","end_date":"2025-12-27T23:00:00.000000Z","status":"confirmed","total_price":40,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":12,"user_id":9,"pet_id":10,"start_date":"2026-02-09T23:00:00.000000Z","end_date":"2026-02-14T23:00:00.000000Z","status":"pending","total_price":35,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":13,"user_id":10,"pet_id":11,"start_date":"2026-02-07T23:00:00.000000Z","end_date":"2026-02-12T23:00:00.000000Z","status":"completed","total_price":85,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":14,"user_id":10,"pet_id":12,"start_date":"2026-03-04T23:00:00.000000Z","end_date":"2026-03-06T23:00:00.000000Z","status":"cancelled","total_price":75,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/reservations?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/reservations?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/reservations?page=2","path":"http:\/\/localhost:8000\/api\/reservations","per_page":10,"prev_page_url":null,"to":10,"total":12}}'
+        content: '{"reservations":{"current_page":1,"data":[{"id":1,"user_id":1,"pet_id":1,"start_date":"2026-02-08T23:00:00.000000Z","end_date":"2026-02-12T23:00:00.000000Z","status":"pending","total_price":"100.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":2,"user_id":1,"pet_id":1,"start_date":"2026-02-02T23:00:00.000000Z","end_date":"2026-02-07T23:00:00.000000Z","status":"confirmed","total_price":"150.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":3,"user_id":4,"pet_id":1,"start_date":"2025-11-19T23:00:00.000000Z","end_date":"2025-11-22T23:00:00.000000Z","status":"confirmed","total_price":"95.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":4,"user_id":4,"pet_id":2,"start_date":"2026-03-05T23:00:00.000000Z","end_date":"2026-03-07T23:00:00.000000Z","status":"cancelled","total_price":"60.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":5,"user_id":6,"pet_id":3,"start_date":"2026-03-06T23:00:00.000000Z","end_date":"2026-03-12T23:00:00.000000Z","status":"confirmed","total_price":"150.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":6,"user_id":6,"pet_id":4,"start_date":"2026-01-11T23:00:00.000000Z","end_date":"2026-01-16T23:00:00.000000Z","status":"confirmed","total_price":"75.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":7,"user_id":7,"pet_id":5,"start_date":"2026-03-09T23:00:00.000000Z","end_date":"2026-03-11T23:00:00.000000Z","status":"pending","total_price":"70.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":8,"user_id":7,"pet_id":6,"start_date":"2025-11-13T23:00:00.000000Z","end_date":"2025-11-14T23:00:00.000000Z","status":"completed","total_price":"80.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":9,"user_id":8,"pet_id":7,"start_date":"2025-12-22T23:00:00.000000Z","end_date":"2025-12-27T23:00:00.000000Z","status":"confirmed","total_price":"75.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":10,"user_id":8,"pet_id":8,"start_date":"2025-11-22T23:00:00.000000Z","end_date":"2025-11-23T23:00:00.000000Z","status":"confirmed","total_price":"130.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/reservations?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/reservations?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/reservations?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/reservations?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/reservations?page=2","path":"http:\/\/localhost:8000\/api\/reservations","per_page":10,"prev_page_url":null,"to":10,"total":14}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -800,7 +800,7 @@ endpoints:
         name: start_date
         description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
         required: true
-        example: '2022-03-03'
+        example: '2022-03-04'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -811,7 +811,187 @@ endpoints:
         name: end_date
         description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
         required: true
-        example: '2052-03-02'
+        example: '2052-03-03'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: ''
+        required: true
+        example: completed
+        type: string
+        enumValues:
+          - pending
+          - confirmed
+          - completed
+          - cancelled
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      total_price:
+        custom: []
+        name: total_price
+        description: 'Must be at least 0.'
+        required: true
+        example: 39
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      user_id: architecto
+      pet_id: architecto
+      start_date: '2022-03-04'
+      end_date: '2052-03-03'
+      status: completed
+      total_price: 39
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|admin'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/reservations/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer admin'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the reservation.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"id":1,"user_id":1,"pet_id":1,"start_date":"2026-02-08T23:00:00.000000Z","end_date":"2026-02-12T23:00:00.000000Z","status":"pending","total_price":"100.00","created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|admin'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/reservations/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer admin'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the reservation.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      user_id:
+        custom: []
+        name: user_id
+        description: 'The <code>id</code> of an existing record in the users table.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      pet_id:
+        custom: []
+        name: pet_id
+        description: 'The <code>id</code> of an existing record in the pets table.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      start_date:
+        custom: []
+        name: start_date
+        description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
+        required: true
+        example: '2022-03-04'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      end_date:
+        custom: []
+        name: end_date
+        description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
+        required: true
+        example: '2052-03-03'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -846,189 +1026,9 @@ endpoints:
     cleanBodyParameters:
       user_id: architecto
       pet_id: architecto
-      start_date: '2022-03-03'
-      end_date: '2052-03-02'
+      start_date: '2022-03-04'
+      end_date: '2052-03-03'
       status: confirmed
-      total_price: 39
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|admin'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: 'api/reservations/{id}'
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer admin'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the reservation.'
-        required: true
-        example: 5
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 5
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 200
-        content: '{"id":5,"user_id":6,"pet_id":3,"start_date":"2026-01-21T23:00:00.000000Z","end_date":"2026-01-26T23:00:00.000000Z","status":"confirmed","total_price":130,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|admin'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - PUT
-      - PATCH
-    uri: 'api/reservations/{id}'
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer admin'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the reservation.'
-        required: true
-        example: 5
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 5
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      user_id:
-        custom: []
-        name: user_id
-        description: 'The <code>id</code> of an existing record in the users table.'
-        required: true
-        example: architecto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      pet_id:
-        custom: []
-        name: pet_id
-        description: 'The <code>id</code> of an existing record in the pets table.'
-        required: true
-        example: architecto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      start_date:
-        custom: []
-        name: start_date
-        description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
-        required: true
-        example: '2022-03-03'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      end_date:
-        custom: []
-        name: end_date
-        description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
-        required: true
-        example: '2052-03-02'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      status:
-        custom: []
-        name: status
-        description: ''
-        required: true
-        example: cancelled
-        type: string
-        enumValues:
-          - pending
-          - confirmed
-          - completed
-          - cancelled
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      total_price:
-        custom: []
-        name: total_price
-        description: 'Must be at least 0.'
-        required: true
-        example: 39
-        type: number
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      user_id: architecto
-      pet_id: architecto
-      start_date: '2022-03-03'
-      end_date: '2052-03-02'
-      status: cancelled
       total_price: 39
     fileParameters: []
     responses: []
@@ -1065,14 +1065,14 @@ endpoints:
         name: id
         description: 'The ID of the reservation.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 5
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1117,7 +1117,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"services":{"current_page":1,"data":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":20,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":35,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":25,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":30,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":40,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":40,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":35,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":50,"is_active":0,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":50,"is_active":0,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"},{"id":11,"name":"Urgencias 24h","description":"Ambulancia y atenci\u00f3n 24h","base_price":50,"is_active":0,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/services?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/services?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/services?page=2","path":"http:\/\/localhost:8000\/api\/services","per_page":10,"prev_page_url":null,"to":10,"total":12}}'
+        content: '{"services":{"current_page":1,"data":[{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":2,"name":"Juegos y comodidades extra","description":"A\u00f1adido: webcam, comida h\u00fameda y juegos constantes.","base_price":"35.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":3,"name":"Peluquer\u00eda Canina Y Felina","description":"Ba\u00f1o, corte de pelo y u\u00f1as.","base_price":"25.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":4,"name":"Consulta Veterinaria","description":"Revisi\u00f3n general y aviso de pagos extra por llamada.","base_price":"30.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":5,"name":"Adiestramiento B\u00e1sico","description":"Sesi\u00f3n de obediencia b\u00e1sica y juegos.","base_price":"40.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":6,"name":"Hopitalizaci\u00f3n","description":"Cuidados intensivos.","base_price":"40.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":7,"name":"Consulta online","description":"Consulta a trav\u00e9s de videollamada o llamada b\u00e1sica.","base_price":"35.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":8,"name":"Ciruj\u00eda","description":"Mayor\u00eda de operaciones.","base_price":"500.00","is_active":0,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":9,"name":"Sesi\u00f3n de fotos","description":"Prometo que no blanqueamos dinero con esto","base_price":"50.00","is_active":0,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"},{"id":10,"name":"Aromaterapia y SPA","description":"Cuidados especiales para la felicidad de tu mascota","base_price":"50.00","is_active":0,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/services?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/services?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/services?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/services?page=2","path":"http:\/\/localhost:8000\/api\/services","per_page":10,"prev_page_url":null,"to":10,"total":13}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1152,158 +1152,6 @@ endpoints:
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      name:
-        custom: []
-        name: name
-        description: 'Must not be greater than 50 characters.'
-        required: true
-        example: b
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      description:
-        custom: []
-        name: description
-        description: ''
-        required: false
-        example: 'Eius et animi quos velit et.'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: true
-        deprecated: false
-      base_price:
-        custom: []
-        name: base_price
-        description: 'Must be at least 0.'
-        required: true
-        example: 60
-        type: number
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      is_active:
-        custom: []
-        name: is_active
-        description: ''
-        required: true
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      name: b
-      description: 'Eius et animi quos velit et.'
-      base_price: 60
-      is_active: true
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|admin'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: 'api/services/{id}'
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer admin'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the service.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 200
-        content: '{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":20,"is_active":1,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z"}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|admin'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - PUT
-      - PATCH
-    uri: 'api/services/{id}'
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer admin'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the service.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1369,6 +1217,158 @@ endpoints:
   -
     custom: []
     httpMethods:
+      - GET
+    uri: 'api/services/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer admin'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the service.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"id":1,"name":"Alojamiento dog&cat hotel","description":"Habitaci\u00f3n c\u00f3moda con paseos diarios.","base_price":"20.00","is_active":1,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|admin'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/services/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer admin'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the service.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'Must not be greater than 50 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      description:
+        custom: []
+        name: description
+        description: ''
+        required: false
+        example: 'Eius et animi quos velit et.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      base_price:
+        custom: []
+        name: base_price
+        description: 'Must be at least 0.'
+        required: true
+        example: 60
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      is_active:
+        custom: []
+        name: is_active
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: b
+      description: 'Eius et animi quos velit et.'
+      base_price: 60
+      is_active: true
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|admin'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
       - DELETE
     uri: 'api/services/{id}'
     metadata:
@@ -1443,7 +1443,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"pets":{"current_page":1,"data":[{"id":2,"user_id":4,"name":"Luna","species":"Gato","breed":"Bengal\u00ed","age":3,"weight":5.5,"notes":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Max","species":"Perro","breed":"Golden Retriever","age":7,"weight":30.5,"notes":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Nina","species":"Gato","breed":"Persa","age":11,"weight":5,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Zeus","species":"Perro","breed":"Bulldog Franc\u00e9s","age":5,"weight":12,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Maine Coon","age":7,"weight":7.5,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Zeus","species":"Perro","breed":"Labrador","age":2,"weight":28,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":3,"weight":5,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Bruno","species":"Perro","breed":"Pastor Alem\u00e1n","age":10,"weight":35,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Nala","species":"Gato","breed":"Persa","age":13,"weight":5,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null},{"id":11,"user_id":10,"name":"Bruno","species":"Perro","breed":"Bulldog Franc\u00e9s","age":9,"weight":12,"notes":null,"created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/pets?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","path":"http:\/\/localhost:8000\/api\/pets","per_page":10,"prev_page_url":null,"to":10,"total":12}}'
+        content: '{"pets":{"current_page":1,"data":[{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Labrador","age":2,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":2,"user_id":4,"name":"Mia","species":"Gato","breed":"Persa","age":5,"weight":5,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":3,"user_id":6,"name":"Max","species":"Perro","breed":"Labrador","age":4,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":4,"user_id":6,"name":"Nina","species":"Gato","breed":"Bengal\u00ed","age":3,"weight":5.5,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":5,"user_id":7,"name":"Rocky","species":"Perro","breed":"Labrador","age":3,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":6,"user_id":7,"name":"Luna","species":"Gato","breed":"Bengal\u00ed","age":13,"weight":5.5,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":7,"user_id":8,"name":"Toby","species":"Perro","breed":"Labrador","age":5,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":8,"user_id":8,"name":"Nina","species":"Gato","breed":"Persa","age":13,"weight":5,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":9,"user_id":9,"name":"Bruno","species":"Perro","breed":"Labrador","age":3,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null},{"id":10,"user_id":9,"name":"Kira","species":"Gato","breed":"Bengal\u00ed","age":4,"weight":5.5,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null}],"first_page_url":"http:\/\/localhost:8000\/api\/pets?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/pets?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/pets?page=2","path":"http:\/\/localhost:8000\/api\/pets","per_page":10,"prev_page_url":null,"to":10,"total":12}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1601,14 +1601,14 @@ endpoints:
         name: id
         description: 'The ID of the pet.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1618,7 +1618,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":2,"user_id":4,"name":"Luna","species":"Gato","breed":"Bengal\u00ed","age":3,"weight":5.5,"notes":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","deleted_at":null}'
+        content: '{"id":1,"user_id":4,"name":"Toby","species":"Perro","breed":"Labrador","age":2,"weight":28,"notes":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","deleted_at":null}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1658,14 +1658,14 @@ endpoints:
         name: id
         description: 'The ID of the pet.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1789,14 +1789,14 @@ endpoints:
         name: id
         description: 'The ID of the pet.'
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      id: 2
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1841,7 +1841,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"users":{"current_page":1,"data":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:55.000000Z","updated_at":"2026-02-03T13:31:55.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:56.000000Z","updated_at":"2026-02-03T13:31:56.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:56.000000Z","updated_at":"2026-02-03T13:31:56.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:56.000000Z","updated_at":"2026-02-03T13:31:56.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:56.000000Z","updated_at":"2026-02-03T13:31:56.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:57.000000Z","updated_at":"2026-02-03T13:31:57.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"first_page_url":"http:\/\/localhost:8000\/api\/users?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost:8000\/api\/users?page=2","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/users?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/users?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/users?page=2","label":"Next &raquo;","page":2,"active":false}],"next_page_url":"http:\/\/localhost:8000\/api\/users?page=2","path":"http:\/\/localhost:8000\/api\/users","per_page":10,"prev_page_url":null,"to":10,"total":11}}'
+        content: '{"users":{"current_page":1,"data":[{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:36.000000Z","updated_at":"2026-02-08T13:55:36.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"},{"id":2,"name":"veterinario","email":"vet@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:36.000000Z","updated_at":"2026-02-08T13:55:36.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=v&color=7F9CF5&background=EBF4FF"},{"id":3,"name":"recepcionista","email":"recep@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:37.000000Z","updated_at":"2026-02-08T13:55:37.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=r&color=7F9CF5&background=EBF4FF"},{"id":4,"name":"cliente","email":"client@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:37.000000Z","updated_at":"2026-02-08T13:55:37.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":5,"name":"cuidador","email":"cuid@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:37.000000Z","updated_at":"2026-02-08T13:55:37.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":6,"name":"cliente1","email":"cliente1@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:37.000000Z","updated_at":"2026-02-08T13:55:37.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":7,"name":"cliente2","email":"cliente2@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":8,"name":"cliente3","email":"cliente3@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":9,"name":"cliente4","email":"cliente4@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"},{"id":10,"name":"cliente5","email":"cliente5@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:38.000000Z","updated_at":"2026-02-08T13:55:38.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=c&color=7F9CF5&background=EBF4FF"}],"first_page_url":"http:\/\/localhost:8000\/api\/users?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/users?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/users?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/users","per_page":10,"prev_page_url":null,"to":10,"total":10}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1968,7 +1968,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-03T13:31:55.000000Z","updated_at":"2026-02-03T13:31:55.000000Z","two_factor_confirmed_at":null,"profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"}'
+        content: '{"id":1,"name":"admin","email":"admin@mail.es","email_verified_at":null,"two_factor_confirmed_at":null,"current_team_id":null,"profile_photo_path":null,"created_at":"2026-02-08T13:55:36.000000Z","updated_at":"2026-02-08T13:55:36.000000Z","profile_photo_url":"https:\/\/ui-avatars.com\/api\/?name=a&color=7F9CF5&background=EBF4FF"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -2143,7 +2143,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"current_page":1,"data":[{"id":3,"invoice_id":5,"user_id":6,"amount":"130.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-D991A513","paid_at":"2026-02-03T13:31:58.000000Z","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z"},{"id":4,"invoice_id":7,"user_id":7,"amount":"45.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-A78CCC97","paid_at":"2026-02-03T13:31:58.000000Z","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z"},{"id":5,"invoice_id":9,"user_id":8,"amount":"160.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-69F474E3","paid_at":"2026-02-03T13:31:58.000000Z","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z"},{"id":6,"invoice_id":11,"user_id":9,"amount":"40.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-8BDBE67E","paid_at":"2026-02-03T13:31:58.000000Z","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z"},{"id":7,"invoice_id":13,"user_id":10,"amount":"85.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-846B7F66","paid_at":"2026-02-03T13:31:58.000000Z","created_at":"2026-02-03T13:31:58.000000Z","updated_at":"2026-02-03T13:31:58.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/payments?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/payments?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/payments?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/payments","per_page":10,"prev_page_url":null,"to":5,"total":5}'
+        content: '{"current_page":1,"data":[{"id":1,"invoice_id":1,"user_id":1,"amount":"100.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-1","paid_at":"2026-02-12T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":2,"invoice_id":3,"user_id":4,"amount":"95.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-3","paid_at":"2025-11-22T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":3,"invoice_id":5,"user_id":6,"amount":"150.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-5","paid_at":"2026-03-12T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":4,"invoice_id":7,"user_id":7,"amount":"70.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-7","paid_at":"2026-03-11T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":5,"invoice_id":9,"user_id":8,"amount":"75.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-9","paid_at":"2025-12-27T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":6,"invoice_id":11,"user_id":9,"amount":"40.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-11","paid_at":"2025-11-06T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"},{"id":7,"invoice_id":13,"user_id":10,"amount":"95.00","payment_method":"credit_card","status":"completed","transaction_id":"TRX-13","paid_at":"2025-11-27T23:00:00.000000Z","created_at":"2026-02-08T13:55:39.000000Z","updated_at":"2026-02-08T13:55:39.000000Z"}],"first_page_url":"http:\/\/localhost:8000\/api\/payments?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost:8000\/api\/payments?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/payments?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost:8000\/api\/payments","per_page":10,"prev_page_url":null,"to":7,"total":7}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

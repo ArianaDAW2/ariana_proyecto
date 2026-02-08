@@ -11,12 +11,14 @@
         <aside class="w-64 bg-gray-100 p-4 border-r border-gray-200">
             <nav class="space-y-2">
                 <h3 class="text-gray-500 uppercase text-xs font-semibold mb-2">{{ __('private.admin_panel') }}</h3>
-
+                @role('Admin')
                 <a href="{{ route('document.admin.extra.create') }}"
                    class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.global_message') }}</a>
-
-                <a href="{{ route('admin.payments') }}"
-                   class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.payments') }}</a>
+                @endrole
+                @can('manage_payments')
+                    <a href="{{ route('admin.payments') }}"
+                       class="block px-4 py-2 rounded hover:bg-gray-200">{{ __('private.payments') }}</a>
+                @endcan
             </nav>
         </aside>
 

@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\Reservation::class)
+    @can('manage_reservations')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model.live="user_id">
                 <option value="">-----------</option>
@@ -100,11 +100,11 @@
                     @endforeach
                 </td>
                 <td>
-                    @can('update', $reservation)
+                    @can('manage_reservations')
                         <button wire:click="edit({{ $reservation->id }})">{{ __('private.edit') }}</button>
                     @endcan
 
-                    @can('delete', $reservation)
+                    @can('manage_reservations')
                         <button wire:click="delete({{ $reservation->id }})">{{ __('private.delete') }}</button>
                     @endcan
                 </td>

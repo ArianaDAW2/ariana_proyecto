@@ -116,7 +116,7 @@
 </head>
 <body>
 <div class="header">
-    <h1>🐾 HotelForPets</h1>
+    <h1> HotelForPets</h1>
     <h2>Confirmación de Reservación</h2>
     <div class="confirmation-number">
         #{{ str_pad($reservation->id, 6, '0', STR_PAD_LEFT) }}
@@ -124,7 +124,7 @@
 </div>
 
 <div class="info-box">
-    <h3>📋 Detalles de la Reservación</h3>
+    <h3>Detalles de la Reservación</h3>
     <div class="info-row">
         <span class="label">Fecha de Reservación:</span>
         <span class="value">{{ $reservation->created_at->format('d/m/Y H:i') }}</span>
@@ -136,7 +136,7 @@
 </div>
 
 <div class="info-box">
-    <h3>👤 Información del Cliente</h3>
+    <h3>Información del Cliente</h3>
     <div class="info-row">
         <span class="label">Nombre:</span>
         <span class="value">{{ $reservation->user->name }}</span>
@@ -148,7 +148,7 @@
 </div>
 
 <div class="info-box">
-    <h3>🐕 Información de la Mascota</h3>
+    <h3>Información de la Mascota</h3>
     <div class="info-row">
         <span class="label">Nombre:</span>
         <span class="value">{{ $reservation->pet->name }}</span>
@@ -182,7 +182,7 @@
 </div>
 
 <div class="info-box">
-    <h3>📅 Fechas de Hospedaje</h3>
+    <h3>Fechas de Hospedaje</h3>
     <div class="info-row">
         <span class="label">Check-in:</span>
         <span class="value">{{ \Carbon\Carbon::parse($reservation->start_date)->format('d/m/Y') }}</span>
@@ -198,7 +198,7 @@
 </div>
 
 <div class="info-box">
-    <h3>💰 Resumen de Pago</h3>
+    <h3>Resumen de Pago</h3>
     <table>
         <thead>
         <tr>
@@ -227,7 +227,7 @@
 <div class="footer">
     <p><strong>¡Gracias por confiar en HotelForPets!</strong></p>
     <p>Para cualquier consulta o modificación, contáctanos:</p>
-    <p>📧 info@hotelforpets.com | 📞 +34 123 456 789</p>
+    <p>info@hotelforpets.com | Tlf: +34 123 456 789</p>
     <p style="margin-top: 15px; font-size: 10px;">
         Este documento es una confirmación de su reservación.<br>
         Por favor, consérvelo para presentarlo el día de check-in.

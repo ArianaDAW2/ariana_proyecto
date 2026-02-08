@@ -175,7 +175,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 7, 2026</li>
+        <li>Last updated: February 8, 2026</li>
     </ul>
 </div>
 
@@ -256,120 +256,120 @@ access-control-allow-origin: *
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 1,
+                &quot;reservation_id&quot;: 1,
+                &quot;invoice_number&quot;: &quot;HFP-1&quot;,
+                &quot;total&quot;: &quot;100.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-13 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;reservation_id&quot;: 2,
+                &quot;invoice_number&quot;: &quot;HFP-2&quot;,
+                &quot;total&quot;: &quot;150.00&quot;,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-02-08 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;reservation_id&quot;: 3,
+                &quot;invoice_number&quot;: &quot;HFP-3&quot;,
+                &quot;total&quot;: &quot;95.00&quot;,
+                &quot;status&quot;: &quot;paid&quot;,
+                &quot;issued_at&quot;: &quot;2025-11-23 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 4,
+                &quot;reservation_id&quot;: 4,
+                &quot;invoice_number&quot;: &quot;HFP-4&quot;,
+                &quot;total&quot;: &quot;60.00&quot;,
+                &quot;status&quot;: &quot;unpaid&quot;,
+                &quot;issued_at&quot;: &quot;2026-03-08 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
                 &quot;id&quot;: 5,
                 &quot;reservation_id&quot;: 5,
-                &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
-                &quot;total&quot;: 130,
+                &quot;invoice_number&quot;: &quot;HFP-5&quot;,
+                &quot;total&quot;: &quot;150.00&quot;,
                 &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-22 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2026-03-13 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 6,
                 &quot;reservation_id&quot;: 6,
-                &quot;invoice_number&quot;: &quot;FAC-00006&quot;,
-                &quot;total&quot;: 30,
+                &quot;invoice_number&quot;: &quot;HFP-6&quot;,
+                &quot;total&quot;: &quot;75.00&quot;,
                 &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-29 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2026-01-17 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 7,
                 &quot;reservation_id&quot;: 7,
-                &quot;invoice_number&quot;: &quot;FAC-00007&quot;,
-                &quot;total&quot;: 45,
+                &quot;invoice_number&quot;: &quot;HFP-7&quot;,
+                &quot;total&quot;: &quot;70.00&quot;,
                 &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-10 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2026-03-12 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 8,
                 &quot;reservation_id&quot;: 8,
-                &quot;invoice_number&quot;: &quot;FAC-00008&quot;,
-                &quot;total&quot;: 35,
+                &quot;invoice_number&quot;: &quot;HFP-8&quot;,
+                &quot;total&quot;: &quot;80.00&quot;,
                 &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2025-10-13 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2025-11-15 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 9,
                 &quot;reservation_id&quot;: 9,
-                &quot;invoice_number&quot;: &quot;FAC-00009&quot;,
-                &quot;total&quot;: 160,
+                &quot;invoice_number&quot;: &quot;HFP-9&quot;,
+                &quot;total&quot;: &quot;75.00&quot;,
                 &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-07 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2025-12-28 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 10,
                 &quot;reservation_id&quot;: 10,
-                &quot;invoice_number&quot;: &quot;FAC-00010&quot;,
-                &quot;total&quot;: 75,
+                &quot;invoice_number&quot;: &quot;HFP-10&quot;,
+                &quot;total&quot;: &quot;130.00&quot;,
                 &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-01-14 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;reservation_id&quot;: 11,
-                &quot;invoice_number&quot;: &quot;FAC-00011&quot;,
-                &quot;total&quot;: 40,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2025-12-22 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 12,
-                &quot;reservation_id&quot;: 12,
-                &quot;invoice_number&quot;: &quot;FAC-00012&quot;,
-                &quot;total&quot;: 35,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-10 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 13,
-                &quot;reservation_id&quot;: 13,
-                &quot;invoice_number&quot;: &quot;FAC-00013&quot;,
-                &quot;total&quot;: 85,
-                &quot;status&quot;: &quot;paid&quot;,
-                &quot;issued_at&quot;: &quot;2026-02-08 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 14,
-                &quot;reservation_id&quot;: 14,
-                &quot;invoice_number&quot;: &quot;FAC-00014&quot;,
-                &quot;total&quot;: 75,
-                &quot;status&quot;: &quot;unpaid&quot;,
-                &quot;issued_at&quot;: &quot;2026-03-05 00:00:00&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;issued_at&quot;: &quot;2025-11-24 00:00:00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 1,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=1&quot;,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -384,18 +384,24 @@ access-control-allow-origin: *
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: null,
+                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
+                &quot;page&quot;: 2,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: null,
+        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/invoices?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost:8000/api/invoices&quot;,
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 10
+        &quot;total&quot;: 14
     }
 }</code>
  </pre>
@@ -507,8 +513,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"reservation_id\": \"architecto\",
     \"invoice_number\": \"architecto\",
     \"total\": 39,
-    \"status\": \"unpaid\",
-    \"issued_at\": \"2026-02-07T17:34:16\"
+    \"status\": \"paid\",
+    \"issued_at\": \"2026-02-08T15:09:31\"
 }"
 </code></pre></div>
 
@@ -528,8 +534,8 @@ let body = {
     "reservation_id": "architecto",
     "invoice_number": "architecto",
     "total": 39,
-    "status": "unpaid",
-    "issued_at": "2026-02-07T17:34:16"
+    "status": "paid",
+    "issued_at": "2026-02-08T15:09:31"
 };
 
 fetch(url, {
@@ -669,10 +675,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-invoices"
-               value="unpaid"
+               value="paid"
                data-component="body">
     <br>
-<p>Example: <code>unpaid</code></p>
+<p>Example: <code>paid</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>paid</code></li> <li><code>unpaid</code></li></ul>
         </div>
@@ -683,10 +689,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="POSTapi-invoices"
-               value="2026-02-07T17:34:16"
+               value="2026-02-08T15:09:31"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-07T17:34:16</code></p>
+<p>Must be a valid date. Example: <code>2026-02-08T15:09:31</code></p>
         </div>
         </form>
 
@@ -704,7 +710,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/invoices/5" \
+    --get "http://localhost:8000/api/invoices/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -712,7 +718,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/5"
+    "http://localhost:8000/api/invoices/1"
 );
 
 const headers = {
@@ -742,14 +748,14 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 5,
-    &quot;reservation_id&quot;: 5,
-    &quot;invoice_number&quot;: &quot;FAC-00005&quot;,
-    &quot;total&quot;: 130,
+    &quot;id&quot;: 1,
+    &quot;reservation_id&quot;: 1,
+    &quot;invoice_number&quot;: &quot;HFP-1&quot;,
+    &quot;total&quot;: &quot;100.00&quot;,
     &quot;status&quot;: &quot;paid&quot;,
-    &quot;issued_at&quot;: &quot;2026-01-22 00:00:00&quot;,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+    &quot;issued_at&quot;: &quot;2026-02-13 00:00:00&quot;,
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
     &quot;deleted_at&quot;: null
 }</code>
  </pre>
@@ -845,10 +851,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-invoices--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>5</code></p>
+<p>The ID of the invoice. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -866,7 +872,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/invoices/5" \
+    "http://localhost:8000/api/invoices/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -875,14 +881,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"invoice_number\": \"architecto\",
     \"total\": 39,
     \"status\": \"paid\",
-    \"issued_at\": \"2026-02-07T17:34:16\"
+    \"issued_at\": \"2026-02-08T15:09:31\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/5"
+    "http://localhost:8000/api/invoices/1"
 );
 
 const headers = {
@@ -896,7 +902,7 @@ let body = {
     "invoice_number": "architecto",
     "total": 39,
     "status": "paid",
-    "issued_at": "2026-02-07T17:34:16"
+    "issued_at": "2026-02-08T15:09:31"
 };
 
 fetch(url, {
@@ -1004,10 +1010,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-invoices--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>5</code></p>
+<p>The ID of the invoice. Example: <code>1</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1067,10 +1073,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="issued_at"                data-endpoint="PUTapi-invoices--id-"
-               value="2026-02-07T17:34:16"
+               value="2026-02-08T15:09:31"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-07T17:34:16</code></p>
+<p>Must be a valid date. Example: <code>2026-02-08T15:09:31</code></p>
         </div>
         </form>
 
@@ -1088,7 +1094,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/invoices/5" \
+    "http://localhost:8000/api/invoices/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1096,7 +1102,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/invoices/5"
+    "http://localhost:8000/api/invoices/1"
 );
 
 const headers = {
@@ -1205,10 +1211,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-invoices--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the invoice. Example: <code>5</code></p>
+<p>The ID of the invoice. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1268,113 +1274,113 @@ access-control-allow-origin: *
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 1,
+                &quot;pet_id&quot;: 1,
+                &quot;veterinarian_id&quot;: 2,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
+                &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
+                &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
                 &quot;id&quot;: 2,
                 &quot;pet_id&quot;: 2,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 3,
                 &quot;pet_id&quot;: 3,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Max&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 4,
                 &quot;pet_id&quot;: 4,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nina&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 5,
                 &quot;pet_id&quot;: 5,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Zeus&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 6,
                 &quot;pet_id&quot;: 6,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 7,
                 &quot;pet_id&quot;: 7,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Zeus&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 8,
                 &quot;pet_id&quot;: 8,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nina&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 9,
                 &quot;pet_id&quot;: 9,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 10,
                 &quot;pet_id&quot;: 10,
                 &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Nala&quot;,
+                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
                 &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
                 &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;pet_id&quot;: 11,
-                &quot;veterinarian_id&quot;: 2,
-                &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Bruno&quot;,
-                &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
-                &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             }
         ],
@@ -1413,7 +1419,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 11
+        &quot;total&quot;: 12
     }
 }</code>
  </pre>
@@ -1720,7 +1726,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/medical-records/2" \
+    --get "http://localhost:8000/api/medical-records/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1728,7 +1734,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/2"
+    "http://localhost:8000/api/medical-records/1"
 );
 
 const headers = {
@@ -1758,14 +1764,14 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 2,
-    &quot;pet_id&quot;: 2,
+    &quot;id&quot;: 1,
+    &quot;pet_id&quot;: 1,
     &quot;veterinarian_id&quot;: 2,
-    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria para Luna&quot;,
+    &quot;diagnosis&quot;: &quot;Revisi&oacute;n rutinaria&quot;,
     &quot;treatment&quot;: &quot;Ninguno necesario. Todo en orden.&quot;,
     &quot;notes&quot;: &quot;La mascota se comporta bien durante la revisi&oacute;n.&quot;,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
     &quot;deleted_at&quot;: null
 }</code>
  </pre>
@@ -1861,10 +1867,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-medical-records--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>2</code></p>
+<p>The ID of the medical record. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1882,7 +1888,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/medical-records/2" \
+    "http://localhost:8000/api/medical-records/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -1898,7 +1904,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/2"
+    "http://localhost:8000/api/medical-records/1"
 );
 
 const headers = {
@@ -2020,10 +2026,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-medical-records--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>2</code></p>
+<p>The ID of the medical record. Example: <code>1</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2102,7 +2108,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/medical-records/2" \
+    "http://localhost:8000/api/medical-records/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2110,7 +2116,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medical-records/2"
+    "http://localhost:8000/api/medical-records/1"
 );
 
 const headers = {
@@ -2219,10 +2225,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-medical-records--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the medical record. Example: <code>2</code></p>
+<p>The ID of the medical record. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -2282,123 +2288,123 @@ access-control-allow-origin: *
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 1,
+                &quot;user_id&quot;: 1,
+                &quot;pet_id&quot;: 1,
+                &quot;start_date&quot;: &quot;2026-02-08T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;pending&quot;,
+                &quot;total_price&quot;: &quot;100.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;user_id&quot;: 1,
+                &quot;pet_id&quot;: 1,
+                &quot;start_date&quot;: &quot;2026-02-02T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;150.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;user_id&quot;: 4,
+                &quot;pet_id&quot;: 1,
+                &quot;start_date&quot;: &quot;2025-11-19T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-11-22T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;95.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
+                &quot;id&quot;: 4,
+                &quot;user_id&quot;: 4,
+                &quot;pet_id&quot;: 2,
+                &quot;start_date&quot;: &quot;2026-03-05T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-03-07T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;cancelled&quot;,
+                &quot;total_price&quot;: &quot;60.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
                 &quot;id&quot;: 5,
                 &quot;user_id&quot;: 6,
                 &quot;pet_id&quot;: 3,
-                &quot;start_date&quot;: &quot;2026-01-21T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-01-26T23:00:00.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2026-03-06T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-03-12T23:00:00.000000Z&quot;,
                 &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: 130,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;total_price&quot;: &quot;150.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 6,
                 &quot;user_id&quot;: 6,
                 &quot;pet_id&quot;: 4,
-                &quot;start_date&quot;: &quot;2026-01-28T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-03T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;cancelled&quot;,
-                &quot;total_price&quot;: 30,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2026-01-11T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-01-16T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;75.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 7,
                 &quot;user_id&quot;: 7,
                 &quot;pet_id&quot;: 5,
-                &quot;start_date&quot;: &quot;2026-02-09T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;cancelled&quot;,
-                &quot;total_price&quot;: 45,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2026-03-09T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2026-03-11T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;pending&quot;,
+                &quot;total_price&quot;: &quot;70.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 8,
                 &quot;user_id&quot;: 7,
                 &quot;pet_id&quot;: 6,
-                &quot;start_date&quot;: &quot;2025-10-12T22:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2025-10-16T22:00:00.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2025-11-13T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-11-14T23:00:00.000000Z&quot;,
                 &quot;status&quot;: &quot;completed&quot;,
-                &quot;total_price&quot;: 35,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;total_price&quot;: &quot;80.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 9,
                 &quot;user_id&quot;: 8,
                 &quot;pet_id&quot;: 7,
-                &quot;start_date&quot;: &quot;2026-02-06T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-11T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;pending&quot;,
-                &quot;total_price&quot;: 160,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2025-12-22T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-12-27T23:00:00.000000Z&quot;,
+                &quot;status&quot;: &quot;confirmed&quot;,
+                &quot;total_price&quot;: &quot;75.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 10,
                 &quot;user_id&quot;: 8,
                 &quot;pet_id&quot;: 8,
-                &quot;start_date&quot;: &quot;2026-01-13T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-01-17T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;cancelled&quot;,
-                &quot;total_price&quot;: 75,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;user_id&quot;: 9,
-                &quot;pet_id&quot;: 9,
-                &quot;start_date&quot;: &quot;2025-12-21T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2025-12-27T23:00:00.000000Z&quot;,
+                &quot;start_date&quot;: &quot;2025-11-22T23:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-11-23T23:00:00.000000Z&quot;,
                 &quot;status&quot;: &quot;confirmed&quot;,
-                &quot;total_price&quot;: 40,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 12,
-                &quot;user_id&quot;: 9,
-                &quot;pet_id&quot;: 10,
-                &quot;start_date&quot;: &quot;2026-02-09T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-14T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;pending&quot;,
-                &quot;total_price&quot;: 35,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 13,
-                &quot;user_id&quot;: 10,
-                &quot;pet_id&quot;: 11,
-                &quot;start_date&quot;: &quot;2026-02-07T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;completed&quot;,
-                &quot;total_price&quot;: 85,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 14,
-                &quot;user_id&quot;: 10,
-                &quot;pet_id&quot;: 12,
-                &quot;start_date&quot;: &quot;2026-03-04T23:00:00.000000Z&quot;,
-                &quot;end_date&quot;: &quot;2026-03-06T23:00:00.000000Z&quot;,
-                &quot;status&quot;: &quot;cancelled&quot;,
-                &quot;total_price&quot;: 75,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;total_price&quot;: &quot;130.00&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             }
         ],
@@ -2437,7 +2443,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 12
+        &quot;total&quot;: 14
     }
 }</code>
  </pre>
@@ -2548,9 +2554,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-03-03\",
-    \"end_date\": \"2052-03-02\",
-    \"status\": \"confirmed\",
+    \"start_date\": \"2022-03-04\",
+    \"end_date\": \"2052-03-03\",
+    \"status\": \"completed\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2570,9 +2576,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-03-03",
-    "end_date": "2052-03-02",
-    "status": "confirmed",
+    "start_date": "2022-03-04",
+    "end_date": "2052-03-03",
+    "status": "completed",
     "total_price": 39
 };
 
@@ -2701,10 +2707,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-reservations"
-               value="2022-03-03"
+               value="2022-03-04"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-03</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-04</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -2713,10 +2719,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-reservations"
-               value="2052-03-02"
+               value="2052-03-03"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-02</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2725,10 +2731,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-reservations"
-               value="confirmed"
+               value="completed"
                data-component="body">
     <br>
-<p>Example: <code>confirmed</code></p>
+<p>Example: <code>completed</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -2760,7 +2766,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/reservations/5" \
+    --get "http://localhost:8000/api/reservations/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2768,7 +2774,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/5"
+    "http://localhost:8000/api/reservations/1"
 );
 
 const headers = {
@@ -2798,15 +2804,15 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 5,
-    &quot;user_id&quot;: 6,
-    &quot;pet_id&quot;: 3,
-    &quot;start_date&quot;: &quot;2026-01-21T23:00:00.000000Z&quot;,
-    &quot;end_date&quot;: &quot;2026-01-26T23:00:00.000000Z&quot;,
-    &quot;status&quot;: &quot;confirmed&quot;,
-    &quot;total_price&quot;: 130,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+    &quot;id&quot;: 1,
+    &quot;user_id&quot;: 1,
+    &quot;pet_id&quot;: 1,
+    &quot;start_date&quot;: &quot;2026-02-08T23:00:00.000000Z&quot;,
+    &quot;end_date&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
+    &quot;status&quot;: &quot;pending&quot;,
+    &quot;total_price&quot;: &quot;100.00&quot;,
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
     &quot;deleted_at&quot;: null
 }</code>
  </pre>
@@ -2902,10 +2908,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-reservations--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>5</code></p>
+<p>The ID of the reservation. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -2923,16 +2929,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/reservations/5" \
+    "http://localhost:8000/api/reservations/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"user_id\": \"architecto\",
     \"pet_id\": \"architecto\",
-    \"start_date\": \"2022-03-03\",
-    \"end_date\": \"2052-03-02\",
-    \"status\": \"cancelled\",
+    \"start_date\": \"2022-03-04\",
+    \"end_date\": \"2052-03-03\",
+    \"status\": \"confirmed\",
     \"total_price\": 39
 }"
 </code></pre></div>
@@ -2940,7 +2946,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/5"
+    "http://localhost:8000/api/reservations/1"
 );
 
 const headers = {
@@ -2952,9 +2958,9 @@ const headers = {
 let body = {
     "user_id": "architecto",
     "pet_id": "architecto",
-    "start_date": "2022-03-03",
-    "end_date": "2052-03-02",
-    "status": "cancelled",
+    "start_date": "2022-03-04",
+    "end_date": "2052-03-03",
+    "status": "confirmed",
     "total_price": 39
 };
 
@@ -3063,10 +3069,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-reservations--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>5</code></p>
+<p>The ID of the reservation. Example: <code>1</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -3100,10 +3106,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2022-03-03"
+               value="2022-03-04"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-03</code></p>
+<p>Must be a valid date. Must be a date before or equal to <code>end_date</code>. Example: <code>2022-03-04</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -3112,10 +3118,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-reservations--id-"
-               value="2052-03-02"
+               value="2052-03-03"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-02</code></p>
+<p>Must be a valid date. Must be a date after or equal to <code>start_date</code>. Example: <code>2052-03-03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -3124,10 +3130,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-reservations--id-"
-               value="cancelled"
+               value="confirmed"
                data-component="body">
     <br>
-<p>Example: <code>cancelled</code></p>
+<p>Example: <code>confirmed</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>confirmed</code></li> <li><code>completed</code></li> <li><code>cancelled</code></li></ul>
         </div>
@@ -3159,7 +3165,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/reservations/5" \
+    "http://localhost:8000/api/reservations/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -3167,7 +3173,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reservations/5"
+    "http://localhost:8000/api/reservations/1"
 );
 
 const headers = {
@@ -3276,10 +3282,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-reservations--id-"
-               value="5"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the reservation. Example: <code>5</code></p>
+<p>The ID of the reservation. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -3342,91 +3348,91 @@ access-control-allow-origin: *
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Alojamiento dog&amp;cat hotel&quot;,
                 &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
-                &quot;base_price&quot;: 20,
+                &quot;base_price&quot;: &quot;20.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Juegos y comodidades extra&quot;,
                 &quot;description&quot;: &quot;A&ntilde;adido: webcam, comida h&uacute;meda y juegos constantes.&quot;,
-                &quot;base_price&quot;: 35,
+                &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Peluquer&iacute;a Canina Y Felina&quot;,
                 &quot;description&quot;: &quot;Ba&ntilde;o, corte de pelo y u&ntilde;as.&quot;,
-                &quot;base_price&quot;: 25,
+                &quot;base_price&quot;: &quot;25.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;Consulta Veterinaria&quot;,
                 &quot;description&quot;: &quot;Revisi&oacute;n general y aviso de pagos extra por llamada.&quot;,
-                &quot;base_price&quot;: 30,
+                &quot;base_price&quot;: &quot;30.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Adiestramiento B&aacute;sico&quot;,
                 &quot;description&quot;: &quot;Sesi&oacute;n de obediencia b&aacute;sica y juegos.&quot;,
-                &quot;base_price&quot;: 40,
+                &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;Hopitalizaci&oacute;n&quot;,
                 &quot;description&quot;: &quot;Cuidados intensivos.&quot;,
-                &quot;base_price&quot;: 40,
+                &quot;base_price&quot;: &quot;40.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 7,
                 &quot;name&quot;: &quot;Consulta online&quot;,
                 &quot;description&quot;: &quot;Consulta a trav&eacute;s de videollamada o llamada b&aacute;sica.&quot;,
-                &quot;base_price&quot;: 35,
+                &quot;base_price&quot;: &quot;35.00&quot;,
                 &quot;is_active&quot;: 1,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;Ciruj&iacute;a&quot;,
+                &quot;description&quot;: &quot;Mayor&iacute;a de operaciones.&quot;,
+                &quot;base_price&quot;: &quot;500.00&quot;,
+                &quot;is_active&quot;: 0,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 9,
                 &quot;name&quot;: &quot;Sesi&oacute;n de fotos&quot;,
                 &quot;description&quot;: &quot;Prometo que no blanqueamos dinero con esto&quot;,
-                &quot;base_price&quot;: 50,
+                &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             },
             {
                 &quot;id&quot;: 10,
                 &quot;name&quot;: &quot;Aromaterapia y SPA&quot;,
                 &quot;description&quot;: &quot;Cuidados especiales para la felicidad de tu mascota&quot;,
-                &quot;base_price&quot;: 50,
+                &quot;base_price&quot;: &quot;50.00&quot;,
                 &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;name&quot;: &quot;Urgencias 24h&quot;,
-                &quot;description&quot;: &quot;Ambulancia y atenci&oacute;n 24h&quot;,
-                &quot;base_price&quot;: 50,
-                &quot;is_active&quot;: 0,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/services?page=1&quot;,
@@ -3464,7 +3470,7 @@ access-control-allow-origin: *
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 12
+        &quot;total&quot;: 13
     }
 }</code>
  </pre>
@@ -3576,7 +3582,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": true
+    \"is_active\": false
 }"
 </code></pre></div>
 
@@ -3596,7 +3602,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": true
+    "is_active": false
 };
 
 fetch(url, {
@@ -3749,7 +3755,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
@@ -3808,10 +3814,10 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;name&quot;: &quot;Alojamiento dog&amp;cat hotel&quot;,
     &quot;description&quot;: &quot;Habitaci&oacute;n c&oacute;moda con paseos diarios.&quot;,
-    &quot;base_price&quot;: 20,
+    &quot;base_price&quot;: &quot;20.00&quot;,
     &quot;is_active&quot;: 1,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -3935,7 +3941,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
     \"base_price\": 60,
-    \"is_active\": false
+    \"is_active\": true
 }"
 </code></pre></div>
 
@@ -3955,7 +3961,7 @@ let body = {
     "name": "b",
     "description": "Eius et animi quos velit et.",
     "base_price": 60,
-    "is_active": false
+    "is_active": true
 };
 
 fetch(url, {
@@ -4125,7 +4131,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -4323,16 +4329,29 @@ access-control-allow-origin: *
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 1,
+                &quot;user_id&quot;: 4,
+                &quot;name&quot;: &quot;Toby&quot;,
+                &quot;species&quot;: &quot;Perro&quot;,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 2,
+                &quot;weight&quot;: 28,
+                &quot;notes&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;deleted_at&quot;: null
+            },
+            {
                 &quot;id&quot;: 2,
                 &quot;user_id&quot;: 4,
-                &quot;name&quot;: &quot;Luna&quot;,
+                &quot;name&quot;: &quot;Mia&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-                &quot;age&quot;: 3,
-                &quot;weight&quot;: 5.5,
+                &quot;breed&quot;: &quot;Persa&quot;,
+                &quot;age&quot;: 5,
+                &quot;weight&quot;: 5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
@@ -4340,12 +4359,12 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 6,
                 &quot;name&quot;: &quot;Max&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Golden Retriever&quot;,
-                &quot;age&quot;: 7,
-                &quot;weight&quot;: 30.5,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 4,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
@@ -4353,25 +4372,25 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 6,
                 &quot;name&quot;: &quot;Nina&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 11,
-                &quot;weight&quot;: 5,
+                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                &quot;age&quot;: 3,
+                &quot;weight&quot;: 5.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 5,
                 &quot;user_id&quot;: 7,
-                &quot;name&quot;: &quot;Zeus&quot;,
+                &quot;name&quot;: &quot;Rocky&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-                &quot;age&quot;: 5,
-                &quot;weight&quot;: 12,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 3,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
@@ -4379,25 +4398,25 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 7,
                 &quot;name&quot;: &quot;Luna&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Maine Coon&quot;,
-                &quot;age&quot;: 7,
-                &quot;weight&quot;: 7.5,
+                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                &quot;age&quot;: 13,
+                &quot;weight&quot;: 5.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 7,
                 &quot;user_id&quot;: 8,
-                &quot;name&quot;: &quot;Zeus&quot;,
+                &quot;name&quot;: &quot;Toby&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
                 &quot;breed&quot;: &quot;Labrador&quot;,
-                &quot;age&quot;: 2,
+                &quot;age&quot;: 5,
                 &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
@@ -4406,11 +4425,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;Nina&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
                 &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 3,
+                &quot;age&quot;: 13,
                 &quot;weight&quot;: 5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
@@ -4418,38 +4437,25 @@ access-control-allow-origin: *
                 &quot;user_id&quot;: 9,
                 &quot;name&quot;: &quot;Bruno&quot;,
                 &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Pastor Alem&aacute;n&quot;,
-                &quot;age&quot;: 10,
-                &quot;weight&quot;: 35,
+                &quot;breed&quot;: &quot;Labrador&quot;,
+                &quot;age&quot;: 3,
+                &quot;weight&quot;: 28,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             },
             {
                 &quot;id&quot;: 10,
                 &quot;user_id&quot;: 9,
-                &quot;name&quot;: &quot;Nala&quot;,
+                &quot;name&quot;: &quot;Kira&quot;,
                 &quot;species&quot;: &quot;Gato&quot;,
-                &quot;breed&quot;: &quot;Persa&quot;,
-                &quot;age&quot;: 13,
-                &quot;weight&quot;: 5,
+                &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
+                &quot;age&quot;: 4,
+                &quot;weight&quot;: 5.5,
                 &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;user_id&quot;: 10,
-                &quot;name&quot;: &quot;Bruno&quot;,
-                &quot;species&quot;: &quot;Perro&quot;,
-                &quot;breed&quot;: &quot;Bulldog Franc&eacute;s&quot;,
-                &quot;age&quot;: 9,
-                &quot;weight&quot;: 12,
-                &quot;notes&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;deleted_at&quot;: null
             }
         ],
@@ -4823,7 +4829,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/pets/2" \
+    --get "http://localhost:8000/api/pets/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -4831,7 +4837,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/2"
+    "http://localhost:8000/api/pets/1"
 );
 
 const headers = {
@@ -4861,16 +4867,16 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 2,
+    &quot;id&quot;: 1,
     &quot;user_id&quot;: 4,
-    &quot;name&quot;: &quot;Luna&quot;,
-    &quot;species&quot;: &quot;Gato&quot;,
-    &quot;breed&quot;: &quot;Bengal&iacute;&quot;,
-    &quot;age&quot;: 3,
-    &quot;weight&quot;: 5.5,
+    &quot;name&quot;: &quot;Toby&quot;,
+    &quot;species&quot;: &quot;Perro&quot;,
+    &quot;breed&quot;: &quot;Labrador&quot;,
+    &quot;age&quot;: 2,
+    &quot;weight&quot;: 28,
     &quot;notes&quot;: null,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
     &quot;deleted_at&quot;: null
 }</code>
  </pre>
@@ -4966,10 +4972,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-pets--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>2</code></p>
+<p>The ID of the pet. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -4987,7 +4993,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/pets/2" \
+    "http://localhost:8000/api/pets/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -5005,7 +5011,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/2"
+    "http://localhost:8000/api/pets/1"
 );
 
 const headers = {
@@ -5129,10 +5135,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-pets--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>2</code></p>
+<p>The ID of the pet. Example: <code>1</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -5235,7 +5241,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/pets/2" \
+    "http://localhost:8000/api/pets/1" \
     --header "Authorization: Bearer admin" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -5243,7 +5249,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/pets/2"
+    "http://localhost:8000/api/pets/1"
 );
 
 const headers = {
@@ -5352,10 +5358,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-pets--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the pet. Example: <code>2</code></p>
+<p>The ID of the pet. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -5419,11 +5425,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;admin&quot;,
                 &quot;email&quot;: &quot;admin@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:55.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:55.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5431,11 +5437,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;veterinario&quot;,
                 &quot;email&quot;: &quot;vet@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=v&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5443,11 +5449,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;recepcionista&quot;,
                 &quot;email&quot;: &quot;recep@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=r&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5455,11 +5461,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente&quot;,
                 &quot;email&quot;: &quot;client@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5467,11 +5473,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cuidador&quot;,
                 &quot;email&quot;: &quot;cuid@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:56.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5479,11 +5485,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente1&quot;,
                 &quot;email&quot;: &quot;cliente1@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:37.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5491,11 +5497,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente2&quot;,
                 &quot;email&quot;: &quot;cliente2@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5503,11 +5509,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente3&quot;,
                 &quot;email&quot;: &quot;cliente3@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5515,11 +5521,11 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente4&quot;,
                 &quot;email&quot;: &quot;cliente4@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             },
             {
@@ -5527,18 +5533,18 @@ access-control-allow-origin: *
                 &quot;name&quot;: &quot;cliente5&quot;,
                 &quot;email&quot;: &quot;cliente5@mail.es&quot;,
                 &quot;email_verified_at&quot;: null,
+                &quot;two_factor_confirmed_at&quot;: null,
                 &quot;current_team_id&quot;: null,
                 &quot;profile_photo_path&quot;: null,
-                &quot;created_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2026-02-03T13:31:57.000000Z&quot;,
-                &quot;two_factor_confirmed_at&quot;: null,
+                &quot;created_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-08T13:55:38.000000Z&quot;,
                 &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=c&amp;color=7F9CF5&amp;background=EBF4FF&quot;
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/users?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 2,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/users?page=2&quot;,
+        &quot;last_page&quot;: 1,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/users?page=1&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -5553,24 +5559,18 @@ access-control-allow-origin: *
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: &quot;http://localhost:8000/api/users?page=2&quot;,
-                &quot;label&quot;: &quot;2&quot;,
-                &quot;page&quot;: 2,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost:8000/api/users?page=2&quot;,
+                &quot;url&quot;: null,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: 2,
+                &quot;page&quot;: null,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/users?page=2&quot;,
+        &quot;next_page_url&quot;: null,
         &quot;path&quot;: &quot;http://localhost:8000/api/users&quot;,
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 11
+        &quot;total&quot;: 10
     }
 }</code>
  </pre>
@@ -5891,11 +5891,11 @@ access-control-allow-origin: *
     &quot;name&quot;: &quot;admin&quot;,
     &quot;email&quot;: &quot;admin@mail.es&quot;,
     &quot;email_verified_at&quot;: null,
+    &quot;two_factor_confirmed_at&quot;: null,
     &quot;current_team_id&quot;: null,
     &quot;profile_photo_path&quot;: null,
-    &quot;created_at&quot;: &quot;2026-02-03T13:31:55.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2026-02-03T13:31:55.000000Z&quot;,
-    &quot;two_factor_confirmed_at&quot;: null,
+    &quot;created_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-02-08T13:55:36.000000Z&quot;,
     &quot;profile_photo_url&quot;: &quot;https://ui-avatars.com/api/?name=a&amp;color=7F9CF5&amp;background=EBF4FF&quot;
 }</code>
  </pre>
@@ -6383,40 +6383,64 @@ access-control-allow-origin: *
     &quot;current_page&quot;: 1,
     &quot;data&quot;: [
         {
+            &quot;id&quot;: 1,
+            &quot;invoice_id&quot;: 1,
+            &quot;user_id&quot;: 1,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-1&quot;,
+            &quot;paid_at&quot;: &quot;2026-02-12T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;invoice_id&quot;: 3,
+            &quot;user_id&quot;: 4,
+            &quot;amount&quot;: &quot;95.00&quot;,
+            &quot;payment_method&quot;: &quot;credit_card&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;transaction_id&quot;: &quot;TRX-3&quot;,
+            &quot;paid_at&quot;: &quot;2025-11-22T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
+        },
+        {
             &quot;id&quot;: 3,
             &quot;invoice_id&quot;: 5,
             &quot;user_id&quot;: 6,
-            &quot;amount&quot;: &quot;130.00&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
             &quot;payment_method&quot;: &quot;credit_card&quot;,
             &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-D991A513&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
+            &quot;transaction_id&quot;: &quot;TRX-5&quot;,
+            &quot;paid_at&quot;: &quot;2026-03-12T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
         },
         {
             &quot;id&quot;: 4,
             &quot;invoice_id&quot;: 7,
             &quot;user_id&quot;: 7,
-            &quot;amount&quot;: &quot;45.00&quot;,
+            &quot;amount&quot;: &quot;70.00&quot;,
             &quot;payment_method&quot;: &quot;credit_card&quot;,
             &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-A78CCC97&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
+            &quot;transaction_id&quot;: &quot;TRX-7&quot;,
+            &quot;paid_at&quot;: &quot;2026-03-11T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
         },
         {
             &quot;id&quot;: 5,
             &quot;invoice_id&quot;: 9,
             &quot;user_id&quot;: 8,
-            &quot;amount&quot;: &quot;160.00&quot;,
+            &quot;amount&quot;: &quot;75.00&quot;,
             &quot;payment_method&quot;: &quot;credit_card&quot;,
             &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-69F474E3&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
+            &quot;transaction_id&quot;: &quot;TRX-9&quot;,
+            &quot;paid_at&quot;: &quot;2025-12-27T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
         },
         {
             &quot;id&quot;: 6,
@@ -6425,22 +6449,22 @@ access-control-allow-origin: *
             &quot;amount&quot;: &quot;40.00&quot;,
             &quot;payment_method&quot;: &quot;credit_card&quot;,
             &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-8BDBE67E&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
+            &quot;transaction_id&quot;: &quot;TRX-11&quot;,
+            &quot;paid_at&quot;: &quot;2025-11-06T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
         },
         {
             &quot;id&quot;: 7,
             &quot;invoice_id&quot;: 13,
             &quot;user_id&quot;: 10,
-            &quot;amount&quot;: &quot;85.00&quot;,
+            &quot;amount&quot;: &quot;95.00&quot;,
             &quot;payment_method&quot;: &quot;credit_card&quot;,
             &quot;status&quot;: &quot;completed&quot;,
-            &quot;transaction_id&quot;: &quot;TRX-846B7F66&quot;,
-            &quot;paid_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-02-03T13:31:58.000000Z&quot;
+            &quot;transaction_id&quot;: &quot;TRX-13&quot;,
+            &quot;paid_at&quot;: &quot;2025-11-27T23:00:00.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2026-02-08T13:55:39.000000Z&quot;
         }
     ],
     &quot;first_page_url&quot;: &quot;http://localhost:8000/api/payments?page=1&quot;,
@@ -6471,8 +6495,8 @@ access-control-allow-origin: *
     &quot;path&quot;: &quot;http://localhost:8000/api/payments&quot;,
     &quot;per_page&quot;: 10,
     &quot;prev_page_url&quot;: null,
-    &quot;to&quot;: 5,
-    &quot;total&quot;: 5
+    &quot;to&quot;: 7,
+    &quot;total&quot;: 7
 }</code>
  </pre>
     </span>

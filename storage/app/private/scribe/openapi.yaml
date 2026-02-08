@@ -38,109 +38,109 @@ paths:
                     current_page: 1
                     data:
                       -
+                        id: 1
+                        reservation_id: 1
+                        invoice_number: HFP-1
+                        total: '100.00'
+                        status: paid
+                        issued_at: '2026-02-13 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        reservation_id: 2
+                        invoice_number: HFP-2
+                        total: '150.00'
+                        status: unpaid
+                        issued_at: '2026-02-08 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        reservation_id: 3
+                        invoice_number: HFP-3
+                        total: '95.00'
+                        status: paid
+                        issued_at: '2025-11-23 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        reservation_id: 4
+                        invoice_number: HFP-4
+                        total: '60.00'
+                        status: unpaid
+                        issued_at: '2026-03-08 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                        deleted_at: null
+                      -
                         id: 5
                         reservation_id: 5
-                        invoice_number: FAC-00005
-                        total: 130
+                        invoice_number: HFP-5
+                        total: '150.00'
                         status: paid
-                        issued_at: '2026-01-22 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2026-03-13 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 6
                         reservation_id: 6
-                        invoice_number: FAC-00006
-                        total: 30
+                        invoice_number: HFP-6
+                        total: '75.00'
                         status: unpaid
-                        issued_at: '2026-01-29 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2026-01-17 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 7
                         reservation_id: 7
-                        invoice_number: FAC-00007
-                        total: 45
+                        invoice_number: HFP-7
+                        total: '70.00'
                         status: paid
-                        issued_at: '2026-02-10 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2026-03-12 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 8
                         reservation_id: 8
-                        invoice_number: FAC-00008
-                        total: 35
+                        invoice_number: HFP-8
+                        total: '80.00'
                         status: unpaid
-                        issued_at: '2025-10-13 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2025-11-15 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 9
                         reservation_id: 9
-                        invoice_number: FAC-00009
-                        total: 160
+                        invoice_number: HFP-9
+                        total: '75.00'
                         status: paid
-                        issued_at: '2026-02-07 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2025-12-28 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 10
                         reservation_id: 10
-                        invoice_number: FAC-00010
-                        total: 75
+                        invoice_number: HFP-10
+                        total: '130.00'
                         status: unpaid
-                        issued_at: '2026-01-14 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 11
-                        reservation_id: 11
-                        invoice_number: FAC-00011
-                        total: 40
-                        status: paid
-                        issued_at: '2025-12-22 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 12
-                        reservation_id: 12
-                        invoice_number: FAC-00012
-                        total: 35
-                        status: unpaid
-                        issued_at: '2026-02-10 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 13
-                        reservation_id: 13
-                        invoice_number: FAC-00013
-                        total: 85
-                        status: paid
-                        issued_at: '2026-02-08 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 14
-                        reservation_id: 14
-                        invoice_number: FAC-00014
-                        total: 75
-                        status: unpaid
-                        issued_at: '2026-03-05 00:00:00'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        issued_at: '2025-11-24 00:00:00'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                     first_page_url: 'http://localhost:8000/api/invoices?page=1'
                     from: 1
-                    last_page: 1
-                    last_page_url: 'http://localhost:8000/api/invoices?page=1'
+                    last_page: 2
+                    last_page_url: 'http://localhost:8000/api/invoices?page=2'
                     links:
                       -
                         url: null
@@ -153,16 +153,21 @@ paths:
                         page: 1
                         active: true
                       -
-                        url: null
-                        label: 'Next &raquo;'
-                        page: null
+                        url: 'http://localhost:8000/api/invoices?page=2'
+                        label: '2'
+                        page: 2
                         active: false
-                    next_page_url: null
+                      -
+                        url: 'http://localhost:8000/api/invoices?page=2'
+                        label: 'Next &raquo;'
+                        page: 2
+                        active: false
+                    next_page_url: 'http://localhost:8000/api/invoices?page=2'
                     path: 'http://localhost:8000/api/invoices'
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 10
+                    total: 14
                 properties:
                   invoices:
                     type: object
@@ -174,132 +179,132 @@ paths:
                         type: array
                         example:
                           -
+                            id: 1
+                            reservation_id: 1
+                            invoice_number: HFP-1
+                            total: '100.00'
+                            status: paid
+                            issued_at: '2026-02-13 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            reservation_id: 2
+                            invoice_number: HFP-2
+                            total: '150.00'
+                            status: unpaid
+                            issued_at: '2026-02-08 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            reservation_id: 3
+                            invoice_number: HFP-3
+                            total: '95.00'
+                            status: paid
+                            issued_at: '2025-11-23 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            reservation_id: 4
+                            invoice_number: HFP-4
+                            total: '60.00'
+                            status: unpaid
+                            issued_at: '2026-03-08 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
+                            deleted_at: null
+                          -
                             id: 5
                             reservation_id: 5
-                            invoice_number: FAC-00005
-                            total: 130
+                            invoice_number: HFP-5
+                            total: '150.00'
                             status: paid
-                            issued_at: '2026-01-22 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2026-03-13 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 6
                             reservation_id: 6
-                            invoice_number: FAC-00006
-                            total: 30
+                            invoice_number: HFP-6
+                            total: '75.00'
                             status: unpaid
-                            issued_at: '2026-01-29 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2026-01-17 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 7
                             reservation_id: 7
-                            invoice_number: FAC-00007
-                            total: 45
+                            invoice_number: HFP-7
+                            total: '70.00'
                             status: paid
-                            issued_at: '2026-02-10 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2026-03-12 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 8
                             reservation_id: 8
-                            invoice_number: FAC-00008
-                            total: 35
+                            invoice_number: HFP-8
+                            total: '80.00'
                             status: unpaid
-                            issued_at: '2025-10-13 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2025-11-15 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 9
                             reservation_id: 9
-                            invoice_number: FAC-00009
-                            total: 160
+                            invoice_number: HFP-9
+                            total: '75.00'
                             status: paid
-                            issued_at: '2026-02-07 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2025-12-28 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 10
                             reservation_id: 10
-                            invoice_number: FAC-00010
-                            total: 75
+                            invoice_number: HFP-10
+                            total: '130.00'
                             status: unpaid
-                            issued_at: '2026-01-14 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 11
-                            reservation_id: 11
-                            invoice_number: FAC-00011
-                            total: 40
-                            status: paid
-                            issued_at: '2025-12-22 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 12
-                            reservation_id: 12
-                            invoice_number: FAC-00012
-                            total: 35
-                            status: unpaid
-                            issued_at: '2026-02-10 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 13
-                            reservation_id: 13
-                            invoice_number: FAC-00013
-                            total: 85
-                            status: paid
-                            issued_at: '2026-02-08 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 14
-                            reservation_id: 14
-                            invoice_number: FAC-00014
-                            total: 75
-                            status: unpaid
-                            issued_at: '2026-03-05 00:00:00'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            issued_at: '2025-11-24 00:00:00'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                         items:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 5
+                              example: 1
                             reservation_id:
                               type: integer
-                              example: 5
+                              example: 1
                             invoice_number:
                               type: string
-                              example: FAC-00005
+                              example: HFP-1
                             total:
-                              type: integer
-                              example: 130
+                              type: string
+                              example: '100.00'
                             status:
                               type: string
                               example: paid
                             issued_at:
                               type: string
-                              example: '2026-01-22 00:00:00'
+                              example: '2026-02-13 00:00:00'
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:39.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:39.000000Z'
                             deleted_at:
                               type: string
                               example: null
@@ -311,10 +316,10 @@ paths:
                         example: 1
                       last_page:
                         type: integer
-                        example: 1
+                        example: 2
                       last_page_url:
                         type: string
-                        example: 'http://localhost:8000/api/invoices?page=1'
+                        example: 'http://localhost:8000/api/invoices?page=2'
                       links:
                         type: array
                         example:
@@ -329,9 +334,14 @@ paths:
                             page: 1
                             active: true
                           -
-                            url: null
+                            url: 'http://localhost:8000/api/invoices?page=2'
+                            label: '2'
+                            page: 2
+                            active: false
+                          -
+                            url: 'http://localhost:8000/api/invoices?page=2'
                             label: 'Next &raquo;'
-                            page: null
+                            page: 2
                             active: false
                         items:
                           type: object
@@ -350,7 +360,7 @@ paths:
                               example: false
                       next_page_url:
                         type: string
-                        example: null
+                        example: 'http://localhost:8000/api/invoices?page=2'
                       path:
                         type: string
                         example: 'http://localhost:8000/api/invoices'
@@ -365,7 +375,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 10
+                        example: 14
       tags:
         - Endpoints
     post:
@@ -398,14 +408,14 @@ paths:
                 status:
                   type: string
                   description: ''
-                  example: unpaid
+                  example: paid
                   enum:
                     - paid
                     - unpaid
                 issued_at:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2026-02-07T17:34:16'
+                  example: '2026-02-08T15:09:31'
               required:
                 - reservation_id
                 - invoice_number
@@ -426,40 +436,40 @@ paths:
               schema:
                 type: object
                 example:
-                  id: 5
-                  reservation_id: 5
-                  invoice_number: FAC-00005
-                  total: 130
+                  id: 1
+                  reservation_id: 1
+                  invoice_number: HFP-1
+                  total: '100.00'
                   status: paid
-                  issued_at: '2026-01-22 00:00:00'
-                  created_at: '2026-02-03T13:31:58.000000Z'
-                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  issued_at: '2026-02-13 00:00:00'
+                  created_at: '2026-02-08T13:55:39.000000Z'
+                  updated_at: '2026-02-08T13:55:39.000000Z'
                   deleted_at: null
                 properties:
                   id:
                     type: integer
-                    example: 5
+                    example: 1
                   reservation_id:
                     type: integer
-                    example: 5
+                    example: 1
                   invoice_number:
                     type: string
-                    example: FAC-00005
+                    example: HFP-1
                   total:
-                    type: integer
-                    example: 130
+                    type: string
+                    example: '100.00'
                   status:
                     type: string
                     example: paid
                   issued_at:
                     type: string
-                    example: '2026-01-22 00:00:00'
+                    example: '2026-02-13 00:00:00'
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:39.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:39.000000Z'
                   deleted_at:
                     type: string
                     example: null
@@ -502,7 +512,7 @@ paths:
                 issued_at:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2026-02-07T17:34:16'
+                  example: '2026-02-08T15:09:31'
               required:
                 - reservation_id
                 - invoice_number
@@ -522,7 +532,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the invoice.'
-        example: 5
+        example: 1
         required: true
         schema:
           type: integer
@@ -544,104 +554,104 @@ paths:
                     current_page: 1
                     data:
                       -
+                        id: 1
+                        pet_id: 1
+                        veterinarian_id: 2
+                        diagnosis: 'Revisión rutinaria'
+                        treatment: 'Ninguno necesario. Todo en orden.'
+                        notes: 'La mascota se comporta bien durante la revisión.'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                        deleted_at: null
+                      -
                         id: 2
                         pet_id: 2
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Luna'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 3
                         pet_id: 3
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Max'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 4
                         pet_id: 4
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Nina'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 5
                         pet_id: 5
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Zeus'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 6
                         pet_id: 6
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Luna'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 7
                         pet_id: 7
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Zeus'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 8
                         pet_id: 8
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Nina'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 9
                         pet_id: 9
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Bruno'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                       -
                         id: 10
                         pet_id: 10
                         veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Nala'
+                        diagnosis: 'Revisión rutinaria'
                         treatment: 'Ninguno necesario. Todo en orden.'
                         notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 11
-                        pet_id: 11
-                        veterinarian_id: 2
-                        diagnosis: 'Revisión rutinaria para Bruno'
-                        treatment: 'Ninguno necesario. Todo en orden.'
-                        notes: 'La mascota se comporta bien durante la revisión.'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                         deleted_at: null
                     first_page_url: 'http://localhost:8000/api/medical-records?page=1'
                     from: 1
@@ -673,7 +683,7 @@ paths:
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 11
+                    total: 12
                 properties:
                   records:
                     type: object
@@ -685,120 +695,120 @@ paths:
                         type: array
                         example:
                           -
+                            id: 1
+                            pet_id: 1
+                            veterinarian_id: 2
+                            diagnosis: 'Revisión rutinaria'
+                            treatment: 'Ninguno necesario. Todo en orden.'
+                            notes: 'La mascota se comporta bien durante la revisión.'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
+                            deleted_at: null
+                          -
                             id: 2
                             pet_id: 2
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Luna'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 3
                             pet_id: 3
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Max'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 4
                             pet_id: 4
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Nina'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 5
                             pet_id: 5
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Zeus'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 6
                             pet_id: 6
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Luna'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 7
                             pet_id: 7
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Zeus'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 8
                             pet_id: 8
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Nina'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 9
                             pet_id: 9
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Bruno'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                           -
                             id: 10
                             pet_id: 10
                             veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Nala'
+                            diagnosis: 'Revisión rutinaria'
                             treatment: 'Ninguno necesario. Todo en orden.'
                             notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 11
-                            pet_id: 11
-                            veterinarian_id: 2
-                            diagnosis: 'Revisión rutinaria para Bruno'
-                            treatment: 'Ninguno necesario. Todo en orden.'
-                            notes: 'La mascota se comporta bien durante la revisión.'
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:39.000000Z'
+                            updated_at: '2026-02-08T13:55:39.000000Z'
                             deleted_at: null
                         items:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 2
+                              example: 1
                             pet_id:
                               type: integer
-                              example: 2
+                              example: 1
                             veterinarian_id:
                               type: integer
                               example: 2
                             diagnosis:
                               type: string
-                              example: 'Revisión rutinaria para Luna'
+                              example: 'Revisión rutinaria'
                             treatment:
                               type: string
                               example: 'Ninguno necesario. Todo en orden.'
@@ -807,10 +817,10 @@ paths:
                               example: 'La mascota se comporta bien durante la revisión.'
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:39.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:39.000000Z'
                             deleted_at:
                               type: string
                               example: null
@@ -881,7 +891,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 11
+                        example: 12
       tags:
         - Endpoints
     post:
@@ -939,28 +949,28 @@ paths:
               schema:
                 type: object
                 example:
-                  id: 2
-                  pet_id: 2
+                  id: 1
+                  pet_id: 1
                   veterinarian_id: 2
-                  diagnosis: 'Revisión rutinaria para Luna'
+                  diagnosis: 'Revisión rutinaria'
                   treatment: 'Ninguno necesario. Todo en orden.'
                   notes: 'La mascota se comporta bien durante la revisión.'
-                  created_at: '2026-02-03T13:31:58.000000Z'
-                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  created_at: '2026-02-08T13:55:39.000000Z'
+                  updated_at: '2026-02-08T13:55:39.000000Z'
                   deleted_at: null
                 properties:
                   id:
                     type: integer
-                    example: 2
+                    example: 1
                   pet_id:
                     type: integer
-                    example: 2
+                    example: 1
                   veterinarian_id:
                     type: integer
                     example: 2
                   diagnosis:
                     type: string
-                    example: 'Revisión rutinaria para Luna'
+                    example: 'Revisión rutinaria'
                   treatment:
                     type: string
                     example: 'Ninguno necesario. Todo en orden.'
@@ -969,10 +979,10 @@ paths:
                     example: 'La mascota se comporta bien durante la revisión.'
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:39.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:39.000000Z'
                   deleted_at:
                     type: string
                     example: null
@@ -1032,7 +1042,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the medical record.'
-        example: 2
+        example: 1
         required: true
         schema:
           type: integer
@@ -1054,114 +1064,114 @@ paths:
                     current_page: 1
                     data:
                       -
+                        id: 1
+                        user_id: 1
+                        pet_id: 1
+                        start_date: '2026-02-08T23:00:00.000000Z'
+                        end_date: '2026-02-12T23:00:00.000000Z'
+                        status: pending
+                        total_price: '100.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                        deleted_at: null
+                      -
+                        id: 2
+                        user_id: 1
+                        pet_id: 1
+                        start_date: '2026-02-02T23:00:00.000000Z'
+                        end_date: '2026-02-07T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: '150.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                        deleted_at: null
+                      -
+                        id: 3
+                        user_id: 4
+                        pet_id: 1
+                        start_date: '2025-11-19T23:00:00.000000Z'
+                        end_date: '2025-11-22T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: '95.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                        deleted_at: null
+                      -
+                        id: 4
+                        user_id: 4
+                        pet_id: 2
+                        start_date: '2026-03-05T23:00:00.000000Z'
+                        end_date: '2026-03-07T23:00:00.000000Z'
+                        status: cancelled
+                        total_price: '60.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                        deleted_at: null
+                      -
                         id: 5
                         user_id: 6
                         pet_id: 3
-                        start_date: '2026-01-21T23:00:00.000000Z'
-                        end_date: '2026-01-26T23:00:00.000000Z'
+                        start_date: '2026-03-06T23:00:00.000000Z'
+                        end_date: '2026-03-12T23:00:00.000000Z'
                         status: confirmed
-                        total_price: 130
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        total_price: '150.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 6
                         user_id: 6
                         pet_id: 4
-                        start_date: '2026-01-28T23:00:00.000000Z'
-                        end_date: '2026-02-03T23:00:00.000000Z'
-                        status: cancelled
-                        total_price: 30
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        start_date: '2026-01-11T23:00:00.000000Z'
+                        end_date: '2026-01-16T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: '75.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 7
                         user_id: 7
                         pet_id: 5
-                        start_date: '2026-02-09T23:00:00.000000Z'
-                        end_date: '2026-02-12T23:00:00.000000Z'
-                        status: cancelled
-                        total_price: 45
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        start_date: '2026-03-09T23:00:00.000000Z'
+                        end_date: '2026-03-11T23:00:00.000000Z'
+                        status: pending
+                        total_price: '70.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 8
                         user_id: 7
                         pet_id: 6
-                        start_date: '2025-10-12T22:00:00.000000Z'
-                        end_date: '2025-10-16T22:00:00.000000Z'
+                        start_date: '2025-11-13T23:00:00.000000Z'
+                        end_date: '2025-11-14T23:00:00.000000Z'
                         status: completed
-                        total_price: 35
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        total_price: '80.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 9
                         user_id: 8
                         pet_id: 7
-                        start_date: '2026-02-06T23:00:00.000000Z'
-                        end_date: '2026-02-11T23:00:00.000000Z'
-                        status: pending
-                        total_price: 160
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        start_date: '2025-12-22T23:00:00.000000Z'
+                        end_date: '2025-12-27T23:00:00.000000Z'
+                        status: confirmed
+                        total_price: '75.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 10
                         user_id: 8
                         pet_id: 8
-                        start_date: '2026-01-13T23:00:00.000000Z'
-                        end_date: '2026-01-17T23:00:00.000000Z'
-                        status: cancelled
-                        total_price: 75
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 11
-                        user_id: 9
-                        pet_id: 9
-                        start_date: '2025-12-21T23:00:00.000000Z'
-                        end_date: '2025-12-27T23:00:00.000000Z'
+                        start_date: '2025-11-22T23:00:00.000000Z'
+                        end_date: '2025-11-23T23:00:00.000000Z'
                         status: confirmed
-                        total_price: 40
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 12
-                        user_id: 9
-                        pet_id: 10
-                        start_date: '2026-02-09T23:00:00.000000Z'
-                        end_date: '2026-02-14T23:00:00.000000Z'
-                        status: pending
-                        total_price: 35
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 13
-                        user_id: 10
-                        pet_id: 11
-                        start_date: '2026-02-07T23:00:00.000000Z'
-                        end_date: '2026-02-12T23:00:00.000000Z'
-                        status: completed
-                        total_price: 85
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 14
-                        user_id: 10
-                        pet_id: 12
-                        start_date: '2026-03-04T23:00:00.000000Z'
-                        end_date: '2026-03-06T23:00:00.000000Z'
-                        status: cancelled
-                        total_price: 75
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        total_price: '130.00'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                     first_page_url: 'http://localhost:8000/api/reservations?page=1'
                     from: 1
@@ -1193,7 +1203,7 @@ paths:
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 12
+                    total: 14
                 properties:
                   reservations:
                     type: object
@@ -1205,145 +1215,145 @@ paths:
                         type: array
                         example:
                           -
+                            id: 1
+                            user_id: 1
+                            pet_id: 1
+                            start_date: '2026-02-08T23:00:00.000000Z'
+                            end_date: '2026-02-12T23:00:00.000000Z'
+                            status: pending
+                            total_price: '100.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                            deleted_at: null
+                          -
+                            id: 2
+                            user_id: 1
+                            pet_id: 1
+                            start_date: '2026-02-02T23:00:00.000000Z'
+                            end_date: '2026-02-07T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: '150.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                            deleted_at: null
+                          -
+                            id: 3
+                            user_id: 4
+                            pet_id: 1
+                            start_date: '2025-11-19T23:00:00.000000Z'
+                            end_date: '2025-11-22T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: '95.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                            deleted_at: null
+                          -
+                            id: 4
+                            user_id: 4
+                            pet_id: 2
+                            start_date: '2026-03-05T23:00:00.000000Z'
+                            end_date: '2026-03-07T23:00:00.000000Z'
+                            status: cancelled
+                            total_price: '60.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                            deleted_at: null
+                          -
                             id: 5
                             user_id: 6
                             pet_id: 3
-                            start_date: '2026-01-21T23:00:00.000000Z'
-                            end_date: '2026-01-26T23:00:00.000000Z'
+                            start_date: '2026-03-06T23:00:00.000000Z'
+                            end_date: '2026-03-12T23:00:00.000000Z'
                             status: confirmed
-                            total_price: 130
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            total_price: '150.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 6
                             user_id: 6
                             pet_id: 4
-                            start_date: '2026-01-28T23:00:00.000000Z'
-                            end_date: '2026-02-03T23:00:00.000000Z'
-                            status: cancelled
-                            total_price: 30
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            start_date: '2026-01-11T23:00:00.000000Z'
+                            end_date: '2026-01-16T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: '75.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 7
                             user_id: 7
                             pet_id: 5
-                            start_date: '2026-02-09T23:00:00.000000Z'
-                            end_date: '2026-02-12T23:00:00.000000Z'
-                            status: cancelled
-                            total_price: 45
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            start_date: '2026-03-09T23:00:00.000000Z'
+                            end_date: '2026-03-11T23:00:00.000000Z'
+                            status: pending
+                            total_price: '70.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 8
                             user_id: 7
                             pet_id: 6
-                            start_date: '2025-10-12T22:00:00.000000Z'
-                            end_date: '2025-10-16T22:00:00.000000Z'
+                            start_date: '2025-11-13T23:00:00.000000Z'
+                            end_date: '2025-11-14T23:00:00.000000Z'
                             status: completed
-                            total_price: 35
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            total_price: '80.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 9
                             user_id: 8
                             pet_id: 7
-                            start_date: '2026-02-06T23:00:00.000000Z'
-                            end_date: '2026-02-11T23:00:00.000000Z'
-                            status: pending
-                            total_price: 160
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            start_date: '2025-12-22T23:00:00.000000Z'
+                            end_date: '2025-12-27T23:00:00.000000Z'
+                            status: confirmed
+                            total_price: '75.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 10
                             user_id: 8
                             pet_id: 8
-                            start_date: '2026-01-13T23:00:00.000000Z'
-                            end_date: '2026-01-17T23:00:00.000000Z'
-                            status: cancelled
-                            total_price: 75
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 11
-                            user_id: 9
-                            pet_id: 9
-                            start_date: '2025-12-21T23:00:00.000000Z'
-                            end_date: '2025-12-27T23:00:00.000000Z'
+                            start_date: '2025-11-22T23:00:00.000000Z'
+                            end_date: '2025-11-23T23:00:00.000000Z'
                             status: confirmed
-                            total_price: 40
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 12
-                            user_id: 9
-                            pet_id: 10
-                            start_date: '2026-02-09T23:00:00.000000Z'
-                            end_date: '2026-02-14T23:00:00.000000Z'
-                            status: pending
-                            total_price: 35
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 13
-                            user_id: 10
-                            pet_id: 11
-                            start_date: '2026-02-07T23:00:00.000000Z'
-                            end_date: '2026-02-12T23:00:00.000000Z'
-                            status: completed
-                            total_price: 85
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 14
-                            user_id: 10
-                            pet_id: 12
-                            start_date: '2026-03-04T23:00:00.000000Z'
-                            end_date: '2026-03-06T23:00:00.000000Z'
-                            status: cancelled
-                            total_price: 75
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            total_price: '130.00'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                         items:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 5
+                              example: 1
                             user_id:
                               type: integer
-                              example: 6
+                              example: 1
                             pet_id:
                               type: integer
-                              example: 3
+                              example: 1
                             start_date:
                               type: string
-                              example: '2026-01-21T23:00:00.000000Z'
+                              example: '2026-02-08T23:00:00.000000Z'
                             end_date:
                               type: string
-                              example: '2026-01-26T23:00:00.000000Z'
+                              example: '2026-02-12T23:00:00.000000Z'
                             status:
                               type: string
-                              example: confirmed
+                              example: pending
                             total_price:
-                              type: integer
-                              example: 130
+                              type: string
+                              example: '100.00'
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:58.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                             deleted_at:
                               type: string
                               example: null
@@ -1414,7 +1424,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 12
+                        example: 14
       tags:
         - Endpoints
     post:
@@ -1443,15 +1453,15 @@ paths:
                 start_date:
                   type: string
                   description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
-                  example: '2022-03-03'
+                  example: '2022-03-04'
                 end_date:
                   type: string
                   description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
-                  example: '2052-03-02'
+                  example: '2052-03-03'
                 status:
                   type: string
                   description: ''
-                  example: confirmed
+                  example: completed
                   enum:
                     - pending
                     - confirmed
@@ -1482,44 +1492,44 @@ paths:
               schema:
                 type: object
                 example:
-                  id: 5
-                  user_id: 6
-                  pet_id: 3
-                  start_date: '2026-01-21T23:00:00.000000Z'
-                  end_date: '2026-01-26T23:00:00.000000Z'
-                  status: confirmed
-                  total_price: 130
-                  created_at: '2026-02-03T13:31:58.000000Z'
-                  updated_at: '2026-02-03T13:31:58.000000Z'
+                  id: 1
+                  user_id: 1
+                  pet_id: 1
+                  start_date: '2026-02-08T23:00:00.000000Z'
+                  end_date: '2026-02-12T23:00:00.000000Z'
+                  status: pending
+                  total_price: '100.00'
+                  created_at: '2026-02-08T13:55:38.000000Z'
+                  updated_at: '2026-02-08T13:55:38.000000Z'
                   deleted_at: null
                 properties:
                   id:
                     type: integer
-                    example: 5
+                    example: 1
                   user_id:
                     type: integer
-                    example: 6
+                    example: 1
                   pet_id:
                     type: integer
-                    example: 3
+                    example: 1
                   start_date:
                     type: string
-                    example: '2026-01-21T23:00:00.000000Z'
+                    example: '2026-02-08T23:00:00.000000Z'
                   end_date:
                     type: string
-                    example: '2026-01-26T23:00:00.000000Z'
+                    example: '2026-02-12T23:00:00.000000Z'
                   status:
                     type: string
-                    example: confirmed
+                    example: pending
                   total_price:
-                    type: integer
-                    example: 130
+                    type: string
+                    example: '100.00'
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:58.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
                   deleted_at:
                     type: string
                     example: null
@@ -1551,15 +1561,15 @@ paths:
                 start_date:
                   type: string
                   description: 'Must be a valid date. Must be a date before or equal to <code>end_date</code>.'
-                  example: '2022-03-03'
+                  example: '2022-03-04'
                 end_date:
                   type: string
                   description: 'Must be a valid date. Must be a date after or equal to <code>start_date</code>.'
-                  example: '2052-03-02'
+                  example: '2052-03-03'
                 status:
                   type: string
                   description: ''
-                  example: cancelled
+                  example: confirmed
                   enum:
                     - pending
                     - confirmed
@@ -1589,7 +1599,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the reservation.'
-        example: 5
+        example: 1
         required: true
         schema:
           type: integer
@@ -1614,82 +1624,82 @@ paths:
                         id: 1
                         name: 'Alojamiento dog&cat hotel'
                         description: 'Habitación cómoda con paseos diarios.'
-                        base_price: 20
+                        base_price: '20.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 2
                         name: 'Juegos y comodidades extra'
                         description: 'Añadido: webcam, comida húmeda y juegos constantes.'
-                        base_price: 35
+                        base_price: '35.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 3
                         name: 'Peluquería Canina Y Felina'
                         description: 'Baño, corte de pelo y uñas.'
-                        base_price: 25
+                        base_price: '25.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 4
                         name: 'Consulta Veterinaria'
                         description: 'Revisión general y aviso de pagos extra por llamada.'
-                        base_price: 30
+                        base_price: '30.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 5
                         name: 'Adiestramiento Básico'
                         description: 'Sesión de obediencia básica y juegos.'
-                        base_price: 40
+                        base_price: '40.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 6
                         name: Hopitalización
                         description: 'Cuidados intensivos.'
-                        base_price: 40
+                        base_price: '40.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 7
                         name: 'Consulta online'
                         description: 'Consulta a través de videollamada o llamada básica.'
-                        base_price: 35
+                        base_price: '35.00'
                         is_active: 1
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                      -
+                        id: 8
+                        name: Cirujía
+                        description: 'Mayoría de operaciones.'
+                        base_price: '500.00'
+                        is_active: 0
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 9
                         name: 'Sesión de fotos'
                         description: 'Prometo que no blanqueamos dinero con esto'
-                        base_price: 50
+                        base_price: '50.00'
                         is_active: 0
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                       -
                         id: 10
                         name: 'Aromaterapia y SPA'
                         description: 'Cuidados especiales para la felicidad de tu mascota'
-                        base_price: 50
+                        base_price: '50.00'
                         is_active: 0
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                      -
-                        id: 11
-                        name: 'Urgencias 24h'
-                        description: 'Ambulancia y atención 24h'
-                        base_price: 50
-                        is_active: 0
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                     first_page_url: 'http://localhost:8000/api/services?page=1'
                     from: 1
                     last_page: 2
@@ -1720,7 +1730,7 @@ paths:
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 12
+                    total: 13
                 properties:
                   services:
                     type: object
@@ -1735,82 +1745,82 @@ paths:
                             id: 1
                             name: 'Alojamiento dog&cat hotel'
                             description: 'Habitación cómoda con paseos diarios.'
-                            base_price: 20
+                            base_price: '20.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 2
                             name: 'Juegos y comodidades extra'
                             description: 'Añadido: webcam, comida húmeda y juegos constantes.'
-                            base_price: 35
+                            base_price: '35.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 3
                             name: 'Peluquería Canina Y Felina'
                             description: 'Baño, corte de pelo y uñas.'
-                            base_price: 25
+                            base_price: '25.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 4
                             name: 'Consulta Veterinaria'
                             description: 'Revisión general y aviso de pagos extra por llamada.'
-                            base_price: 30
+                            base_price: '30.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 5
                             name: 'Adiestramiento Básico'
                             description: 'Sesión de obediencia básica y juegos.'
-                            base_price: 40
+                            base_price: '40.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 6
                             name: Hopitalización
                             description: 'Cuidados intensivos.'
-                            base_price: 40
+                            base_price: '40.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 7
                             name: 'Consulta online'
                             description: 'Consulta a través de videollamada o llamada básica.'
-                            base_price: 35
+                            base_price: '35.00'
                             is_active: 1
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                          -
+                            id: 8
+                            name: Cirujía
+                            description: 'Mayoría de operaciones.'
+                            base_price: '500.00'
+                            is_active: 0
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 9
                             name: 'Sesión de fotos'
                             description: 'Prometo que no blanqueamos dinero con esto'
-                            base_price: 50
+                            base_price: '50.00'
                             is_active: 0
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                           -
                             id: 10
                             name: 'Aromaterapia y SPA'
                             description: 'Cuidados especiales para la felicidad de tu mascota'
-                            base_price: 50
+                            base_price: '50.00'
                             is_active: 0
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                          -
-                            id: 11
-                            name: 'Urgencias 24h'
-                            description: 'Ambulancia y atención 24h'
-                            base_price: 50
-                            is_active: 0
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                         items:
                           type: object
                           properties:
@@ -1824,17 +1834,17 @@ paths:
                               type: string
                               example: 'Habitación cómoda con paseos diarios.'
                             base_price:
-                              type: integer
-                              example: 20
+                              type: string
+                              example: '20.00'
                             is_active:
                               type: integer
                               example: 1
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:57.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:57.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                       first_page_url:
                         type: string
                         example: 'http://localhost:8000/api/services?page=1'
@@ -1902,7 +1912,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 12
+                        example: 13
       tags:
         - Endpoints
     post:
@@ -1936,7 +1946,7 @@ paths:
                 is_active:
                   type: boolean
                   description: ''
-                  example: true
+                  example: false
               required:
                 - name
                 - base_price
@@ -1958,10 +1968,10 @@ paths:
                   id: 1
                   name: 'Alojamiento dog&cat hotel'
                   description: 'Habitación cómoda con paseos diarios.'
-                  base_price: 20
+                  base_price: '20.00'
                   is_active: 1
-                  created_at: '2026-02-03T13:31:57.000000Z'
-                  updated_at: '2026-02-03T13:31:57.000000Z'
+                  created_at: '2026-02-08T13:55:38.000000Z'
+                  updated_at: '2026-02-08T13:55:38.000000Z'
                 properties:
                   id:
                     type: integer
@@ -1973,17 +1983,17 @@ paths:
                     type: string
                     example: 'Habitación cómoda con paseos diarios.'
                   base_price:
-                    type: integer
-                    example: 20
+                    type: string
+                    example: '20.00'
                   is_active:
                     type: integer
                     example: 1
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:57.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:57.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
       tags:
         - Endpoints
     put:
@@ -2017,7 +2027,7 @@ paths:
                 is_active:
                   type: boolean
                   description: ''
-                  example: false
+                  example: true
               required:
                 - name
                 - base_price
@@ -2057,76 +2067,88 @@ paths:
                     current_page: 1
                     data:
                       -
+                        id: 1
+                        user_id: 4
+                        name: Toby
+                        species: Perro
+                        breed: Labrador
+                        age: 2
+                        weight: 28
+                        notes: null
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
+                        deleted_at: null
+                      -
                         id: 2
                         user_id: 4
-                        name: Luna
+                        name: Mia
                         species: Gato
-                        breed: Bengalí
-                        age: 3
-                        weight: 5.5
+                        breed: Persa
+                        age: 5
+                        weight: 5
                         notes: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 3
                         user_id: 6
                         name: Max
                         species: Perro
-                        breed: 'Golden Retriever'
-                        age: 7
-                        weight: 30.5
+                        breed: Labrador
+                        age: 4
+                        weight: 28
                         notes: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 4
                         user_id: 6
                         name: Nina
                         species: Gato
-                        breed: Persa
-                        age: 11
-                        weight: 5
+                        breed: Bengalí
+                        age: 3
+                        weight: 5.5
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 5
                         user_id: 7
-                        name: Zeus
+                        name: Rocky
                         species: Perro
-                        breed: 'Bulldog Francés'
-                        age: 5
-                        weight: 12
+                        breed: Labrador
+                        age: 3
+                        weight: 28
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 6
                         user_id: 7
                         name: Luna
                         species: Gato
-                        breed: 'Maine Coon'
-                        age: 7
-                        weight: 7.5
+                        breed: Bengalí
+                        age: 13
+                        weight: 5.5
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 7
                         user_id: 8
-                        name: Zeus
+                        name: Toby
                         species: Perro
                         breed: Labrador
-                        age: 2
+                        age: 5
                         weight: 28
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 8
@@ -2134,47 +2156,35 @@ paths:
                         name: Nina
                         species: Gato
                         breed: Persa
-                        age: 3
+                        age: 13
                         weight: 5
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 9
                         user_id: 9
                         name: Bruno
                         species: Perro
-                        breed: 'Pastor Alemán'
-                        age: 10
-                        weight: 35
+                        breed: Labrador
+                        age: 3
+                        weight: 28
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                       -
                         id: 10
                         user_id: 9
-                        name: Nala
+                        name: Kira
                         species: Gato
-                        breed: Persa
-                        age: 13
-                        weight: 5
+                        breed: Bengalí
+                        age: 4
+                        weight: 5.5
                         notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
-                        deleted_at: null
-                      -
-                        id: 11
-                        user_id: 10
-                        name: Bruno
-                        species: Perro
-                        breed: 'Bulldog Francés'
-                        age: 9
-                        weight: 12
-                        notes: null
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         deleted_at: null
                     first_page_url: 'http://localhost:8000/api/pets?page=1'
                     from: 1
@@ -2218,76 +2228,88 @@ paths:
                         type: array
                         example:
                           -
+                            id: 1
+                            user_id: 4
+                            name: Toby
+                            species: Perro
+                            breed: Labrador
+                            age: 2
+                            weight: 28
+                            notes: null
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
+                            deleted_at: null
+                          -
                             id: 2
                             user_id: 4
-                            name: Luna
+                            name: Mia
                             species: Gato
-                            breed: Bengalí
-                            age: 3
-                            weight: 5.5
+                            breed: Persa
+                            age: 5
+                            weight: 5
                             notes: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 3
                             user_id: 6
                             name: Max
                             species: Perro
-                            breed: 'Golden Retriever'
-                            age: 7
-                            weight: 30.5
+                            breed: Labrador
+                            age: 4
+                            weight: 28
                             notes: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 4
                             user_id: 6
                             name: Nina
                             species: Gato
-                            breed: Persa
-                            age: 11
-                            weight: 5
+                            breed: Bengalí
+                            age: 3
+                            weight: 5.5
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 5
                             user_id: 7
-                            name: Zeus
+                            name: Rocky
                             species: Perro
-                            breed: 'Bulldog Francés'
-                            age: 5
-                            weight: 12
+                            breed: Labrador
+                            age: 3
+                            weight: 28
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 6
                             user_id: 7
                             name: Luna
                             species: Gato
-                            breed: 'Maine Coon'
-                            age: 7
-                            weight: 7.5
+                            breed: Bengalí
+                            age: 13
+                            weight: 5.5
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 7
                             user_id: 8
-                            name: Zeus
+                            name: Toby
                             species: Perro
                             breed: Labrador
-                            age: 2
+                            age: 5
                             weight: 28
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 8
@@ -2295,81 +2317,69 @@ paths:
                             name: Nina
                             species: Gato
                             breed: Persa
-                            age: 3
+                            age: 13
                             weight: 5
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 9
                             user_id: 9
                             name: Bruno
                             species: Perro
-                            breed: 'Pastor Alemán'
-                            age: 10
-                            weight: 35
+                            breed: Labrador
+                            age: 3
+                            weight: 28
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                           -
                             id: 10
                             user_id: 9
-                            name: Nala
+                            name: Kira
                             species: Gato
-                            breed: Persa
-                            age: 13
-                            weight: 5
+                            breed: Bengalí
+                            age: 4
+                            weight: 5.5
                             notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
-                            deleted_at: null
-                          -
-                            id: 11
-                            user_id: 10
-                            name: Bruno
-                            species: Perro
-                            breed: 'Bulldog Francés'
-                            age: 9
-                            weight: 12
-                            notes: null
-                            created_at: '2026-02-03T13:31:58.000000Z'
-                            updated_at: '2026-02-03T13:31:58.000000Z'
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             deleted_at: null
                         items:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 2
+                              example: 1
                             user_id:
                               type: integer
                               example: 4
                             name:
                               type: string
-                              example: Luna
+                              example: Toby
                             species:
                               type: string
-                              example: Gato
+                              example: Perro
                             breed:
                               type: string
-                              example: Bengalí
+                              example: Labrador
                             age:
                               type: integer
-                              example: 3
+                              example: 2
                             weight:
-                              type: number
-                              example: 5.5
+                              type: integer
+                              example: 28
                             notes:
                               type: string
                               example: null
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:57.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:57.000000Z'
+                              example: '2026-02-08T13:55:38.000000Z'
                             deleted_at:
                               type: string
                               example: null
@@ -2508,48 +2518,48 @@ paths:
               schema:
                 type: object
                 example:
-                  id: 2
+                  id: 1
                   user_id: 4
-                  name: Luna
-                  species: Gato
-                  breed: Bengalí
-                  age: 3
-                  weight: 5.5
+                  name: Toby
+                  species: Perro
+                  breed: Labrador
+                  age: 2
+                  weight: 28
                   notes: null
-                  created_at: '2026-02-03T13:31:57.000000Z'
-                  updated_at: '2026-02-03T13:31:57.000000Z'
+                  created_at: '2026-02-08T13:55:38.000000Z'
+                  updated_at: '2026-02-08T13:55:38.000000Z'
                   deleted_at: null
                 properties:
                   id:
                     type: integer
-                    example: 2
+                    example: 1
                   user_id:
                     type: integer
                     example: 4
                   name:
                     type: string
-                    example: Luna
+                    example: Toby
                   species:
                     type: string
-                    example: Gato
+                    example: Perro
                   breed:
                     type: string
-                    example: Bengalí
+                    example: Labrador
                   age:
                     type: integer
-                    example: 3
+                    example: 2
                   weight:
-                    type: number
-                    example: 5.5
+                    type: integer
+                    example: 28
                   notes:
                     type: string
                     example: null
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:57.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:57.000000Z'
+                    example: '2026-02-08T13:55:38.000000Z'
                   deleted_at:
                     type: string
                     example: null
@@ -2619,7 +2629,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the pet.'
-        example: 2
+        example: 1
         required: true
         schema:
           type: integer
@@ -2645,115 +2655,115 @@ paths:
                         name: admin
                         email: admin@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:55.000000Z'
-                        updated_at: '2026-02-03T13:31:55.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:36.000000Z'
+                        updated_at: '2026-02-08T13:55:36.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
                       -
                         id: 2
                         name: veterinario
                         email: vet@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:56.000000Z'
-                        updated_at: '2026-02-03T13:31:56.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:36.000000Z'
+                        updated_at: '2026-02-08T13:55:36.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=v&color=7F9CF5&background=EBF4FF'
                       -
                         id: 3
                         name: recepcionista
                         email: recep@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:56.000000Z'
-                        updated_at: '2026-02-03T13:31:56.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:37.000000Z'
+                        updated_at: '2026-02-08T13:55:37.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=r&color=7F9CF5&background=EBF4FF'
                       -
                         id: 4
                         name: cliente
                         email: client@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:56.000000Z'
-                        updated_at: '2026-02-03T13:31:56.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:37.000000Z'
+                        updated_at: '2026-02-08T13:55:37.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 5
                         name: cuidador
                         email: cuid@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:56.000000Z'
-                        updated_at: '2026-02-03T13:31:56.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:37.000000Z'
+                        updated_at: '2026-02-08T13:55:37.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 6
                         name: cliente1
                         email: cliente1@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:37.000000Z'
+                        updated_at: '2026-02-08T13:55:37.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 7
                         name: cliente2
                         email: cliente2@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 8
                         name: cliente3
                         email: cliente3@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 9
                         name: cliente4
                         email: cliente4@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                       -
                         id: 10
                         name: cliente5
                         email: cliente5@mail.es
                         email_verified_at: null
+                        two_factor_confirmed_at: null
                         current_team_id: null
                         profile_photo_path: null
-                        created_at: '2026-02-03T13:31:57.000000Z'
-                        updated_at: '2026-02-03T13:31:57.000000Z'
-                        two_factor_confirmed_at: null
+                        created_at: '2026-02-08T13:55:38.000000Z'
+                        updated_at: '2026-02-08T13:55:38.000000Z'
                         profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                     first_page_url: 'http://localhost:8000/api/users?page=1'
                     from: 1
-                    last_page: 2
-                    last_page_url: 'http://localhost:8000/api/users?page=2'
+                    last_page: 1
+                    last_page_url: 'http://localhost:8000/api/users?page=1'
                     links:
                       -
                         url: null
@@ -2766,21 +2776,16 @@ paths:
                         page: 1
                         active: true
                       -
-                        url: 'http://localhost:8000/api/users?page=2'
-                        label: '2'
-                        page: 2
-                        active: false
-                      -
-                        url: 'http://localhost:8000/api/users?page=2'
+                        url: null
                         label: 'Next &raquo;'
-                        page: 2
+                        page: null
                         active: false
-                    next_page_url: 'http://localhost:8000/api/users?page=2'
+                    next_page_url: null
                     path: 'http://localhost:8000/api/users'
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 11
+                    total: 10
                 properties:
                   users:
                     type: object
@@ -2796,110 +2801,110 @@ paths:
                             name: admin
                             email: admin@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:55.000000Z'
-                            updated_at: '2026-02-03T13:31:55.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:36.000000Z'
+                            updated_at: '2026-02-08T13:55:36.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
                           -
                             id: 2
                             name: veterinario
                             email: vet@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:56.000000Z'
-                            updated_at: '2026-02-03T13:31:56.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:36.000000Z'
+                            updated_at: '2026-02-08T13:55:36.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=v&color=7F9CF5&background=EBF4FF'
                           -
                             id: 3
                             name: recepcionista
                             email: recep@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:56.000000Z'
-                            updated_at: '2026-02-03T13:31:56.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:37.000000Z'
+                            updated_at: '2026-02-08T13:55:37.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=r&color=7F9CF5&background=EBF4FF'
                           -
                             id: 4
                             name: cliente
                             email: client@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:56.000000Z'
-                            updated_at: '2026-02-03T13:31:56.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:37.000000Z'
+                            updated_at: '2026-02-08T13:55:37.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 5
                             name: cuidador
                             email: cuid@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:56.000000Z'
-                            updated_at: '2026-02-03T13:31:56.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:37.000000Z'
+                            updated_at: '2026-02-08T13:55:37.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 6
                             name: cliente1
                             email: cliente1@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:37.000000Z'
+                            updated_at: '2026-02-08T13:55:37.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 7
                             name: cliente2
                             email: cliente2@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 8
                             name: cliente3
                             email: cliente3@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 9
                             name: cliente4
                             email: cliente4@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                           -
                             id: 10
                             name: cliente5
                             email: cliente5@mail.es
                             email_verified_at: null
+                            two_factor_confirmed_at: null
                             current_team_id: null
                             profile_photo_path: null
-                            created_at: '2026-02-03T13:31:57.000000Z'
-                            updated_at: '2026-02-03T13:31:57.000000Z'
-                            two_factor_confirmed_at: null
+                            created_at: '2026-02-08T13:55:38.000000Z'
+                            updated_at: '2026-02-08T13:55:38.000000Z'
                             profile_photo_url: 'https://ui-avatars.com/api/?name=c&color=7F9CF5&background=EBF4FF'
                         items:
                           type: object
@@ -2916,6 +2921,9 @@ paths:
                             email_verified_at:
                               type: string
                               example: null
+                            two_factor_confirmed_at:
+                              type: string
+                              example: null
                             current_team_id:
                               type: string
                               example: null
@@ -2924,13 +2932,10 @@ paths:
                               example: null
                             created_at:
                               type: string
-                              example: '2026-02-03T13:31:55.000000Z'
+                              example: '2026-02-08T13:55:36.000000Z'
                             updated_at:
                               type: string
-                              example: '2026-02-03T13:31:55.000000Z'
-                            two_factor_confirmed_at:
-                              type: string
-                              example: null
+                              example: '2026-02-08T13:55:36.000000Z'
                             profile_photo_url:
                               type: string
                               example: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
@@ -2942,10 +2947,10 @@ paths:
                         example: 1
                       last_page:
                         type: integer
-                        example: 2
+                        example: 1
                       last_page_url:
                         type: string
-                        example: 'http://localhost:8000/api/users?page=2'
+                        example: 'http://localhost:8000/api/users?page=1'
                       links:
                         type: array
                         example:
@@ -2960,14 +2965,9 @@ paths:
                             page: 1
                             active: true
                           -
-                            url: 'http://localhost:8000/api/users?page=2'
-                            label: '2'
-                            page: 2
-                            active: false
-                          -
-                            url: 'http://localhost:8000/api/users?page=2'
+                            url: null
                             label: 'Next &raquo;'
-                            page: 2
+                            page: null
                             active: false
                         items:
                           type: object
@@ -2986,7 +2986,7 @@ paths:
                               example: false
                       next_page_url:
                         type: string
-                        example: 'http://localhost:8000/api/users?page=2'
+                        example: null
                       path:
                         type: string
                         example: 'http://localhost:8000/api/users'
@@ -3001,7 +3001,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 11
+                        example: 10
       tags:
         - Endpoints
     post:
@@ -3053,11 +3053,11 @@ paths:
                   name: admin
                   email: admin@mail.es
                   email_verified_at: null
+                  two_factor_confirmed_at: null
                   current_team_id: null
                   profile_photo_path: null
-                  created_at: '2026-02-03T13:31:55.000000Z'
-                  updated_at: '2026-02-03T13:31:55.000000Z'
-                  two_factor_confirmed_at: null
+                  created_at: '2026-02-08T13:55:36.000000Z'
+                  updated_at: '2026-02-08T13:55:36.000000Z'
                   profile_photo_url: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
                 properties:
                   id:
@@ -3072,6 +3072,9 @@ paths:
                   email_verified_at:
                     type: string
                     example: null
+                  two_factor_confirmed_at:
+                    type: string
+                    example: null
                   current_team_id:
                     type: string
                     example: null
@@ -3080,13 +3083,10 @@ paths:
                     example: null
                   created_at:
                     type: string
-                    example: '2026-02-03T13:31:55.000000Z'
+                    example: '2026-02-08T13:55:36.000000Z'
                   updated_at:
                     type: string
-                    example: '2026-02-03T13:31:55.000000Z'
-                  two_factor_confirmed_at:
-                    type: string
-                    example: null
+                    example: '2026-02-08T13:55:36.000000Z'
                   profile_photo_url:
                     type: string
                     example: 'https://ui-avatars.com/api/?name=a&color=7F9CF5&background=EBF4FF'
@@ -3157,38 +3157,60 @@ paths:
                   current_page: 1
                   data:
                     -
+                      id: 1
+                      invoice_id: 1
+                      user_id: 1
+                      amount: '100.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-1
+                      paid_at: '2026-02-12T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
+                    -
+                      id: 2
+                      invoice_id: 3
+                      user_id: 4
+                      amount: '95.00'
+                      payment_method: credit_card
+                      status: completed
+                      transaction_id: TRX-3
+                      paid_at: '2025-11-22T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
+                    -
                       id: 3
                       invoice_id: 5
                       user_id: 6
-                      amount: '130.00'
+                      amount: '150.00'
                       payment_method: credit_card
                       status: completed
-                      transaction_id: TRX-D991A513
-                      paid_at: '2026-02-03T13:31:58.000000Z'
-                      created_at: '2026-02-03T13:31:58.000000Z'
-                      updated_at: '2026-02-03T13:31:58.000000Z'
+                      transaction_id: TRX-5
+                      paid_at: '2026-03-12T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
                     -
                       id: 4
                       invoice_id: 7
                       user_id: 7
-                      amount: '45.00'
+                      amount: '70.00'
                       payment_method: credit_card
                       status: completed
-                      transaction_id: TRX-A78CCC97
-                      paid_at: '2026-02-03T13:31:58.000000Z'
-                      created_at: '2026-02-03T13:31:58.000000Z'
-                      updated_at: '2026-02-03T13:31:58.000000Z'
+                      transaction_id: TRX-7
+                      paid_at: '2026-03-11T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
                     -
                       id: 5
                       invoice_id: 9
                       user_id: 8
-                      amount: '160.00'
+                      amount: '75.00'
                       payment_method: credit_card
                       status: completed
-                      transaction_id: TRX-69F474E3
-                      paid_at: '2026-02-03T13:31:58.000000Z'
-                      created_at: '2026-02-03T13:31:58.000000Z'
-                      updated_at: '2026-02-03T13:31:58.000000Z'
+                      transaction_id: TRX-9
+                      paid_at: '2025-12-27T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
                     -
                       id: 6
                       invoice_id: 11
@@ -3196,21 +3218,21 @@ paths:
                       amount: '40.00'
                       payment_method: credit_card
                       status: completed
-                      transaction_id: TRX-8BDBE67E
-                      paid_at: '2026-02-03T13:31:58.000000Z'
-                      created_at: '2026-02-03T13:31:58.000000Z'
-                      updated_at: '2026-02-03T13:31:58.000000Z'
+                      transaction_id: TRX-11
+                      paid_at: '2025-11-06T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
                     -
                       id: 7
                       invoice_id: 13
                       user_id: 10
-                      amount: '85.00'
+                      amount: '95.00'
                       payment_method: credit_card
                       status: completed
-                      transaction_id: TRX-846B7F66
-                      paid_at: '2026-02-03T13:31:58.000000Z'
-                      created_at: '2026-02-03T13:31:58.000000Z'
-                      updated_at: '2026-02-03T13:31:58.000000Z'
+                      transaction_id: TRX-13
+                      paid_at: '2025-11-27T23:00:00.000000Z'
+                      created_at: '2026-02-08T13:55:39.000000Z'
+                      updated_at: '2026-02-08T13:55:39.000000Z'
                   first_page_url: 'http://localhost:8000/api/payments?page=1'
                   from: 1
                   last_page: 1
@@ -3235,8 +3257,8 @@ paths:
                   path: 'http://localhost:8000/api/payments'
                   per_page: 10
                   prev_page_url: null
-                  to: 5
-                  total: 5
+                  to: 7
+                  total: 7
                 properties:
                   current_page:
                     type: integer
@@ -3245,38 +3267,60 @@ paths:
                     type: array
                     example:
                       -
+                        id: 1
+                        invoice_id: 1
+                        user_id: 1
+                        amount: '100.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-1
+                        paid_at: '2026-02-12T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                      -
+                        id: 2
+                        invoice_id: 3
+                        user_id: 4
+                        amount: '95.00'
+                        payment_method: credit_card
+                        status: completed
+                        transaction_id: TRX-3
+                        paid_at: '2025-11-22T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
+                      -
                         id: 3
                         invoice_id: 5
                         user_id: 6
-                        amount: '130.00'
+                        amount: '150.00'
                         payment_method: credit_card
                         status: completed
-                        transaction_id: TRX-D991A513
-                        paid_at: '2026-02-03T13:31:58.000000Z'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        transaction_id: TRX-5
+                        paid_at: '2026-03-12T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                       -
                         id: 4
                         invoice_id: 7
                         user_id: 7
-                        amount: '45.00'
+                        amount: '70.00'
                         payment_method: credit_card
                         status: completed
-                        transaction_id: TRX-A78CCC97
-                        paid_at: '2026-02-03T13:31:58.000000Z'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        transaction_id: TRX-7
+                        paid_at: '2026-03-11T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                       -
                         id: 5
                         invoice_id: 9
                         user_id: 8
-                        amount: '160.00'
+                        amount: '75.00'
                         payment_method: credit_card
                         status: completed
-                        transaction_id: TRX-69F474E3
-                        paid_at: '2026-02-03T13:31:58.000000Z'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        transaction_id: TRX-9
+                        paid_at: '2025-12-27T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                       -
                         id: 6
                         invoice_id: 11
@@ -3284,36 +3328,36 @@ paths:
                         amount: '40.00'
                         payment_method: credit_card
                         status: completed
-                        transaction_id: TRX-8BDBE67E
-                        paid_at: '2026-02-03T13:31:58.000000Z'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        transaction_id: TRX-11
+                        paid_at: '2025-11-06T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                       -
                         id: 7
                         invoice_id: 13
                         user_id: 10
-                        amount: '85.00'
+                        amount: '95.00'
                         payment_method: credit_card
                         status: completed
-                        transaction_id: TRX-846B7F66
-                        paid_at: '2026-02-03T13:31:58.000000Z'
-                        created_at: '2026-02-03T13:31:58.000000Z'
-                        updated_at: '2026-02-03T13:31:58.000000Z'
+                        transaction_id: TRX-13
+                        paid_at: '2025-11-27T23:00:00.000000Z'
+                        created_at: '2026-02-08T13:55:39.000000Z'
+                        updated_at: '2026-02-08T13:55:39.000000Z'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 3
+                          example: 1
                         invoice_id:
                           type: integer
-                          example: 5
+                          example: 1
                         user_id:
                           type: integer
-                          example: 6
+                          example: 1
                         amount:
                           type: string
-                          example: '130.00'
+                          example: '100.00'
                         payment_method:
                           type: string
                           example: credit_card
@@ -3322,16 +3366,16 @@ paths:
                           example: completed
                         transaction_id:
                           type: string
-                          example: TRX-D991A513
+                          example: TRX-1
                         paid_at:
                           type: string
-                          example: '2026-02-03T13:31:58.000000Z'
+                          example: '2026-02-12T23:00:00.000000Z'
                         created_at:
                           type: string
-                          example: '2026-02-03T13:31:58.000000Z'
+                          example: '2026-02-08T13:55:39.000000Z'
                         updated_at:
                           type: string
-                          example: '2026-02-03T13:31:58.000000Z'
+                          example: '2026-02-08T13:55:39.000000Z'
                   first_page_url:
                     type: string
                     example: 'http://localhost:8000/api/payments?page=1'
@@ -3391,9 +3435,9 @@ paths:
                     example: null
                   to:
                     type: integer
-                    example: 5
+                    example: 7
                   total:
                     type: integer
-                    example: 5
+                    example: 7
       tags:
         - Endpoints

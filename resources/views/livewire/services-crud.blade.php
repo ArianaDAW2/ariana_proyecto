@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\Service::class)
+    @can('manage_services')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <input type="text" wire:model="name" placeholder="{{ __('private.service_name') }}">
             @error('name') <span>{{ $message }}</span> @enderror
@@ -43,11 +43,11 @@
                 <td>{{ $service->base_price }} €</td>
                 <td>{{ $service->is_active ? __('private.yes') : __('private.no') }}</td>
                 <td>
-                    @can('update', $service)
+                    @can('manage_services')
                         <button wire:click="edit({{ $service->id }})">{{ __('private.edit') }}</button>
                     @endcan
 
-                    @can('delete', $service)
+                    @can('manage_services')
                         <button wire:click="delete({{ $service->id }})">{{ __('private.delete') }}</button>
                     @endcan
                 </td>

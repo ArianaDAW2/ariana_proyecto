@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\MedicalRecord::class)
+    @can('manage_medical_records')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <select wire:model="pet_id">
                 <option value="">{{ __('private.pet') }}</option>
@@ -57,13 +57,13 @@
                 <td>{{ $record->veterinarian->name }}</td>
                 <td>{{ Str::limit($record->diagnosis, 50) }}</td>
                 <td>
-                    @can('update', $record)
+                    @can('manage_medical_records')
                         <button wire:click="edit({{ $record->id }})">
                             {{ __('private.edit') }}
                         </button>
                     @endcan
 
-                    @can('delete', $record)
+                    @can('manage_medical_records')
                         <button wire:click="delete({{ $record->id }})">
                             {{ __('private.delete') }}
                         </button>

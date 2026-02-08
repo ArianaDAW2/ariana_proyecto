@@ -1,6 +1,6 @@
 <div>
     {{-- FORMULARIO --}}
-    @can('create', App\Models\User::class)
+    @can('manage_users')
         <form wire:submit.prevent="{{ $isEdit ? 'update' : 'save' }}">
             <input type="text" wire:model="name" placeholder="{{ __('private.name') }}">
             @error('name') <span>{{ $message }}</span> @enderror
@@ -38,11 +38,11 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>
-                    @can('update', $user)
+                    @can('manage_users')
                         <button wire:click="edit({{ $user->id }})">{{ __('private.edit') }}</button>
                     @endcan
 
-                    @can('delete', $user)
+                    @can('manage_users')
                         <button wire:click="delete({{ $user->id }})">{{ __('private.delete') }}</button>
                     @endcan
                 </td>

@@ -10,6 +10,9 @@ use Laravel\Sanctum\Sanctum;
 
 beforeEach(function () {
     $this->seed(RolePermissionUserSeeder::class);
+
+    $this->admin = User::where('name', 'admin')->first();
+    $this->cliente = User::where('name', 'cliente')->first();
 });
 
 /*
@@ -27,7 +30,7 @@ it('guest cannot access payments', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Cliente (sin permisos)
+| Cliente
 |--------------------------------------------------------------------------
 */
 
@@ -48,9 +51,8 @@ it('cliente cannot access payments', function () {
 */
 
 it('admin can access payments', function () {
-    $admin = User::factory()->create();
-    $admin->assignRole('Admin');
-    Sanctum::actingAs($admin);
+
+    Sanctum::actingAs($this->admin);
 
     Payment::factory()->count(3)->create();
 
@@ -58,6 +60,11 @@ it('admin can access payments', function () {
 
     $response->assertStatus(200);
 });
+/*
+|--------------------------------------------------------------------------
+| token
+|--------------------------------------------------------------------------
+*/
 it('can authenticate with custom hashed token', function () {
     $user = User::factory()->create();
     $user->assignRole('Admin');
